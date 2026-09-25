@@ -13035,9 +13035,15 @@ Borkenberge",
     zoom = 1000000.0,
   },
   maxDictId = 0,
-  pictureFileNameB = {},
-  pictureFileNameN = {},
-  pictureFileNameR = {},
+  pictureFileNameB = {
+    "ResKey_ImageBriefing_carte",
+  },
+  pictureFileNameN = {
+    "ResKey_ImageBriefing_carte",
+  },
+  pictureFileNameR = {
+    "ResKey_ImageBriefing_carte",
+  },
   requiredModules = {},
   result = {
     blue = {

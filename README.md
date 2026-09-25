@@ -16,9 +16,9 @@ Zones de combat, missions CAP et soutien se pilotent par le menu radio F10 (*Zon
 
 ## Carte
 
-![Carte schématique de la mission](docs/carte.svg)
+![Carte de la mission](docs/carte.jpg)
 
-Carrés : bases avec slots (bleu / rouge). Traits pleins : hippodromes des ravitailleurs et AWACS. Pointillés : CAP à la demande. Cercles : QRA. Pastilles vertes : entraînement (H hélicos, A attaque, S SEAD). Pastilles rouges numérotées : zones de combat (numéros de la liste plus bas). Schéma à l'échelle, sans fond de carte ; la ligne de front est approximative. Dans DCS, la carte F10 porte les mêmes dessins, chaque camp ne voyant que les siens.
+Carrés : bases avec slots (bleu / rouge). Traits pleins : hippodromes des ravitailleurs et AWACS. Pointillés : CAP à la demande. Cercles : QRA. Pastilles vertes : entraînement (H hélicos, A attaque, S SEAD). Pastilles rouges numérotées : zones de combat (numéros de la liste plus bas). Fond de carte OpenStreetMap ; la ligne de front est approximative. La même image est dans le briefing de la mission, dans DCS, et la carte F10 porte les mêmes dessins, chaque camp ne voyant que les siens.
 
 ## Bases
 
@@ -353,9 +353,9 @@ Contrôle avant build : `.\veaf-tools.exe validate` (ou l'action MCP `validate_m
 | `src/waypoints.yaml` | Points de navigation injectés dans les appareils joueurs |
 | `src/warehouses.yaml` | Bases qui offrent des slots (`exclude_airports` pour les bases rouges sans slots), carburant et munitions illimités |
 | `src/dynamic-slot-templates.yaml` | Appareils proposés en slots dynamiques (WW2 retirés) |
-| `docs/carte.svg` | La carte de ce briefing |
+| `docs/carte.jpg` | La carte de ce briefing (fond OpenStreetMap) ; la même image est dans `src/mission/l10n/DEFAULT/carte.jpg` pour le briefing DCS |
 
-Ce README est **généré depuis la mission** : après tout changement, relancer `gather.py` puis `gen_readme.py`
+Ce README est **généré depuis la mission** : après tout changement, relancer `gather.py` puis `gen_readme.py` (qui appelle `gen_map.py` pour la carte)
 (rangés hors dépôt, dans `.veaf-backups/outils-controle/`), sans rien retaper à la main.
 
 ### Limites connues

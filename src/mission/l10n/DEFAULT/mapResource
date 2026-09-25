@@ -1,2 +1,4 @@
 mapResource = 
-{}
+{
+  ResKey_ImageBriefing_carte = "carte.jpg",
+}
