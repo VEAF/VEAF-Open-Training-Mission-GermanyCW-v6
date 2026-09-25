@@ -8,15 +8,15 @@
 veaf.config.MISSION_NAME = "VEAF_OpenTraining_GermanyCW_ICAO_ETAR"
 veaf.config.era = veaf.ERA.MODERN
 veaf.silenceAtcOnAllAirbases()
-veaf.HideNamesFromSpawnedGroups = true
+veaf.HideNamesFromSpawnedGroups = false
 
 veaf.config.language = "fr"
 
 -- ── Security ─────────────────────────────────────────────────────────────────
-veaf.SecurityDisabled = false
+veaf.SecurityDisabled = true
 
 -- ── Global log level ─────────────────────────────────────────────────────────
-veaf.ForcedLogLevel = "info"
+veaf.ForcedLogLevel = "debug"
 
 -- ── CTLD 2 ───────────────────────────────────────────────────────────────────
 -- Configuration lives in ctld-config.yaml (edit it with ctld-tools); this only starts it.
