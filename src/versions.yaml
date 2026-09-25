@@ -1,0 +1,127 @@
+# Variantes météo et heure — VEAF Open Training GermanyCW (moderne).
+#
+# 5 heures (nuit, aube, matin, jour, soir) x 4 ciels (réel, dégagé, épars, pluie) = 20 .miz.
+# - réel   : METAR de Ramstein (ETAR) récupéré au build ; sur le serveur, RealWeather le remplace
+#            au lancement grâce au _ICAO_ETAR du nom de la mission ;
+# - dégagé : météo manuelle, ciel clair ;
+# - épars / pluie : METAR fixe (le bloc weather: ne sait pas décrire la pluie).
+# L'horloge d'une mission GermanyCW est à UTC+2 (limitation mesurée en juin) : les outils de develop
+# calculent « sunrise » / « sunset » sur ce décalage (FIX-SCRATCH-MISSION-FINDINGS 02).
+
+position:
+  latitude: 49.4369     # Ramstein, base mère
+  longitude: 7.6003
+  timezone: "Europe/Berlin"
+
+base_date: "2025-06-14"
+
+versions:
+  - name: nuit-reel
+    time: "02:00"
+    airport_icao: ETAR
+
+  - name: nuit-degage
+    time: "02:00"
+    weather:
+      temperature: 12.0
+      wind_speed: 3.0
+      wind_direction: 240.0
+      visibility: 40000
+      cloud_type: "clear"
+      fog_enabled: false
+
+  - name: nuit-epars
+    time: "02:00"
+    metar: "METAR ETAR 140000Z 25008KT 9999 SCT035 SCT080 12/08 Q1017"
+
+  - name: nuit-pluie
+    time: "02:00"
+    metar: "METAR ETAR 140000Z 23014G24KT 6000 RA BKN012 OVC030 08/07 Q1006"
+
+  - name: aube-reel
+    time: "sunrise"
+    airport_icao: ETAR
+
+  - name: aube-degage
+    time: "sunrise"
+    weather:
+      temperature: 11.0
+      wind_speed: 3.0
+      wind_direction: 240.0
+      visibility: 40000
+      cloud_type: "clear"
+      fog_enabled: false
+
+  - name: aube-epars
+    time: "sunrise"
+    metar: "METAR ETAR 140330Z 25008KT 9999 SCT035 SCT080 11/08 Q1017"
+
+  - name: aube-pluie
+    time: "sunrise"
+    metar: "METAR ETAR 140330Z 23014G24KT 6000 RA BKN012 OVC030 07/06 Q1006"
+
+  - name: matin-reel
+    time: "09:00"
+    airport_icao: ETAR
+
+  - name: matin-degage
+    time: "09:00"
+    weather:
+      temperature: 16.0
+      wind_speed: 3.0
+      wind_direction: 240.0
+      visibility: 40000
+      cloud_type: "clear"
+      fog_enabled: false
+
+  - name: matin-epars
+    time: "09:00"
+    metar: "METAR ETAR 140700Z 25008KT 9999 SCT035 SCT080 16/08 Q1017"
+
+  - name: matin-pluie
+    time: "09:00"
+    metar: "METAR ETAR 140700Z 23014G24KT 6000 RA BKN012 OVC030 12/11 Q1006"
+
+  - name: jour-reel
+    time: "14:00"
+    airport_icao: ETAR
+
+  - name: jour-degage
+    time: "14:00"
+    weather:
+      temperature: 23.0
+      wind_speed: 3.0
+      wind_direction: 240.0
+      visibility: 40000
+      cloud_type: "clear"
+      fog_enabled: false
+
+  - name: jour-epars
+    time: "14:00"
+    metar: "METAR ETAR 141200Z 25008KT 9999 SCT035 SCT080 23/08 Q1017"
+
+  - name: jour-pluie
+    time: "14:00"
+    metar: "METAR ETAR 141200Z 23014G24KT 6000 RA BKN012 OVC030 19/18 Q1006"
+
+  - name: soir-reel
+    time: "sunset-45*60"
+    airport_icao: ETAR
+
+  - name: soir-degage
+    time: "sunset-45*60"
+    weather:
+      temperature: 19.0
+      wind_speed: 3.0
+      wind_direction: 240.0
+      visibility: 40000
+      cloud_type: "clear"
+      fog_enabled: false
+
+  - name: soir-epars
+    time: "sunset-45*60"
+    metar: "METAR ETAR 141830Z 25008KT 9999 SCT035 SCT080 19/08 Q1017"
+
+  - name: soir-pluie
+    time: "sunset-45*60"
+    metar: "METAR ETAR 141830Z 23014G24KT 6000 RA BKN012 OVC030 15/14 Q1006"

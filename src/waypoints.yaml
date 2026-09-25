@@ -1,0 +1,147 @@
+# Points de navigation injectés dans les appareils joueurs (slots dynamiques) — GermanyCW.
+# Le BULLSEYE vient de la mission (set_bullseye, sommet du Brocken) et est ajouté par le build.
+# x vers le nord, y vers l'est, en mètres ; alt en mètres ; speed en m/s.
+
+waypoints:
+  TEXACO_1:
+    type: "Turning Point"
+    action: "Turning Point"
+    alt: 6706
+    alt_type: "BARO"
+    speed: 200
+    speed_type: "TAS"
+    x: -97981
+    y: -740334
+    name: "TEXACO_1"
+  ARCO_1:
+    type: "Turning Point"
+    action: "Turning Point"
+    alt: 5486
+    alt_type: "BARO"
+    speed: 200
+    speed_type: "TAS"
+    x: -94651
+    y: -760225
+    name: "ARCO_1"
+  TEXACO_2:
+    type: "Turning Point"
+    action: "Turning Point"
+    alt: 7315
+    alt_type: "BARO"
+    speed: 200
+    speed_type: "TAS"
+    x: -369444
+    y: -816876
+    name: "TEXACO_2"
+  ARCO_2:
+    type: "Turning Point"
+    action: "Turning Point"
+    alt: 4877
+    alt_type: "BARO"
+    speed: 200
+    speed_type: "TAS"
+    x: -365903
+    y: -837938
+    name: "ARCO_2"
+  SHELL_1:
+    type: "Turning Point"
+    action: "Turning Point"
+    alt: 6096
+    alt_type: "BARO"
+    speed: 200
+    speed_type: "TAS"
+    x: -472638
+    y: -974518
+    name: "SHELL_1"
+  TANKER_ROUGE:
+    type: "Turning Point"
+    action: "Turning Point"
+    alt: 6096
+    alt_type: "BARO"
+    speed: 200
+    speed_type: "TAS"
+    x: -165749
+    y: -440718
+    name: "TANKER_ROUGE"
+  FARP_BAUMHOLDER:
+    type: "Turning Point"
+    action: "Turning Point"
+    alt: 300
+    alt_type: "BARO"
+    speed: 50
+    speed_type: "TAS"
+    x: -476688
+    y: -952950
+    name: "FARP_BAUMHOLDER"
+  FARP_GOETTINGEN:
+    type: "Turning Point"
+    action: "Turning Point"
+    alt: 300
+    alt_type: "BARO"
+    speed: 50
+    speed_type: "TAS"
+    x: -291516
+    y: -732665
+    name: "FARP_GOETTINGEN"
+  LAAGE:
+    type: "Turning Point"
+    action: "Turning Point"
+    alt: 300
+    alt_type: "BARO"
+    speed: 50
+    speed_type: "TAS"
+    x: -51583
+    y: -537833
+    name: "LAAGE"
+  HOLZDORF:
+    type: "Turning Point"
+    action: "Turning Point"
+    alt: 300
+    alt_type: "BARO"
+    speed: 50
+    speed_type: "TAS"
+    x: -297610
+    y: -503199
+    name: "HOLZDORF"
+  ALLSTEDT:
+    type: "Turning Point"
+    action: "Turning Point"
+    alt: 300
+    alt_type: "BARO"
+    speed: 50
+    speed_type: "TAS"
+    x: -325836
+    y: -627545
+    name: "ALLSTEDT"
+
+settings:
+  bleu_avions:
+    category: "plane"
+    coalition: "blue"
+    waypoints:
+      TEXACO_1: "TEXACO_1"
+      ARCO_1: "ARCO_1"
+      TEXACO_2: "TEXACO_2"
+      ARCO_2: "ARCO_2"
+      SHELL_1: "SHELL_1"
+  bleu_helicopteres:
+    category: "helicopter"
+    coalition: "blue"
+    waypoints:
+      FARP_BAUMHOLDER: "FARP_BAUMHOLDER"
+      FARP_GOETTINGEN: "FARP_GOETTINGEN"
+  rouge_avions:
+    category: "plane"
+    coalition: "red"
+    waypoints:
+      TANKER_ROUGE: "TANKER_ROUGE"
+      LAAGE: "LAAGE"
+      HOLZDORF: "HOLZDORF"
+      ALLSTEDT: "ALLSTEDT"
+  rouge_helicopteres:
+    category: "helicopter"
+    coalition: "red"
+    waypoints:
+      LAAGE: "LAAGE"
+      HOLZDORF: "HOLZDORF"
+      ALLSTEDT: "ALLSTEDT"

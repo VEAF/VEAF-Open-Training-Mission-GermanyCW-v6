@@ -1,0 +1,299 @@
+# Plan radio de la mission VEAF Open Training GermanyCW (moderne).
+# L'ATC DCS est coupé (silence_atc_on_all_airbases) : les fréquences de base sont des fréquences de
+# trafic propres à la mission. Même fréquence partout : groupe DCS, preset, texte ASSETS, briefing.
+channel_lists: # plan par rôle (ADR 0010), projeté sur les radios de chaque appareil au build
+  blue:
+    primary_1: # première radio V/UHF
+      01: { title: Guard/UHF, channel: Guard }
+      02: Overlord-1
+      03: Magic-1
+      04: Texaco-1
+      05: Arco-1
+      06: Texaco-2
+      07: Arco-2
+      08: Shell-1
+      09: Base-Ramstein
+      10: Base-Spangdahlem
+      11: Base-Buchel
+      12: Base-Norvenich
+      13: Base-Wiesbaden
+      14: Base-Nordholz
+      15: Base-Wunstorf
+      16: Base-Fassberg
+      17: Base-Fulda
+      18: Archer
+      19: Arctic
+      20: Ninja
+    primary_2: # deuxième radio V/UHF (VHF) ; seule radio des warbirds
+      01: { title: Guard/VHF, channel: Guard }
+      02: Base-Ramstein
+      03: Base-Spangdahlem
+      04: Base-Buchel
+      05: Base-Norvenich
+      06: Base-Wiesbaden
+      07: Base-Nordholz
+      08: Base-Wunstorf
+      09: Base-Fassberg
+      10: Base-Fulda
+      11: Archer
+      12: Arctic
+      13: Ninja
+      14: Pinder
+      15: Bengal
+      16: Blade
+    fm_supplement: # FM en plus de deux radios V/UHF (A-10C, hélicoptères)
+      01: 30
+      02: 31
+      03: 32
+      04: 33
+      05: 34
+      06: 35
+      07: 36
+      08: 37
+      09: 38
+      10: 39
+      11: 40
+      12: 41
+      13: 42
+      14: 43
+      15: 44
+      16: 45
+      17: 46
+      18: 47
+      19: 48
+      20: 49
+      21: 50
+      22: 51
+      23: 52
+      24: 53
+      25: 54
+      26: 55
+      27: 56
+      28: 57
+      29: 58
+      30: 59
+  red:
+    primary_1: # première radio V/UHF
+      01: { title: Guard/UHF, channel: Guard }
+      02: AWACS-Rouge
+      03: Tanker-Rouge
+      04: Base-Laage
+      05: Base-Holzdorf
+      06: Base-Allstedt
+      07: Rouge-1
+      08: Rouge-2
+      09: Rouge-3
+      10: Rouge-4
+    primary_2: # deuxième radio V/UHF (VHF) ; seule radio des warbirds
+      01: { title: Guard/VHF, channel: Guard }
+      02: Base-Laage
+      03: Base-Holzdorf
+      04: Base-Allstedt
+      05: Rouge-1
+      06: Rouge-2
+      07: Rouge-3
+      08: Rouge-4
+    fm_supplement: # FM en plus de deux radios V/UHF (A-10C, hélicoptères)
+      01: 30
+      02: 31
+      03: 32
+      04: 33
+      05: 34
+      06: 35
+      07: 36
+      08: 37
+      09: 38
+      10: 39
+      11: 40
+      12: 41
+      13: 42
+      14: 43
+      15: 44
+      16: 45
+      17: 46
+      18: 47
+      19: 48
+      20: 49
+      21: 50
+      22: 51
+      23: 52
+      24: 53
+      25: 54
+      26: 55
+      27: 56
+      28: 57
+      29: 58
+      30: 59
+
+presets_assignments: # surcharge manuelle : une affectation explicite l'emporte sur channel_lists
+  blue:
+    helicopter:
+      Mi-8MT: none # pas d'injection : on garde les radios du groupe source
+      CH-47Fbl1: modern_blue_fm_uhf # garde la disposition FM/UHF à deux radios du CH-47
+
+radios_collection: # définitions de radios (format historique, utilisé par presets_assignments)
+  blue_radios:
+    radio_uhf_30:
+      title: UHF
+      type: uhf
+      channels:
+        01: { title: Guard/UHF, channel: Guard }
+        02: Overlord-1
+        03: Magic-1
+        04: Texaco-1
+        05: Arco-1
+        06: Texaco-2
+        07: Arco-2
+        08: Shell-1
+        09: Base-Ramstein
+        10: Base-Spangdahlem
+        11: Base-Buchel
+        12: Base-Norvenich
+        13: Base-Wiesbaden
+        14: Base-Nordholz
+        15: Base-Wunstorf
+        16: Base-Fassberg
+        17: Base-Fulda
+    radio_fm_30:
+      title: FM
+      type: fm
+      channels:
+        01: 30
+        02: 31
+        03: 32
+        04: 33
+        05: 34
+        06: 35
+        07: 36
+        08: 37
+        09: 38
+        10: 39
+        11: 40
+        12: 41
+        13: 42
+        14: 43
+        15: 44
+        16: 45
+        17: 46
+        18: 47
+        19: 48
+        20: 49
+        21: 50
+        22: 51
+        23: 52
+        24: 53
+        25: 54
+        26: 55
+        27: 56
+        28: 57
+        29: 58
+        30: 59
+
+presets_collection:
+  blue_presets:
+    modern_blue_fm_uhf:
+      title: Blue coalition - FM/UHF (CH-47)
+      radios:
+        radio_1: radio_fm_30
+        radio_2: radio_uhf_30
+
+channels_collection: # toutes les fréquences de la mission
+  tactical:
+    Guard:
+      title: Guard
+      freqs: { uhf: 243, vhf: 121.5 }
+    Overlord-1:
+      title: Overlord 1 (AWACS)
+      freqs: { uhf: 265.0 }
+    Magic-1:
+      title: Magic 1 (AWACS)
+      freqs: { uhf: 266.0 }
+    Texaco-1:
+      title: Texaco 1 / perche / 51Y
+      freqs: { uhf: 251.0 }
+    Arco-1:
+      title: Arco 1 / panier / 52Y
+      freqs: { uhf: 252.0 }
+    Texaco-2:
+      title: Texaco 2 / perche / 53Y
+      freqs: { uhf: 253.0 }
+    Arco-2:
+      title: Arco 2 / panier / 54Y
+      freqs: { uhf: 254.0 }
+    Shell-1:
+      title: Shell 1 / perche / 55Y
+      freqs: { uhf: 255.0 }
+    AWACS-Rouge:
+      title: AWACS Rouge (A-50)
+      freqs: { uhf: 260.0 }
+    Tanker-Rouge:
+      title: Tanker Rouge (Il-78M)
+      freqs: { uhf: 261.0 }
+  bases:
+    Base-Ramstein:
+      title: Ramstein
+      freqs: { uhf: 270.1, vhf: 130.1 }
+    Base-Spangdahlem:
+      title: Spangdahlem
+      freqs: { uhf: 270.2, vhf: 130.2 }
+    Base-Buchel:
+      title: Büchel
+      freqs: { uhf: 270.3, vhf: 130.3 }
+    Base-Norvenich:
+      title: Nörvenich
+      freqs: { uhf: 270.4, vhf: 130.4 }
+    Base-Wiesbaden:
+      title: Wiesbaden
+      freqs: { uhf: 270.5, vhf: 130.5 }
+    Base-Nordholz:
+      title: Nordholz
+      freqs: { uhf: 270.6, vhf: 130.6 }
+    Base-Wunstorf:
+      title: Wunstorf
+      freqs: { uhf: 270.7, vhf: 130.7 }
+    Base-Fassberg:
+      title: Fassberg
+      freqs: { uhf: 270.8, vhf: 130.8 }
+    Base-Fulda:
+      title: Fulda
+      freqs: { uhf: 270.9, vhf: 130.9 }
+    Base-Laage:
+      title: Laage
+      freqs: { uhf: 275.1, vhf: 131.1 }
+    Base-Holzdorf:
+      title: Holzdorf
+      freqs: { uhf: 275.2, vhf: 131.2 }
+    Base-Allstedt:
+      title: Allstedt
+      freqs: { uhf: 275.3, vhf: 131.3 }
+  flights:
+    Archer:
+      title: Archer
+      freqs: { vhf: 120.0, uhf: 360.0 }
+    Arctic:
+      title: Arctic
+      freqs: { vhf: 120.1, uhf: 360.1 }
+    Ninja:
+      title: Ninja
+      freqs: { vhf: 120.5, uhf: 360.2 }
+    Pinder:
+      title: Pinder
+      freqs: { vhf: 120.6, uhf: 360.3 }
+    Bengal:
+      title: Bengal
+      freqs: { vhf: 120.7, uhf: 360.4 }
+    Blade:
+      title: Blade
+      freqs: { vhf: 120.8, uhf: 360.5 }
+    Rouge-1:
+      title: Rouge-1
+      freqs: { vhf: 124.0, uhf: 380.0 }
+    Rouge-2:
+      title: Rouge-2
+      freqs: { vhf: 124.1, uhf: 380.1 }
+    Rouge-3:
+      title: Rouge-3
+      freqs: { vhf: 124.2, uhf: 380.2 }
+    Rouge-4:
+      title: Rouge-4
+      freqs: { vhf: 124.3, uhf: 380.3 }
