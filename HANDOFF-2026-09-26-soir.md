@@ -7,43 +7,39 @@ livré et mesuré en jeu.**
 
 ## 1. Où en est le code, exactement
 
+**Tout est committé, arbres propres, 49 suites Lua vertes.** Rien n'est poussé ni mergé.
+
 ### VMCT — `D:\dev\_VEAF\VEAF-Mission-Creation-Tools`
 
-Branche **`fix/settle-verifies-its-candidate`**, **rien n'est committé**. L'arbre contient deux
-choses qu'il faut séparer :
-
-**À garder** — le diagnostic et la vérification :
+Branche **`fix/settle-verifies-its-candidate`**, commit `01633c0e`, partie de `develop` @ `ae8076f9`.
+Elle contient le diagnostic et la vérification par unité :
 
 | fichier | contenu |
 |---|---|
-| `.backlog/FIX-PLACEMENT-IGNORES-SCENERY/tickets/11-…md` | le ticket (à réécrire, §3) |
+| `.backlog/…/tickets/11-settle-verifies-the-candidate-it-trusts.md` | le ticket, à jour : ce qui est fait, ce qui reste (le pré-calcul) |
 | `.backlog/FIX-PLACEMENT-IGNORES-SCENERY/PRD.md` | lot rouvert, section « pourquoi trois rounds » |
-| `src/python/…/known-limitations.yaml` + `docs/agents/dcs-runtime-traps.md` | l'entrée DCS (à corriger, §3) |
-| `CHANGELOG.md` | entrée sous `[Unreleased]` (à réécrire) |
+| `src/python/…/known-limitations.yaml` + `docs/agents/dcs-runtime-traps.md` | l'entrée DCS sur `getSimpleZones` |
+| `CHANGELOG.md` | entrée sous `[Unreleased]`, qui dit que c'est une étape et pas le correctif |
 | `src/scripts/veaf/veafUnits.lua` | `isPointClearOfScenery`, `SETTLE_DRAWS`, `SETTLE_UNIT_PROBE`, `SETTLE_MAX_CANDIDATES_VERIFIED`, vérification par unité |
 | `test/lua/test_veafUnits.lua` | mock fidèle + 2 tests neufs, vérifiés rouges sans le correctif |
 
-**À RETIRER** — le report d'une seconde, qui casserait la défense aérienne :
-
-- `src/scripts/veaf/veafSpawnCore.lua` : `veafSpawn.SETTLE_DELAY` et le bloc `if not deferred` dans
-  `doSpawnGroup` ;
-- `src/scripts/veaf/veafSpawnGround.lua` : les blocs `if not deferred` dans `_createDcsUnits` et
-  `spawnFullCombatGroup`, et le paramètre `deferred` des trois signatures.
-
-**Pourquoi le retirer :** le nom du groupe rendu par le spawn alimente `Group.getByName`, puis
-`veaf.readyForCombat`, les routes de convoi et **`veafSkynet.declareSpawn`**
-(`veafSpawnCore.lua:417-460`). Différer la création vide ce bloc entier — c'est exactement la panne
-qui a supprimé les 9 batteries le matin même. Quatre tests de `test_veafSpawn.lua` le signalaient
-(ils attendent le nom du groupe en retour) ; ils sont rouges tant que ce code est là.
-
-Avec le report retiré, `poetry run test-lua` doit repasser à 49 suites vertes.
+**Le report d'une seconde a été écrit puis retiré avant le commit** — il n'est nulle part dans
+l'historique. Ne pas le réintroduire sans lire le §2.
 
 ### Mission — `D:\dev\_VEAF\VEAF-Open-Training-Mission-GermanyCW-v6`
 
-- `main`, propre sauf `docs/journal-v6.md` (modifié, §9 et §10 ajoutés) et ce fichier.
-- Exes déployés en **6.25.0.1**, construits depuis la branche ci-dessus : ils contiennent la
-  vérification mais **aussi le report**. À redéployer après nettoyage.
-- `bridge/bridge-GermanyCW-OT.miz` régénérée à 15:28.
+- `main` @ `d061236` (journal + ce fichier), arbre propre, non poussé.
+- **Piège** : les exes déployés sont en **6.25.0.1** et contiennent **aussi le report retiré**, car
+  ils ont été construits avant le nettoyage. **Redéployer avant toute mesure** :
+
+  ```
+  cd D:/dev/_VEAF/VEAF-Mission-Creation-Tools
+  PYTHONUTF8=1 poetry run veaf-build build --version 6.25.0.2
+  PYTHONUTF8=1 poetry run veaf-build publish-local "D:/dev/_VEAF/VEAF-Open-Training-Mission-GermanyCW-v6"
+  ```
+
+- `bridge/bridge-GermanyCW-OT.miz` régénérée à 15:28, donc elle aussi avec le report. À refaire
+  après le redéploiement (voir §4 pour le script cassé et son contournement).
 
 ---
 
