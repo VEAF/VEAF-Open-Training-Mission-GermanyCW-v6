@@ -1,4 +1,4 @@
-# Open Training GermanyCW v6 — résumé du chantier (24-25/09/2026)
+# Open Training GermanyCW v6 — résumé du chantier (24-26/09/2026)
 
 ## 1. Point de départ et choix
 
@@ -138,11 +138,114 @@
 - **Tester le point d'ancrage ne suffit pas.** Ce qui compte, c'est où les unités apparaissent réellement : activer les zones et sonder les unités en place.
 - Le log fourni par David a désigné la cause racine plus vite que mes sondes : lire le `dcs.log` tôt.
 
-## 9. Points ouverts
+## 9. La suite du chantier « unités dans les bois » (25-26/09)
+
+### 9.1 Une seule régression causait trois symptômes
+
+`settlePosition` perdait le champ `hdg`, d'où un `math.deg(nil)` qui tuait la fonction planifiée en
+silence. Conséquences : 6 zones sur 25 vides, 11 groupes perdus, **et toute la défense aérienne
+absente** — 0 batterie générée au lieu de 9, Skynet se rabattant sur les gabarits de l'éditeur et en
+rejetant 15 avec un message à l'écran. Corrigé par la PR VMCT #1003.
+
+### 9.2 Déplacer unité par unité ne peut pas marcher
+
+`settlePosition` n'a jamais déplacé quoi que ce soit : sur 20 unités bloquées, 25 candidats rendus,
+25 valides sur le terrain, **0 accepté**. Elle bornait l'acceptation par le rayon demandé à DCS, or
+**DCS ne respecte pas ce rayon** — on demande 50 m, il répond entre 52 et 171 m, médiane 130.
+
+Et même corrigée, l'approche est condamnée : l'espacement naturel d'un groupe est de 20 à 27 m pour
+un SAM, le point le plus proche que DCS propose est à 52 m. Tout déplacement à l'unité disloque la
+formation d'un facteur 2 à 5. D'où la translation rigide du groupe (PR #1005, livrée en 6.25.0).
+
+Aucune retouche des sources ne peut s'y substituer : `veafUnits` tire la disposition interne au
+hasard **à chaque spawn**. Les ancres atterrissent exactement où on les vise (écart 4 à 22 m) et les
+unités retombent quand même sous les arbres au tirage suivant. Seul le moment du spawn connaît la
+disposition réelle.
+
+À noter, parce que c'est le piège qui a coûté un aller-retour : **le rayon nul est une valeur par
+défaut, pas une intention**. 100 des 118 commandes de spawn passent `radius 0`. Toute exemption
+fondée dessus rend le correctif inerte. D'où le drapeau explicite `honouringDeclaredPosition`.
+
+### 9.3 L'essai en jeu du 26/09 : la translation rigide est inerte elle aussi
+
+Mission chargée, 25 zones activées, 102 groupes et 593 unités en place.
+
+| mesure | avant #1005 | attendu | **mesuré** |
+|---|---|---|---|
+| alertes sur des groupes | 16-18 | ~0 | **19** |
+| unités bloquées | ~81 | quelques-unes | **66** |
+| espacements internes | intacts | intacts | **intacts** |
+
+La seule promesse tenue est la formation. Réserve à garder en tête : les chiffres de référence
+viennent de la veille et les parcs n'ont pas été appariés, donc 19 contre 16 ne mesure pas une
+régression. Ce qui est acquis sans réserve, c'est que **ce n'est pas proche de zéro**.
+
+Le diagnostic, étape par étape, parce qu'aucun des suspects évidents n'est coupable :
+
+1. **Le correctif tourne** — `settleGroup` présente en jeu, `settlePosition` disparue. 55 groupes
+   translatés (118 à 278 m), 11 en échec. *Le hash de version affiché (`6.24.0.5+f4211271`)
+   désignait le commit de #1004 et induit en erreur : c'est la présence des fonctions qui tranche.*
+2. **DCS obéit au mètre** — `settleGroup` instrumentée, une zone recyclée, positions relues :
+   **0 m d'écart** entre le barycentre commandé et le réel.
+3. **Le groupe atterrit quand même dans les bois** — le S-300 de Wittstock, translaté de 217 m, a
+   **6 de ses 14 unités bloquées**. Son point d'arrivée est bloqué dans **12 directions sur 12 à
+   10 m**, et ne se dégage qu'à 183 m.
+4. **`Disposition.getSimpleZones` n'est pas déterministe** — cinq appels consécutifs identiques :
+   candidat le plus proche à 1335, 1476, 1404, 1355, 1293 m. Un sixième en a trouvé un à 153 m.
+
+C'est la même erreur que celle que #1005 corrigeait, déplacée d'un paramètre à l'autre : #1005 avait
+établi que DCS n'honore pas le **rayon de recherche**, puis a supposé qu'il honore le **dégagement**,
+et l'a écrit en commentaire sans le mesurer.
+
+**Suite** : ticket 11 du lot VMCT FIX-PLACEMENT-IGNORES-SCENERY — le singleton propose, le code
+vérifie. Chaque candidat est testé unité par unité avec le critère de la sonde, et plusieurs tirages
+sont fusionnés.
+
+### 9.4 Pièges de mesure, à relire avant toute nouvelle sonde
+
+- **La sonde ne vaut rien pour les statiques.** Elle demande « 5 m de libre dans un rayon de 20 m » ;
+  un bâtiment de 47×52 m bloque forcément son propre test. Les statiques signalées ont un voisinage
+  dégagé à 60 m dans 1 à 3 directions sur 4 : elles ne sont pas en forêt. 11 déplacements décidés sur
+  ce signal faussé ont été annulés. **Restreindre la sonde aux véhicules.**
+- **La sonde est déterministe, elle** : 12 essais sur les mêmes points, 0/12 contre 12/12, comptes de
+  candidats identiques. Le bruit ne vient jamais de là. C'est l'usage à grand rayon de dégagement qui
+  est aléatoire (§9.3, point 4).
+- **`getSimpleZones` rend `{course, x, y}` où `y` est l'est**, sans champ `z`. Calculer une distance
+  sur le candidat brut donne des valeurs absurdes.
+- **Les horodatages de `dcs.log` sont en UTC**, l'heure locale est UTC+2.
+- **`dcs.log.old` peut contenir plusieurs runs.** Découper sur `loading mission` avant de compter :
+  un total brut a déjà produit un « 18 batteries attendues » qui en valait 9.
+- **Ne pas comparer deux nombres d'alertes** sans vérifier que le parc est le même, ni sans séparer
+  groupes et statiques.
+
+### 9.5 Règles de travail
+
+- **C'est Claude qui lance `dcs-serve`**, pas David ; lui ne s'occupe que de DCS et du slot. Prendre
+  la configuration de `VEAF-dcs-bridge`, **pas** celle de VMCT : les clés diffèrent et l'erreur se
+  manifeste par un 401 peu parlant.
+- **Vérifier le travail d'un agent avant de le relayer.** #1005 a été rendue « tout vert » alors
+  qu'elle était inerte sur la mission réelle : sa CI passait un rayon non nul, la mission n'en passe
+  jamais.
+
+## 10. Points ouverts
 
 1. **NASAMS à 6 km de Ramstein** : acceptable, ou le rapprocher en acceptant une lisière ?
 2. **Outils de contrôle hors dépôt** (`.veaf-backups/outils-controle/` : générateur du README, mission de test, sondes). Proposition : les déplacer dans un dossier `tools/` versionné.
 3. **Clé CheckWX en clair** dans le `configuration.json` de la v5 : à révoquer.
-4. **Session VMCT FIX-PLACEMENT-IGNORES-SCENERY** : en cours. À la livraison, rebuild et nouvelle sonde.
-5. **Encore à vérifier en jeu** : statiques, navires, convois, FARP, imbrication des zones, engagement des CAP, portées des SAM.
-6. Les 25 zones sont restées actives dans la partie de test en cours.
+4. **Lot VMCT FIX-PLACEMENT-IGNORES-SCENERY** : tickets 01-03, 05-07, 09 et 10 livrés ; 10 mesuré
+   inerte en jeu le 26/09 (§9.3) et repris par le **ticket 11**, en cours. Le ticket 04 (refuser un
+   FARP dont l'escorte ne peut être placée) reste ouvert. À la livraison de 11 : rebuild, nouvelle
+   sonde, et vérifier que les espacements n'ont pas bougé.
+5. **La sonde et les statiques** (§9.4, premier point) : à corriger avant le prochain passage.
+6. **Le Shilka aveugle**, en pause, aucun ticket ouvert. Sur 11 ZSU-23-4, 3 ne déclarent aucun
+   capteur à DCS (`getSensors()` rend `nil`) ; 2 sont l'unique radar de leur site, qui n'apporte donc
+   rien à la détection Skynet. Éliminés : le type (`getDesc` identique au caractère près), le pays,
+   l'état de l'unité, le gabarit seul, le retard après spawn (stable à 190 s et à 576 s). **Ce n'est
+   pas une régression** : 2 alertes par run avant comme après. Décision en attente : ouvrir un ticket
+   VMCT pour ne pas le perdre, ou abandonner.
+7. **`combatZone_Wittstock [r] SA15`** : 2 unités, aucune issue à 800 m. Le seul cas que la
+   translation rigide ne résout pas, ticket 11 compris.
+8. **Les FARP** : 4 accessoires dans les bois à Baumholder et Göttingen, volontairement non traités.
+   Ils partagent leur groupe avec l'hélisurface, et les déplacer bougerait le point d'atterrissage
+   pour un gain cosmétique.
+9. **Encore à vérifier en jeu** : statiques, navires, convois, FARP, imbrication des zones, engagement des CAP, portées des SAM.

@@ -1,8 +1,8 @@
 # Rapport de validation des fréquences radio
 
-Généré le : 2026-09-25  
+Généré le : 2026-09-26  
 Fichier presets : `D:\dev\_VEAF\VEAF-Open-Training-Mission-GermanyCW-v6\src\presets.yaml`  
-Mission : `D:\dev\_VEAF\VEAF-Open-Training-Mission-GermanyCW-v6\VEAF_OpenTraining_GermanyCW_ICAO_ETAR_20260925.miz`
+Mission : `D:\dev\_VEAF\VEAF-Open-Training-Mission-GermanyCW-v6\VEAF_OpenTraining_GermanyCW_ICAO_ETAR_20260926.miz`
 
 ## ℹ️ Hors plage — retirées de la radio injectée (DCS les stockerait mais les ignorerait)
 
