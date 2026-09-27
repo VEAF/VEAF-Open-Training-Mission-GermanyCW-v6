@@ -176,9 +176,14 @@ Mission chargée, 25 zones activées, 102 groupes et 593 unités en place.
 | unités bloquées | ~81 | quelques-unes | **66** |
 | espacements internes | intacts | intacts | **intacts** |
 
-La seule promesse tenue est la formation. Réserve à garder en tête : les chiffres de référence
-viennent de la veille et les parcs n'ont pas été appariés, donc 19 contre 16 ne mesure pas une
-régression. Ce qui est acquis sans réserve, c'est que **ce n'est pas proche de zéro**.
+> **Ces chiffres sont faux, et le §9.5 dit pourquoi.** Ils sont relevés après le spawn, et le
+> critère employé compte les **véhicules** autant que les arbres : une batterie serrée échoue au
+> test où qu'elle soit. Le tableau est conservé parce que la conclusion qu'on en a tirée — la
+> translation rigide ne suffit pas — tient sur le critère correct aussi, mais **aucun de ces
+> nombres ne doit être cité**.
+
+La seule promesse tenue est la formation. Ce qui est acquis sans réserve, c'est que **ce n'est pas
+proche de zéro**.
 
 Le diagnostic, étape par étape, parce qu'aucun des suspects évidents n'est coupable :
 
@@ -217,8 +222,43 @@ sont fusionnés.
   un total brut a déjà produit un « 18 batteries attendues » qui en valait 9.
 - **Ne pas comparer deux nombres d'alertes** sans vérifier que le parc est le même, ni sans séparer
   groupes et statiques.
+- **Et surtout : ne rien mesurer après le spawn.** Voir §9.5, qui invalide la moitié des chiffres
+  de ce chapitre.
 
-### 9.5 Règles de travail
+### 9.5 La sonde compte les véhicules — ce qui invalide la moitié des chiffres ci-dessus
+
+Trouvé le 26/09 au soir, après deux jours de mesures bâties dessus.
+
+`Disposition.getSimpleZones` — la seule API DCS qui connaisse les forêts, et donc le socle de toute
+la métrique « unités dans les arbres » — ne répond pas à la question « suis-je sous un arbre ». Elle
+répond à « y a-t-il de la place libre ici », et **un blindé occupe de la place**.
+
+La preuve, mêmes points, même session, quelques secondes d'écart, la seule différence étant que le
+groupe se tenait dessus ou non :
+
+| groupe | avec ses véhicules | groupe détruit |
+|---|---|---|
+| `combatZone_Brocken` EWR, 3 véhicules | **3 / 3 bloquées** | **0 / 3** |
+| `combatZone_Borkenberge_Hard` S-300, 14 véhicules | **12 / 14 bloquées** | **0 / 14** |
+
+Quinze véhicules sur dix-sept signalés « dans les arbres » n'étaient gênés que par leurs propres
+voisins. Une batterie SAM serrée ne peut pas passer ce test, où qu'on la mette.
+
+**Conséquence :** les nombres `~81`, `76` et `66` de ce chapitre, et les `69` qui ont suivi, sont
+en grande partie un décompte de groupes qui se bloquent eux-mêmes.
+
+**Conséquence heureuse :** ça explique la « cécité de `Disposition` dans la pile d'appel de
+`settleGroup` », qui a coûté une journée et qu'on n'a jamais expliquée. `settleGroup` sonde **avant
+que les unités existent** — pas de véhicules, donc « dégagé » ; la mesure de contrôle sondait
+**après** le spawn. Deux questions différentes, pas un singleton qui ment.
+
+**La bonne façon de mesurer :** sonder là où aucun véhicule du groupe n'existe encore, c'est-à-dire
+exactement là où `veafUnits` sonde déjà. Relevé ainsi le 26/09 au soir, après le ticket 11 et après
+le déplacement de 11 groupes : **22 véhicules réellement sous les arbres à l'arrivée du spawn**, et
+**4** une fois `settleGroup` passé — contre 22 et 17 avant. C'est consigné côté VMCT dans
+`known-limitations.yaml` et dans la docstring de `isPointClearOfScenery`.
+
+### 9.6 Règles de travail
 
 - **C'est Claude qui lance `dcs-serve`**, pas David ; lui ne s'occupe que de DCS et du slot. Prendre
   la configuration de `VEAF-dcs-bridge`, **pas** celle de VMCT : les clés diffèrent et l'erreur se
@@ -243,8 +283,11 @@ sont fusionnés.
    l'état de l'unité, le gabarit seul, le retard après spawn (stable à 190 s et à 576 s). **Ce n'est
    pas une régression** : 2 alertes par run avant comme après. Décision en attente : ouvrir un ticket
    VMCT pour ne pas le perdre, ou abandonner.
-7. **`combatZone_Wittstock [r] SA15`** : 2 unités, aucune issue à 800 m. Le seul cas que la
-   translation rigide ne résout pas, ticket 11 compris.
+7. **`combatZone_Wittstock [r] SA15`** : 2 unités, aucune issue à 720 m — vérifié le 26/09 au soir
+   en retirant toute marge, la forêt est réellement fermée. Le seul cas sans solution. Son voisin le
+   S-300, longtemps rangé ici aussi, **en a une** : un balayage à la sonde lui a trouvé une clairière
+   à 200 m là où `getSimpleZones` ne proposait rien à aucun rayon. Il a été déplacé, avec dix autres
+   groupes.
 8. **Les FARP** : 4 accessoires dans les bois à Baumholder et Göttingen, volontairement non traités.
    Ils partagent leur groupe avec l'hélisurface, et les déplacer bougerait le point d'atterrissage
    pour un gain cosmétique.
