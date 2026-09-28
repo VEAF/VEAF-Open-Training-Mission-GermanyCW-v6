@@ -229,32 +229,8 @@ mm_facing:
   enableSmokeDrop: true
   enabledFOBBuilding: true
   enabledRadioBeaconDrop: true
-  extractableGroups:
-  - extract1
-  - extract2
-  - extract3
-  - extract4
-  - extract5
-  - extract6
-  - extract7
-  - extract8
-  - extract9
-  - extract10
-  - extract11
-  - extract12
-  - extract13
-  - extract14
-  - extract15
-  - extract16
-  - extract17
-  - extract18
-  - extract19
-  - extract20
-  - extract21
-  - extract22
-  - extract23
-  - extract24
-  - extract25
+  # listes d'exemple du gabarit retirées : aucun de ces noms n'existe dans la mission (le parseur de CTLD ne lit pas les commentaires en fin de ligne)
+  extractableGroups: []
   farpTroopPickupRadius: 150
   fastRopeMaximumHeight: 18.28
   fobCrateCollectionRadius: 750
@@ -321,17 +297,8 @@ mm_facing:
   - name: 5x - Mortar Squad
     mortar: 30
   location_DMS: false
-  logisticUnits:
-  - logistic1
-  - logistic2
-  - logistic3
-  - logistic4
-  - logistic5
-  - logistic6
-  - logistic7
-  - logistic8
-  - logistic9
-  - logistic10
+  # listes d'exemple du gabarit retirées : aucun de ces noms n'existe dans la mission (le parseur de CTLD ne lit pas les commentaires en fin de ligne)
+  logisticUnits: []
   logisticUnitTypes:
   - LHA_Tarawa
   - Stennis

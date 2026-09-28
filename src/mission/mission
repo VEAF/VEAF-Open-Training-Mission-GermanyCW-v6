@@ -23261,7 +23261,7 @@ RAVITAILLEURS :\
 Les ravitailleurs de secteur ne sont pas escortés : c'est à vous de les défendre.\
 AWACS (escortés) : Overlord 1 (nord) 265.0, FL300, BULLSEYE 318/91 ; Magic 1 (sud) 266.0, FL310, BULLSEYE 246/107.\
 PORTE-AVIONS : CSG-74 Stennis en mer du Nord, à l'ouest d'Helgoland (BULLSEYE 329/178) : TACAN 10X STS, ICLS 10, Link 4 et tour 225.0 ; slots F/A-18C et F-14B sur le pont ; menu F10 CARRIER OPS pour le mettre face au vent (ravitailleur S-3B et hélicoptère de sauvetage).\
-DRONES LASER (menu ASSETS) : Reaper 1 à Baumholder, code 1688, FM 36.0 ; Reaper 2 à Wahner Heide, 1687, FM 37.0. Pas de drone sur la zone SEAD de Borkenberge : ses SAM portent plus loin que le laser.\
+DRONES LASER (menu ASSETS) : Reaper 1 à Baumholder, code 1688, FM 36.0 ; Reaper 2 à Wahner Heide, 1687, FM 37.0. Ils volent à 3 000 m sol ; au niveau difficile, l'AAA lourde de la zone peut les abattre : le menu ASSETS les relance. Pas de drone sur la zone SEAD de Borkenberge : ses SAM portent plus loin que le laser.\
 \
 ENTRAÎNEMENT (côté ouest, loin du front ; un seul niveau par famille à la fois) : hélicoptères à Baumholder, attaque à Wahner Heide, SEAD à Borkenberge ; trois niveaux chacun (facile, moyen, difficile). Navigation et sauvetage hélicoptère dans le Hunsrück, sans ennemi : balises MH01 à MH03 sur 31.0, 32.0 et 33.0 FM, SOS de l'équipage sur 34.0 FM.\
 \
