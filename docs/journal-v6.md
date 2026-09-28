@@ -348,3 +348,17 @@ Mission de test (game master, pont dcs-bridge), mesures par le pont et `dcs.log`
 - **Chaque zone s'initialise deux fois** (lignes de log et éléments doublés), sans double spawn.
   Signalé à VMCT.
 
+### 12.1 Sur private1, le soir même
+
+`dcs.log` du serveur relu entièrement (19:24 → 20:31, 10 567 lignes, plusieurs joueurs) :
+
+- **Reaper 2 abattu** à 19:53 par un S-60 de 57 mm de Wahner Heide difficile (8 coups). À 3 000 m sol
+  le drone est à portée de l'AAA lourde du niveau difficile. Décision de David : le dire au briefing,
+  le menu ASSETS le relance.
+- **CTLD attend `extract1`…`extract25` et `logistic1`…`logistic10`**, les listes d'exemple que
+  `ctld-config.yaml` reprend des valeurs par défaut de CTLD ; aucun de ces noms n'existe : 35
+  avertissements au démarrage. Listes vidées.
+- **Le sanctuaire plante** sur une arme sans cible (CBU-105, AGM-88C : 25 fois) ou déjà disparue (un
+  obus de 57 mm : 1 fois). Sans effet en jeu ; ticket VMCT.
+- **Aucune ville pour GermanyCW** dans `veafNamedPoints`. Ticket VMCT.
+

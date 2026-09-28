@@ -72,7 +72,7 @@ En mer du Nord, à l'ouest d'Helgoland. Slots sur le pont : F-14B (2 à froid, 2
 | **Reaper 1** | MQ-9 Reaper | Baumholder | `1688` | `36.0 FM` | `3 000 m sol` | `233/180` |
 | **Reaper 2** | MQ-9 Reaper | Wahner Heide | `1687` | `37.0 FM` | `3 000 m sol` | `257/145` |
 
-Un drone tourne au-dessus des zones d'entraînement hélicoptères et attaque, et désigne au laser ce qu'il voit ; le menu F10 *ASSETS* le remet en vol s'il a été abattu. Il ne désigne que des véhicules : rien aux niveaux faciles de Baumholder et de Wahner Heide, faits de cibles statiques. Pas de drone sur la zone SEAD de Borkenberge : ses SAM portent plus loin que le laser, qui ne marque qu'à 10 km.
+Un drone tourne au-dessus des zones d'entraînement hélicoptères et attaque, et désigne au laser ce qu'il voit ; le menu F10 *ASSETS* le remet en vol s'il a été abattu : au niveau difficile, l'AAA lourde de la zone le touche à cette hauteur (Reaper 2 abattu par un S-60 à Wahner Heide le 28/09). Il ne désigne que des véhicules : rien aux niveaux faciles de Baumholder et de Wahner Heide, faits de cibles statiques. Pas de drone sur la zone SEAD de Borkenberge : ses SAM portent plus loin que le laser, qui ne marque qu'à 10 km.
 
 ## Entraînement
 

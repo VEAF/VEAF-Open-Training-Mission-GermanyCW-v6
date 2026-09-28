@@ -93,7 +93,7 @@ Tour 225.0 - S-3B et Pedro gérés par le menu CARRIER OPS"
         name: Reaper 1
         description: Reaper 1 (drone laser) - Baumholder
         information: "Laser 1688 - FM 36.0
-3 000 m sol au-dessus de la zone"
+3 000 m sol au-dessus de la zone ; au niveau difficile, l'AAA peut l'abattre : le relancer ici"
         jtac: 1688
         freq: "36.0"
         mod: FM
@@ -101,7 +101,7 @@ Tour 225.0 - S-3B et Pedro gérés par le menu CARRIER OPS"
         name: Reaper 2
         description: Reaper 2 (drone laser) - Wahner Heide
         information: "Laser 1687 - FM 37.0
-3 000 m sol au-dessus de la zone"
+3 000 m sol au-dessus de la zone ; au niveau difficile, l'AAA peut l'abattre : le relancer ici"
         jtac: 1687
         freq: "37.0"
         mod: FM
