@@ -1,4 +1,8 @@
 mapResource = 
 {
   ResKey_ImageBriefing_carte = "carte.jpg",
+  ResKey_advancedFile_MH01 = "MH01.ogg",
+  ResKey_advancedFile_MH02 = "MH02.ogg",
+  ResKey_advancedFile_MH03 = "MH03.ogg",
+  ResKey_advancedFile_SOS = "SOS.ogg",
 }

@@ -6,7 +6,7 @@ Mission d'entraînement ouverte des serveurs VEAF, sur la carte **Germany Cold W
 |---|---|---|---|---|---|
 | `VEAF_OpenTraining_GermanyCW_ICAO_ETAR` | 14/06/2025 | 09:00 (heure de la carte, UTC+2) | Brocken · `N51°47.948' E010°36.938'` | ETAR (Ramstein) | coupé sur tous les aérodromes |
 
-**Sommaire** : [Situation](#situation) · [Carte](#carte) · [Bases](#bases) · [Ravitailleurs et AWACS](#ravitailleurs-et-awacs) · [Entraînement](#entraînement) · [Zones de combat](#zones-de-combat) · [QRA](#qra) · [CAP à la demande](#cap-à-la-demande) · [Défense aérienne](#défense-aérienne) · [Plan radio](#plan-radio) · [Météo et heures](#météo-et-heures) · [Commandes utiles](#commandes-utiles) · [Pour les créateurs de mission](#pour-les-créateurs-de-mission)
+**Sommaire** : [Situation](#situation) · [Carte](#carte) · [Bases](#bases) · [Ravitailleurs et AWACS](#ravitailleurs-et-awacs) · [Porte-avions](#porte-avions) · [Drones laser](#drones-laser) · [Entraînement](#entraînement) · [Zones de combat](#zones-de-combat) · [QRA](#qra) · [CAP à la demande](#cap-à-la-demande) · [Combat entre joueurs](#combat-entre-joueurs) · [Défense aérienne](#défense-aérienne) · [Plan radio](#plan-radio) · [Météo et heures](#météo-et-heures) · [Commandes utiles](#commandes-utiles) · [Pour les créateurs de mission](#pour-les-créateurs-de-mission)
 
 ## Situation
 
@@ -18,7 +18,7 @@ Zones de combat, missions CAP et soutien se pilotent par le menu radio F10 (*Zon
 
 ![Carte de la mission](docs/carte.jpg)
 
-Carrés : bases avec slots (bleu / rouge). Traits pleins : hippodromes des ravitailleurs et AWACS. Pointillés : CAP à la demande. Cercles : QRA. Pastilles vertes : entraînement (H hélicos, A attaque, S SEAD). Pastilles rouges numérotées : zones de combat (numéros de la liste plus bas). Fond de carte OpenStreetMap ; la ligne de front est approximative. La même image est dans le briefing de la mission, dans DCS, et la carte F10 porte les mêmes dessins, chaque camp ne voyant que les siens.
+Carrés : bases avec slots (bleu / rouge). Traits pleins : hippodromes des ravitailleurs et AWACS. Pointillés : CAP à la demande. Cercles : QRA. Pastilles vertes : entraînement (H hélicos, A attaque, S SEAD). Pastilles rouges numérotées : zones de combat (numéros de la liste plus bas). Tirets épais : sanctuaires. Navire : porte-avions. L'arène est hors du cadre, au nord (flèche). Fond de carte OpenStreetMap ; la ligne de front est approximative. La même image est dans le briefing de la mission, dans DCS, et la carte F10 porte les mêmes dessins, chaque camp ne voyant que les siens.
 
 ## Bases
 
@@ -57,6 +57,23 @@ Slots dynamiques, démarrage moteur chaud, carburant et munitions illimités. Le
 
 Les ravitailleurs de secteur ne sont pas escortés : à vous de les défendre. Marqueurs F10 : `-tanker <nom>` amène un ravitailleur au marqueur ; `-tankerlow` et `-tankerhigh` mettent le plus proche au FL120 ou au FL220.
 
+## Porte-avions
+
+| Navire | Position de départ | Bullseye | TACAN | ICLS | Link 4 | Tour |
+|---|---|---|---|---|---|---|
+| **CVN-74 Stennis** (groupe CSG-74, 3 escorteurs) | `N54°01.441' E007°26.658'` | `329/178` | `10X STS` | `10` | `225.0` | `225.0` |
+
+En mer du Nord, à l'ouest d'Helgoland. Slots sur le pont : F-14B (2 à froid, 2 moteur chaud), F/A-18C (4 à froid, 4 moteur chaud) ; les slots dynamiques du pont proposent F/A-18C, F-14B, AV-8B, UH-1H et AH-64D. Le menu F10 *CARRIER OPS* met le porte-avions face au vent pour 45 ou 90 minutes, avec un ravitailleur S-3B et un hélicoptère de sauvetage.
+
+## Drones laser
+
+| Drone | Appareil | Au-dessus de | Code laser | Radio | Niveau | Bullseye |
+|---|---|---|---|---|---|---|
+| **Reaper 1** | MQ-9 Reaper | Baumholder | `1688` | `36.0 FM` | `FL150` | `233/180` |
+| **Reaper 2** | MQ-9 Reaper | Wahner Heide | `1687` | `37.0 FM` | `FL150` | `257/145` |
+
+Un drone tourne au-dessus des zones d'entraînement hélicoptères et attaque, et désigne au laser ce qu'il voit ; le menu F10 *ASSETS* le remet en vol s'il a été abattu. Pas de drone sur la zone SEAD de Borkenberge : ses SAM portent plus loin que le laser, qui ne marque qu'à 10 km.
+
 ## Entraînement
 
 Côté ouest, loin du front. Trois niveaux par famille, chacun comprenant ceux d'en dessous. **Activez un seul niveau par famille à la fois.**
@@ -65,15 +82,15 @@ Côté ouest, loin du front. Trois niveaux par famille, chacun comprenant ceux d
 
 `N49°38.624' E007°23.572'` · bullseye `233/180` · rayon 1.6 nm · menu F10 « Entraînement hélicoptères »
 
-- **Facile** — Cibles statiques inertes (blindés et camions), aucune défense.
-- **Moyen** — Ajoute de l'AAA légère (ZU-23 et Shilka), en plus du niveau facile.
+- **Facile** — Cibles statiques inertes (blindés et camions), trois des cinq tirées au sort à chaque activation, aucune défense.
+- **Moyen** — Ajoute de l'AAA légère (ZU-23 ou Shilka, tirée au sort à chaque activation), en plus du niveau facile.
 - **Difficile** — Ajoute une défense courte portée (batterie VEAF de niveau 3 : missiles IR et AAA) et des MANPADS, en plus du niveau moyen.
 
 ### Attaque — Wahner Heide
 
 `N50°53.234' E007°05.434'` · bullseye `257/145` · rayon 1.6 nm · menu F10 « Entraînement attaque »
 
-- **Facile** — Cibles statiques inertes (chars, VCI, camions).
+- **Facile** — Cibles statiques inertes (chars, VCI, camions), cinq des sept tirées au sort à chaque activation.
 - **Moyen** — Ajoute un peloton blindé actif et de l'AAA légère, en plus du niveau facile.
 - **Difficile** — Ajoute un groupe blindé VEAF avec sa défense et une batterie courte portée (niveau 3), en plus du niveau moyen.
 
@@ -81,13 +98,26 @@ Côté ouest, loin du front. Trois niveaux par famille, chacun comprenant ceux d
 
 `N51°45.936' E007°17.854'` · bullseye `279/125` · rayon 2.2 nm · menu F10 « Entraînement SEAD »
 
-- **Facile** — Une batterie SA-6 seule (moyenne portée).
-- **Moyen** — Ajoute un SA-15 (courte portée), en plus du niveau facile.
+- **Facile** — Une batterie moyenne portée seule : SA-6 ou SA-11, tirée au sort à chaque activation.
+- **Moyen** — Ajoute une défense courte portée (SA-15, SA-8 ou SA-19, tirée au sort à chaque activation), en plus du niveau facile.
 - **Difficile** — Ajoute un SA-10 (longue portée), un SA-11 et un radar d'alerte 55G6, en réseau Skynet, en plus du niveau moyen.
+
+### Hélicoptères hors combat — Hunsrück
+
+`N49°52.768' E007°19.007'` · bullseye `237/172` · menu F10 « Entraînement hélicoptères »
+
+Un UH-60A s'est posé en catastrophe au nord-ouest de Kastellaun (BULLSEYE 241/160), vers la Moselle. Départ conseillé : FARP de Baumholder. Suivez les balises radio (FM, relevables au radiogoniomètre) : MH01 sur 31.0 (Erbeskopf), MH02 sur 32.0 (Kirchberg), MH03 sur 33.0 (Kastellaun). L'équipage émet un SOS sur 34.0 FM depuis le lieu de l'accident. Les balises n'émettent que lorsque la zone est activée.
+
+| Balise | FM | Position | Bullseye |
+|---|---|---|---|
+| MH01 | `31.0` | `N49°43.769' E007°05.340'` | `237/185` |
+| MH02 | `32.0` | `N49°55.984' E007°21.286'` | `237/169` |
+| MH03 | `33.0` | `N50°04.280' E007°26.534'` | `239/160` |
+| Equipage | `34.0` | `N50°09.170' E007°20.084'` | `241/160` |
 
 ## Zones de combat
 
-Côté est. Les numéros renvoient à la carte. Chaque zone s'active par le menu F10 *Zones de combat*, qui redonne son briefing et sa position.
+Côté est. Les numéros renvoient à la carte. Chaque zone s'active par le menu F10 *Zones de combat*, qui redonne son briefing et sa position. La plupart des sites changent d'une activation à l'autre : une partie des cibles ou de la défense est tirée au sort, et la fiche dit laquelle.
 
 ### Front
 
@@ -97,11 +127,11 @@ un bataillon blindé en position de départ sur le terrain d'exercice de Lübthe
 
 **2. Letzlingen (Altmark)** — `N52°26.271' E011°34.983'` · bullseye `051/53`
 
-une brigade mécanisée sur le terrain d'exercice de l'Altmark, face au front. À détruire : les blindés et les véhicules de commandement. Défense : SA-15 Tor et SA-19 Tunguska, plus la défense propre du groupe blindé. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 81 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 92 nm.
+une brigade mécanisée sur le terrain d'exercice de l'Altmark, face au front. À détruire : les blindés et les véhicules de commandement. Défense : SA-15 Tor ou SA-19 Tunguska (tiré au sort à chaque activation), plus la défense propre du groupe blindé. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 81 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 92 nm.
 
 **3. Ohrdruf** — `N50°49.620' E010°43.917'` · bullseye `184/59`
 
-des positions d'artillerie et de lance-roquettes sur le terrain d'Ohrdruf. À détruire : les lance-roquettes Smerch, les obusiers Msta et leur ravitaillement. Défense : batterie VEAF de niveau 4 (SA-8 ou Tor, missiles IR, AAA). Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 2 (perche, TACAN 53Y, 253.0) à 70 nm, Arco 2 (panier, TACAN 54Y, 254.0) à 82 nm.
+des positions d'artillerie et de lance-roquettes sur le terrain d'Ohrdruf. À détruire : les lance-roquettes Smerch ou les obusiers Msta (l'un des deux, tiré au sort à chaque activation) et leur ravitaillement. Défense : batterie VEAF de niveau 4 (SA-8 ou Tor, missiles IR, AAA). Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 2 (perche, TACAN 53Y, 253.0) à 70 nm, Arco 2 (panier, TACAN 54Y, 254.0) à 82 nm.
 
 ### SEAD
 
@@ -131,29 +161,29 @@ une colonne blindée de renfort qui roule de Neustadt-Glewe vers Ludwigslust pui
 
 **9. Wünsdorf** — `N52°09.783' E013°28.627'` · bullseye `085/109`
 
-l'état-major de théâtre installé dans les bunkers de Wünsdorf. À détruire : le poste de commandement, les bunkers et la tour de transmissions. Défense : SA-22 Pantsir et SA-15 Tor. Sous la couverture de la QRA Berlin. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 153 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 163 nm.
+l'état-major de théâtre installé dans les bunkers de Wünsdorf. À détruire : le poste de commandement (toujours présent), les bunkers, la tour de transmissions et la caserne (trois des quatre présents, tirés au sort à chaque activation). Défense : SA-22 Pantsir et SA-15 Tor. Sous la couverture de la QRA Berlin. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 153 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 163 nm.
 
 **10. Altengrabow** — `N52°12.130' E012°10.771'` · bullseye `075/63`
 
-une batterie de missiles sol-sol Iskander déployée sur le terrain d'Altengrabow. À détruire : les trois lanceurs Iskander et leurs véhicules. Défense : SA-15 Tor et SA-19 Tunguska. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 106 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 117 nm.
+une batterie de missiles sol-sol Iskander déployée sur le terrain d'Altengrabow. À détruire : les trois lanceurs Iskander et leurs véhicules. Défense : SA-15 Tor ou SA-19 Tunguska, tiré au sort à chaque activation. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 106 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 117 nm.
 
 **11. Wittenberg** — `N51°51.480' E012°39.095'` · bullseye `095/76`
 
-le nœud logistique du franchissement de l'Elbe à Wittenberg (B2). À détruire : le dépôt de munitions, l'entrepôt, les réservoirs et les camions. Défense : SA-19 Tunguska et ZU-23. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 130 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 140 nm.
+le nœud logistique du franchissement de l'Elbe à Wittenberg (B2). À détruire : le dépôt de munitions, l'entrepôt, les réservoirs (trois des quatre présents, tirés au sort à chaque activation) et les camions. Défense : SA-19 Tunguska et ZU-23. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 130 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 140 nm.
 
 **12. Torgau** — `N51°32.300' E012°59.607'` · bullseye `107/91`
 
-le dépôt de munitions et de carburant de Torgau, sur l'Elbe. À détruire : les dépôts de munitions, les entrepôts et le réservoir. Défense : batterie VEAF de niveau 4 (SA-8 ou Tor, missiles IR, AAA). Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 151 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 160 nm.
+le dépôt de munitions et de carburant de Torgau, sur l'Elbe. À détruire : les dépôts de munitions, les entrepôts et le réservoir (quatre des cinq présents, tirés au sort à chaque activation). Défense : batterie VEAF de niveau 4 (SA-8 ou Tor, missiles IR, AAA). Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 151 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 160 nm.
 
 ### Bases aériennes
 
 **13. Base aérienne de Parchim** — `N53°25.398' E011°46.155'` · bullseye `031/107`
 
-la base aérienne de Parchim, où stationnent des MiG-29S et des Su-27. À détruire : les avions au parking et le réservoir de carburant. Défense : SA-15 Tor et SA-11 Buk. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 88 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 99 nm.
+la base aérienne de Parchim, où stationnent des MiG-29S et des Su-27. À détruire : les avions au parking et le réservoir de carburant (cinq des sept objectifs présents, tirés au sort à chaque activation). Défense : SA-15 Tor et SA-11 Buk. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 88 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 99 nm.
 
 **14. Base aérienne de Werneuchen** — `N52°37.859' E013°45.067'` · bullseye `074/127`
 
-la base aérienne de Werneuchen, à l'est de Berlin, avec des Su-30, des MiG-31 et un Il-76. À détruire : les avions au parking. Défense : SA-22 Pantsir et SA-11 Buk ; la base est sous le parapluie du SA-10 de Berlin. Sous la couverture de la QRA Berlin. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 158 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 169 nm.
+la base aérienne de Werneuchen, à l'est de Berlin, avec des Su-30, des MiG-31 et un Il-76. À détruire : les avions au parking (quatre des cinq présents, tirés au sort à chaque activation). Défense : SA-22 Pantsir et SA-11 Buk ; la base est sous le parapluie du SA-10 de Berlin. Sous la couverture de la QRA Berlin. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 158 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 169 nm.
 
 ### Antinavire
 
@@ -169,11 +199,13 @@ un groupe naval au mouillage dans la baie de Prorer Wiek, devant le port de Mukr
 
 | QRA | Défend | Centre | Bullseye | Rayon | Base | Réponse |
 |---|---|---|---|---|---|---|
-| **QRA Berlin** | Rouge | `N52°28.230' E013°23.500'` | `076/111` | `32 nm` | Schonefeld | dès 1 intrus : 1 vol parmi 2 × MiG-29S, 2 × MiG-29S<br>dès 3 intrus : 2 vols parmi 2 × Su-27, 2 × MiG-29S<br>dès 6 intrus : 3 vols parmi 2 × Su-30, 2 × Su-27, 2 × MiG-29S |
-| **QRA Laage** | Rouge | `N53°55.189' E012°15.650'` | `033/141` | `27 nm` | Laage | dès 1 intrus : 1 vol parmi 2 × MiG-29S, 2 × MiG-29S<br>dès 3 intrus : 2 vols parmi 2 × Su-27, 2 × MiG-29S<br>dès 6 intrus : 3 vols parmi 2 × Su-30, 2 × Su-27, 2 × MiG-29S |
-| **QRA Leipzig** | Rouge | `N51°24.658' E012°17.236'` | `118/67` | `27 nm` | Schkeuditz | dès 1 intrus : 1 vol parmi 2 × MiG-29S, 2 × MiG-29S<br>dès 3 intrus : 2 vols parmi 2 × Su-27, 2 × MiG-29S<br>dès 6 intrus : 3 vols parmi 2 × Su-30, 2 × Su-27, 2 × MiG-29S |
-| **QRA Celle** | Bleu | `N52°35.559' E010°02.364'` | `344/53` | `24 nm` | Wunstorf | dès 1 intrus : 1 vol parmi 2 × F-16C_50, 2 × F-16C_50<br>dès 3 intrus : 2 vols parmi 2 × F-15C, 2 × F-16C_50 |
-| **QRA Francfort** | Bleu | `N50°19.763' E009°14.811'` | `219/103` | `24 nm` | Wiesbaden | dès 1 intrus : 1 vol parmi 2 × F-16C_50, 2 × F-16C_50<br>dès 3 intrus : 2 vols parmi 2 × F-15C, 2 × F-16C_50 |
+| **QRA Berlin** | Rouge | `N52°28.230' E013°23.500'` | `076/111` | `32 nm` | Schonefeld | dès 1 intrus : 1 vol parmi 2 × MiG-29S, 2 × Su-27<br>dès 3 intrus : 2 vols parmi 2 × Su-27, 2 × Su-30, 2 × MiG-29S, 2 × MiG-29S<br>dès 6 intrus : 3 vols parmi 2 × Su-30, 2 × Su-27, 2 × MiG-29S, 2 × MiG-29S |
+| **QRA Laage** | Rouge | `N53°55.189' E012°15.650'` | `033/141` | `27 nm` | Laage | dès 1 intrus : 1 vol parmi 2 × MiG-29S, 2 × Su-27<br>dès 3 intrus : 2 vols parmi 2 × Su-27, 2 × Su-30, 2 × MiG-29S, 2 × MiG-29S<br>dès 6 intrus : 3 vols parmi 2 × Su-30, 2 × Su-27, 2 × MiG-29S, 2 × MiG-29S |
+| **QRA Leipzig** | Rouge | `N51°24.658' E012°17.236'` | `118/67` | `27 nm` | Schkeuditz | dès 1 intrus : 1 vol parmi 2 × MiG-29S, 2 × Su-27<br>dès 3 intrus : 2 vols parmi 2 × Su-27, 2 × Su-30, 2 × MiG-29S, 2 × MiG-29S<br>dès 6 intrus : 3 vols parmi 2 × Su-30, 2 × Su-27, 2 × MiG-29S, 2 × MiG-29S |
+| **QRA Celle** | Bleu | `N52°35.559' E010°02.364'` | `344/53` | `24 nm` | Wunstorf | dès 1 intrus : 1 vol parmi 2 × F-16C_50, 2 × F-15C<br>dès 3 intrus : 2 vols parmi 2 × F-15C, 2 × F-16C_50, 2 × F-16C_50 |
+| **QRA Francfort** | Bleu | `N50°19.763' E009°14.811'` | `219/103` | `24 nm` | Wiesbaden | dès 1 intrus : 1 vol parmi 2 × F-16C_50, 2 × F-15C<br>dès 3 intrus : 2 vols parmi 2 × F-15C, 2 × F-16C_50, 2 × F-16C_50 |
+
+Les chasseurs décollent 60 s après l'entrée du premier intrus dans le cercle ; les hélicoptères ne les déclenchent pas.
 
 Couloirs sans QRA rouge : le nord-ouest (Lübtheen, Parchim, Ludwigslust), le centre (Altmark, Magdeburg, Altengrabow) et la Thuringe (Ohrdruf, Brocken).
 
@@ -190,6 +222,30 @@ Couloirs sans QRA rouge : le nord-ouest (Lübtheen, Parchim, Ludwigslust), le ce
 
 À lancer par le menu F10 *MISSIONS*.
 
+## Combat entre joueurs
+
+Des joueurs volent des deux côtés. Le combat entre joueurs est **permis partout, sauf dans les sanctuaires** : un pilote du camp adverse y est prévenu dès l'entrée, puis détruit au bout de 60 s, et les missiles tirés sur les défenseurs sont détruits. Les limites sont tracées sur la carte F10.
+
+| Sanctuaire | Protège | Étendue | Destruction après |
+|---|---|---|---|
+| **Sanctuaire bleu** | Bleu | les arrières à l'ouest : Ramstein, Spangdahlem, Büchel, Nörvenich, Wiesbaden et les zones d'entraînement | 60 s |
+| **Sanctuaire rouge Laage** | Rouge | 8 nm autour de la base (bullseye `033/141`) | 60 s |
+| **Sanctuaire rouge Holzdorf** | Rouge | 8 nm autour de la base (bullseye `098/96`) | 60 s |
+| **Sanctuaire rouge Allstedt** | Rouge | 8 nm autour de la base (bullseye `136/41`) | 60 s |
+
+### Arène
+
+Au-dessus du Grand Belt, en territoire neutre, loin du front : `N55°20.041' E010°59.794'` · bullseye `012/214` · rayon 38 nm. Slots en départ en vol au FL250, bleus à l'ouest, rouges à l'est, face à face à 57 nm.
+
+| Camp | Missiles | Slots | MHz |
+|---|---|---|---|
+| Bleu | Fox 3 | F-14B ×4, F-16C ×4, F/A-18C ×4 | `280.0` |
+| Bleu | Fox 1 | F-14B ×4, F-16C ×4, F/A-18C ×4, M-2000C ×4 | `280.0` |
+| Rouge | Fox 3 | F-14B ×4, F-16C ×4, F/A-18C ×4, J-11A ×4, JF-17 ×4, MiG-29S ×4 | `281.0` |
+| Rouge | Fox 1 | F-14B ×4, F-16C ×4, F/A-18C ×4, J-11A ×4, M-2000C ×4, MiG-21bis ×4, MiG-29A ×4, Mirage-F1EE ×4, Su-27 ×4, Su-33 ×4 | `281.0` |
+
+AWACS de l'arène : Darkstar 1 (E-3A, bleu) 280.0, FL300 ; AWACS Arène Rouge (A-50, rouge) 281.0, FL300.
+
 ## Défense aérienne
 
 **Rouge (renseignement)** : SA-10 permanents à Berlin, Rostock et Leipzig ; SA-15 et SA-11 sur les bases rouges avec slots (Laage, Holzdorf, Allstedt) ; trois radars d'alerte 55G6 en réseau et un réseau de guetteurs Skynet. Chaque zone de combat a sa propre défense, décrite dans sa fiche.
@@ -203,24 +259,24 @@ Couloirs sans QRA rouge : le nord-ouest (Lübtheen, Parchim, Ludwigslust), le ce
 | Spangdahlem-SR | Avenger | `N49°59.972' E006°41.561'` | `244/186` |
 | Spangdahlem-MR | NASAMS | `N49°58.101' E006°45.241'` | `243/185` |
 | Buchel-SR | Avenger | `N50°10.711' E007°02.057'` | `244/168` |
-| Buchel-MR | NASAMS | `N50°08.828' E007°05.741'` | `243/168` |
+| Buchel-MR | NASAMS | `N50°08.872' E007°05.788'` | `243/168` |
 | Norvenich-SR | Avenger | `N50°50.457' E006°37.301'` | `259/162` |
 | Norvenich-MR | NASAMS | `N50°48.593' E006°41.058'` | `258/161` |
 | Wiesbaden-SR | Avenger | `N50°03.680' E008°17.444'` | `229/138` |
 | Wiesbaden-MR | NASAMS | `N50°01.752' E008°21.075'` | `228/138` |
 | Nordholz-SR | Avenger | `N53°46.999' E008°39.196'` | `338/140` |
 | Nordholz-MR | NASAMS | `N53°45.077' E008°43.160'` | `339/137` |
-| Wunstorf-SR | Avenger | `N52°28.344' E009°25.127'` | `321/60` |
+| Wunstorf-SR | Avenger | `N52°28.312' E009°25.199'` | `321/60` |
 | Wunstorf-MR | NASAMS | `N52°26.388' E009°28.931'` | `321/57` |
-| Fassberg-SR | Avenger | `N52°56.011' E010°08.696'` | `354/71` |
+| Fassberg-SR | Avenger | `N52°56.117' E010°08.669'` | `354/71` |
 | Fassberg-MR | NASAMS | `N52°54.032' E010°12.513'` | `356/68` |
 | Fulda-SR | Avenger | `N50°33.251' E009°37.596'` | `215/84` |
-| Fulda-MR | NASAMS | `N50°31.279' E009°41.220'` | `213/85` |
-| Patriot-Nord | Patriot | `N52°24.000' E009°33.000'` | `321/54` |
+| Fulda-MR | NASAMS | `N50°31.332' E009°41.207'` | `213/85` |
+| Patriot-Nord | Patriot | `N52°24.053' E009°32.986'` | `321/54` |
 | Patriot-Centre | Patriot | `N51°43.200' E008°42.000'` | `275/72` |
 | Patriot-Sud | Patriot | `N50°06.000' E008°27.000'` | `228/132` |
 | EWR-Nord | Radar d'alerte | `N53°09.000' E008°51.000'` | `330/105` |
-| EWR-Sud | Radar d'alerte | `N50°33.000' E008°33.000'` | `235/109` |
+| EWR-Sud | Radar d'alerte | `N50°33.031' E008°32.931'` | `235/109` |
 
 ## Plan radio
 
@@ -328,7 +384,9 @@ Sur le serveur VEAF, la météo réelle de Ramstein est appliquée au lancement 
 ## Pour les créateurs de mission
 
 Construite de zéro avec VEAF Mission Creation Tools (`veaf-tools`) et le serveur MCP `veaf-mission-mcp`, en
-s'inspirant de la v5 (`VEAF-Open-Training-Mission-GermanyCW`, 1980) sans la recopier.
+s'inspirant de la v5 (`VEAF-Open-Training-Mission-GermanyCW`, 1980) sans la recopier. Trois ensembles sont repris de
+l'Open Training Caucase v5 : l'arène « Air Quake » (emports et leurres), le groupe aéronaval du Stennis (tâches ATC,
+Pedro, S-3B, slots de pont, entrepôt) et la zone hélicoptère « Mountain Hike » (balises et sons).
 
 ### Construire
 
@@ -351,8 +409,9 @@ Contrôle avant build : `.\veaf-tools.exe validate` (ou l'action MCP `validate_m
 | `src/presets.yaml` | Plan radio bleu et rouge |
 | `src/versions.yaml` | Variantes météo et heure |
 | `src/waypoints.yaml` | Points de navigation injectés dans les appareils joueurs |
-| `src/warehouses.yaml` | Bases qui offrent des slots (`exclude_airports` pour les bases rouges sans slots), carburant et munitions illimités |
+| `src/warehouses.yaml` | Bases qui offrent des slots (`exclude_airports` pour les bases rouges sans slots), carburant et munitions illimités, appareils proposés sur le pont du porte-avions (`ships:`) |
 | `src/dynamic-slot-templates.yaml` | Appareils proposés en slots dynamiques (WW2 retirés) |
+| `src/mission/l10n/DEFAULT/*.ogg` | Sons des balises de la zone de sauvetage (MH01 à MH03, SOS), déclarés dans `mapResource` |
 | `docs/carte.jpg` | La carte de ce briefing (fond OpenStreetMap) ; la même image est dans `src/mission/l10n/DEFAULT/carte.jpg` pour le briefing DCS |
 
 Ce README est **généré depuis la mission** : après tout changement, relancer `gather.py` puis `gen_readme.py` (qui appelle `gen_map.py` pour la carte)
@@ -360,18 +419,11 @@ Ce README est **généré depuis la mission** : après tout changement, relancer
 
 ### Limites connues
 
-La mission s'appuie sur des correctifs de VMCT mergés sur `develop` mais pas encore publiés (lot
-FIX-SCRATCH-MISSION-FINDINGS) : météo des variantes, METAR réel, presets des slots dynamiques, heures solaires,
-imbrication des niveaux par `includes:`, identifiants des catalogues injectés, exclusion des bases sans slots
-(`exclude_airports`). Construite avec la 6.24.0 publiée, elle retrouve ces défauts : construisez-la avec les outils de
-`develop`, ou avec la version qui les publiera.
+Construite avec veaf-tools 6.25.0.3 (branche `develop`). Plusieurs éléments n'ont pas d'action MCP dédiée et ont été
+écrits par script sur la table de la mission : leurres et indicatifs des slots de l'arène, tâches ATC et slots de pont du
+porte-avions, entrepôt du navire, balises radio de la zone de sauvetage, balises de tirage (`#spawngroup`,
+`#spawncount`) des zones. Ils se relisent dans `src/mission/mission` comme le reste.
 
-- Les appareils sans radio programmable (FC3, Ka-50, Gazelle, certains mods) ne reçoivent pas de presets.
-- N'activez qu'un niveau par famille d'entraînement à la fois.
-- Le contenu posé dans l'éditeur (statiques, groupes natifs, alias SAM en `radius 0`) n'est pas écarté des forêts par
-  VEAF : l'emplacement de chaque zone doit être choisi sur un terrain dégagé.
-
-À vérifier dans DCS : placement des statiques (avions au parking de Parchim et Werneuchen, bâtiments), navires bien sur
-l'eau (rades de Rostock et de Prorer Wiek), suivi des routes par les convois, FARP posés par `-farp`, imbrication des
-zones d'entraînement, engagement des CAP, portées réelles des SAM par rapport aux marges prévues.
+À vérifier en jeu : dépôts de munitions des FARP reconnus par CTLD, balises relevables au radiogoniomètre, TACAN et ICLS
+du Stennis, destruction dans les sanctuaires, marquage laser des drones, tirages des zones.
 

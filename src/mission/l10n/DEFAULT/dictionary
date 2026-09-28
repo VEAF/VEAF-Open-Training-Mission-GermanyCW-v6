@@ -1,2 +1,7 @@
 dictionary = 
-{}
+{
+  DictKey_subtitle_MH01 = "",
+  DictKey_subtitle_MH02 = "",
+  DictKey_subtitle_MH03 = "",
+  DictKey_subtitle_SOS = "",
+}

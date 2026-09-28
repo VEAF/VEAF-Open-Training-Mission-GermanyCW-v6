@@ -31,6 +31,16 @@ blue:
   defaults:
     fuel: unlimited
     weapons: unlimited
+  ships:
+    # Porte-avions : seulement les appareils embarquables (sans cette liste, le build y offrait
+    # tous les modèles bleus, B-52 et hélicoptères lourds compris).
+    CVN-74 Stennis:
+      aircrafts:
+        FA-18C_hornet: { amount: unlimited }
+        F-14B: { amount: unlimited }
+        AV8BNA: { amount: unlimited }
+        UH-1H: { amount: unlimited }
+        AH-64D_BLK_II: { amount: unlimited }
 
 red:
   defaults:

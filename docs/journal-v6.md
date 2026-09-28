@@ -1,4 +1,4 @@
-# Open Training GermanyCW v6 — résumé du chantier (24-26/09/2026)
+# Open Training GermanyCW v6 — résumé du chantier (24-28/09/2026)
 
 ## 1. Point de départ et choix
 
@@ -21,7 +21,7 @@
 | Défense aérienne | 35 groupes `AD-*`, FARP Baumholder et Göttingen |
 | Zones de combat | 25 zones ; les niveaux Medium et Hard incluent le niveau inférieur (`includes:`) |
 | QRA / CAP | 5 QRA (menu radio public retiré) ; 6 CAP (tâches : engager d'abord, puis orbite) |
-| Modules | CTLD, CSAR, AIEN, STTS, Skynet (réseau de spotters, vue radio) |
+| Modules | CTLD, CSAR, AIEN, STTS, Skynet (réseau de spotters, vue F10 désactivée) |
 | Radio | Plan refait. Bleu : 20 canaux UHF, patrouilles en 360.x. Bases en 270.x / 130.x. Ravitailleurs 251-255, AWACS 265/266, rouges 260/261 |
 | Variantes | 20 variantes : nuit, aube (`sunrise`), matin, jour, soir (`sunset-45*60`) × réel (METAR ETAR), dégagé, épars, pluie. Fuseau `Europe/Berlin`, date 14/06/2025 |
 | Divers | Bullseye sur le Brocken ; 11 points de navigation, 4 plans de vol ; 38 dessins F10 ; avions WW2 retirés des modèles de slots dynamiques (102 gardés) |
@@ -292,3 +292,38 @@ le déplacement de 11 groupes : **22 véhicules réellement sous les arbres à l
    Ils partagent leur groupe avec l'hélisurface, et les déplacer bougerait le point d'atterrissage
    pour un gain cosmétique.
 9. **Encore à vérifier en jeu** : statiques, navires, convois, FARP, imbrication des zones, engagement des CAP, portées des SAM.
+10. **À vérifier en jeu après le 28/09** : dépôts de munitions reconnus par CTLD, balises MH01-03 et SOS
+    relevables à l'ADF, tâches ATC du Stennis (TACAN, ICLS, Link 4), destruction dans les sanctuaires,
+    slots de l'arène et du pont, marquage laser des drones, tirages des zones.
+
+## 11. Finalisation selon le prompt du 28/09
+
+Le prompt `new-open-training-mission` a gagné le 28/09 les règles tirées de l'Open Training Caucase v5
+(commit VMCT `4fdb8ab6`). Appliquées à la mission :
+
+- **Mesuré conforme sans rien changer** : aucune défense permanente à portée d'une base adverse avec slots
+  (la plus proche, SA-11 d'Allstedt → Fulda, 84 nm ; NASAMS de Fulda → Allstedt, 85 nm), `requiredModules`
+  vide, aucun mot de passe, chaque nom d'`ASSETS` désigne un groupe, `troopPickupAtFARP` ouvert.
+- **Vue F10 des guetteurs** : `spotter_view: "off"` (ni dessin ni interrupteur radio).
+- **FARP** : un statique `FARP Ammo Dump Coating` à 120 m de chacun. Celui que pose `-farp` apparaît en cours
+  de partie, alors que CTLD ne cherche ses points logistiques qu'une fois, à son démarrage.
+- **QRA** : `react_on_helicopters: false` écrit, vrai tirage à chaque niveau (les groupes A et B étaient des
+  copies du même avion, et les niveaux 3 et 6 faisaient décoller tout ce qu'ils listaient). Délai de 60 s et
+  hélicoptères ignorés dits au briefing.
+- **Combat entre joueurs** : règle écrite au briefing ; sanctuaire bleu sur les arrières ouest, trois
+  sanctuaires rouges de 8 nm autour de Laage, Holzdorf et Allstedt (aucune zone de combat dedans : Torgau, la
+  plus proche, est à 15,6 nm de Holzdorf) ; arène au-dessus du Grand Belt, reprise de l'« Air Quake » v5
+  (14 patrouilles de 4 slots en vol, emports v5, un AWACS par camp), plus 9 patrouilles rouges d'avions de l'Est
+  (MiG-29S, J-11A et JF-17 en Fox 3 ; MiG-29A, Su-27, Su-33, J-11A, MiG-21bis et Mirage F1EE en Fox 1), emports du
+  catalogue de démo VMCT et des modèles de slots rouges. Limites tracées sur la carte F10.
+- **Porte-avions** : CSG-74 Stennis de la v5 en mer du Nord (tâches ATC, Pedro, S-3B, 6 slots de pont, module
+  `CARRIER`), avec son entrepôt ; les slots dynamiques du pont limités aux appareils embarquables.
+- **Drones laser** : un MQ-9 sur Baumholder (1688) et un sur Wahner Heide (1687), JTAC par `ASSETS`. Pas de drone sur
+  Borkenberge : le JTAC ne marque qu'à 10 km, et tous les SAM de la zone portent plus loin (retiré sur décision de David).
+- **Zone hélicoptère hors combat** : reprise de la « Mountain Hike » v5 dans le Hunsrück, trois balises FM et un
+  SOS qui n'émettent que zone active ; sons v5 dans `src/mission/l10n/DEFAULT/`.
+- **README** : reste le briefing, en français, généré par `gather.py` / `gen_readme.py` ; nouvelles sections
+  porte-avions, drones, zone de sauvetage, combat entre joueurs et arène ; la carte montre sanctuaires et porte-avions,
+  l'arène (hors cadre) par une flèche.
+- **Sites variables** : `#spawngroup` / `#spawncount` sur 13 zones, dont les 5 d'entraînement qui ont plus d'un
+  élément ; trois porteurs `#command` ajoutés à Borkenberge pour tirer la défense au sort.

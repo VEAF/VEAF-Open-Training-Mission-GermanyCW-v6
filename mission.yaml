@@ -84,11 +84,40 @@ modules:
         name: AWACS Rouge
         description: AWACS Rouge (A-50)
         information: U260.0 - FL300
+      - sort: 10
+        name: CSG-74 Stennis
+        description: CVN-74 Stennis (porte-avions) - mer du Nord
+        information: "TACAN 10X STS - ICLS 10 - Link 4 225.0
+Tour 225.0 - S-3B et Pedro gérés par le menu CARRIER OPS"
+      - sort: 11
+        name: Reaper 1
+        description: Reaper 1 (drone laser) - Baumholder
+        information: "Laser 1688 - FM 36.0
+FL150 au-dessus de la zone"
+        jtac: 1688
+        freq: "36.0"
+        mod: FM
+      - sort: 12
+        name: Reaper 2
+        description: Reaper 2 (drone laser) - Wahner Heide
+        information: "Laser 1687 - FM 37.0
+FL150 au-dessus de la zone"
+        jtac: 1687
+        freq: "37.0"
+        mod: FM
+      - sort: 14
+        name: Darkstar 1
+        description: Darkstar 1 (E-3A) - arène, bleu
+        information: U280.0 - FL300
+      - sort: 15
+        name: AWACS Arène Rouge
+        description: AWACS Arène Rouge (A-50) - arène, rouge
+        information: U281.0 - FL300
   # ── Combat ──
   GROUNDAI: true
   CASMISSION: true
   TRANSPORTMISSION: true
-  CARRIER: false            # pas de porte-avions sur ce théâtre
+  CARRIER: true             # CSG-74 Stennis en mer du Nord (menu CARRIER OPS)
   COMBATMISSION: true       # missions CAP à la demande (cap_missions:)
   COMBATZONE:
     enabled: true
@@ -98,13 +127,13 @@ modules:
       - type: zone
         zone_name: combatZone_Baumholder_Easy
         friendly_name: Baumholder - facile
-        briefing: 'Entraînement cibles pour hélicoptères à Baumholder (BULLSEYE 233/180), niveau facile. Cibles statiques inertes (blindés et camions), aucune défense. Ravitailleur le plus proche : Shell 1 (TACAN 55Y, 255.0) à 16 nm. Un seul niveau de cette famille à la fois.'
+        briefing: 'Entraînement cibles pour hélicoptères à Baumholder (BULLSEYE 233/180), niveau facile. Cibles statiques inertes (blindés et camions), trois des cinq tirées au sort à chaque activation, aucune défense. Ravitailleur le plus proche : Shell 1 (TACAN 55Y, 255.0) à 16 nm. Un seul niveau de cette famille à la fois.'
         radio_group_name: Entraînement hélicoptères
         training: true
       - type: zone
         zone_name: combatZone_Baumholder_Medium
         friendly_name: Baumholder - moyen
-        briefing: "Entraînement cibles pour hélicoptères à Baumholder (BULLSEYE 233/180), niveau moyen. Ajoute de l'AAA légère (ZU-23 et Shilka), en plus du niveau facile. Ravitailleur le plus proche : Shell 1 (TACAN 55Y, 255.0) à 16 nm. Un seul niveau de cette famille à la fois."
+        briefing: "Entraînement cibles pour hélicoptères à Baumholder (BULLSEYE 233/180), niveau moyen. Ajoute de l'AAA légère (ZU-23 ou Shilka, tirée au sort à chaque activation), en plus du niveau facile. Ravitailleur le plus proche : Shell 1 (TACAN 55Y, 255.0) à 16 nm. Un seul niveau de cette famille à la fois."
         radio_group_name: Entraînement hélicoptères
         training: true
         includes: [combatZone_Baumholder_Easy]
@@ -118,7 +147,7 @@ modules:
       - type: zone
         zone_name: combatZone_WahnerHeide_Easy
         friendly_name: Wahner Heide - facile
-        briefing: "Entraînement cibles pour avions d'attaque à Wahner Heide (BULLSEYE 257/144), niveau facile. Cibles statiques inertes (chars, VCI, camions). Ravitailleur le plus proche : Arco 2 (TACAN 54Y, 254.0) à 57 nm. Un seul niveau de cette famille à la fois."
+        briefing: "Entraînement cibles pour avions d'attaque à Wahner Heide (BULLSEYE 257/144), niveau facile. Cibles statiques inertes (chars, VCI, camions), cinq des sept tirées au sort à chaque activation. Ravitailleur le plus proche : Arco 2 (TACAN 54Y, 254.0) à 57 nm. Un seul niveau de cette famille à la fois."
         radio_group_name: Entraînement attaque
         training: true
       - type: zone
@@ -138,13 +167,13 @@ modules:
       - type: zone
         zone_name: combatZone_Borkenberge_Easy
         friendly_name: Borkenberge - facile
-        briefing: 'Entraînement site SEAD/DEAD à Borkenberge (BULLSEYE 279/125), niveau facile. Une batterie SA-6 seule (moyenne portée). Ravitailleur le plus proche : Arco 2 (TACAN 54Y, 254.0) à 79 nm. Un seul niveau de cette famille à la fois.'
+        briefing: 'Entraînement site SEAD/DEAD à Borkenberge (BULLSEYE 279/125), niveau facile. Une batterie moyenne portée seule : SA-6 ou SA-11, tirée au sort à chaque activation. Ravitailleur le plus proche : Arco 2 (TACAN 54Y, 254.0) à 79 nm. Un seul niveau de cette famille à la fois.'
         radio_group_name: Entraînement SEAD
         training: true
       - type: zone
         zone_name: combatZone_Borkenberge_Medium
         friendly_name: Borkenberge - moyen
-        briefing: 'Entraînement site SEAD/DEAD à Borkenberge (BULLSEYE 279/125), niveau moyen. Ajoute un SA-15 (courte portée), en plus du niveau facile. Ravitailleur le plus proche : Arco 2 (TACAN 54Y, 254.0) à 79 nm. Un seul niveau de cette famille à la fois.'
+        briefing: 'Entraînement site SEAD/DEAD à Borkenberge (BULLSEYE 279/125), niveau moyen. Ajoute une défense courte portée (SA-15, SA-8 ou SA-19, tirée au sort à chaque activation), en plus du niveau facile. Ravitailleur le plus proche : Arco 2 (TACAN 54Y, 254.0) à 79 nm. Un seul niveau de cette famille à la fois.'
         radio_group_name: Entraînement SEAD
         training: true
         includes: [combatZone_Borkenberge_Easy]
@@ -156,6 +185,13 @@ modules:
         training: true
         includes: [combatZone_Borkenberge_Medium]
       - type: zone
+        zone_name: combatZone_Hunsrueck_SAR
+        friendly_name: Hunsrück - recherche et sauvetage
+        briefing: "Navigation et recherche d'équipage dans le Hunsrück (BULLSEYE 237/172), sans ennemi. Un UH-60A s'est posé en catastrophe au nord-ouest de Kastellaun (BULLSEYE 241/160), vers la Moselle. Départ conseillé : FARP de Baumholder. Suivez les balises radio (FM, relevables au radiogoniomètre) : MH01 sur 31.0 (Erbeskopf), MH02 sur 32.0 (Kirchberg), MH03 sur 33.0 (Kastellaun). L'équipage émet un SOS sur 34.0 FM depuis le lieu de l'accident. Les balises n'émettent que lorsque la zone est activée."
+        radio_group_name: Entraînement hélicoptères
+        training: true
+        completable: false
+      - type: zone
         zone_name: combatZone_Luebtheen
         friendly_name: Lübtheen
         radio_group_name: Front
@@ -166,13 +202,13 @@ modules:
         friendly_name: Letzlingen (Altmark)
         radio_group_name: Front
         training: false
-        briefing: "Letzlingen (Altmark) (BULLSEYE 051/53) : une brigade mécanisée sur le terrain d'exercice de l'Altmark, face au front. À détruire : les blindés et les véhicules de commandement. Défense : SA-15 Tor et SA-19 Tunguska, plus la défense propre du groupe blindé. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 81 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 92 nm."
+        briefing: "Letzlingen (Altmark) (BULLSEYE 051/53) : une brigade mécanisée sur le terrain d'exercice de l'Altmark, face au front. À détruire : les blindés et les véhicules de commandement. Défense : SA-15 Tor ou SA-19 Tunguska (tiré au sort à chaque activation), plus la défense propre du groupe blindé. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 81 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 92 nm."
       - type: zone
         zone_name: combatZone_Ohrdruf
         friendly_name: Ohrdruf
         radio_group_name: Front
         training: false
-        briefing: "Ohrdruf (BULLSEYE 184/59) : des positions d'artillerie et de lance-roquettes sur le terrain d'Ohrdruf. À détruire : les lance-roquettes Smerch, les obusiers Msta et leur ravitaillement. Défense : batterie VEAF de niveau 4 (SA-8 ou Tor, missiles IR, AAA). Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 2 (perche, TACAN 53Y, 253.0) à 70 nm, Arco 2 (panier, TACAN 54Y, 254.0) à 82 nm."
+        briefing: "Ohrdruf (BULLSEYE 184/59) : des positions d'artillerie et de lance-roquettes sur le terrain d'Ohrdruf. À détruire : les lance-roquettes Smerch ou les obusiers Msta (l'un des deux, tiré au sort à chaque activation) et leur ravitaillement. Défense : batterie VEAF de niveau 4 (SA-8 ou Tor, missiles IR, AAA). Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 2 (perche, TACAN 53Y, 253.0) à 70 nm, Arco 2 (panier, TACAN 54Y, 254.0) à 82 nm."
       - type: zone
         zone_name: combatZone_Brocken
         friendly_name: Brocken
@@ -208,37 +244,37 @@ modules:
         friendly_name: Wünsdorf
         radio_group_name: Frappe profonde
         training: false
-        briefing: "Wünsdorf (BULLSEYE 085/109) : l'état-major de théâtre installé dans les bunkers de Wünsdorf. À détruire : le poste de commandement, les bunkers et la tour de transmissions. Défense : SA-22 Pantsir et SA-15 Tor. Sous la couverture de la QRA Berlin. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 153 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 163 nm."
+        briefing: "Wünsdorf (BULLSEYE 085/109) : l'état-major de théâtre installé dans les bunkers de Wünsdorf. À détruire : le poste de commandement (toujours présent), les bunkers, la tour de transmissions et la caserne (trois des quatre présents, tirés au sort à chaque activation). Défense : SA-22 Pantsir et SA-15 Tor. Sous la couverture de la QRA Berlin. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 153 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 163 nm."
       - type: zone
         zone_name: combatZone_Altengrabow
         friendly_name: Altengrabow
         radio_group_name: Frappe profonde
         training: false
-        briefing: "Altengrabow (BULLSEYE 075/63) : une batterie de missiles sol-sol Iskander déployée sur le terrain d'Altengrabow. À détruire : les trois lanceurs Iskander et leurs véhicules. Défense : SA-15 Tor et SA-19 Tunguska. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 106 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 117 nm."
+        briefing: "Altengrabow (BULLSEYE 075/63) : une batterie de missiles sol-sol Iskander déployée sur le terrain d'Altengrabow. À détruire : les trois lanceurs Iskander et leurs véhicules. Défense : SA-15 Tor ou SA-19 Tunguska, tiré au sort à chaque activation. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 106 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 117 nm."
       - type: zone
         zone_name: combatZone_Wittenberg
         friendly_name: Wittenberg
         radio_group_name: Frappe profonde
         training: false
-        briefing: "Wittenberg (BULLSEYE 095/76) : le nœud logistique du franchissement de l'Elbe à Wittenberg (B2). À détruire : le dépôt de munitions, l'entrepôt, les réservoirs et les camions. Défense : SA-19 Tunguska et ZU-23. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 130 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 140 nm."
+        briefing: "Wittenberg (BULLSEYE 095/76) : le nœud logistique du franchissement de l'Elbe à Wittenberg (B2). À détruire : le dépôt de munitions, l'entrepôt, les réservoirs (trois des quatre présents, tirés au sort à chaque activation) et les camions. Défense : SA-19 Tunguska et ZU-23. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 130 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 140 nm."
       - type: zone
         zone_name: combatZone_Torgau
         friendly_name: Torgau
         radio_group_name: Frappe profonde
         training: false
-        briefing: "Torgau (BULLSEYE 107/91) : le dépôt de munitions et de carburant de Torgau, sur l'Elbe. À détruire : les dépôts de munitions, les entrepôts et le réservoir. Défense : batterie VEAF de niveau 4 (SA-8 ou Tor, missiles IR, AAA). Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 151 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 160 nm."
+        briefing: "Torgau (BULLSEYE 107/91) : le dépôt de munitions et de carburant de Torgau, sur l'Elbe. À détruire : les dépôts de munitions, les entrepôts et le réservoir (quatre des cinq présents, tirés au sort à chaque activation). Défense : batterie VEAF de niveau 4 (SA-8 ou Tor, missiles IR, AAA). Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 151 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 160 nm."
       - type: zone
         zone_name: combatZone_Parchim
         friendly_name: Base aérienne de Parchim
         radio_group_name: Bases aériennes
         training: false
-        briefing: 'Base aérienne de Parchim (BULLSEYE 031/107) : la base aérienne de Parchim, où stationnent des MiG-29S et des Su-27. À détruire : les avions au parking et le réservoir de carburant. Défense : SA-15 Tor et SA-11 Buk. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 88 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 99 nm.'
+        briefing: 'Base aérienne de Parchim (BULLSEYE 031/107) : la base aérienne de Parchim, où stationnent des MiG-29S et des Su-27. À détruire : les avions au parking et le réservoir de carburant (cinq des sept objectifs présents, tirés au sort à chaque activation). Défense : SA-15 Tor et SA-11 Buk. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 88 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 99 nm.'
       - type: zone
         zone_name: combatZone_Werneuchen
         friendly_name: Base aérienne de Werneuchen
         radio_group_name: Bases aériennes
         training: false
-        briefing: "Base aérienne de Werneuchen (BULLSEYE 074/127) : la base aérienne de Werneuchen, à l'est de Berlin, avec des Su-30, des MiG-31 et un Il-76. À détruire : les avions au parking. Défense : SA-22 Pantsir et SA-11 Buk ; la base est sous le parapluie du SA-10 de Berlin. Sous la couverture de la QRA Berlin. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 158 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 169 nm."
+        briefing: "Base aérienne de Werneuchen (BULLSEYE 074/127) : la base aérienne de Werneuchen, à l'est de Berlin, avec des Su-30, des MiG-31 et un Il-76. À détruire : les avions au parking (quatre des cinq présents, tirés au sort à chaque activation). Défense : SA-22 Pantsir et SA-11 Buk ; la base est sous le parapluie du SA-10 de Berlin. Sous la couverture de la QRA Berlin. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 158 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 169 nm."
       - type: zone
         zone_name: combatZone_Rostock
         friendly_name: Rade de Rostock
@@ -265,22 +301,26 @@ modules:
           - enemy_count: 1
             groups:
               - QRA Berlin - MiG-29S A
-              - QRA Berlin - MiG-29S B
+              - QRA Berlin - Su-27
             random_pick: 1
           - enemy_count: 3
             groups:
               - QRA Berlin - Su-27
+              - QRA Berlin - Su-30
               - QRA Berlin - MiG-29S A
+              - QRA Berlin - MiG-29S B
             random_pick: 2
           - enemy_count: 6
             groups:
               - QRA Berlin - Su-30
               - QRA Berlin - Su-27
+              - QRA Berlin - MiG-29S A
               - QRA Berlin - MiG-29S B
             random_pick: 3
         airport_link: Schonefeld
         delay_before_rearming: 600
         delay_before_activating: 60
+        react_on_helicopters: false   # les QRA laissent passer les hélicoptères (dit au briefing)
       - name: QRA Laage
         coalition: RED
         trigger_zone: QRA-Laage
@@ -291,22 +331,26 @@ modules:
           - enemy_count: 1
             groups:
               - QRA Laage - MiG-29S A
-              - QRA Laage - MiG-29S B
+              - QRA Laage - Su-27
             random_pick: 1
           - enemy_count: 3
             groups:
               - QRA Laage - Su-27
+              - QRA Laage - Su-30
               - QRA Laage - MiG-29S A
+              - QRA Laage - MiG-29S B
             random_pick: 2
           - enemy_count: 6
             groups:
               - QRA Laage - Su-30
               - QRA Laage - Su-27
+              - QRA Laage - MiG-29S A
               - QRA Laage - MiG-29S B
             random_pick: 3
         airport_link: Laage
         delay_before_rearming: 600
         delay_before_activating: 60
+        react_on_helicopters: false   # les QRA laissent passer les hélicoptères (dit au briefing)
       - name: QRA Leipzig
         coalition: RED
         trigger_zone: QRA-Leipzig
@@ -317,22 +361,26 @@ modules:
           - enemy_count: 1
             groups:
               - QRA Leipzig - MiG-29S A
-              - QRA Leipzig - MiG-29S B
+              - QRA Leipzig - Su-27
             random_pick: 1
           - enemy_count: 3
             groups:
               - QRA Leipzig - Su-27
+              - QRA Leipzig - Su-30
               - QRA Leipzig - MiG-29S A
+              - QRA Leipzig - MiG-29S B
             random_pick: 2
           - enemy_count: 6
             groups:
               - QRA Leipzig - Su-30
               - QRA Leipzig - Su-27
+              - QRA Leipzig - MiG-29S A
               - QRA Leipzig - MiG-29S B
             random_pick: 3
         airport_link: Schkeuditz
         delay_before_rearming: 600
         delay_before_activating: 60
+        react_on_helicopters: false   # les QRA laissent passer les hélicoptères (dit au briefing)
       - name: QRA Celle
         coalition: BLUE
         trigger_zone: QRA-Celle
@@ -343,16 +391,18 @@ modules:
           - enemy_count: 1
             groups:
               - QRA Celle - F-16C A
-              - QRA Celle - F-16C B
+              - QRA Celle - F-15C
             random_pick: 1
           - enemy_count: 3
             groups:
               - QRA Celle - F-15C
               - QRA Celle - F-16C A
+              - QRA Celle - F-16C B
             random_pick: 2
         airport_link: Wunstorf
         delay_before_rearming: 600
         delay_before_activating: 60
+        react_on_helicopters: false   # les QRA laissent passer les hélicoptères (dit au briefing)
       - name: QRA Francfort
         coalition: BLUE
         trigger_zone: QRA-Francfort
@@ -363,16 +413,74 @@ modules:
           - enemy_count: 1
             groups:
               - QRA Francfort - F-16C A
-              - QRA Francfort - F-16C B
+              - QRA Francfort - F-15C
             random_pick: 1
           - enemy_count: 3
             groups:
               - QRA Francfort - F-15C
               - QRA Francfort - F-16C A
+              - QRA Francfort - F-16C B
             random_pick: 2
         airport_link: Wiesbaden
         delay_before_rearming: 600
         delay_before_activating: 60
+        react_on_helicopters: false   # les QRA laissent passer les hélicoptères (dit au briefing)
+  # Sanctuaires : un pilote humain du camp adverse est prévenu dès l'entrée, détruit après 60 s ;
+  # les missiles tirés sur les défenseurs sont détruits. Sommets = véhicules jamais activés.
+  SANCTUARY:
+    enabled: true
+    sanctuary_zones:
+      - name: Sanctuaire bleu
+        coalition: BLUE
+        polygon_units:
+          - Sanctuaire bleu-01
+          - Sanctuaire bleu-02
+          - Sanctuaire bleu-03
+          - Sanctuaire bleu-04
+          - Sanctuaire bleu-05
+        delay_warning: 0
+        delay_spawn: -1
+        delay_instant: 60
+        protect_from_missiles: true
+      - name: Sanctuaire rouge Laage
+        coalition: RED
+        polygon_units:
+          - Sanctuaire rouge Laage-01
+          - Sanctuaire rouge Laage-02
+          - Sanctuaire rouge Laage-03
+          - Sanctuaire rouge Laage-04
+          - Sanctuaire rouge Laage-05
+          - Sanctuaire rouge Laage-06
+        delay_warning: 0
+        delay_spawn: -1
+        delay_instant: 60
+        protect_from_missiles: true
+      - name: Sanctuaire rouge Holzdorf
+        coalition: RED
+        polygon_units:
+          - Sanctuaire rouge Holzdorf-01
+          - Sanctuaire rouge Holzdorf-02
+          - Sanctuaire rouge Holzdorf-03
+          - Sanctuaire rouge Holzdorf-04
+          - Sanctuaire rouge Holzdorf-05
+          - Sanctuaire rouge Holzdorf-06
+        delay_warning: 0
+        delay_spawn: -1
+        delay_instant: 60
+        protect_from_missiles: true
+      - name: Sanctuaire rouge Allstedt
+        coalition: RED
+        polygon_units:
+          - Sanctuaire rouge Allstedt-01
+          - Sanctuaire rouge Allstedt-02
+          - Sanctuaire rouge Allstedt-03
+          - Sanctuaire rouge Allstedt-04
+          - Sanctuaire rouge Allstedt-05
+          - Sanctuaire rouge Allstedt-06
+        delay_warning: 0
+        delay_spawn: -1
+        delay_instant: 60
+        protect_from_missiles: true
   # ── Community ──
   STTS: true
   CTLD:
@@ -385,7 +493,7 @@ modules:
     include_red_in_radio: false
     include_blue_in_radio: false
     spotter_network: true
-    spotter_view: "radio"   # vue F10 du réseau de guetteurs, interrupteur dans le menu radio
+    spotter_view: "off"     # vue F10 du réseau de guetteurs : désactivée (ni affichage ni interrupteur radio)
 
 pipeline:
   weather: true
