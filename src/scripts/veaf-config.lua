@@ -18,6 +18,9 @@ veaf.SecurityDisabled = false
 -- ── Global log level ─────────────────────────────────────────────────────────
 veaf.ForcedLogLevel = "info"
 
+-- ── Module settings ──────────────────────────────────────────────────────────
+veaf.Diagnostics = true
+
 -- ── CTLD 2 ───────────────────────────────────────────────────────────────────
 -- Configuration lives in ctld-config.yaml (edit it with ctld-tools); this only starts it.
 if ctld then
@@ -50,7 +53,9 @@ end
 
 -- ── Combat ──
 
-veaf.setConfig("CARRIER", "enable", false)
+if veafCarrierOperations then
+    veafCarrierOperations.initialize(true)
+end
 
 if veafCasMission then
     veafCasMission.initialize()
@@ -77,7 +82,7 @@ if veafCombatZone then
         :setMissionEditorZoneName("combatZone_Baumholder_Easy")
         :setFriendlyName("Baumholder - facile")
         :setRadioGroupName("Entraînement hélicoptères")
-        :setBriefing([[Entraînement cibles pour hélicoptères à Baumholder (BULLSEYE 233/180), niveau facile. Cibles statiques inertes (blindés et camions), aucune défense. Ravitailleur le plus proche : Shell 1 (TACAN 55Y, 255.0) à 16 nm. Un seul niveau de cette famille à la fois.]])
+        :setBriefing([[Entraînement cibles pour hélicoptères à Baumholder (BULLSEYE 233/180), niveau facile. Cibles statiques inertes (blindés et camions), trois des cinq tirées au sort à chaque activation, aucune défense. Ravitailleur le plus proche : Shell 1 (TACAN 55Y, 255.0) à 16 nm. Un seul niveau de cette famille à la fois.]])
         :setTraining(true)
         :initialize()
     )
@@ -86,7 +91,7 @@ if veafCombatZone then
         :setMissionEditorZoneName("combatZone_Baumholder_Medium")
         :setFriendlyName("Baumholder - moyen")
         :setRadioGroupName("Entraînement hélicoptères")
-        :setBriefing([[Entraînement cibles pour hélicoptères à Baumholder (BULLSEYE 233/180), niveau moyen. Ajoute de l'AAA légère (ZU-23 et Shilka), en plus du niveau facile. Ravitailleur le plus proche : Shell 1 (TACAN 55Y, 255.0) à 16 nm. Un seul niveau de cette famille à la fois.]])
+        :setBriefing([[Entraînement cibles pour hélicoptères à Baumholder (BULLSEYE 233/180), niveau moyen. Ajoute de l'AAA légère (ZU-23 ou Shilka, tirée au sort à chaque activation), en plus du niveau facile. Ravitailleur le plus proche : Shell 1 (TACAN 55Y, 255.0) à 16 nm. Un seul niveau de cette famille à la fois.]])
         :setTraining(true)
         :initialize()
     )
@@ -104,7 +109,7 @@ if veafCombatZone then
         :setMissionEditorZoneName("combatZone_WahnerHeide_Easy")
         :setFriendlyName("Wahner Heide - facile")
         :setRadioGroupName("Entraînement attaque")
-        :setBriefing([[Entraînement cibles pour avions d'attaque à Wahner Heide (BULLSEYE 257/144), niveau facile. Cibles statiques inertes (chars, VCI, camions). Ravitailleur le plus proche : Arco 2 (TACAN 54Y, 254.0) à 57 nm. Un seul niveau de cette famille à la fois.]])
+        :setBriefing([[Entraînement cibles pour avions d'attaque à Wahner Heide (BULLSEYE 257/144), niveau facile. Cibles statiques inertes (chars, VCI, camions), cinq des sept tirées au sort à chaque activation. Ravitailleur le plus proche : Arco 2 (TACAN 54Y, 254.0) à 57 nm. Un seul niveau de cette famille à la fois.]])
         :setTraining(true)
         :initialize()
     )
@@ -131,7 +136,7 @@ if veafCombatZone then
         :setMissionEditorZoneName("combatZone_Borkenberge_Easy")
         :setFriendlyName("Borkenberge - facile")
         :setRadioGroupName("Entraînement SEAD")
-        :setBriefing([[Entraînement site SEAD/DEAD à Borkenberge (BULLSEYE 279/125), niveau facile. Une batterie SA-6 seule (moyenne portée). Ravitailleur le plus proche : Arco 2 (TACAN 54Y, 254.0) à 79 nm. Un seul niveau de cette famille à la fois.]])
+        :setBriefing([[Entraînement site SEAD/DEAD à Borkenberge (BULLSEYE 279/125), niveau facile. Une batterie moyenne portée seule : SA-6 ou SA-11, tirée au sort à chaque activation. Ravitailleur le plus proche : Arco 2 (TACAN 54Y, 254.0) à 79 nm. Un seul niveau de cette famille à la fois.]])
         :setTraining(true)
         :initialize()
     )
@@ -140,7 +145,7 @@ if veafCombatZone then
         :setMissionEditorZoneName("combatZone_Borkenberge_Medium")
         :setFriendlyName("Borkenberge - moyen")
         :setRadioGroupName("Entraînement SEAD")
-        :setBriefing([[Entraînement site SEAD/DEAD à Borkenberge (BULLSEYE 279/125), niveau moyen. Ajoute un SA-15 (courte portée), en plus du niveau facile. Ravitailleur le plus proche : Arco 2 (TACAN 54Y, 254.0) à 79 nm. Un seul niveau de cette famille à la fois.]])
+        :setBriefing([[Entraînement site SEAD/DEAD à Borkenberge (BULLSEYE 279/125), niveau moyen. Ajoute une défense courte portée (SA-15, SA-8 ou SA-19, tirée au sort à chaque activation), en plus du niveau facile. Ravitailleur le plus proche : Arco 2 (TACAN 54Y, 254.0) à 79 nm. Un seul niveau de cette famille à la fois.]])
         :setTraining(true)
         :initialize()
     )
@@ -150,6 +155,16 @@ if veafCombatZone then
         :setFriendlyName("Borkenberge - difficile")
         :setRadioGroupName("Entraînement SEAD")
         :setBriefing([[Entraînement site SEAD/DEAD à Borkenberge (BULLSEYE 279/125), niveau difficile. Ajoute un SA-10 (longue portée), un SA-11 et un radar d'alerte 55G6, en réseau Skynet, en plus du niveau moyen. Ravitailleur le plus proche : Arco 2 (TACAN 54Y, 254.0) à 79 nm. Un seul niveau de cette famille à la fois.]])
+        :setTraining(true)
+        :initialize()
+    )
+    veafCombatZone.AddZone(
+        VeafCombatZone:new()
+        :setMissionEditorZoneName("combatZone_Hunsrueck_SAR")
+        :setFriendlyName("Hunsrück - recherche et sauvetage")
+        :setRadioGroupName("Entraînement hélicoptères")
+        :setBriefing([[Navigation et recherche d'équipage dans le Hunsrück (BULLSEYE 237/172), sans ennemi. Un UH-60A s'est posé en catastrophe au nord-ouest de Kastellaun (BULLSEYE 241/160), vers la Moselle. Départ conseillé : FARP de Baumholder. Suivez les balises radio (FM, relevables au radiogoniomètre) : MH01 sur 31.0 (Erbeskopf), MH02 sur 32.0 (Kirchberg), MH03 sur 33.0 (Kastellaun). L'équipage émet un SOS sur 34.0 FM depuis le lieu de l'accident. Les balises n'émettent que lorsque la zone est activée.]])
+        :setCompletable(false)
         :setTraining(true)
         :initialize()
     )
@@ -167,7 +182,7 @@ if veafCombatZone then
         :setMissionEditorZoneName("combatZone_Letzlingen")
         :setFriendlyName("Letzlingen (Altmark)")
         :setRadioGroupName("Front")
-        :setBriefing([[Letzlingen (Altmark) (BULLSEYE 051/53) : une brigade mécanisée sur le terrain d'exercice de l'Altmark, face au front. À détruire : les blindés et les véhicules de commandement. Défense : SA-15 Tor et SA-19 Tunguska, plus la défense propre du groupe blindé. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 81 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 92 nm.]])
+        :setBriefing([[Letzlingen (Altmark) (BULLSEYE 051/53) : une brigade mécanisée sur le terrain d'exercice de l'Altmark, face au front. À détruire : les blindés et les véhicules de commandement. Défense : SA-15 Tor ou SA-19 Tunguska (tiré au sort à chaque activation), plus la défense propre du groupe blindé. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 81 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 92 nm.]])
         :setTraining(false)
         :initialize()
     )
@@ -176,7 +191,7 @@ if veafCombatZone then
         :setMissionEditorZoneName("combatZone_Ohrdruf")
         :setFriendlyName("Ohrdruf")
         :setRadioGroupName("Front")
-        :setBriefing([[Ohrdruf (BULLSEYE 184/59) : des positions d'artillerie et de lance-roquettes sur le terrain d'Ohrdruf. À détruire : les lance-roquettes Smerch, les obusiers Msta et leur ravitaillement. Défense : batterie VEAF de niveau 4 (SA-8 ou Tor, missiles IR, AAA). Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 2 (perche, TACAN 53Y, 253.0) à 70 nm, Arco 2 (panier, TACAN 54Y, 254.0) à 82 nm.]])
+        :setBriefing([[Ohrdruf (BULLSEYE 184/59) : des positions d'artillerie et de lance-roquettes sur le terrain d'Ohrdruf. À détruire : les lance-roquettes Smerch ou les obusiers Msta (l'un des deux, tiré au sort à chaque activation) et leur ravitaillement. Défense : batterie VEAF de niveau 4 (SA-8 ou Tor, missiles IR, AAA). Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 2 (perche, TACAN 53Y, 253.0) à 70 nm, Arco 2 (panier, TACAN 54Y, 254.0) à 82 nm.]])
         :setTraining(false)
         :initialize()
     )
@@ -230,7 +245,7 @@ if veafCombatZone then
         :setMissionEditorZoneName("combatZone_Wuensdorf")
         :setFriendlyName("Wünsdorf")
         :setRadioGroupName("Frappe profonde")
-        :setBriefing([[Wünsdorf (BULLSEYE 085/109) : l'état-major de théâtre installé dans les bunkers de Wünsdorf. À détruire : le poste de commandement, les bunkers et la tour de transmissions. Défense : SA-22 Pantsir et SA-15 Tor. Sous la couverture de la QRA Berlin. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 153 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 163 nm.]])
+        :setBriefing([[Wünsdorf (BULLSEYE 085/109) : l'état-major de théâtre installé dans les bunkers de Wünsdorf. À détruire : le poste de commandement (toujours présent), les bunkers, la tour de transmissions et la caserne (trois des quatre présents, tirés au sort à chaque activation). Défense : SA-22 Pantsir et SA-15 Tor. Sous la couverture de la QRA Berlin. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 153 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 163 nm.]])
         :setTraining(false)
         :initialize()
     )
@@ -239,7 +254,7 @@ if veafCombatZone then
         :setMissionEditorZoneName("combatZone_Altengrabow")
         :setFriendlyName("Altengrabow")
         :setRadioGroupName("Frappe profonde")
-        :setBriefing([[Altengrabow (BULLSEYE 075/63) : une batterie de missiles sol-sol Iskander déployée sur le terrain d'Altengrabow. À détruire : les trois lanceurs Iskander et leurs véhicules. Défense : SA-15 Tor et SA-19 Tunguska. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 106 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 117 nm.]])
+        :setBriefing([[Altengrabow (BULLSEYE 075/63) : une batterie de missiles sol-sol Iskander déployée sur le terrain d'Altengrabow. À détruire : les trois lanceurs Iskander et leurs véhicules. Défense : SA-15 Tor ou SA-19 Tunguska, tiré au sort à chaque activation. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 106 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 117 nm.]])
         :setTraining(false)
         :initialize()
     )
@@ -248,7 +263,7 @@ if veafCombatZone then
         :setMissionEditorZoneName("combatZone_Wittenberg")
         :setFriendlyName("Wittenberg")
         :setRadioGroupName("Frappe profonde")
-        :setBriefing([[Wittenberg (BULLSEYE 095/76) : le nœud logistique du franchissement de l'Elbe à Wittenberg (B2). À détruire : le dépôt de munitions, l'entrepôt, les réservoirs et les camions. Défense : SA-19 Tunguska et ZU-23. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 130 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 140 nm.]])
+        :setBriefing([[Wittenberg (BULLSEYE 095/76) : le nœud logistique du franchissement de l'Elbe à Wittenberg (B2). À détruire : le dépôt de munitions, l'entrepôt, les réservoirs (trois des quatre présents, tirés au sort à chaque activation) et les camions. Défense : SA-19 Tunguska et ZU-23. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 130 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 140 nm.]])
         :setTraining(false)
         :initialize()
     )
@@ -257,7 +272,7 @@ if veafCombatZone then
         :setMissionEditorZoneName("combatZone_Torgau")
         :setFriendlyName("Torgau")
         :setRadioGroupName("Frappe profonde")
-        :setBriefing([[Torgau (BULLSEYE 107/91) : le dépôt de munitions et de carburant de Torgau, sur l'Elbe. À détruire : les dépôts de munitions, les entrepôts et le réservoir. Défense : batterie VEAF de niveau 4 (SA-8 ou Tor, missiles IR, AAA). Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 151 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 160 nm.]])
+        :setBriefing([[Torgau (BULLSEYE 107/91) : le dépôt de munitions et de carburant de Torgau, sur l'Elbe. À détruire : les dépôts de munitions, les entrepôts et le réservoir (quatre des cinq présents, tirés au sort à chaque activation). Défense : batterie VEAF de niveau 4 (SA-8 ou Tor, missiles IR, AAA). Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 151 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 160 nm.]])
         :setTraining(false)
         :initialize()
     )
@@ -266,7 +281,7 @@ if veafCombatZone then
         :setMissionEditorZoneName("combatZone_Parchim")
         :setFriendlyName("Base aérienne de Parchim")
         :setRadioGroupName("Bases aériennes")
-        :setBriefing([[Base aérienne de Parchim (BULLSEYE 031/107) : la base aérienne de Parchim, où stationnent des MiG-29S et des Su-27. À détruire : les avions au parking et le réservoir de carburant. Défense : SA-15 Tor et SA-11 Buk. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 88 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 99 nm.]])
+        :setBriefing([[Base aérienne de Parchim (BULLSEYE 031/107) : la base aérienne de Parchim, où stationnent des MiG-29S et des Su-27. À détruire : les avions au parking et le réservoir de carburant (cinq des sept objectifs présents, tirés au sort à chaque activation). Défense : SA-15 Tor et SA-11 Buk. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 88 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 99 nm.]])
         :setTraining(false)
         :initialize()
     )
@@ -275,7 +290,7 @@ if veafCombatZone then
         :setMissionEditorZoneName("combatZone_Werneuchen")
         :setFriendlyName("Base aérienne de Werneuchen")
         :setRadioGroupName("Bases aériennes")
-        :setBriefing([[Base aérienne de Werneuchen (BULLSEYE 074/127) : la base aérienne de Werneuchen, à l'est de Berlin, avec des Su-30, des MiG-31 et un Il-76. À détruire : les avions au parking. Défense : SA-22 Pantsir et SA-11 Buk ; la base est sous le parapluie du SA-10 de Berlin. Sous la couverture de la QRA Berlin. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 158 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 169 nm.]])
+        :setBriefing([[Base aérienne de Werneuchen (BULLSEYE 074/127) : la base aérienne de Werneuchen, à l'est de Berlin, avec des Su-30, des MiG-31 et un Il-76. À détruire : les avions au parking (quatre des cinq présents, tirés au sort à chaque activation). Défense : SA-22 Pantsir et SA-11 Buk ; la base est sous le parapluie du SA-10 de Berlin. Sous la couverture de la QRA Berlin. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 158 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 169 nm.]])
         :setTraining(false)
         :initialize()
     )
@@ -317,9 +332,9 @@ if veafQraManager then
         :setCoalition(coalition.side.RED)
         :addEnnemyCoalition(coalition.side.BLUE)
         :setTriggerZone("QRA-Berlin")
-        :setRandomGroupsToDeployByEnemyQuantity(1, {"QRA Berlin - MiG-29S A", "QRA Berlin - MiG-29S B"}, 1)
-        :setRandomGroupsToDeployByEnemyQuantity(3, {"QRA Berlin - Su-27", "QRA Berlin - MiG-29S A"}, 2)
-        :setRandomGroupsToDeployByEnemyQuantity(6, {"QRA Berlin - Su-30", "QRA Berlin - Su-27", "QRA Berlin - MiG-29S B"}, 3)
+        :setRandomGroupsToDeployByEnemyQuantity(1, {"QRA Berlin - MiG-29S A", "QRA Berlin - Su-27"}, 1)
+        :setRandomGroupsToDeployByEnemyQuantity(3, {"QRA Berlin - Su-27", "QRA Berlin - Su-30", "QRA Berlin - MiG-29S A", "QRA Berlin - MiG-29S B"}, 2)
+        :setRandomGroupsToDeployByEnemyQuantity(6, {"QRA Berlin - Su-30", "QRA Berlin - Su-27", "QRA Berlin - MiG-29S A", "QRA Berlin - MiG-29S B"}, 3)
         :setDelayBeforeRearming(600)
         :setDelayBeforeActivating(60)
         :setAirportLink("Schonefeld")
@@ -329,9 +344,9 @@ if veafQraManager then
         :setCoalition(coalition.side.RED)
         :addEnnemyCoalition(coalition.side.BLUE)
         :setTriggerZone("QRA-Laage")
-        :setRandomGroupsToDeployByEnemyQuantity(1, {"QRA Laage - MiG-29S A", "QRA Laage - MiG-29S B"}, 1)
-        :setRandomGroupsToDeployByEnemyQuantity(3, {"QRA Laage - Su-27", "QRA Laage - MiG-29S A"}, 2)
-        :setRandomGroupsToDeployByEnemyQuantity(6, {"QRA Laage - Su-30", "QRA Laage - Su-27", "QRA Laage - MiG-29S B"}, 3)
+        :setRandomGroupsToDeployByEnemyQuantity(1, {"QRA Laage - MiG-29S A", "QRA Laage - Su-27"}, 1)
+        :setRandomGroupsToDeployByEnemyQuantity(3, {"QRA Laage - Su-27", "QRA Laage - Su-30", "QRA Laage - MiG-29S A", "QRA Laage - MiG-29S B"}, 2)
+        :setRandomGroupsToDeployByEnemyQuantity(6, {"QRA Laage - Su-30", "QRA Laage - Su-27", "QRA Laage - MiG-29S A", "QRA Laage - MiG-29S B"}, 3)
         :setDelayBeforeRearming(600)
         :setDelayBeforeActivating(60)
         :setAirportLink("Laage")
@@ -341,9 +356,9 @@ if veafQraManager then
         :setCoalition(coalition.side.RED)
         :addEnnemyCoalition(coalition.side.BLUE)
         :setTriggerZone("QRA-Leipzig")
-        :setRandomGroupsToDeployByEnemyQuantity(1, {"QRA Leipzig - MiG-29S A", "QRA Leipzig - MiG-29S B"}, 1)
-        :setRandomGroupsToDeployByEnemyQuantity(3, {"QRA Leipzig - Su-27", "QRA Leipzig - MiG-29S A"}, 2)
-        :setRandomGroupsToDeployByEnemyQuantity(6, {"QRA Leipzig - Su-30", "QRA Leipzig - Su-27", "QRA Leipzig - MiG-29S B"}, 3)
+        :setRandomGroupsToDeployByEnemyQuantity(1, {"QRA Leipzig - MiG-29S A", "QRA Leipzig - Su-27"}, 1)
+        :setRandomGroupsToDeployByEnemyQuantity(3, {"QRA Leipzig - Su-27", "QRA Leipzig - Su-30", "QRA Leipzig - MiG-29S A", "QRA Leipzig - MiG-29S B"}, 2)
+        :setRandomGroupsToDeployByEnemyQuantity(6, {"QRA Leipzig - Su-30", "QRA Leipzig - Su-27", "QRA Leipzig - MiG-29S A", "QRA Leipzig - MiG-29S B"}, 3)
         :setDelayBeforeRearming(600)
         :setDelayBeforeActivating(60)
         :setAirportLink("Schkeuditz")
@@ -353,8 +368,8 @@ if veafQraManager then
         :setCoalition(coalition.side.BLUE)
         :addEnnemyCoalition(coalition.side.RED)
         :setTriggerZone("QRA-Celle")
-        :setRandomGroupsToDeployByEnemyQuantity(1, {"QRA Celle - F-16C A", "QRA Celle - F-16C B"}, 1)
-        :setRandomGroupsToDeployByEnemyQuantity(3, {"QRA Celle - F-15C", "QRA Celle - F-16C A"}, 2)
+        :setRandomGroupsToDeployByEnemyQuantity(1, {"QRA Celle - F-16C A", "QRA Celle - F-15C"}, 1)
+        :setRandomGroupsToDeployByEnemyQuantity(3, {"QRA Celle - F-15C", "QRA Celle - F-16C A", "QRA Celle - F-16C B"}, 2)
         :setDelayBeforeRearming(600)
         :setDelayBeforeActivating(60)
         :setAirportLink("Wunstorf")
@@ -364,8 +379,8 @@ if veafQraManager then
         :setCoalition(coalition.side.BLUE)
         :addEnnemyCoalition(coalition.side.RED)
         :setTriggerZone("QRA-Francfort")
-        :setRandomGroupsToDeployByEnemyQuantity(1, {"QRA Francfort - F-16C A", "QRA Francfort - F-16C B"}, 1)
-        :setRandomGroupsToDeployByEnemyQuantity(3, {"QRA Francfort - F-15C", "QRA Francfort - F-16C A"}, 2)
+        :setRandomGroupsToDeployByEnemyQuantity(1, {"QRA Francfort - F-16C A", "QRA Francfort - F-15C"}, 1)
+        :setRandomGroupsToDeployByEnemyQuantity(3, {"QRA Francfort - F-15C", "QRA Francfort - F-16C A", "QRA Francfort - F-16C B"}, 2)
         :setDelayBeforeRearming(600)
         :setDelayBeforeActivating(60)
         :setAirportLink("Wiesbaden")
@@ -394,12 +409,61 @@ U255.0 - FL200]]},
         {sort = 7, name = "Magic 1", description = "Magic 1 (E-3A) - sud", information = "U266.0 - FL310"},
         {sort = 8, name = "Tanker Rouge", description = "Tanker Rouge (Il-78M)", information = "U261.0 - FL200"},
         {sort = 9, name = "AWACS Rouge", description = "AWACS Rouge (A-50)", information = "U260.0 - FL300"},
+        {sort = 10, name = "CSG-74 Stennis", description = "CVN-74 Stennis (porte-avions) - mer du Nord", information = "TACAN 10X STS - ICLS 10 - Link 4 225.0 Tour 225.0 - S-3B et Pedro gérés par le menu CARRIER OPS"},
+        {sort = 11, name = "Reaper 1", description = "Reaper 1 (drone laser) - Baumholder", information = "Laser 1688 - FM 36.0 FL150 au-dessus de la zone", jtac = 1688, freq = "36.0", mod = "FM"},
+        {sort = 12, name = "Reaper 2", description = "Reaper 2 (drone laser) - Wahner Heide", information = "Laser 1687 - FM 37.0 FL150 au-dessus de la zone", jtac = 1687, freq = "37.0", mod = "FM"},
+        {sort = 14, name = "Darkstar 1", description = "Darkstar 1 (E-3A) - arène, bleu", information = "U280.0 - FL300"},
+        {sort = 15, name = "AWACS Arène Rouge", description = "AWACS Arène Rouge (A-50) - arène, rouge", information = "U281.0 - FL300"},
     }
     veafAssets.initialize()
 end
 
 if veafMove then
     veafMove.initialize()
+end
+
+if veafSanctuary then
+    veafSanctuary.initialize()
+    veafSanctuary.addZone(
+        VeafSanctuaryZone:new()
+        :setName("Sanctuaire bleu")
+        :setPolygonFromUnits({"Sanctuaire bleu-01", "Sanctuaire bleu-02", "Sanctuaire bleu-03", "Sanctuaire bleu-04", "Sanctuaire bleu-05"})
+        :setCoalition(coalition.side.BLUE)
+        :setDelayWarning(0)
+        :setDelaySpawn(-1)
+        :setDelayInstant(60)
+        :setProtectFromMissiles(true)
+    )
+    veafSanctuary.addZone(
+        VeafSanctuaryZone:new()
+        :setName("Sanctuaire rouge Laage")
+        :setPolygonFromUnits({"Sanctuaire rouge Laage-01", "Sanctuaire rouge Laage-02", "Sanctuaire rouge Laage-03", "Sanctuaire rouge Laage-04", "Sanctuaire rouge Laage-05", "Sanctuaire rouge Laage-06"})
+        :setCoalition(coalition.side.RED)
+        :setDelayWarning(0)
+        :setDelaySpawn(-1)
+        :setDelayInstant(60)
+        :setProtectFromMissiles(true)
+    )
+    veafSanctuary.addZone(
+        VeafSanctuaryZone:new()
+        :setName("Sanctuaire rouge Holzdorf")
+        :setPolygonFromUnits({"Sanctuaire rouge Holzdorf-01", "Sanctuaire rouge Holzdorf-02", "Sanctuaire rouge Holzdorf-03", "Sanctuaire rouge Holzdorf-04", "Sanctuaire rouge Holzdorf-05", "Sanctuaire rouge Holzdorf-06"})
+        :setCoalition(coalition.side.RED)
+        :setDelayWarning(0)
+        :setDelaySpawn(-1)
+        :setDelayInstant(60)
+        :setProtectFromMissiles(true)
+    )
+    veafSanctuary.addZone(
+        VeafSanctuaryZone:new()
+        :setName("Sanctuaire rouge Allstedt")
+        :setPolygonFromUnits({"Sanctuaire rouge Allstedt-01", "Sanctuaire rouge Allstedt-02", "Sanctuaire rouge Allstedt-03", "Sanctuaire rouge Allstedt-04", "Sanctuaire rouge Allstedt-05", "Sanctuaire rouge Allstedt-06"})
+        :setCoalition(coalition.side.RED)
+        :setDelayWarning(0)
+        :setDelaySpawn(-1)
+        :setDelayInstant(60)
+        :setProtectFromMissiles(true)
+    )
 end
 
 if veafWeather then
@@ -460,7 +524,7 @@ veaf.setConfig("tum", "enable", false)
 -- ── Skynet-IADS ──────────────────────────────────────────────────────────────
 if veafSkynet then
     veafSkynet.SpotterNetwork = true
-    veafSkynet.SpotterView = "radio"
+    veafSkynet.SpotterView = "off"
     veafSkynet.initialize(false, false, false, false)
 end
 
