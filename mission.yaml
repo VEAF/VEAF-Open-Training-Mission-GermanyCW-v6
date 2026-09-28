@@ -495,6 +495,10 @@ FL150 au-dessus de la zone"
     spotter_network: true
     spotter_view: "off"     # vue F10 du réseau de guetteurs : désactivée (ni affichage ni interrupteur radio)
 
+# Logs supplémentaires des zones de combat (branche VMCT feature/combatzone-diagnostics).
+module_settings:
+  veaf.Diagnostics: true
+
 pipeline:
   weather: true
 
