@@ -327,3 +327,24 @@ Le prompt `new-open-training-mission` a gagné le 28/09 les règles tirées de l
   l'arène (hors cadre) par une flèche.
 - **Sites variables** : `#spawngroup` / `#spawncount` sur 13 zones, dont les 5 d'entraînement qui ont plus d'un
   élément ; trois porteurs `#command` ajoutés à Borkenberge pour tirer la défense au sort.
+
+## 12. Test en jeu du 28/09 au soir
+
+Mission de test (game master, pont dcs-bridge), mesures par le pont et `dcs.log` :
+
+- **Conforme** : aucune erreur de script ; sanctuaires construits (5 / 6 / 6 / 6 sommets, sommets
+  détruits au démarrage) ; CARRIER OPS lit TACAN 10X, ICLS 10, Link 4 et tour du Stennis ; les FARP
+  `-farp` s'enregistrent eux-mêmes comme points logistiques CTLD (les deux dépôts posés dans
+  l'éditeur sont redondants) ; tirages justes (Baumholder 3 / 5, Borkenberge SA-6 + SA-15,
+  Parchim 5 / 7) ; Reaper 1 désigne au laser le ZU-23 de Baumholder moyen ; slots de l'arène et du
+  pont, dessins F10 vus par David.
+- **Quatre objectifs n'existaient pas depuis le 24/09** : le poste de commandement de Wünsdorf et
+  les trois `.Ammunition depot` (Torgau ×2, Wittenberg). DCS refuse un statique de ces types sans
+  `shape_name` (« unknown static shape_name »). Corrigé avec les noms de la table de VEAF
+  (`ComCenter`, `SkladC`).
+- **Les drones volent à 3 000 m sol**, pas au FL150 écrit : CTLD les ré-oriente à
+  `JTAC_droneAltitude` dès qu'il les prend comme JTAC. Briefing et README corrigés. Le JTAC ne
+  désigne que des véhicules : rien aux niveaux faciles, faits de statiques.
+- **Chaque zone s'initialise deux fois** (lignes de log et éléments doublés), sans double spawn.
+  Signalé à VMCT.
+
