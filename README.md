@@ -419,7 +419,7 @@ Ce README est **généré depuis la mission** : après tout changement, relancer
 
 ### Limites connues
 
-Construite avec veaf-tools 6.25.0.3 (branche `develop`). Plusieurs éléments n'ont pas d'action MCP dédiée et ont été
+Construite avec veaf-tools 6.25.0.1, construit depuis la branche `develop` de VMCT (`5c6f8fec`, 28/09/2026). Plusieurs éléments n'ont pas d'action MCP dédiée et ont été
 écrits par script sur la table de la mission : leurres et indicatifs des slots de l'arène, tâches ATC et slots de pont du
 porte-avions, entrepôt du navire, balises radio de la zone de sauvetage, balises de tirage (`#spawngroup`,
 `#spawncount`) des zones. Ils se relisent dans `src/mission/mission` comme le reste.
