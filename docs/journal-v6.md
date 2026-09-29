@@ -394,7 +394,11 @@ Mission de test (game master, pont dcs-bridge), mesures par le pont et `dcs.log`
   (`<zone> [r] <nom>#<id>`) ; `world.searchObjects` teste l'encombrement, un Il-76 déborde sur le point
   voisin ; une statique posée détruite n'est pas rendue par `getStaticObjects` ; VEAF enregistre chaque CAP
   en variantes `…/good/2`. Activer d'un coup tous les niveaux d'une famille fait tirer chaque niveau.
-- **Le refus « secured command posted without a group »** vu par David venait du serveur, pas du poste :
-  en local, aucun menu n'est construit sans groupe. À chercher dans le `dcs.log` du serveur (la ligne
-  « posted without a group » donne le nom de la commande).
+- **Le refus « secured command posted without a group »** vu par David venait de private1 (trois clics
+  refusés le 29/09 à 11:19, 11:20 et 11:21 UTC, mission du 28/09). Cause, lue dans le code VMCT :
+  `RadioMenuBuilder:_placeCommandOnMenu` pose une commande sécurisée déclarée `USAGE_ForAll` sans groupe
+  (`_addDcsCommand(nil, …)`), sans l'avertissement que l'autre chemin écrit, et `_proxyMethod` refuse
+  alors tout clic, sécurité active. Sont déclarées ainsi : activer / désactiver une zone et une mission
+  CAP, « dispose » d'un asset, le brouillard, l'élingage CTLD, « skip » CAS et transport, le nettoyage
+  des convois. Le log ne dit pas laquelle a été cliquée. Défaut VMCT, signalé à David, pas corrigé ici.
 
