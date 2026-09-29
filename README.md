@@ -415,7 +415,7 @@ Contrôle avant build : `.\veaf-tools.exe validate` (ou l'action MCP `validate_m
 | `docs/carte.jpg` | La carte de ce briefing (fond OpenStreetMap) ; la même image est dans `src/mission/l10n/DEFAULT/carte.jpg` pour le briefing DCS |
 
 Ce README est **généré depuis la mission** : après tout changement, relancer `gather.py` puis `gen_readme.py` (qui appelle `gen_map.py` pour la carte)
-(rangés hors dépôt, dans `.veaf-backups/outils-controle/`), sans rien retaper à la main.
+(dans `tools/`, voir `tools/README.md`), sans rien retaper à la main.
 
 ### Limites connues
 
@@ -424,6 +424,8 @@ Construite avec veaf-tools 6.25.0.1, construit depuis la branche `develop` de VM
 porte-avions, entrepôt du navire, balises radio de la zone de sauvetage, balises de tirage (`#spawngroup`,
 `#spawncount`) des zones. Ils se relisent dans `src/mission/mission` comme le reste.
 
-À vérifier en jeu : dépôts de munitions des FARP reconnus par CTLD, balises relevables au radiogoniomètre, TACAN et ICLS
-du Stennis, destruction dans les sanctuaires, marquage laser des drones, tirages des zones.
+Vérifié en jeu les 28 et 29/09 (`tools/test_en_jeu.py`, journal §12 et §13) : TACAN, ICLS et Link 4 du Stennis,
+points logistiques CTLD des FARP, destruction dans les sanctuaires, marquage laser des drones, tirages des zones,
+imbrication des niveaux, statiques, navires, convois, engagement des CAP, fréquences de chaque appareil. Reste à
+vérifier : les balises relevables au radiogoniomètre (il faut un hélicoptère sur la zone de sauvetage).
 

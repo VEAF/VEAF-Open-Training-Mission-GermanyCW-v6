@@ -270,13 +270,13 @@ le déplacement de 11 groupes : **22 véhicules réellement sous les arbres à l
 ## 10. Points ouverts
 
 1. **NASAMS à 6 km de Ramstein** : acceptable, ou le rapprocher en acceptant une lisière ?
-2. **Outils de contrôle hors dépôt** (`.veaf-backups/outils-controle/` : générateur du README, mission de test, sondes). Proposition : les déplacer dans un dossier `tools/` versionné.
+2. ~~Outils de contrôle hors dépôt~~ : versionnés dans `tools/` le 29/09 (§13).
 3. **Clé CheckWX en clair** dans le `configuration.json` de la v5 : à révoquer.
 4. **Lot VMCT FIX-PLACEMENT-IGNORES-SCENERY** : tickets 01-03, 05-07, 09 et 10 livrés ; 10 mesuré
    inerte en jeu le 26/09 (§9.3) et repris par le **ticket 11**, en cours. Le ticket 04 (refuser un
    FARP dont l'escorte ne peut être placée) reste ouvert. À la livraison de 11 : rebuild, nouvelle
    sonde, et vérifier que les espacements n'ont pas bougé.
-5. **La sonde et les statiques** (§9.4, premier point) : à corriger avant le prochain passage.
+5. ~~La sonde et les statiques~~ : corrigée le 29/09 (§13) — véhicules seuls, positions de l'éditeur, avant tout spawn.
 6. **Le Shilka aveugle**, en pause, aucun ticket ouvert. Sur 11 ZSU-23-4, 3 ne déclarent aucun
    capteur à DCS (`getSensors()` rend `nil`) ; 2 sont l'unique radar de leur site, qui n'apporte donc
    rien à la détection Skynet. Éliminés : le type (`getDesc` identique au caractère près), le pays,
@@ -291,10 +291,11 @@ le déplacement de 11 groupes : **22 véhicules réellement sous les arbres à l
 8. **Les FARP** : 4 accessoires dans les bois à Baumholder et Göttingen, volontairement non traités.
    Ils partagent leur groupe avec l'hélisurface, et les déplacer bougerait le point d'atterrissage
    pour un gain cosmétique.
-9. **Encore à vérifier en jeu** : statiques, navires, convois, FARP, imbrication des zones, engagement des CAP, portées des SAM.
-10. **À vérifier en jeu après le 28/09** : dépôts de munitions reconnus par CTLD, balises MH01-03 et SOS
-    relevables à l'ADF, tâches ATC du Stennis (TACAN, ICLS, Link 4), destruction dans les sanctuaires,
-    slots de l'arène et du pont, marquage laser des drones, tirages des zones.
+9. ~~Encore à vérifier en jeu~~ : fait le 29/09 (§13). Les portées des SAM sont retirées de la liste : le briefing n'en chiffre aucune, il n'y a rien à comparer.
+10. **Reste à vérifier en jeu** : les balises MH01-03 et SOS relevables au radiogoniomètre (il faut un
+    hélicoptère sur la zone de sauvetage). Le reste de la liste du 28/09 est vérifié (§12).
+11. **Le preset VHF de l'OH-58D** n'a pas été lu dans le cockpit : le module a fait tomber DCS deux fois au
+    chargement du cockpit (§13). La correction repose sur le code.
 
 ## 11. Finalisation selon le prompt du 28/09
 
@@ -361,4 +362,44 @@ Mission de test (game master, pont dcs-bridge), mesures par le pont et `dcs.log`
 - **Le sanctuaire plante** sur une arme sans cible (CBU-105, AGM-88C : 25 fois) ou déjà disparue (un
   obus de 57 mm : 1 fois). Sans effet en jeu ; ticket VMCT.
 - **Aucune ville pour GermanyCW** dans `veafNamedPoints`. Ticket VMCT.
+
+## 13. Plan de fréquences, outils et test en jeu du 29/09
+
+- **Le « Nörvenich pas juste » du 28/09 était un défaut d'encodage, pas de fréquence.** Les 1 931 canaux
+  injectés, les 12 paires du briefing DCS et les 65 cellules radio du README donnent tous la fréquence du
+  plan (`tools/check_frequencies.py`, vérifié avec un plan faussé pour témoin). Mais VMCT lisait
+  `presets.yaml` en cp1252 (`open()` sans `encoding`) : 127 noms de canaux injectés et tous les kneeboards
+  affichaient « NÃ¶rvenich », « BÃ¼chel ». Corrigé côté VMCT (branche `fix/presets-yaml-utf8`), avec un
+  test qui refuse désormais toute ouverture de fichier texte sans encodage.
+- **Le kneeboard du Mi-24P se trompait d'un cran** : il imprimait la case DCS (« 13 Nörvenich ») alors que
+  le rotacteur de la R-863 lit **12** — lu par David dans le cockpit. Le README avait raison. Même défaut
+  sur l'OH-58D (case « M » en tête).
+- **L'OH-58D décalait toute sa VHF d'un cran** : sa case « M » est alimentée par l'entrée n°20, la liste
+  VHF de la mission n'en a que 16, VMCT abandonnait la case et Nörvenich passait du preset 5 au 4. Corrigé
+  dans VMCT (la case prend la dernière entrée), trouvé dans le code ; la lecture dans le cockpit n'a pas pu
+  se faire (voir §10, point 11).
+- **Le convoi de Ludwigslust était posé sur de l'eau pour DCS** (surface 3 sous les 9 véhicules, et sur
+  240 m d'est en ouest au relevé du 29/09 ; le §8 y voyait un pont, rien ne le prouve ni ne l'exclut) ; VEAF le
+  replaçait au hasard (« declared position … is on invalid terrain »). Reposé sur la route, 350 m au
+  nord-est, espacé de 19 m ; VEAF valide maintenant sa position.
+- **Mesuré conforme** par `tools/test_en_jeu.py` : imbrication des niveaux (chaque niveau fait apparaître
+  plus de groupes que celui qu'il inclut), 32 statiques à moins d'1 m de leur place et tirages respectés,
+  navires à flot, convois qui roulent, les 5 CAP qui tirent sur une cible envoyée devant elles.
+- **La sonde des bois refaite** (`tools/probe_scenery.py`) selon §9.4-9.5 : positions de l'éditeur, véhicules
+  seuls, au démarrage, un point couvert par une unité vivante n'étant pas jugé. 18 alertes, toutes connues
+  (accessoires de FARP, porteurs `#command`, sommets de sanctuaire, SA-15 de Wittstock, zone de sauvetage).
+- **Outils versionnés** dans `tools/` (chemins relatifs, `VMCT_PY` pour pointer un export de develop) ;
+  voir `tools/README.md`.
+- **Pièges de mesure de la journée**, tous dans mes détecteurs : un groupe tiré par `#command` porte le nom
+  du niveau qui l'a lancé, pas du sien ; les groupes d'une zone sont renommés au spawn
+  (`<zone> [r] <nom>#<id>`) ; `world.searchObjects` teste l'encombrement, un Il-76 déborde sur le point
+  voisin ; une statique posée détruite n'est pas rendue par `getStaticObjects` ; VEAF enregistre chaque CAP
+  en variantes `…/good/2`. Activer d'un coup tous les niveaux d'une famille fait tirer chaque niveau.
+- **Le refus « secured command posted without a group »** vu par David venait de private1 (trois clics
+  refusés le 29/09 à 11:19, 11:20 et 11:21 UTC, mission du 28/09). Cause, lue dans le code VMCT :
+  `RadioMenuBuilder:_placeCommandOnMenu` pose une commande sécurisée déclarée `USAGE_ForAll` sans groupe
+  (`_addDcsCommand(nil, …)`), sans l'avertissement que l'autre chemin écrit, et `_proxyMethod` refuse
+  alors tout clic, sécurité active. Sont déclarées ainsi : activer / désactiver une zone et une mission
+  CAP, « dispose » d'un asset, le brouillard, l'élingage CTLD, « skip » CAS et transport, le nettoyage
+  des convois. Le log ne dit pas laquelle a été cliquée. Défaut VMCT, signalé à David, pas corrigé ici.
 
