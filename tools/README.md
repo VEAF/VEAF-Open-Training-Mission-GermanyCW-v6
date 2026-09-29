@@ -17,8 +17,8 @@ $env:VMCT_PY = "D:\chemin\vers\veaf-tools"   # le dossier src/python/veaf-tools
 | Script | Ce qu'il fait |
 |---|---|
 | `gather.py` | Relève dans la mission tout ce que le briefing affiche → `tools/briefing_data.json` |
-| `gen_readme.py` | Écrit `README.md` (le briefing des pilotes) à partir de `briefing_data.json`, et la carte via `gen_map.py` |
-| `gen_map.py` | Dessine `docs/carte.jpg` et l'image du briefing DCS sur un fond OpenStreetMap (tuiles mises en cache dans `tools/tiles/`) |
+| `gen_readme.py` | Écrit `README.md` (le briefing des pilotes) à partir de `briefing_data.json`, et les cartes via `gen_map.py` : la carte générale en tête, chaque zoom dans la section qu'il illustre |
+| `gen_map.py` | Dessine sur un fond OpenStreetMap (tuiles mises en cache dans `tools/tiles/`) la carte générale `docs/carte.jpg` et les zooms `docs/cartes/` (liste `ZOOMS` : un titre et les objets à cadrer), copie les images dans `src/mission/l10n/DEFAULT/` et les déclare dans `mapResource` et les `pictureFileName*` de la mission |
 | `check_frequencies.py` | Compare le plan radio `src/presets.yaml` aux radios injectées dans chaque appareil, au briefing DCS et au README ; finit sur une ligne `VERDICT` |
 | `verify.py` | Contrôles du `.miz` construit : identifiants et noms en double, slots, météo, heure, configuration serveur |
 | `make_test_mission.py` | Construit la mission de test locale : profil `LOCAL_TEST`, game master, A-10C II en slot classique, pont dcs-bridge → `bridge/bridge-GermanyCW-OT.miz` |
