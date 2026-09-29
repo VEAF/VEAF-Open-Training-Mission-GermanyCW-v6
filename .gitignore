@@ -18,3 +18,10 @@ Thumbs.db
 
 # Sauvegardes automatiques des actions MCP (veaf-mission-mcp)
 /.veaf-backups/
+
+# tools/ : produits de travail des scripts de contrôle (regénérables)
+/tools/tiles/
+/tools/briefing_data.json
+/tools/probe_chunks.json
+/tools/probe_points.json
+__pycache__/

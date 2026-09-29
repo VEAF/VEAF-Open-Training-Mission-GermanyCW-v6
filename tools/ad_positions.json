@@ -1,0 +1,187 @@
+{
+ "AD-Ramstein-SR": [
+  -497058,
+  -934711,
+  "#veafInterpreter[\"-avenger_squad, hdg 90\"] #ramstein-sr"
+ ],
+ "AD-Ramstein-MR": [
+  -501358,
+  -931011,
+  "#veafInterpreter[\"-nasams, hdg 90\"] #ramstein-mr"
+ ],
+ "AD-Spangdahlem-SR": [
+  -424228,
+  -988002,
+  "#veafInterpreter[\"-avenger_squad, hdg 90\"] #spangdahlem-sr"
+ ],
+ "AD-Spangdahlem-MR": [
+  -428528,
+  -984302,
+  "#veafInterpreter[\"-nasams, hdg 90\"] #spangdahlem-mr"
+ ],
+ "AD-Buchel-SR": [
+  -409138,
+  -959886,
+  "#veafInterpreter[\"-avenger_squad, hdg 90\"] #buchel-sr"
+ ],
+ "AD-Buchel-MR": [
+  -413438,
+  -956186,
+  "#veafInterpreter[\"-nasams, hdg 90\"] #buchel-mr"
+ ],
+ "AD-Norvenich-SR": [
+  -330279,
+  -974692,
+  "#veafInterpreter[\"-avenger_squad, hdg 90\"] #norvenich-sr"
+ ],
+ "AD-Norvenich-MR": [
+  -334579,
+  -970992,
+  "#veafInterpreter[\"-nasams, hdg 90\"] #norvenich-mr"
+ ],
+ "AD-Wiesbaden-SR": [
+  -438358,
+  -872888,
+  "#veafInterpreter[\"-avenger_squad, hdg 90\"] #wiesbaden-sr"
+ ],
+ "AD-Wiesbaden-MR": [
+  -442658,
+  -869188,
+  "#veafInterpreter[\"-nasams, hdg 90\"] #wiesbaden-mr"
+ ],
+ "AD-Nordholz-SR": [
+  -31202,
+  -776152,
+  "#veafInterpreter[\"-avenger_squad, hdg 90\"] #nordholz-sr"
+ ],
+ "AD-Nordholz-MR": [
+  -35502,
+  -772452,
+  "#veafInterpreter[\"-nasams, hdg 90\"] #nordholz-mr"
+ ],
+ "AD-Wunstorf-SR": [
+  -184737,
+  -749822,
+  "#veafInterpreter[\"-avenger_squad, hdg 90\"] #wunstorf-sr"
+ ],
+ "AD-Wunstorf-MR": [
+  -189037,
+  -746122,
+  "#veafInterpreter[\"-nasams, hdg 90\"] #wunstorf-mr"
+ ],
+ "AD-Fassberg-SR": [
+  -141415,
+  -692965,
+  "#veafInterpreter[\"-avenger_squad, hdg 90\"] #fassberg-sr"
+ ],
+ "AD-Fassberg-MR": [
+  -145715,
+  -689265,
+  "#veafInterpreter[\"-nasams, hdg 90\"] #fassberg-mr"
+ ],
+ "AD-Fulda-SR": [
+  -399342,
+  -769216,
+  "#veafInterpreter[\"-avenger_squad, hdg 90\"] #fulda-sr"
+ ],
+ "AD-Fulda-MR": [
+  -403642,
+  -765516,
+  "#veafInterpreter[\"-nasams, hdg 90\"] #fulda-mr"
+ ],
+ "AD-Laage-SR": [
+  -49783,
+  -536633,
+  "#veafInterpreter[\"-sa15, hdg 270\"] #laage-sr"
+ ],
+ "AD-Laage-MR": [
+  -54083,
+  -540333,
+  "#veafInterpreter[\"-sa11, hdg 270\"] #laage-mr"
+ ],
+ "AD-Holzdorf-SR": [
+  -295810,
+  -501999,
+  "#veafInterpreter[\"-sa15, hdg 270\"] #holzdorf-sr"
+ ],
+ "AD-Holzdorf-MR": [
+  -300110,
+  -505699,
+  "#veafInterpreter[\"-sa11, hdg 270\"] #holzdorf-mr"
+ ],
+ "AD-Allstedt-SR": [
+  -324036,
+  -626345,
+  "#veafInterpreter[\"-sa15, hdg 270\"] #allstedt-sr"
+ ],
+ "AD-Allstedt-MR": [
+  -328336,
+  -630045,
+  "#veafInterpreter[\"-sa11, hdg 270\"] #allstedt-mr"
+ ],
+ "AD-Patriot-Nord": [
+  -194179,
+  -742244,
+  "#veafInterpreter[\"-patriot, hdg 90\"] #patriot-nord"
+ ],
+ "AD-Patriot-Centre": [
+  -259786,
+  -812674,
+  "#veafInterpreter[\"-patriot, hdg 90\"] #patriot-centre"
+ ],
+ "AD-Patriot-Sud": [
+  -436028,
+  -860809,
+  "#veafInterpreter[\"-patriot, hdg 90\"] #patriot-sud"
+ ],
+ "AD-EWR-Nord": [
+  -103435,
+  -775388,
+  "#veafInterpreter[\"-blue_ewr\"] #ewr-bleu-nord"
+ ],
+ "AD-EWR-Sud": [
+  -387435,
+  -845226,
+  "#veafInterpreter[\"-blue_ewr\"] #ewr-bleu-sud"
+ ],
+ "AD-SA10-Berlin": [
+  -217121,
+  -464960,
+  "#veafInterpreter[\"-sa10, hdg 270\"] #sa10-berlin"
+ ],
+ "AD-SA10-Rostock": [
+  -40794,
+  -533896,
+  "#veafInterpreter[\"-sa10, hdg 270\"] #sa10-rostock"
+ ],
+ "AD-SA10-Leipzig": [
+  -341133,
+  -552817,
+  "#veafInterpreter[\"-sa10, hdg 270\"] #sa10-leipzig"
+ ],
+ "AD-EWR-Nord-Rouge": [
+  -100196,
+  -477581,
+  "#veafInterpreter[\"-ewr\"] #ewr-rouge-nord"
+ ],
+ "AD-EWR-Centre-Rouge": [
+  -243788,
+  -445009,
+  "#veafInterpreter[\"-ewr\"] #ewr-rouge-centre"
+ ],
+ "AD-EWR-Sud-Rouge": [
+  -350238,
+  -501031,
+  "#veafInterpreter[\"-ewr\"] #ewr-rouge-sud"
+ ],
+ "FARP-Baumholder": [
+  -476688,
+  -952950,
+  "#veafInterpreter[\"-farp Baumholder\"] #farp-baumholder"
+ ],
+ "FARP-Goettingen": [
+  -291516,
+  -732665,
+  "#veafInterpreter[\"-farp Goettingen\"] #farp-goettingen"
+ ]
+}

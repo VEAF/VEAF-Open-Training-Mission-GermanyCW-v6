@@ -1,8 +1,8 @@
 # Rapport de validation des fréquences radio
 
-Généré le : 2026-09-28  
+Généré le : 2026-09-29  
 Fichier presets : `D:\dev\_VEAF\VEAF-Open-Training-Mission-GermanyCW-v6\src\presets.yaml`  
-Mission : `D:\dev\_VEAF\VEAF-Open-Training-Mission-GermanyCW-v6\VEAF_OpenTraining_GermanyCW_ICAO_ETAR_20260928.miz`
+Mission : `D:\dev\_VEAF\VEAF-Open-Training-Mission-GermanyCW-v6\VEAF_OpenTraining_GermanyCW_ICAO_ETAR_20260929.miz`
 
 ## ℹ️ Hors plage — retirées de la radio injectée (DCS les stockerait mais les ignorerait)
 
@@ -24,8 +24,8 @@ Plages valides : 38.0–156.0 MHz (AM/FM), 100.0–200.0 MHz (AM/FM)
 | 8 | Shell 1 / perche / 55Y | 255.0 |  | radio_2 |
 | 9 | Ramstein | 270.1 |  | radio_2 |
 | 10 | Spangdahlem | 270.2 |  | radio_2 |
-| 11 | BÃ¼chel | 270.3 |  | radio_2 |
-| 12 | NÃ¶rvenich | 270.4 |  | radio_2 |
+| 11 | Büchel | 270.3 |  | radio_2 |
+| 12 | Nörvenich | 270.4 |  | radio_2 |
 | 13 | Wiesbaden | 270.5 |  | radio_2 |
 | 14 | Nordholz | 270.6 |  | radio_2 |
 | 15 | Wunstorf | 270.7 |  | radio_2 |
