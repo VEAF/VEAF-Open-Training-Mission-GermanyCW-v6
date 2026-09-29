@@ -24,6 +24,7 @@ $env:VMCT_PY = "D:\chemin\vers\veaf-tools"   # le dossier src/python/veaf-tools
 | `make_test_mission.py` | Construit la mission de test locale : profil `LOCAL_TEST`, game master, A-10C II en slot classique, pont dcs-bridge → `bridge/bridge-GermanyCW-OT.miz` |
 | `probe_scenery.py` | En jeu, par dcs-bridge : quels véhicules l'éditeur a posés dans les bois, en ville ou dans l'eau |
 | `probe_gen.py` | En jeu : cherche la clairière la plus proche de chaque groupe, pour déplacer ceux qui sont dans les bois |
+| `statics_to_groups.py` | Change des statiques d'une zone en groupes d'un véhicule (même type, place, cap et tirage au sort ; tir interdit, pas de dispersion), pour qu'elles soient chaudes au pod. Refuse de tourner deux fois |
 | `run_actions.py` | Exécute un lot d'actions `veaf-mission-mcp` décrit dans un fichier JSON |
 
 Données d'entrée, relevées une fois sur la carte : `airfields.json` (aérodromes GermanyCW), `red_airfields.json`,

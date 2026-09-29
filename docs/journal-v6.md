@@ -427,3 +427,21 @@ Mission de test (game master, pont dcs-bridge), mesures par le pont et `dcs.log`
   zones de combat, arène), deux par ligne, cliquables.
 - `gen_map.py` écrit lui-même `mapResource` et les `pictureFileName*` de la mission : la liste suit ce qui est
   dessiné, un zoom retiré ne reste pas dans le `.miz`.
+
+## 15. Cibles des niveaux faciles : de statiques à groupes, 29/09
+
+- **Constat** : au vol du 28/09 au soir (Wahner Heide difficile, qui inclut le moyen et le facile), des
+  véhicules étaient froids au pod de l'A-10, d'autres chauds. Les groupes des niveaux moyen et difficile
+  étaient chauds ; les froids étaient les cibles du niveau facile, des statiques. Un statique n'a pas de
+  moteur, aucun script ne le réchauffe (ticket VMCT `FIX-COMBATZONE-DEAD-UNIT-HAS-NO-GROUP` n°02).
+- **Fait** : `tools/statics_to_groups.py` a changé les 12 cibles faciles (Wahner Heide 7, Baumholder 5)
+  en groupes d'un véhicule : même type, même place, même nom d'unité (donc même tirage `#spawngroup` /
+  `#spawncount`), `coldAtStart = false`, tir interdit et pas de dispersion sous le feu, pour rester les
+  cibles inertes que promet le briefing. Comparaison de la table avant/après : rien d'autre ne change.
+- **Effet attendu** : le drone laser, qui ne désigne que des véhicules (§12), désigne aussi ces cibles.
+- **L'option « dispersion sous le feu »** (`name = 8`) prend un délai en secondes (`me_action_db.lua` de
+  DCS, 600 par défaut) : décochée, l'éditeur l'écrit sans valeur, forme reprise ici (une valeur 0 aurait
+  voulu dire « se disperser tout de suite »).
+- **À vérifier en jeu** : cibles chaudes au pod, immobiles et muettes sous le feu, désignées par le Reaper ;
+  et leurs 12 places, que `probe_scenery.py` n'a testées que pour l'eau tant qu'elles étaient statiques
+  (§9.4) : un véhicule posé dans les bois est replacé au hasard par VEAF, comme le convoi de Ludwigslust.
