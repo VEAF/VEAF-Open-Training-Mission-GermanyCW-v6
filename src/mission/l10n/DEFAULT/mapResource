@@ -1,6 +1,15 @@
 mapResource = 
 {
   ResKey_ImageBriefing_carte = "carte.jpg",
+  ResKey_ImageBriefing_carte_01_sud_ouest = "carte_01_sud_ouest.jpg",
+  ResKey_ImageBriefing_carte_02_rhenanie = "carte_02_rhenanie.jpg",
+  ResKey_ImageBriefing_carte_03_hesse = "carte_03_hesse.jpg",
+  ResKey_ImageBriefing_carte_04_nord_ouest = "carte_04_nord_ouest.jpg",
+  ResKey_ImageBriefing_carte_05_front_nord = "carte_05_front_nord.jpg",
+  ResKey_ImageBriefing_carte_06_front_centre = "carte_06_front_centre.jpg",
+  ResKey_ImageBriefing_carte_07_berlin = "carte_07_berlin.jpg",
+  ResKey_ImageBriefing_carte_08_baltique = "carte_08_baltique.jpg",
+  ResKey_ImageBriefing_carte_09_arene = "carte_09_arene.jpg",
   ResKey_advancedFile_MH01 = "MH01.ogg",
   ResKey_advancedFile_MH02 = "MH02.ogg",
   ResKey_advancedFile_MH03 = "MH03.ogg",

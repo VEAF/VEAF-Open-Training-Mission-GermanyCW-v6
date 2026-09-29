@@ -18,7 +18,9 @@ Zones de combat, missions CAP et soutien se pilotent par le menu radio F10 (*Zon
 
 ![Carte de la mission](docs/carte.jpg)
 
-Carrés : bases avec slots (bleu / rouge). Traits pleins : hippodromes des ravitailleurs et AWACS. Pointillés : CAP à la demande. Cercles : QRA. Pastilles vertes : entraînement (H hélicos, A attaque, S SEAD). Pastilles rouges numérotées : zones de combat (numéros de la liste plus bas). Tirets épais : sanctuaires. Navire : porte-avions. L'arène est hors du cadre, au nord (flèche). Fond de carte OpenStreetMap ; la ligne de front est approximative. La même image est dans le briefing de la mission, dans DCS, et la carte F10 porte les mêmes dessins, chaque camp ne voyant que les siens.
+Cartes zoomées, reprises dans les sections qu'elles illustrent : [Sud-ouest](docs/cartes/carte_01_sud_ouest.jpg) · [Rhénanie](docs/cartes/carte_02_rhenanie.jpg) · [Hesse](docs/cartes/carte_03_hesse.jpg) · [Nord-ouest](docs/cartes/carte_04_nord_ouest.jpg) · [Front nord](docs/cartes/carte_05_front_nord.jpg) · [Front centre](docs/cartes/carte_06_front_centre.jpg) · [Berlin](docs/cartes/carte_07_berlin.jpg) · [Mecklembourg et Baltique](docs/cartes/carte_08_baltique.jpg) · [Arène Air Quake (Grand Belt)](docs/cartes/carte_09_arene.jpg).
+
+Carrés : bases avec slots (bleu / rouge). Traits pleins : hippodromes des ravitailleurs et AWACS. Pointillés : CAP à la demande. Cercles : QRA. Pastilles vertes : entraînement (H hélicos, A attaque, S SEAD). Pastilles rouges numérotées : zones de combat (numéros de la liste plus bas). Tirets épais : sanctuaires. Navire : porte-avions. L'arène est hors du cadre, au nord (flèche). Fond de carte OpenStreetMap ; la ligne de front est approximative. Le briefing de la mission, dans DCS, montre cette carte puis les zooms (flèches sous l'image, molette pour grossir), et la carte F10 porte les mêmes dessins, chaque camp ne voyant que les siens.
 
 ## Bases
 
@@ -40,6 +42,8 @@ Carrés : bases avec slots (bleu / rouge). Traits pleins : hippodromes des ravit
 | **FARP Göttingen** | Bleu | `N51°33.300' E009°54.300'` | `250/31` | — | — | posé au démarrage (`-farp`) |
 
 Slots dynamiques, démarrage moteur chaud, carburant et munitions illimités. Les 49 autres aérodromes de l'Est sont rouges, sans slots.
+
+<table><tr><td width="50%"><a href="docs/cartes/carte_04_nord_ouest.jpg"><img src="docs/cartes/carte_04_nord_ouest.jpg" alt="Nord-ouest : Nordholz, Wunstorf, Fassberg, porte-avions"></a><br><sub>Nord-ouest : Nordholz, Wunstorf, Fassberg, porte-avions</sub></td><td width="50%"><a href="docs/cartes/carte_03_hesse.jpg"><img src="docs/cartes/carte_03_hesse.jpg" alt="Hesse : Wiesbaden, Fulda, FARP Göttingen, QRA Francfort"></a><br><sub>Hesse : Wiesbaden, Fulda, FARP Göttingen, QRA Francfort</sub></td></tr></table>
 
 ## Ravitailleurs et AWACS
 
@@ -77,6 +81,8 @@ Un drone tourne au-dessus des zones d'entraînement hélicoptères et attaque, e
 ## Entraînement
 
 Côté ouest, loin du front. Trois niveaux par famille, chacun comprenant ceux d'en dessous. **Activez un seul niveau par famille à la fois.**
+
+<table><tr><td width="50%"><a href="docs/cartes/carte_01_sud_ouest.jpg"><img src="docs/cartes/carte_01_sud_ouest.jpg" alt="Sud-ouest : Ramstein, Spangdahlem, Büchel, Baumholder, Hunsrück"></a><br><sub>Sud-ouest : Ramstein, Spangdahlem, Büchel, Baumholder, Hunsrück</sub></td><td width="50%"><a href="docs/cartes/carte_02_rhenanie.jpg"><img src="docs/cartes/carte_02_rhenanie.jpg" alt="Rhénanie : Nörvenich, Wahner Heide, Borkenberge"></a><br><sub>Rhénanie : Nörvenich, Wahner Heide, Borkenberge</sub></td></tr></table>
 
 ### Hélicoptères — Baumholder
 
@@ -118,6 +124,8 @@ Un UH-60A s'est posé en catastrophe au nord-ouest de Kastellaun (BULLSEYE 241/1
 ## Zones de combat
 
 Côté est. Les numéros renvoient à la carte. Chaque zone s'active par le menu F10 *Zones de combat*, qui redonne son briefing et sa position. La plupart des sites changent d'une activation à l'autre : une partie des cibles ou de la défense est tirée au sort, et la fiche dit laquelle.
+
+<table><tr><td width="50%"><a href="docs/cartes/carte_05_front_nord.jpg"><img src="docs/cartes/carte_05_front_nord.jpg" alt="Front nord : Lübtheen, Ludwigslust, Parchim, Kyritz, Letzlingen"></a><br><sub>Front nord : Lübtheen, Ludwigslust, Parchim, Kyritz, Letzlingen</sub></td><td width="50%"><a href="docs/cartes/carte_06_front_centre.jpg"><img src="docs/cartes/carte_06_front_centre.jpg" alt="Front centre : Brocken, Ohrdruf, Altengrabow, Leipzig"></a><br><sub>Front centre : Brocken, Ohrdruf, Altengrabow, Leipzig</sub></td></tr><tr><td width="50%"><a href="docs/cartes/carte_07_berlin.jpg"><img src="docs/cartes/carte_07_berlin.jpg" alt="Berlin : Wünsdorf, Werneuchen, convoi A2, QRA Berlin"></a><br><sub>Berlin : Wünsdorf, Werneuchen, convoi A2, QRA Berlin</sub></td><td width="50%"><a href="docs/cartes/carte_08_baltique.jpg"><img src="docs/cartes/carte_08_baltique.jpg" alt="Mecklembourg et Baltique : Laage, Rostock, Mukran"></a><br><sub>Mecklembourg et Baltique : Laage, Rostock, Mukran</sub></td></tr></table>
 
 ### Front
 
@@ -236,6 +244,8 @@ Des joueurs volent des deux côtés. Le combat entre joueurs est **permis partou
 ### Arène
 
 Au-dessus du Grand Belt, en territoire neutre, loin du front : `N55°20.041' E010°59.794'` · bullseye `012/214` · rayon 38 nm. Slots en départ en vol au FL250, bleus à l'ouest, rouges à l'est, face à face à 57 nm.
+
+![Arène Air Quake (Grand Belt)](docs/cartes/carte_09_arene.jpg)
 
 | Camp | Missiles | Slots | MHz |
 |---|---|---|---|
@@ -412,7 +422,7 @@ Contrôle avant build : `.\veaf-tools.exe validate` (ou l'action MCP `validate_m
 | `src/warehouses.yaml` | Bases qui offrent des slots (`exclude_airports` pour les bases rouges sans slots), carburant et munitions illimités, appareils proposés sur le pont du porte-avions (`ships:`) |
 | `src/dynamic-slot-templates.yaml` | Appareils proposés en slots dynamiques (WW2 retirés) |
 | `src/mission/l10n/DEFAULT/*.ogg` | Sons des balises de la zone de sauvetage (MH01 à MH03, SOS), déclarés dans `mapResource` |
-| `docs/carte.jpg` | La carte de ce briefing (fond OpenStreetMap) ; la même image est dans `src/mission/l10n/DEFAULT/carte.jpg` pour le briefing DCS |
+| `docs/carte.jpg`, `docs/cartes/` | La carte de ce briefing et ses zooms par zone (fond OpenStreetMap) ; les mêmes images sont dans `src/mission/l10n/DEFAULT/` pour le briefing DCS, listées côté bleu et neutre seulement (voir `tools/gen_map.py`, `declare_pictures`) |
 
 Ce README est **généré depuis la mission** : après tout changement, relancer `gather.py` puis `gen_readme.py` (qui appelle `gen_map.py` pour la carte)
 (dans `tools/`, voir `tools/README.md`), sans rien retaper à la main.

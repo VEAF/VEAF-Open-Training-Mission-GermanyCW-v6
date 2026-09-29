@@ -1,4 +1,4 @@
-"""Render briefing_data.json into the mission README (the pilots' briefing) and docs/carte.jpg (via gen_map.py).
+"""Render briefing_data.json into the mission README (the pilots' briefing) and the maps (via gen_map.py).
 
 Run gather.py first: every value comes from the mission folder, nothing is typed by hand.
 """
@@ -12,7 +12,7 @@ from paths import ROOT as _ROOT  # noqa: E402
 
 ROOT = str(_ROOT)
 
-# ── map: docs/carte.jpg and the DCS briefing picture, on an OpenStreetMap basemap ─────────
+# ── maps: docs/carte.jpg, the zooms of docs/cartes/ and the DCS briefing pictures ────────────
 import gen_map  # noqa: E402
 
 gen_map.render()
@@ -63,14 +63,34 @@ w("Une crise OTAN–Russie fige les deux camps sur la ligne de l'ancienne fronti
 w("")
 w("Zones de combat, missions CAP et soutien se pilotent par le menu radio F10 (*Zones de combat*, *MISSIONS*, *ASSETS*).")
 w("")
+ZOOM = {s: (f"docs/cartes/carte_{i:02d}_{s}.jpg", t) for i, (s, t, _) in enumerate(gen_map.ZOOMS, 1)}
+
+
+def zooms(*slugs):
+    """The zoomed maps of a section, two per row, each opening full size when clicked (a single one, full width)."""
+    if len(slugs) == 1:
+        w(f"![{ZOOM[slugs[0]][1]}]({ZOOM[slugs[0]][0]})")
+        w("")
+        return
+    cells = [f'<td width="50%"><a href="{ZOOM[s][0]}"><img src="{ZOOM[s][0]}" alt="{ZOOM[s][1]}"></a><br>'
+             f'<sub>{ZOOM[s][1]}</sub></td>' for s in slugs]
+    rows = ["<tr>" + "".join(cells[k:k + 2]) + "</tr>" for k in range(0, len(cells), 2)]
+    w("<table>" + "".join(rows) + "</table>")
+    w("")
+
+
 w("## Carte")
 w("")
 w("![Carte de la mission](docs/carte.jpg)")
 w("")
+w("Cartes zoomées, reprises dans les sections qu'elles illustrent : "
+  + " · ".join(f"[{t.split(' : ')[0]}]({f})" for f, t in ZOOM.values()) + ".")
+w("")
 w("Carrés : bases avec slots (bleu / rouge). Traits pleins : hippodromes des ravitailleurs et AWACS. Pointillés : CAP à la "
   "demande. Cercles : QRA. Pastilles vertes : entraînement (H hélicos, A attaque, S SEAD). Pastilles rouges numérotées : "
   "zones de combat (numéros de la liste plus bas). Tirets épais : sanctuaires. Navire : porte-avions. L'arène est hors du cadre, au nord (flèche). Fond de carte OpenStreetMap ; la ligne de front est approximative. "
-  "La même image est dans le briefing de la mission, dans DCS, et la carte F10 porte les mêmes dessins, chaque camp ne "
+  "Le briefing de la mission, dans DCS, montre cette carte puis les zooms (flèches sous l'image, molette pour grossir), "
+  "et la carte F10 porte les mêmes dessins, chaque camp ne "
   "voyant que les siens.")
 w("")
 w("## Bases")
@@ -86,6 +106,7 @@ w("")
 w("Slots dynamiques, démarrage moteur chaud, carburant et munitions illimités. Les 49 autres aérodromes de l'Est sont "
   "rouges, sans slots.")
 w("")
+zooms("nord_ouest", "hesse")
 w("## Ravitailleurs et AWACS")
 w("")
 ROLE = {"Texaco 1": "perche · nord", "Arco 1": "panier · nord", "Texaco 2": "perche · sud", "Arco 2": "panier · sud",
@@ -130,6 +151,7 @@ w("")
 w("Côté ouest, loin du front. Trois niveaux par famille, chacun comprenant ceux d'en dessous. **Activez un seul niveau par "
   "famille à la fois.**")
 w("")
+zooms("sud_ouest", "rhenanie")
 for fam, label in (("Baumholder", "Hélicoptères"), ("WahnerHeide", "Attaque"), ("Borkenberge", "SEAD / DEAD")):
     lv = [z for z in D["zones"] if z["key"].startswith(f"combatZone_{fam}_")]
     z0 = lv[0]
@@ -156,6 +178,7 @@ w("Côté est. Les numéros renvoient à la carte. Chaque zone s'active par le m
   "briefing et sa position. La plupart des sites changent d'une activation à l'autre : une partie des cibles ou "
   "de la défense est tirée au sort, et la fiche dit laquelle.")
 w("")
+zooms("front_nord", "front_centre", "berlin", "baltique")
 for menu in ("Front", "SEAD", "Convois", "Frappe profonde", "Bases aériennes", "Antinavire"):
     w(f"### {menu}")
     w("")
@@ -206,6 +229,7 @@ w("")
 w(f'Au-dessus du Grand Belt, en territoire neutre, loin du front : {c(az["ddm"])} · bullseye {c(az["be"])} · rayon {az["radius_nm"]} nm. '
   "Slots en départ en vol au FL250, bleus à l'ouest, rouges à l'est, face à face à 57 nm.")
 w("")
+zooms("arene")
 rows = []
 for sd in ("blue", "red"):
     for fox in ("FOX3", "FOX1"):
@@ -261,4 +285,4 @@ w("- `-jtac`, `-afac` : JTAC au sol, drone AFAC.")
 w("")
 w(open(os.path.join(S, "readme_makers.md"), encoding="utf-8").read())
 open(os.path.join(ROOT, "README.md"), "w", encoding="utf-8").write("\n".join(md) + "\n")
-print("README.md", sum(len(x) for x in md), "docs/carte.jpg ok")
+print("README.md", sum(len(x) for x in md), "docs/carte.jpg and docs/cartes/ ok")

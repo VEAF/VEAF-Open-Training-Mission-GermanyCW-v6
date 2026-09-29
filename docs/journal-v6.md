@@ -403,3 +403,27 @@ Mission de test (game master, pont dcs-bridge), mesures par le pont et `dcs.log`
   CAP, « dispose » d'un asset, le brouillard, l'élingage CTLD, « skip » CAS et transport, le nettoyage
   des convois. Le log ne dit pas laquelle a été cliquée. Défaut VMCT, signalé à David, pas corrigé ici.
 
+
+## 14. Cartes du briefing DCS, 29/09
+
+- **La carte apparaissait deux fois** dans le briefing. Cause, lue dans `MissionEditor/modules/me_autobriefing.lua`
+  de DCS : le camp du joueur n'est connu que si une unité a le niveau `Player` ; sinon (slot `Client`, dont
+  celui de la mission de test, slot dynamique, spectateur) DCS affiche la liste rouge puis la liste bleue, et
+  l'image était dans les deux. Le briefing en vol et en multijoueur passe par le moteur
+  (`DCS.getPlayerBriefing`, `Scripts/UI/BriefingDialog.lua`), dont on ne voit pas la règle : ce qu'y voit un
+  pilote rouge reste à confirmer. Les images sont
+  maintenant listées côté bleu et neutre seulement ; la liste rouge est vide. Les seuls slots rouges classiques
+  sont ceux de l'arène : c'est là, et seulement si DCS reconnaît le camp, qu'un pilote risque de n'avoir aucune
+  carte.
+- **Illisible parce que trop petite** : le panneau ajuste l'image à sa taille (la molette grossit, personne ne
+  le sait). `tools/gen_map.py` dessine en plus 9 zooms titrés (liste `ZOOMS`, chacun nommé par les objets
+  qu'il doit cadrer), à partir de tuiles OpenStreetMap du niveau le plus proche de leur résolution, avec les
+  noms des zones de combat, la zone de sauvetage, le cercle de l'arène. Le briefing montre la carte générale
+  puis les zooms. Le `.miz` passe de 7,1 à 11,2 Mo.
+- **Au passage** : la zone 4 (Brocken) était cachée sous le bullseye, posé au même point ; le bullseye est
+  maintenant un anneau autour d'elle. Les tirets des petits cercles (sanctuaires rouges) redémarraient à chaque
+  segment et se dessinaient en trait plein.
+- **Le README les reprend** : la carte générale en tête, chaque zoom dans la section qu'il illustre (bases, entraînement,
+  zones de combat, arène), deux par ligne, cliquables.
+- `gen_map.py` écrit lui-même `mapResource` et les `pictureFileName*` de la mission : la liste suit ce qui est
+  dessiné, un zoom retiré ne reste pas dans le `.miz`.
