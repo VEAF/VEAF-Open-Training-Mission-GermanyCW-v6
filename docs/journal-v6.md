@@ -378,7 +378,8 @@ Mission de test (game master, pont dcs-bridge), mesures par le pont et `dcs.log`
   VHF de la mission n'en a que 16, VMCT abandonnait la case et Nörvenich passait du preset 5 au 4. Corrigé
   dans VMCT (la case prend la dernière entrée), trouvé dans le code ; la lecture dans le cockpit n'a pas pu
   se faire (voir §10, point 11).
-- **Le convoi de Ludwigslust était posé sur le canal** (surface « eau » sous les 9 véhicules) ; VEAF le
+- **Le convoi de Ludwigslust était posé sur de l'eau pour DCS** (surface 3 sous les 9 véhicules, et sur
+  240 m d'est en ouest au relevé du 29/09 ; le §8 y voyait un pont, rien ne le prouve ni ne l'exclut) ; VEAF le
   replaçait au hasard (« declared position … is on invalid terrain »). Reposé sur la route, 350 m au
   nord-est, espacé de 19 m ; VEAF valide maintenant sa position.
 - **Mesuré conforme** par `tools/test_en_jeu.py` : imbrication des niveaux (chaque niveau fait apparaître
