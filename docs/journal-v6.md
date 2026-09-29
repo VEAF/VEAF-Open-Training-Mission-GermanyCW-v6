@@ -445,3 +445,15 @@ Mission de test (game master, pont dcs-bridge), mesures par le pont et `dcs.log`
 - **À vérifier en jeu** : cibles chaudes au pod, immobiles et muettes sous le feu, désignées par le Reaper ;
   et leurs 12 places, que `probe_scenery.py` n'a testées que pour l'eau tant qu'elles étaient statiques
   (§9.4) : un véhicule posé dans les bois est replacé au hasard par VEAF, comme le convoi de Ludwigslust.
+
+## 16. Outils reconstruits depuis VMCT develop `dd60e7a5`, 29/09
+
+- Apporte #1028 (une commande F10 sécurisée « pour tous » est posée dans le menu de chaque groupe :
+  le refus « secured command posted without a group » vu sur private1, §13) et #1030 (tout véhicule
+  créé par script part avec `coldAtStart = false` ; le panneau d'information d'une zone compte ses statiques).
+- Construits dans un worktree détaché, avec son propre environnement Poetry (`veaf-build build`, puis
+  `publish-local`). Outils précédents dans `.veaf-backups/outils-e33ee057/`.
+- `.miz` mesuré : aucun identifiant ni nom en double, aucune anomalie de structure, slots sur les 12 bases,
+  sécurité active, `check_frequencies.py` conforme ; les scripts embarqués sont ceux de `dd60e7a5`.
+- À vérifier en jeu, pour le ticket VMCT n°02 : les véhicules d'une zone qu'on vient d'activer sont
+  chauds au pod.
