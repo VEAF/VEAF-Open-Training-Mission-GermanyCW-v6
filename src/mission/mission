@@ -15113,414 +15113,6 @@ mission =
           static = {
             group = {
               [1] = {
-                groupId = 52,
-                name = "combatZone_Baumholder_Easy-cible-1",
-                dead = false,
-                heading = 0,
-                hidden = false,
-                route = {
-                  points = {
-                    [1] = {
-                      name = "",
-                      type = "",
-                      action = "",
-                      alt = 0,
-                      formation_template = "",
-                      speed = 0,
-                      x = -473086,
-                      y = -945380,
-                    },
-                  },
-                },
-                units = {
-                  [1] = {
-                    unitId = 57,
-                    name = "combatZone_Baumholder_Easy-cible-1 #spawngroup=\"bh_cibles\" #spawncount=3",
-                    type = "BMP-2",
-                    category = "Armor",
-                    heading = 0,
-                    x = -473086,
-                    y = -945380,
-                  },
-                },
-                x = -473086,
-                y = -945380,
-              },
-              [2] = {
-                groupId = 53,
-                name = "combatZone_Baumholder_Easy-cible-2",
-                dead = false,
-                heading = 0,
-                hidden = false,
-                route = {
-                  points = {
-                    [1] = {
-                      name = "",
-                      type = "",
-                      action = "",
-                      alt = 0,
-                      formation_template = "",
-                      speed = 0,
-                      x = -472786,
-                      y = -945180,
-                    },
-                  },
-                },
-                units = {
-                  [1] = {
-                    unitId = 58,
-                    name = "combatZone_Baumholder_Easy-cible-2 #spawngroup=\"bh_cibles\" #spawncount=3",
-                    type = "BTR-80",
-                    category = "Armor",
-                    heading = 0,
-                    x = -472786,
-                    y = -945180,
-                  },
-                },
-                x = -472786,
-                y = -945180,
-              },
-              [3] = {
-                groupId = 54,
-                name = "combatZone_Baumholder_Easy-cible-3",
-                dead = false,
-                heading = 0,
-                hidden = false,
-                route = {
-                  points = {
-                    [1] = {
-                      name = "",
-                      type = "",
-                      action = "",
-                      alt = 0,
-                      formation_template = "",
-                      speed = 0,
-                      x = -473386,
-                      y = -945080,
-                    },
-                  },
-                },
-                units = {
-                  [1] = {
-                    unitId = 59,
-                    name = "combatZone_Baumholder_Easy-cible-3 #spawngroup=\"bh_cibles\" #spawncount=3",
-                    type = "Ural-375",
-                    category = "Unarmed",
-                    heading = 0,
-                    x = -473386,
-                    y = -945080,
-                  },
-                },
-                x = -473386,
-                y = -945080,
-              },
-              [4] = {
-                groupId = 55,
-                name = "combatZone_Baumholder_Easy-cible-4",
-                dead = false,
-                heading = 0,
-                hidden = false,
-                route = {
-                  points = {
-                    [1] = {
-                      name = "",
-                      type = "",
-                      action = "",
-                      alt = 0,
-                      formation_template = "",
-                      speed = 0,
-                      x = -473066,
-                      y = -945838,
-                    },
-                  },
-                },
-                units = {
-                  [1] = {
-                    unitId = 60,
-                    name = "combatZone_Baumholder_Easy-cible-4 #spawngroup=\"bh_cibles\" #spawncount=3",
-                    type = "T-72B",
-                    category = "Armor",
-                    heading = 0,
-                    x = -473066,
-                    y = -945838,
-                  },
-                },
-                x = -473066,
-                y = -945838,
-              },
-              [5] = {
-                groupId = 56,
-                name = "combatZone_Baumholder_Easy-cible-5",
-                dead = false,
-                heading = 0,
-                hidden = false,
-                route = {
-                  points = {
-                    [1] = {
-                      name = "",
-                      type = "",
-                      action = "",
-                      alt = 0,
-                      formation_template = "",
-                      speed = 0,
-                      x = -473336,
-                      y = -945680,
-                    },
-                  },
-                },
-                units = {
-                  [1] = {
-                    unitId = 61,
-                    name = "combatZone_Baumholder_Easy-cible-5 #spawngroup=\"bh_cibles\" #spawncount=3",
-                    type = "Ural-375",
-                    category = "Unarmed",
-                    heading = 0,
-                    x = -473336,
-                    y = -945680,
-                  },
-                },
-                x = -473336,
-                y = -945680,
-              },
-              [6] = {
-                groupId = 61,
-                name = "combatZone_WahnerHeide_Easy-cible-1",
-                dead = false,
-                heading = 0,
-                hidden = false,
-                route = {
-                  points = {
-                    [1] = {
-                      name = "",
-                      type = "",
-                      action = "",
-                      alt = 0,
-                      formation_template = "",
-                      speed = 0,
-                      x = -331563,
-                      y = -940919,
-                    },
-                  },
-                },
-                units = {
-                  [1] = {
-                    unitId = 67,
-                    name = "combatZone_WahnerHeide_Easy-cible-1 #spawngroup=\"wh_cibles\" #spawncount=5",
-                    type = "T-72B",
-                    category = "Armor",
-                    heading = 0,
-                    x = -331563,
-                    y = -940919,
-                  },
-                },
-                x = -331563,
-                y = -940919,
-              },
-              [7] = {
-                groupId = 62,
-                name = "combatZone_WahnerHeide_Easy-cible-2",
-                dead = false,
-                heading = 0,
-                hidden = false,
-                route = {
-                  points = {
-                    [1] = {
-                      name = "",
-                      type = "",
-                      action = "",
-                      alt = 0,
-                      formation_template = "",
-                      speed = 0,
-                      x = -331422,
-                      y = -940807,
-                    },
-                  },
-                },
-                units = {
-                  [1] = {
-                    unitId = 68,
-                    name = "combatZone_WahnerHeide_Easy-cible-2 #spawngroup=\"wh_cibles\" #spawncount=5",
-                    type = "T-72B",
-                    category = "Armor",
-                    heading = 0,
-                    x = -331422,
-                    y = -940807,
-                  },
-                },
-                x = -331422,
-                y = -940807,
-              },
-              [8] = {
-                groupId = 63,
-                name = "combatZone_WahnerHeide_Easy-cible-3",
-                dead = false,
-                heading = 0,
-                hidden = false,
-                route = {
-                  points = {
-                    [1] = {
-                      name = "",
-                      type = "",
-                      action = "",
-                      alt = 0,
-                      formation_template = "",
-                      speed = 0,
-                      x = -331788,
-                      y = -940779,
-                    },
-                  },
-                },
-                units = {
-                  [1] = {
-                    unitId = 69,
-                    name = "combatZone_WahnerHeide_Easy-cible-3 #spawngroup=\"wh_cibles\" #spawncount=5",
-                    type = "BMP-2",
-                    category = "Armor",
-                    heading = 0,
-                    x = -331788,
-                    y = -940779,
-                  },
-                },
-                x = -331788,
-                y = -940779,
-              },
-              [9] = {
-                groupId = 64,
-                name = "combatZone_WahnerHeide_Easy-cible-4",
-                dead = false,
-                heading = 0,
-                hidden = false,
-                route = {
-                  points = {
-                    [1] = {
-                      name = "",
-                      type = "",
-                      action = "",
-                      alt = 0,
-                      formation_template = "",
-                      speed = 0,
-                      x = -331336,
-                      y = -941131,
-                    },
-                  },
-                },
-                units = {
-                  [1] = {
-                    unitId = 70,
-                    name = "combatZone_WahnerHeide_Easy-cible-4 #spawngroup=\"wh_cibles\" #spawncount=5",
-                    type = "BMP-2",
-                    category = "Armor",
-                    heading = 0,
-                    x = -331336,
-                    y = -941131,
-                  },
-                },
-                x = -331336,
-                y = -941131,
-              },
-              [10] = {
-                groupId = 65,
-                name = "combatZone_WahnerHeide_Easy-cible-5",
-                dead = false,
-                heading = 0,
-                hidden = false,
-                route = {
-                  points = {
-                    [1] = {
-                      name = "",
-                      type = "",
-                      action = "",
-                      alt = 0,
-                      formation_template = "",
-                      speed = 0,
-                      x = -331873,
-                      y = -941149,
-                    },
-                  },
-                },
-                units = {
-                  [1] = {
-                    unitId = 71,
-                    name = "combatZone_WahnerHeide_Easy-cible-5 #spawngroup=\"wh_cibles\" #spawncount=5",
-                    type = "Ural-375",
-                    category = "Unarmed",
-                    heading = 0,
-                    x = -331873,
-                    y = -941149,
-                  },
-                },
-                x = -331873,
-                y = -941149,
-              },
-              [11] = {
-                groupId = 66,
-                name = "combatZone_WahnerHeide_Easy-cible-6",
-                dead = false,
-                heading = 0,
-                hidden = false,
-                route = {
-                  points = {
-                    [1] = {
-                      name = "",
-                      type = "",
-                      action = "",
-                      alt = 0,
-                      formation_template = "",
-                      speed = 0,
-                      x = -331725,
-                      y = -941330,
-                    },
-                  },
-                },
-                units = {
-                  [1] = {
-                    unitId = 72,
-                    name = "combatZone_WahnerHeide_Easy-cible-6 #spawngroup=\"wh_cibles\" #spawncount=5",
-                    type = "Ural-375",
-                    category = "Unarmed",
-                    heading = 0,
-                    x = -331725,
-                    y = -941330,
-                  },
-                },
-                x = -331725,
-                y = -941330,
-              },
-              [12] = {
-                groupId = 67,
-                name = "combatZone_WahnerHeide_Easy-cible-7",
-                dead = false,
-                heading = 0,
-                hidden = false,
-                route = {
-                  points = {
-                    [1] = {
-                      name = "",
-                      type = "",
-                      action = "",
-                      alt = 0,
-                      formation_template = "",
-                      speed = 0,
-                      x = -331133,
-                      y = -940631,
-                    },
-                  },
-                },
-                units = {
-                  [1] = {
-                    unitId = 73,
-                    name = "combatZone_WahnerHeide_Easy-cible-7 #spawngroup=\"wh_cibles\" #spawncount=5",
-                    type = "ATZ-5",
-                    category = "Unarmed",
-                    heading = 0,
-                    x = -331133,
-                    y = -940631,
-                  },
-                },
-                x = -331133,
-                y = -940631,
-              },
-              [13] = {
                 groupId = 102,
                 name = "combatZone_Wuensdorf-cible-1",
                 dead = false,
@@ -15555,7 +15147,7 @@ mission =
                 x = -255733,
                 y = -478776,
               },
-              [14] = {
+              [2] = {
                 groupId = 103,
                 name = "combatZone_Wuensdorf-cible-2",
                 dead = false,
@@ -15589,7 +15181,7 @@ mission =
                 x = -255613,
                 y = -478696,
               },
-              [15] = {
+              [3] = {
                 groupId = 104,
                 name = "combatZone_Wuensdorf-cible-3",
                 dead = false,
@@ -15623,7 +15215,7 @@ mission =
                 x = -255843,
                 y = -478646,
               },
-              [16] = {
+              [4] = {
                 groupId = 105,
                 name = "combatZone_Wuensdorf-cible-4",
                 dead = false,
@@ -15658,7 +15250,7 @@ mission =
                 x = -255533,
                 y = -478926,
               },
-              [17] = {
+              [5] = {
                 groupId = 106,
                 name = "combatZone_Wuensdorf-cible-5",
                 dead = false,
@@ -15693,7 +15285,7 @@ mission =
                 x = -255913,
                 y = -478936,
               },
-              [18] = {
+              [6] = {
                 groupId = 114,
                 name = "combatZone_Wittenberg-cible-1",
                 dead = false,
@@ -15728,7 +15320,7 @@ mission =
                 x = -283220,
                 y = -538870,
               },
-              [19] = {
+              [7] = {
                 groupId = 115,
                 name = "combatZone_Wittenberg-cible-2",
                 dead = false,
@@ -15763,7 +15355,7 @@ mission =
                 x = -283120,
                 y = -539120,
               },
-              [20] = {
+              [8] = {
                 groupId = 116,
                 name = "combatZone_Wittenberg-cible-3",
                 dead = false,
@@ -15798,7 +15390,7 @@ mission =
                 x = -283520,
                 y = -538770,
               },
-              [21] = {
+              [9] = {
                 groupId = 117,
                 name = "combatZone_Wittenberg-cible-4",
                 dead = false,
@@ -15833,7 +15425,7 @@ mission =
                 x = -283620,
                 y = -538870,
               },
-              [22] = {
+              [10] = {
                 groupId = 119,
                 name = "combatZone_Torgau-cible-1",
                 dead = false,
@@ -15868,7 +15460,7 @@ mission =
                 x = -321872,
                 y = -519193,
               },
-              [23] = {
+              [11] = {
                 groupId = 120,
                 name = "combatZone_Torgau-cible-2",
                 dead = false,
@@ -15903,7 +15495,7 @@ mission =
                 x = -320968,
                 y = -519192,
               },
-              [24] = {
+              [12] = {
                 groupId = 121,
                 name = "combatZone_Torgau-cible-3",
                 dead = false,
@@ -15938,7 +15530,7 @@ mission =
                 x = -321932,
                 y = -519220,
               },
-              [25] = {
+              [13] = {
                 groupId = 122,
                 name = "combatZone_Torgau-cible-4",
                 dead = false,
@@ -15973,7 +15565,7 @@ mission =
                 x = -320746,
                 y = -519523,
               },
-              [26] = {
+              [14] = {
                 groupId = 123,
                 name = "combatZone_Torgau-cible-5",
                 dead = false,
@@ -16008,7 +15600,7 @@ mission =
                 x = -320888,
                 y = -519301,
               },
-              [27] = {
+              [15] = {
                 groupId = 126,
                 name = "combatZone_Parchim-cible-1",
                 dead = false,
@@ -16042,7 +15634,7 @@ mission =
                 x = -102194,
                 y = -576798,
               },
-              [28] = {
+              [16] = {
                 groupId = 127,
                 name = "combatZone_Parchim-cible-2",
                 dead = false,
@@ -16076,7 +15668,7 @@ mission =
                 x = -102164,
                 y = -576758,
               },
-              [29] = {
+              [17] = {
                 groupId = 128,
                 name = "combatZone_Parchim-cible-3",
                 dead = false,
@@ -16110,7 +15702,7 @@ mission =
                 x = -102134,
                 y = -576718,
               },
-              [30] = {
+              [18] = {
                 groupId = 129,
                 name = "combatZone_Parchim-cible-4",
                 dead = false,
@@ -16144,7 +15736,7 @@ mission =
                 x = -102104,
                 y = -576678,
               },
-              [31] = {
+              [19] = {
                 groupId = 130,
                 name = "combatZone_Parchim-cible-5",
                 dead = false,
@@ -16178,7 +15770,7 @@ mission =
                 x = -102794,
                 y = -576798,
               },
-              [32] = {
+              [20] = {
                 groupId = 131,
                 name = "combatZone_Parchim-cible-6",
                 dead = false,
@@ -16212,7 +15804,7 @@ mission =
                 x = -102824,
                 y = -576758,
               },
-              [33] = {
+              [21] = {
                 groupId = 132,
                 name = "combatZone_Parchim-cible-7",
                 dead = false,
@@ -16247,7 +15839,7 @@ mission =
                 x = -102894,
                 y = -577498,
               },
-              [34] = {
+              [22] = {
                 groupId = 135,
                 name = "combatZone_Werneuchen-cible-1",
                 dead = false,
@@ -16281,7 +15873,7 @@ mission =
                 x = -205406,
                 y = -454439,
               },
-              [35] = {
+              [23] = {
                 groupId = 136,
                 name = "combatZone_Werneuchen-cible-2",
                 dead = false,
@@ -16315,7 +15907,7 @@ mission =
                 x = -205376,
                 y = -454399,
               },
-              [36] = {
+              [24] = {
                 groupId = 137,
                 name = "combatZone_Werneuchen-cible-3",
                 dead = false,
@@ -16349,7 +15941,7 @@ mission =
                 x = -206006,
                 y = -454439,
               },
-              [37] = {
+              [25] = {
                 groupId = 138,
                 name = "combatZone_Werneuchen-cible-4",
                 dead = false,
@@ -16383,7 +15975,7 @@ mission =
                 x = -206036,
                 y = -454399,
               },
-              [38] = {
+              [26] = {
                 groupId = 139,
                 name = "combatZone_Werneuchen-cible-5",
                 dead = false,
@@ -21416,6 +21008,966 @@ mission =
                 visible = false,
                 x = -235611,
                 y = -906945,
+              },
+              [84] = {
+                groupId = 236,
+                name = "combatZone_Baumholder_Easy-cible-1",
+                task = "Ground Nothing",
+                hidden = false,
+                lateActivation = false,
+                route = {
+                  points = {
+                    [1] = {
+                      name = "",
+                      type = "Turning Point",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {
+                            [1] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 1,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 0,
+                                    value = 4,
+                                  },
+                                },
+                              },
+                            },
+                            [2] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 2,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 8,
+                                  },
+                                },
+                              },
+                            },
+                          },
+                        },
+                      },
+                      action = "Off Road",
+                      alt = 0,
+                      alt_type = "BARO",
+                      ETA = 0,
+                      ETA_locked = true,
+                      formation_template = "",
+                      speed = 0,
+                      speed_locked = true,
+                      x = -473086,
+                      y = -945380,
+                    },
+                  },
+                },
+                start_time = 0,
+                taskSelected = true,
+                uncontrollable = false,
+                units = {
+                  [1] = {
+                    unitId = 416,
+                    name = "combatZone_Baumholder_Easy-cible-1 #spawngroup=\"bh_cibles\" #spawncount=3",
+                    type = "BMP-2",
+                    skill = "Average",
+                    coldAtStart = false,
+                    heading = 0,
+                    playerCanDrive = true,
+                    x = -473086,
+                    y = -945380,
+                  },
+                },
+                visible = false,
+                x = -473086,
+                y = -945380,
+              },
+              [85] = {
+                groupId = 237,
+                name = "combatZone_Baumholder_Easy-cible-2",
+                task = "Ground Nothing",
+                hidden = false,
+                lateActivation = false,
+                route = {
+                  points = {
+                    [1] = {
+                      name = "",
+                      type = "Turning Point",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {
+                            [1] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 1,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 0,
+                                    value = 4,
+                                  },
+                                },
+                              },
+                            },
+                            [2] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 2,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 8,
+                                  },
+                                },
+                              },
+                            },
+                          },
+                        },
+                      },
+                      action = "Off Road",
+                      alt = 0,
+                      alt_type = "BARO",
+                      ETA = 0,
+                      ETA_locked = true,
+                      formation_template = "",
+                      speed = 0,
+                      speed_locked = true,
+                      x = -472786,
+                      y = -945180,
+                    },
+                  },
+                },
+                start_time = 0,
+                taskSelected = true,
+                uncontrollable = false,
+                units = {
+                  [1] = {
+                    unitId = 417,
+                    name = "combatZone_Baumholder_Easy-cible-2 #spawngroup=\"bh_cibles\" #spawncount=3",
+                    type = "BTR-80",
+                    skill = "Average",
+                    coldAtStart = false,
+                    heading = 0,
+                    playerCanDrive = true,
+                    x = -472786,
+                    y = -945180,
+                  },
+                },
+                visible = false,
+                x = -472786,
+                y = -945180,
+              },
+              [86] = {
+                groupId = 238,
+                name = "combatZone_Baumholder_Easy-cible-3",
+                task = "Ground Nothing",
+                hidden = false,
+                lateActivation = false,
+                route = {
+                  points = {
+                    [1] = {
+                      name = "",
+                      type = "Turning Point",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {
+                            [1] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 1,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 0,
+                                    value = 4,
+                                  },
+                                },
+                              },
+                            },
+                            [2] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 2,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 8,
+                                  },
+                                },
+                              },
+                            },
+                          },
+                        },
+                      },
+                      action = "Off Road",
+                      alt = 0,
+                      alt_type = "BARO",
+                      ETA = 0,
+                      ETA_locked = true,
+                      formation_template = "",
+                      speed = 0,
+                      speed_locked = true,
+                      x = -473386,
+                      y = -945080,
+                    },
+                  },
+                },
+                start_time = 0,
+                taskSelected = true,
+                uncontrollable = false,
+                units = {
+                  [1] = {
+                    unitId = 418,
+                    name = "combatZone_Baumholder_Easy-cible-3 #spawngroup=\"bh_cibles\" #spawncount=3",
+                    type = "Ural-375",
+                    skill = "Average",
+                    coldAtStart = false,
+                    heading = 0,
+                    playerCanDrive = true,
+                    x = -473386,
+                    y = -945080,
+                  },
+                },
+                visible = false,
+                x = -473386,
+                y = -945080,
+              },
+              [87] = {
+                groupId = 239,
+                name = "combatZone_Baumholder_Easy-cible-4",
+                task = "Ground Nothing",
+                hidden = false,
+                lateActivation = false,
+                route = {
+                  points = {
+                    [1] = {
+                      name = "",
+                      type = "Turning Point",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {
+                            [1] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 1,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 0,
+                                    value = 4,
+                                  },
+                                },
+                              },
+                            },
+                            [2] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 2,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 8,
+                                  },
+                                },
+                              },
+                            },
+                          },
+                        },
+                      },
+                      action = "Off Road",
+                      alt = 0,
+                      alt_type = "BARO",
+                      ETA = 0,
+                      ETA_locked = true,
+                      formation_template = "",
+                      speed = 0,
+                      speed_locked = true,
+                      x = -473066,
+                      y = -945838,
+                    },
+                  },
+                },
+                start_time = 0,
+                taskSelected = true,
+                uncontrollable = false,
+                units = {
+                  [1] = {
+                    unitId = 419,
+                    name = "combatZone_Baumholder_Easy-cible-4 #spawngroup=\"bh_cibles\" #spawncount=3",
+                    type = "T-72B",
+                    skill = "Average",
+                    coldAtStart = false,
+                    heading = 0,
+                    playerCanDrive = true,
+                    x = -473066,
+                    y = -945838,
+                  },
+                },
+                visible = false,
+                x = -473066,
+                y = -945838,
+              },
+              [88] = {
+                groupId = 240,
+                name = "combatZone_Baumholder_Easy-cible-5",
+                task = "Ground Nothing",
+                hidden = false,
+                lateActivation = false,
+                route = {
+                  points = {
+                    [1] = {
+                      name = "",
+                      type = "Turning Point",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {
+                            [1] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 1,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 0,
+                                    value = 4,
+                                  },
+                                },
+                              },
+                            },
+                            [2] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 2,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 8,
+                                  },
+                                },
+                              },
+                            },
+                          },
+                        },
+                      },
+                      action = "Off Road",
+                      alt = 0,
+                      alt_type = "BARO",
+                      ETA = 0,
+                      ETA_locked = true,
+                      formation_template = "",
+                      speed = 0,
+                      speed_locked = true,
+                      x = -473336,
+                      y = -945680,
+                    },
+                  },
+                },
+                start_time = 0,
+                taskSelected = true,
+                uncontrollable = false,
+                units = {
+                  [1] = {
+                    unitId = 420,
+                    name = "combatZone_Baumholder_Easy-cible-5 #spawngroup=\"bh_cibles\" #spawncount=3",
+                    type = "Ural-375",
+                    skill = "Average",
+                    coldAtStart = false,
+                    heading = 0,
+                    playerCanDrive = true,
+                    x = -473336,
+                    y = -945680,
+                  },
+                },
+                visible = false,
+                x = -473336,
+                y = -945680,
+              },
+              [89] = {
+                groupId = 241,
+                name = "combatZone_WahnerHeide_Easy-cible-1",
+                task = "Ground Nothing",
+                hidden = false,
+                lateActivation = false,
+                route = {
+                  points = {
+                    [1] = {
+                      name = "",
+                      type = "Turning Point",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {
+                            [1] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 1,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 0,
+                                    value = 4,
+                                  },
+                                },
+                              },
+                            },
+                            [2] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 2,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 8,
+                                  },
+                                },
+                              },
+                            },
+                          },
+                        },
+                      },
+                      action = "Off Road",
+                      alt = 0,
+                      alt_type = "BARO",
+                      ETA = 0,
+                      ETA_locked = true,
+                      formation_template = "",
+                      speed = 0,
+                      speed_locked = true,
+                      x = -331563,
+                      y = -940919,
+                    },
+                  },
+                },
+                start_time = 0,
+                taskSelected = true,
+                uncontrollable = false,
+                units = {
+                  [1] = {
+                    unitId = 421,
+                    name = "combatZone_WahnerHeide_Easy-cible-1 #spawngroup=\"wh_cibles\" #spawncount=5",
+                    type = "T-72B",
+                    skill = "Average",
+                    coldAtStart = false,
+                    heading = 0,
+                    playerCanDrive = true,
+                    x = -331563,
+                    y = -940919,
+                  },
+                },
+                visible = false,
+                x = -331563,
+                y = -940919,
+              },
+              [90] = {
+                groupId = 242,
+                name = "combatZone_WahnerHeide_Easy-cible-2",
+                task = "Ground Nothing",
+                hidden = false,
+                lateActivation = false,
+                route = {
+                  points = {
+                    [1] = {
+                      name = "",
+                      type = "Turning Point",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {
+                            [1] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 1,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 0,
+                                    value = 4,
+                                  },
+                                },
+                              },
+                            },
+                            [2] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 2,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 8,
+                                  },
+                                },
+                              },
+                            },
+                          },
+                        },
+                      },
+                      action = "Off Road",
+                      alt = 0,
+                      alt_type = "BARO",
+                      ETA = 0,
+                      ETA_locked = true,
+                      formation_template = "",
+                      speed = 0,
+                      speed_locked = true,
+                      x = -331422,
+                      y = -940807,
+                    },
+                  },
+                },
+                start_time = 0,
+                taskSelected = true,
+                uncontrollable = false,
+                units = {
+                  [1] = {
+                    unitId = 422,
+                    name = "combatZone_WahnerHeide_Easy-cible-2 #spawngroup=\"wh_cibles\" #spawncount=5",
+                    type = "T-72B",
+                    skill = "Average",
+                    coldAtStart = false,
+                    heading = 0,
+                    playerCanDrive = true,
+                    x = -331422,
+                    y = -940807,
+                  },
+                },
+                visible = false,
+                x = -331422,
+                y = -940807,
+              },
+              [91] = {
+                groupId = 243,
+                name = "combatZone_WahnerHeide_Easy-cible-3",
+                task = "Ground Nothing",
+                hidden = false,
+                lateActivation = false,
+                route = {
+                  points = {
+                    [1] = {
+                      name = "",
+                      type = "Turning Point",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {
+                            [1] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 1,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 0,
+                                    value = 4,
+                                  },
+                                },
+                              },
+                            },
+                            [2] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 2,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 8,
+                                  },
+                                },
+                              },
+                            },
+                          },
+                        },
+                      },
+                      action = "Off Road",
+                      alt = 0,
+                      alt_type = "BARO",
+                      ETA = 0,
+                      ETA_locked = true,
+                      formation_template = "",
+                      speed = 0,
+                      speed_locked = true,
+                      x = -331788,
+                      y = -940779,
+                    },
+                  },
+                },
+                start_time = 0,
+                taskSelected = true,
+                uncontrollable = false,
+                units = {
+                  [1] = {
+                    unitId = 423,
+                    name = "combatZone_WahnerHeide_Easy-cible-3 #spawngroup=\"wh_cibles\" #spawncount=5",
+                    type = "BMP-2",
+                    skill = "Average",
+                    coldAtStart = false,
+                    heading = 0,
+                    playerCanDrive = true,
+                    x = -331788,
+                    y = -940779,
+                  },
+                },
+                visible = false,
+                x = -331788,
+                y = -940779,
+              },
+              [92] = {
+                groupId = 244,
+                name = "combatZone_WahnerHeide_Easy-cible-4",
+                task = "Ground Nothing",
+                hidden = false,
+                lateActivation = false,
+                route = {
+                  points = {
+                    [1] = {
+                      name = "",
+                      type = "Turning Point",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {
+                            [1] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 1,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 0,
+                                    value = 4,
+                                  },
+                                },
+                              },
+                            },
+                            [2] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 2,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 8,
+                                  },
+                                },
+                              },
+                            },
+                          },
+                        },
+                      },
+                      action = "Off Road",
+                      alt = 0,
+                      alt_type = "BARO",
+                      ETA = 0,
+                      ETA_locked = true,
+                      formation_template = "",
+                      speed = 0,
+                      speed_locked = true,
+                      x = -331336,
+                      y = -941131,
+                    },
+                  },
+                },
+                start_time = 0,
+                taskSelected = true,
+                uncontrollable = false,
+                units = {
+                  [1] = {
+                    unitId = 424,
+                    name = "combatZone_WahnerHeide_Easy-cible-4 #spawngroup=\"wh_cibles\" #spawncount=5",
+                    type = "BMP-2",
+                    skill = "Average",
+                    coldAtStart = false,
+                    heading = 0,
+                    playerCanDrive = true,
+                    x = -331336,
+                    y = -941131,
+                  },
+                },
+                visible = false,
+                x = -331336,
+                y = -941131,
+              },
+              [93] = {
+                groupId = 245,
+                name = "combatZone_WahnerHeide_Easy-cible-5",
+                task = "Ground Nothing",
+                hidden = false,
+                lateActivation = false,
+                route = {
+                  points = {
+                    [1] = {
+                      name = "",
+                      type = "Turning Point",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {
+                            [1] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 1,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 0,
+                                    value = 4,
+                                  },
+                                },
+                              },
+                            },
+                            [2] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 2,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 8,
+                                  },
+                                },
+                              },
+                            },
+                          },
+                        },
+                      },
+                      action = "Off Road",
+                      alt = 0,
+                      alt_type = "BARO",
+                      ETA = 0,
+                      ETA_locked = true,
+                      formation_template = "",
+                      speed = 0,
+                      speed_locked = true,
+                      x = -331873,
+                      y = -941149,
+                    },
+                  },
+                },
+                start_time = 0,
+                taskSelected = true,
+                uncontrollable = false,
+                units = {
+                  [1] = {
+                    unitId = 425,
+                    name = "combatZone_WahnerHeide_Easy-cible-5 #spawngroup=\"wh_cibles\" #spawncount=5",
+                    type = "Ural-375",
+                    skill = "Average",
+                    coldAtStart = false,
+                    heading = 0,
+                    playerCanDrive = true,
+                    x = -331873,
+                    y = -941149,
+                  },
+                },
+                visible = false,
+                x = -331873,
+                y = -941149,
+              },
+              [94] = {
+                groupId = 246,
+                name = "combatZone_WahnerHeide_Easy-cible-6",
+                task = "Ground Nothing",
+                hidden = false,
+                lateActivation = false,
+                route = {
+                  points = {
+                    [1] = {
+                      name = "",
+                      type = "Turning Point",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {
+                            [1] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 1,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 0,
+                                    value = 4,
+                                  },
+                                },
+                              },
+                            },
+                            [2] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 2,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 8,
+                                  },
+                                },
+                              },
+                            },
+                          },
+                        },
+                      },
+                      action = "Off Road",
+                      alt = 0,
+                      alt_type = "BARO",
+                      ETA = 0,
+                      ETA_locked = true,
+                      formation_template = "",
+                      speed = 0,
+                      speed_locked = true,
+                      x = -331725,
+                      y = -941330,
+                    },
+                  },
+                },
+                start_time = 0,
+                taskSelected = true,
+                uncontrollable = false,
+                units = {
+                  [1] = {
+                    unitId = 426,
+                    name = "combatZone_WahnerHeide_Easy-cible-6 #spawngroup=\"wh_cibles\" #spawncount=5",
+                    type = "Ural-375",
+                    skill = "Average",
+                    coldAtStart = false,
+                    heading = 0,
+                    playerCanDrive = true,
+                    x = -331725,
+                    y = -941330,
+                  },
+                },
+                visible = false,
+                x = -331725,
+                y = -941330,
+              },
+              [95] = {
+                groupId = 247,
+                name = "combatZone_WahnerHeide_Easy-cible-7",
+                task = "Ground Nothing",
+                hidden = false,
+                lateActivation = false,
+                route = {
+                  points = {
+                    [1] = {
+                      name = "",
+                      type = "Turning Point",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {
+                            [1] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 1,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 0,
+                                    value = 4,
+                                  },
+                                },
+                              },
+                            },
+                            [2] = {
+                              id = "WrappedAction",
+                              auto = false,
+                              enabled = true,
+                              number = 2,
+                              params = {
+                                action = {
+                                  id = "Option",
+                                  params = {
+                                    name = 8,
+                                  },
+                                },
+                              },
+                            },
+                          },
+                        },
+                      },
+                      action = "Off Road",
+                      alt = 0,
+                      alt_type = "BARO",
+                      ETA = 0,
+                      ETA_locked = true,
+                      formation_template = "",
+                      speed = 0,
+                      speed_locked = true,
+                      x = -331133,
+                      y = -940631,
+                    },
+                  },
+                },
+                start_time = 0,
+                taskSelected = true,
+                uncontrollable = false,
+                units = {
+                  [1] = {
+                    unitId = 427,
+                    name = "combatZone_WahnerHeide_Easy-cible-7 #spawngroup=\"wh_cibles\" #spawncount=5",
+                    type = "ATZ-5",
+                    skill = "Average",
+                    coldAtStart = false,
+                    heading = 0,
+                    playerCanDrive = true,
+                    x = -331133,
+                    y = -940631,
+                  },
+                },
+                visible = false,
+                x = -331133,
+                y = -940631,
               },
             },
           },

@@ -127,7 +127,7 @@ Tour 225.0 - S-3B et Pedro gérés par le menu CARRIER OPS"
       - type: zone
         zone_name: combatZone_Baumholder_Easy
         friendly_name: Baumholder - facile
-        briefing: 'Entraînement cibles pour hélicoptères à Baumholder (BULLSEYE 233/180), niveau facile. Cibles statiques inertes (blindés et camions), trois des cinq tirées au sort à chaque activation, aucune défense. Ravitailleur le plus proche : Shell 1 (TACAN 55Y, 255.0) à 16 nm. Un seul niveau de cette famille à la fois.'
+        briefing: 'Entraînement cibles pour hélicoptères à Baumholder (BULLSEYE 233/180), niveau facile. Véhicules inertes (blindés et camions), qui ne tirent pas : trois des cinq, tirés au sort à chaque activation, aucune défense. Ravitailleur le plus proche : Shell 1 (TACAN 55Y, 255.0) à 16 nm. Un seul niveau de cette famille à la fois.'
         radio_group_name: Entraînement hélicoptères
         training: true
       - type: zone
@@ -147,7 +147,7 @@ Tour 225.0 - S-3B et Pedro gérés par le menu CARRIER OPS"
       - type: zone
         zone_name: combatZone_WahnerHeide_Easy
         friendly_name: Wahner Heide - facile
-        briefing: "Entraînement cibles pour avions d'attaque à Wahner Heide (BULLSEYE 257/144), niveau facile. Cibles statiques inertes (chars, VCI, camions), cinq des sept tirées au sort à chaque activation. Ravitailleur le plus proche : Arco 2 (TACAN 54Y, 254.0) à 57 nm. Un seul niveau de cette famille à la fois."
+        briefing: "Entraînement cibles pour avions d'attaque à Wahner Heide (BULLSEYE 257/144), niveau facile. Véhicules inertes (chars, VCI, camions), qui ne tirent pas : cinq des sept, tirés au sort à chaque activation. Ravitailleur le plus proche : Arco 2 (TACAN 54Y, 254.0) à 57 nm. Un seul niveau de cette famille à la fois."
         radio_group_name: Entraînement attaque
         training: true
       - type: zone

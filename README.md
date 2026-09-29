@@ -76,7 +76,7 @@ En mer du Nord, à l'ouest d'Helgoland. Slots sur le pont : F-14B (2 à froid, 2
 | **Reaper 1** | MQ-9 Reaper | Baumholder | `1688` | `36.0 FM` | `3 000 m sol` | `233/180` |
 | **Reaper 2** | MQ-9 Reaper | Wahner Heide | `1687` | `37.0 FM` | `3 000 m sol` | `257/145` |
 
-Un drone tourne au-dessus des zones d'entraînement hélicoptères et attaque, et désigne au laser ce qu'il voit ; le menu F10 *ASSETS* le remet en vol s'il a été abattu : au niveau difficile, l'AAA lourde de la zone le touche à cette hauteur (Reaper 2 abattu par un S-60 à Wahner Heide le 28/09). Il ne désigne que des véhicules : rien aux niveaux faciles de Baumholder et de Wahner Heide, faits de cibles statiques. Pas de drone sur la zone SEAD de Borkenberge : ses SAM portent plus loin que le laser, qui ne marque qu'à 10 km.
+Un drone tourne au-dessus des zones d'entraînement hélicoptères et attaque, et désigne au laser ce qu'il voit ; le menu F10 *ASSETS* le remet en vol s'il a été abattu : au niveau difficile, l'AAA lourde de la zone le touche à cette hauteur (Reaper 2 abattu par un S-60 à Wahner Heide le 28/09). Il ne désigne que des véhicules, ce que sont aussi les cibles des niveaux faciles. Pas de drone sur la zone SEAD de Borkenberge : ses SAM portent plus loin que le laser, qui ne marque qu'à 10 km.
 
 ## Entraînement
 
@@ -88,7 +88,7 @@ Côté ouest, loin du front. Trois niveaux par famille, chacun comprenant ceux d
 
 `N49°38.624' E007°23.572'` · bullseye `233/180` · rayon 1.6 nm · menu F10 « Entraînement hélicoptères »
 
-- **Facile** — Cibles statiques inertes (blindés et camions), trois des cinq tirées au sort à chaque activation, aucune défense.
+- **Facile** — Véhicules inertes (blindés et camions), qui ne tirent pas : trois des cinq, tirés au sort à chaque activation, aucune défense.
 - **Moyen** — Ajoute de l'AAA légère (ZU-23 ou Shilka, tirée au sort à chaque activation), en plus du niveau facile.
 - **Difficile** — Ajoute une défense courte portée (batterie VEAF de niveau 3 : missiles IR et AAA) et des MANPADS, en plus du niveau moyen.
 
@@ -96,7 +96,7 @@ Côté ouest, loin du front. Trois niveaux par famille, chacun comprenant ceux d
 
 `N50°53.234' E007°05.434'` · bullseye `257/145` · rayon 1.6 nm · menu F10 « Entraînement attaque »
 
-- **Facile** — Cibles statiques inertes (chars, VCI, camions), cinq des sept tirées au sort à chaque activation.
+- **Facile** — Véhicules inertes (chars, VCI, camions), qui ne tirent pas : cinq des sept, tirés au sort à chaque activation.
 - **Moyen** — Ajoute un peloton blindé actif et de l'AAA légère, en plus du niveau facile.
 - **Difficile** — Ajoute un groupe blindé VEAF avec sa défense et une batterie courte portée (niveau 3), en plus du niveau moyen.
 
