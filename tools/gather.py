@@ -52,7 +52,7 @@ for side, lst in (("blue", ["Ramstein", "Spangdahlem", "Buchel", "Norvenich", "W
     for b in lst:
         a = A[b]; f = chan.get("Base-" + b, {})
         ad = [n for n in groups if n.startswith(f"AD-{b}-")]
-        bases.append(dict(name=disp.get(b, b), side=side, uhf=f.get("uhf"), vhf=f.get("vhf"), ad=ad, **pt(a["x"], a["y"])))
+        bases.append(dict(name=disp.get(b, b), side=side, uhf=f.get("uhf"), vhf=f.get("vhf"), fm=f.get("fm"), ad=ad, **pt(a["x"], a["y"])))
 out["bases"] = bases
 # FARP
 out["farps"] = [dict(name=n.replace("FARP-", "").replace("Goettingen", "Göttingen"), **pt(groups[n][2]["x"], groups[n][2]["y"])) for n in ("FARP-Baumholder", "FARP-Goettingen")]

@@ -19,6 +19,7 @@ $env:VMCT_PY = "D:\chemin\vers\veaf-tools"   # le dossier src/python/veaf-tools
 | `gather.py` | Relève dans la mission tout ce que le briefing affiche → `tools/briefing_data.json` |
 | `gen_readme.py` | Écrit `README.md` (le briefing des pilotes) à partir de `briefing_data.json`, et les cartes via `gen_map.py` : la carte générale en tête, chaque zoom dans la section qu'il illustre |
 | `gen_map.py` | Dessine sur un fond OpenStreetMap (tuiles mises en cache dans `tools/tiles/`) la carte générale `docs/carte.jpg` et les zooms `docs/cartes/` (liste `ZOOMS` : un titre et les objets à cadrer), copie les images dans `src/mission/l10n/DEFAULT/` et les déclare dans `mapResource` et les `pictureFileName*` de la mission |
+| `sync_briefing_bases.py` | Recopie les fréquences de base de `src/presets.yaml` (collection `bases`, écrite par `veaf-tools content airfield-channels`) dans le briefing DCS de la mission ; finit sur une ligne `VERDICT` |
 | `check_frequencies.py` | Compare le plan radio `src/presets.yaml` aux radios injectées dans chaque appareil, au briefing DCS et au README ; finit sur une ligne `VERDICT` |
 | `verify.py` | Contrôles du `.miz` construit : identifiants et noms en double, slots, météo, heure, configuration serveur |
 | `make_test_mission.py` | Construit la mission de test locale : profil `LOCAL_TEST`, game master, A-10C II en slot classique, pont dcs-bridge → `bridge/bridge-GermanyCW-OT.miz` |
@@ -32,7 +33,8 @@ Données d'entrée, relevées une fois sur la carte : `airfields.json` (aérodro
 AWACS).
 
 **Après tout changement de la mission** : `gather.py` puis `gen_readme.py`, et `check_frequencies.py` sur le `.miz`
-reconstruit.
+reconstruit. **Après un changement des fréquences de base** (`veaf-tools content airfield-channels --apply …`) :
+`sync_briefing_bases.py` d'abord.
 
 **La sonde `probe_scenery.py` se lance au démarrage de la mission, avant d'activer la moindre zone.** Elle interroge
 `Disposition.getSimpleZones`, qui répond « y a-t-il de la place ici » : un véhicule prend de la place, donc une

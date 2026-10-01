@@ -99,9 +99,9 @@ rows = []
 for b in D["bases"]:
     ad = " + ".join(ADL.get(ad_by[n]["cmd"].split(",")[0], ad_by[n]["cmd"]) for n in b["ad"])
     rows.append([f'**{b["name"]}**' + (" (base mère)" if b["name"] == "Ramstein" else ""), side[b["side"]], c(b["ddm"]), c(b["be"]),
-                 c(b["uhf"]), c(b["vhf"]), ad])
-rows += [[f'**FARP {f["name"]}**', "Bleu", c(f["ddm"]), c(f["be"]), "—", "—", "posé au démarrage (`-farp`)"] for f in D["farps"]]
-w(table(["Base", "Camp", "Position", "Bullseye", "UHF", "VHF", "Défense"], rows))
+                 c(b["uhf"]), c(b["vhf"]), c(b["fm"]) if b.get("fm") else "—", ad])
+rows += [[f'**FARP {f["name"]}**', "Bleu", c(f["ddm"]), c(f["be"]), "—", "—", "—", "posé au démarrage (`-farp`)"] for f in D["farps"]]
+w(table(["Base", "Camp", "Position", "Bullseye", "UHF", "VHF", "FM", "Défense"], rows))
 w("")
 w("Slots dynamiques, démarrage moteur chaud, carburant et munitions illimités. Les 49 autres aérodromes de l'Est sont "
   "rouges, sans slots.")

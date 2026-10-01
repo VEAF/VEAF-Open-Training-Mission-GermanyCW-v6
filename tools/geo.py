@@ -7,8 +7,8 @@ import os
 S = os.path.dirname(os.path.abspath(__file__))
 BULL = json.load(open(os.path.join(S, "bullseye.json")))
 SUP = json.load(open(os.path.join(S, "support.json")))
-TANKERS = {"Texaco 1": "TACAN 51Y, 251.0", "Arco 1": "TACAN 52Y, 252.0", "Texaco 2": "TACAN 53Y, 253.0",
-           "Arco 2": "TACAN 54Y, 254.0", "Shell 1": "TACAN 55Y, 255.0"}
+TANKERS = {"Texaco 1": "TACAN 51Y, 271.0", "Arco 1": "TACAN 52Y, 272.0", "Texaco 2": "TACAN 53Y, 273.0",
+           "Arco 2": "TACAN 54Y, 274.0", "Shell 1": "TACAN 55Y, 275.0"}
 
 
 def bullseye(x, y):

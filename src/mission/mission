@@ -99,7 +99,7 @@ mission =
                 task = "Refueling",
                 communication = true,
                 dynSpawnTemplate = false,
-                frequency = 251,
+                frequency = 271,
                 hidden = false,
                 lateActivation = false,
                 modulation = 0,
@@ -243,7 +243,7 @@ mission =
                 task = "Refueling",
                 communication = true,
                 dynSpawnTemplate = false,
-                frequency = 252,
+                frequency = 272,
                 hidden = false,
                 lateActivation = false,
                 modulation = 0,
@@ -387,7 +387,7 @@ mission =
                 task = "Refueling",
                 communication = true,
                 dynSpawnTemplate = false,
-                frequency = 253,
+                frequency = 273,
                 hidden = false,
                 lateActivation = false,
                 modulation = 0,
@@ -531,7 +531,7 @@ mission =
                 task = "Refueling",
                 communication = true,
                 dynSpawnTemplate = false,
-                frequency = 254,
+                frequency = 274,
                 hidden = false,
                 lateActivation = false,
                 modulation = 0,
@@ -675,7 +675,7 @@ mission =
                 task = "Refueling",
                 communication = true,
                 dynSpawnTemplate = false,
-                frequency = 255,
+                frequency = 275,
                 hidden = false,
                 lateActivation = false,
                 modulation = 0,
@@ -1093,7 +1093,7 @@ mission =
                 task = "Escort",
                 communication = true,
                 dynSpawnTemplate = false,
-                frequency = 255,
+                frequency = 275,
                 hidden = false,
                 lateActivation = false,
                 modulation = 0,
@@ -23813,14 +23813,14 @@ mission =
     Month = 6,
     Year = 2025,
   },
-  descriptionBlueTask = "BASES (slots dynamiques, démarrage moteur chaud, carburant et munitions illimités) - fréquence de trafic UHF / VHF :\
-Ramstein (base mère) 270.1 / 130.1 - Spangdahlem 270.2 / 130.2 - Büchel 270.3 / 130.3 - Nörvenich 270.4 / 130.4 - Wiesbaden (hélicoptères) 270.5 / 130.5 - Nordholz 270.6 / 130.6 - Wunstorf 270.7 / 130.7 - Fassberg (avancée) 270.8 / 130.8 - Fulda (avancée, hélicoptères) 270.9 / 130.9.\
+  descriptionBlueTask = "BASES (slots dynamiques, démarrage moteur chaud, carburant et munitions illimités) - fréquences de l'aérodrome données par DCS, UHF / VHF :\
+Ramstein (base mère) 251.95 / 133.2 - Spangdahlem 251.8 / 122.2 - Büchel 252.9 / 122.1 - Nörvenich 365.0 / 123.0 - Wiesbaden (hélicoptères) 252.25 / 118.1 - Nordholz 315.7 / 142.9 - Wunstorf 253.95 / 121.1 - Fassberg (avancée) 251.0 / 122.1 - Fulda (avancée, hélicoptères) 252.0 / 126.0.\
 FARP (apparaissent au démarrage) : Baumholder, près de la zone d'entraînement hélicoptères, et Göttingen, près du front.\
 \
 RAVITAILLEURS :\
-- secteur nord : Texaco 1 (perche) 251.0, TACAN 51Y, FL220, BULLSEYE 337/85 ; Arco 1 (panier) 252.0, TACAN 52Y, FL180, BULLSEYE 331/92 ;\
-- secteur sud : Texaco 2 (perche) 253.0, TACAN 53Y, FL240, BULLSEYE 228/102 ; Arco 2 (panier) 254.0, TACAN 54Y, FL160, BULLSEYE 233/109 ;\
-- arrière : Shell 1 (perche) 255.0, TACAN 55Y, FL200, près de Ramstein (BULLSEYE 232/199), escorté.\
+- secteur nord : Texaco 1 (perche) 271.0, TACAN 51Y, FL220, BULLSEYE 337/85 ; Arco 1 (panier) 272.0, TACAN 52Y, FL180, BULLSEYE 331/92 ;\
+- secteur sud : Texaco 2 (perche) 273.0, TACAN 53Y, FL240, BULLSEYE 228/102 ; Arco 2 (panier) 274.0, TACAN 54Y, FL160, BULLSEYE 233/109 ;\
+- arrière : Shell 1 (perche) 275.0, TACAN 55Y, FL200, près de Ramstein (BULLSEYE 232/199), escorté.\
 Les ravitailleurs de secteur ne sont pas escortés : c'est à vous de les défendre.\
 AWACS (escortés) : Overlord 1 (nord) 265.0, FL300, BULLSEYE 318/91 ; Magic 1 (sud) 266.0, FL310, BULLSEYE 246/107.\
 PORTE-AVIONS : CSG-74 Stennis en mer du Nord, à l'ouest d'Helgoland (BULLSEYE 329/178) : TACAN 10X STS, ICLS 10, Link 4 et tour 225.0 ; slots F/A-18C et F-14B sur le pont ; menu F10 CARRIER OPS pour le mettre face au vent (ravitailleur S-3B et hélicoptère de sauvetage).\
@@ -23838,14 +23838,14 @@ ARÈNE au-dessus du Grand Belt (BULLSEYE 012/214) : slots en vol pour les deux c
   descriptionRedTask = "Des joueurs volent rouge : combat aérien entre joueurs, pas de zone de combat à défendre.\
 COMBAT ENTRE JOUEURS : permis partout, sauf dans les sanctuaires. Sanctuaire bleu : les arrières à l'ouest (Ramstein, Spangdahlem, Büchel, Nörvenich, Wiesbaden et les zones d'entraînement). Sanctuaires rouges : 8 nm autour de Laage, Holzdorf et Allstedt. Un pilote du camp adverse y est prévenu dès l'entrée, puis détruit au bout de 60 s ; les missiles tirés sur les défenseurs sont détruits. Les limites sont tracées sur la carte F10.\
 ARÈNE au-dessus du Grand Belt (BULLSEYE 012/214) : slots en vol pour les deux camps, F-14B, F-16C et F/A-18C en Fox 1 ou Fox 3, M-2000C en Fox 1 ; côté rouge en plus, MiG-29S, J-11A et JF-17 en Fox 3, MiG-29A, Su-27, Su-33, J-11A, MiG-21bis et Mirage F1EE en Fox 1 ; bleu à l'ouest sur 280.0 avec l'AWACS Darkstar 1, rouge à l'est sur 281.0 avec l'AWACS Arène Rouge.\
-BASES (slots dynamiques) - UHF / VHF : Laage 275.1 / 131.1, Holzdorf 275.2 / 131.2, Allstedt (avancée) 275.3 / 131.3.\
+BASES (slots dynamiques) - UHF / VHF : Laage 252.7 / 129.5, Holzdorf 250.95 / 118.2, Allstedt (avancée) 251.5 / 132.5.\
 SOUTIEN : Tanker Rouge (Il-78M) 261.0, FL200, BULLSEYE 072/138 ; AWACS Rouge (A-50) 260.0, FL300, BULLSEYE 088/133 ; tous deux escortés.\
 OPPOSITION BLEUE : QRA bleues autour de Hanovre-Celle et de Francfort (décollage 60 s après l'entrée du premier intrus, hélicoptères ignorés) ; missions CAP F-16C (Hanovre) et F-15C (Kassel) à lancer par le menu F10 MISSIONS ; défense aérienne bleue (Patriot, NASAMS) sur les bases et les arrières.",
   descriptionText = "VEAF Open Training - Allemagne, 2025 (scénario fictif).\
 Une crise OTAN-Russie fige les deux camps sur la ligne de l'ancienne frontière interallemande, de la baie de Lübeck à la frontière tchèque (environ 300 nm). L'OTAN tient l'Ouest, la Russie tient l'Est et Berlin ; Danemark, Suède et Pologne restent neutres.\
 \
 BULLSEYE (commun aux deux camps) : le sommet du Brocken, dans le Harz, au milieu du front.\
-ATC coupé sur tous les aérodromes : utilisez les fréquences de trafic des presets.\
+ATC coupé sur tous les aérodromes : utilisez les fréquences d'aérodrome des presets.\
 \
 Zones de combat, missions CAP, soutien et QRA se pilotent par le menu radio F10 (Zones de combat, MISSIONS, ASSETS). Marqueurs utiles sur la carte F10 : -tanker <nom> (déplacer un ravitailleur), -cas (cible CAS aléatoire), -point <nom> (nommer un point).",
   drawings = {
@@ -24118,7 +24118,7 @@ Zones de combat, missions CAP, soutien et QRA se pilotent par le menu radio F10 
             mapX = -91981.0,
             mapY = -737334.0,
             primitiveType = "TextBox",
-            text = "Texaco 1 · perche · 251.0 · 51Y · FL220",
+            text = "Texaco 1 · perche · 271.0 · 51Y · FL220",
             visible = true,
           },
           [9] = {
@@ -24157,7 +24157,7 @@ Zones de combat, missions CAP, soutien et QRA se pilotent par le menu radio F10 
             mapX = -157052.0,
             mapY = -765859.0,
             primitiveType = "TextBox",
-            text = "Arco 1 · panier · 252.0 · 52Y · FL180",
+            text = "Arco 1 · panier · 272.0 · 52Y · FL180",
             visible = true,
           },
           [11] = {
@@ -24196,7 +24196,7 @@ Zones de combat, missions CAP, soutien et QRA se pilotent par le menu radio F10 
             mapX = -363444.0,
             mapY = -813876.0,
             primitiveType = "TextBox",
-            text = "Texaco 2 · perche · 253.0 · 53Y · FL240",
+            text = "Texaco 2 · perche · 273.0 · 53Y · FL240",
             visible = true,
           },
           [13] = {
@@ -24235,7 +24235,7 @@ Zones de combat, missions CAP, soutien et QRA se pilotent par le menu radio F10 
             mapX = -427835.0,
             mapY = -846777.0,
             primitiveType = "TextBox",
-            text = "Arco 2 · panier · 254.0 · 54Y · FL160",
+            text = "Arco 2 · panier · 274.0 · 54Y · FL160",
             visible = true,
           },
           [15] = {
@@ -24274,7 +24274,7 @@ Zones de combat, missions CAP, soutien et QRA se pilotent par le menu radio F10 
             mapX = -496119.5,
             mapY = -962455.5,
             primitiveType = "TextBox",
-            text = "Shell 1 · perche · 255.0 · 55Y · FL200",
+            text = "Shell 1 · perche · 275.0 · 55Y · FL200",
             visible = true,
           },
           [17] = {

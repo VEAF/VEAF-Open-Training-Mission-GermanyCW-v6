@@ -8,7 +8,8 @@ Compared, for every channel of the plan:
   2. the radios injected into every player aircraft of the .miz: frequency, and the channel name shown in the
      cockpit, byte for byte (a UTF-8 name read as cp1252 becomes "NÃ¶rvenich");
   3. the DCS briefing (dictionary of the .miz): every "<base> <uhf> / <vhf>" pair;
-  4. README.md: the bases table and the radio tables.
+  4. README.md: the bases table (UHF, VHF, FM) and the radio tables.
+A base channel is titled "<base> / <TACAN>" by veaf-tools: the texts name the base alone, both keys are checked.
 The kneeboard pages are pictures drawn from the same injected radios: check 2 covers their names and frequencies.
 NOT checked: the channel NUMBERS (README 'canal 12', kneeboard CH column) against what the cockpit shows. On the
 Mi-24P and the OH-58D they differ from the DCS slot (journal, section 13): read them in the cockpit.
@@ -42,6 +43,7 @@ def plan():
     for coll in p["channels_collection"].values():
         for ch in coll.values():
             by_title[ch["title"]] = ch["freqs"]
+            by_title.setdefault(ch["title"].split(" / ")[0], ch["freqs"])
             for f in ch["freqs"].values():
                 by_freq.setdefault(round(float(f), 3), set()).add(ch["title"])
     return by_title, by_freq
@@ -72,7 +74,7 @@ def check_radios(m, by_title, by_freq, problems):
     return seen
 
 
-PAIR = re.compile(r"([A-ZÀ-Ý][\w\-éèüöäÉ ]+?)(?: \([^)]*\))? (\d{3}\.\d) / (\d{3}\.\d)")
+PAIR = re.compile(r"([A-ZÀ-Ý][\w\-éèüöäÉ ]+?)(?: \([^)]*\))? (\d{3}\.\d+) / (\d{3}\.\d+)")
 
 
 def check_text(label, text, by_title, problems):
@@ -92,14 +94,16 @@ def check_readme(by_title, by_freq, problems):
     n = 0
     for line in open(ROOT / "README.md", encoding="utf-8"):
         cells = [c.strip().strip("*`") for c in line.strip().strip("|").split("|")]
+        cells[0] = re.sub(r"\*\* \(.*\)$", "", cells[0])  # "**Ramstein** (base mère)"
         if len(cells) < 4:
             continue
-        # bases table: | **Base** | side | coords | bullseye | `uhf` | `vhf` | defence |
-        if cells[0] in by_title and len(cells) >= 6 and re.fullmatch(r"\d{3}\.\d+", cells[4] or ""):
+        # bases table: | **Base** | side | coords | bullseye | `uhf` | `vhf` | `fm` | defence |
+        if cells[0] in by_title and len(cells) >= 7 and re.fullmatch(r"\d{3}\.\d+", cells[4] or ""):
             n += 1
             want = by_title[cells[0]]
-            if float(cells[4]) != float(want.get("uhf", -1)) or float(cells[5]) != float(want.get("vhf", -1)):
-                problems.append(f"README bases: {cells[0]} {cells[4]} / {cells[5]}, plan says {want}")
+            got = [float(x) if re.fullmatch(r"\d+\.\d+", x) else -1 for x in cells[4:7]]
+            if got != [float(want.get(b, -1)) for b in ("uhf", "vhf", "fm")]:
+                problems.append(f"README bases: {cells[0]} {' / '.join(cells[4:7])}, plan says {want}")
         # radio tables: | radio | `channel` | name | `MHz` |
         if re.fullmatch(r"\d+(\.\d+)?", cells[-1] or "") and re.fullmatch(r"\d+", cells[1] or ""):
             f = round(float(cells[-1]), 3)
