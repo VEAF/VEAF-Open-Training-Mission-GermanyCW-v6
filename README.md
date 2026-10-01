@@ -24,22 +24,22 @@ Carrés : bases avec slots (bleu / rouge). Traits pleins : hippodromes des ravit
 
 ## Bases
 
-| Base | Camp | Position | Bullseye | UHF | VHF | Défense |
-|---|---|---|---|---|---|---|
-| **Ramstein** (base mère) | Bleu | `N49°26.237' E007°36.939'` | `228/184` | `270.1` | `130.1` | Avenger + NASAMS |
-| **Spangdahlem** | Bleu | `N49°59.153' E006°42.819'` | `243/186` | `270.2` | `130.2` | Avenger + NASAMS |
-| **Büchel** | Bleu | `N50°09.888' E007°03.315'` | `243/168` | `270.3` | `130.3` | Avenger + NASAMS |
-| **Nörvenich** | Bleu | `N50°49.641' E006°38.586'` | `258/162` | `270.4` | `130.4` | Avenger + NASAMS |
-| **Wiesbaden** | Bleu | `N50°02.841' E008°18.679'` | `229/138` | `270.5` | `130.5` | Avenger + NASAMS |
-| **Nordholz** | Bleu | `N53°46.163' E008°40.546'` | `338/139` | `270.6` | `130.6` | Avenger + NASAMS |
-| **Wunstorf** | Bleu | `N52°27.495' E009°26.418'` | `321/59` | `270.7` | `130.7` | Avenger + NASAMS |
-| **Fassberg** | Bleu | `N52°55.154' E010°09.989'` | `355/70` | `270.8` | `130.8` | Avenger + NASAMS |
-| **Fulda** | Bleu | `N50°32.397' E009°38.824'` | `214/85` | `270.9` | `130.9` | Avenger + NASAMS |
-| **Laage** | Rouge | `N53°55.189' E012°15.650'` | `033/141` | `275.1` | `131.1` | SA-15 + SA-11 |
-| **Holzdorf** | Rouge | `N51°46.009' E013°11.332'` | `098/96` | `275.2` | `131.2` | SA-15 + SA-11 |
-| **Allstedt** | Rouge | `N51°23.029' E011°27.789'` | `136/41` | `275.3` | `131.3` | SA-15 + SA-11 |
-| **FARP Baumholder** | Bleu | `N49°36.000' E007°18.000'` | `233/184` | — | — | posé au démarrage (`-farp`) |
-| **FARP Göttingen** | Bleu | `N51°33.300' E009°54.300'` | `250/31` | — | — | posé au démarrage (`-farp`) |
+| Base | Camp | Position | Bullseye | UHF | VHF | FM | Défense |
+|---|---|---|---|---|---|---|---|
+| **Ramstein** (base mère) | Bleu | `N49°26.237' E007°36.939'` | `228/184` | `251.95` | `133.2` | `40.35` | Avenger + NASAMS |
+| **Spangdahlem** | Bleu | `N49°59.153' E006°42.819'` | `243/186` | `251.8` | `122.2` | `40.2` | Avenger + NASAMS |
+| **Büchel** | Bleu | `N50°09.888' E007°03.315'` | `243/168` | `252.9` | `122.1` | `41.3` | Avenger + NASAMS |
+| **Nörvenich** | Bleu | `N50°49.641' E006°38.586'` | `258/162` | `365.0` | `123.0` | `41.2` | Avenger + NASAMS |
+| **Wiesbaden** | Bleu | `N50°02.841' E008°18.679'` | `229/138` | `252.25` | `118.1` | `40.65` | Avenger + NASAMS |
+| **Nordholz** | Bleu | `N53°46.163' E008°40.546'` | `338/139` | `315.7` | `142.9` | `40.85` | Avenger + NASAMS |
+| **Wunstorf** | Bleu | `N52°27.495' E009°26.418'` | `321/59` | `253.95` | `121.1` | `39.95` | Avenger + NASAMS |
+| **Fassberg** | Bleu | `N52°55.154' E010°09.989'` | `355/70` | `251.0` | `122.1` | `39.4` | Avenger + NASAMS |
+| **Fulda** | Bleu | `N50°32.397' E009°38.824'` | `214/85` | `252.0` | `126.0` | `40.4` | Avenger + NASAMS |
+| **Laage** | Rouge | `N53°55.189' E012°15.650'` | `033/141` | `252.7` | `129.5` | `41.1` | SA-15 + SA-11 |
+| **Holzdorf** | Rouge | `N51°46.009' E013°11.332'` | `098/96` | `250.95` | `118.2` | `39.35` | SA-15 + SA-11 |
+| **Allstedt** | Rouge | `N51°23.029' E011°27.789'` | `136/41` | `251.5` | `132.5` | `39.9` | SA-15 + SA-11 |
+| **FARP Baumholder** | Bleu | `N49°36.000' E007°18.000'` | `233/184` | — | — | — | posé au démarrage (`-farp`) |
+| **FARP Göttingen** | Bleu | `N51°33.300' E009°54.300'` | `250/31` | — | — | — | posé au démarrage (`-farp`) |
 
 Slots dynamiques, démarrage moteur chaud, carburant et munitions illimités. Les 49 autres aérodromes de l'Est sont rouges, sans slots.
 
@@ -49,11 +49,11 @@ Slots dynamiques, démarrage moteur chaud, carburant et munitions illimités. Le
 
 | Indicatif | Camp | Appareil | Rôle | MHz | TACAN | Niveau | Vitesse | Bullseye | Hippodrome (extrémités) | Escorte |
 |---|---|---|---|---|---|---|---|---|---|---|
-| **Texaco 1** | Bleu | KC-135 | perche · nord | `251.0` | `51Y TX1` | `FL220` | `420 kt` | `337/85` | `N53°15.000' E009°21.000'`<br>`N52°45.000' E009°27.000'` | non |
-| **Arco 1** | Bleu | KC135MPRS | panier · nord | `252.0` | `52Y AR1` | `FL180` | `340 kt` | `331/92` | `N53°15.000' E009°03.000'`<br>`N52°45.000' E009°09.000'` | non |
-| **Texaco 2** | Bleu | KC-135 | perche · sud | `253.0` | `53Y TX2` | `FL240` | `430 kt` | `228/102` | `N50°45.000' E008°54.000'`<br>`N50°15.000' E008°57.000'` | non |
-| **Arco 2** | Bleu | KC135MPRS | panier · sud | `254.0` | `54Y AR2` | `FL160` | `330 kt` | `233/109` | `N50°45.000' E008°36.000'`<br>`N50°15.000' E008°39.000'` | non |
-| **Shell 1** | Bleu | KC-135 | perche · arrière | `255.0` | `55Y SH1` | `FL200` | `410 kt` | `232/199` | `N49°36.000' E007°00.000'`<br>`N49°12.000' E007°12.000'` | oui |
+| **Texaco 1** | Bleu | KC-135 | perche · nord | `271.0` | `51Y TX1` | `FL220` | `420 kt` | `337/85` | `N53°15.000' E009°21.000'`<br>`N52°45.000' E009°27.000'` | non |
+| **Arco 1** | Bleu | KC135MPRS | panier · nord | `272.0` | `52Y AR1` | `FL180` | `340 kt` | `331/92` | `N53°15.000' E009°03.000'`<br>`N52°45.000' E009°09.000'` | non |
+| **Texaco 2** | Bleu | KC-135 | perche · sud | `273.0` | `53Y TX2` | `FL240` | `430 kt` | `228/102` | `N50°45.000' E008°54.000'`<br>`N50°15.000' E008°57.000'` | non |
+| **Arco 2** | Bleu | KC135MPRS | panier · sud | `274.0` | `54Y AR2` | `FL160` | `330 kt` | `233/109` | `N50°45.000' E008°36.000'`<br>`N50°15.000' E008°39.000'` | non |
+| **Shell 1** | Bleu | KC-135 | perche · arrière | `275.0` | `55Y SH1` | `FL200` | `410 kt` | `232/199` | `N49°36.000' E007°00.000'`<br>`N49°12.000' E007°12.000'` | oui |
 | **Overlord 1** | Bleu | E-3A | AWACS · nord | `265.0` | — | `FL300` | `400 kt` | `318/91` | `N53°06.000' E008°36.000'`<br>`N52°24.000' E008°48.000'` | oui |
 | **Magic 1** | Bleu | E-3A | AWACS · sud | `266.0` | — | `FL310` | `400 kt` | `246/107` | `N51°12.000' E008°12.000'`<br>`N50°30.000' E008°18.000'` | oui |
 | **Tanker Rouge** | Rouge | IL-78M | ravitailleur | `261.0` | — | `FL200` | `400 kt` | `072/138` | `N53°00.000' E013°54.000'`<br>`N52°30.000' E014°06.000'` | oui |
@@ -131,77 +131,77 @@ Côté est. Les numéros renvoient à la carte. Chaque zone s'active par le menu
 
 **1. Lübtheen** — `N53°16.840' E011°11.407'` · bullseye `021/92`
 
-un bataillon blindé en position de départ sur le terrain d'exercice de Lübtheen. À détruire : les chars, les VCI et la batterie d'artillerie. Défense : batterie VEAF de niveau 4 (SA-8 ou Tor, missiles IR, AAA) et un SA-19 Tunguska. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 66 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 77 nm.
+un bataillon blindé en position de départ sur le terrain d'exercice de Lübtheen. À détruire : les chars, les VCI et la batterie d'artillerie. Défense : batterie VEAF de niveau 4 (SA-8 ou Tor, missiles IR, AAA) et un SA-19 Tunguska. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 271.0) à 66 nm, Arco 1 (panier, TACAN 52Y, 272.0) à 77 nm.
 
 **2. Letzlingen (Altmark)** — `N52°26.271' E011°34.983'` · bullseye `051/53`
 
-une brigade mécanisée sur le terrain d'exercice de l'Altmark, face au front. À détruire : les blindés et les véhicules de commandement. Défense : SA-15 Tor ou SA-19 Tunguska (tiré au sort à chaque activation), plus la défense propre du groupe blindé. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 81 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 92 nm.
+une brigade mécanisée sur le terrain d'exercice de l'Altmark, face au front. À détruire : les blindés et les véhicules de commandement. Défense : SA-15 Tor ou SA-19 Tunguska (tiré au sort à chaque activation), plus la défense propre du groupe blindé. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 271.0) à 81 nm, Arco 1 (panier, TACAN 52Y, 272.0) à 92 nm.
 
 **3. Ohrdruf** — `N50°49.620' E010°43.917'` · bullseye `184/59`
 
-des positions d'artillerie et de lance-roquettes sur le terrain d'Ohrdruf. À détruire : les lance-roquettes Smerch ou les obusiers Msta (l'un des deux, tiré au sort à chaque activation) et leur ravitaillement. Défense : batterie VEAF de niveau 4 (SA-8 ou Tor, missiles IR, AAA). Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 2 (perche, TACAN 53Y, 253.0) à 70 nm, Arco 2 (panier, TACAN 54Y, 254.0) à 82 nm.
+des positions d'artillerie et de lance-roquettes sur le terrain d'Ohrdruf. À détruire : les lance-roquettes Smerch ou les obusiers Msta (l'un des deux, tiré au sort à chaque activation) et leur ravitaillement. Défense : batterie VEAF de niveau 4 (SA-8 ou Tor, missiles IR, AAA). Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 2 (perche, TACAN 53Y, 273.0) à 70 nm, Arco 2 (panier, TACAN 54Y, 274.0) à 82 nm.
 
 ### SEAD
 
 **4. Brocken** — `N51°47.948' E010°36.938'` · bullseye `sur le bullseye`
 
-le site radar du Brocken, au sommet du Harz, avec une batterie SA-11. À détruire : le radar d'alerte 55G6 et la batterie SA-11. Défense : SA-11 Buk et MANPADS SA-18, en réseau Skynet. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 72 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 79 nm.
+le site radar du Brocken, au sommet du Harz, avec une batterie SA-11. À détruire : le radar d'alerte 55G6 et la batterie SA-11. Défense : SA-11 Buk et MANPADS SA-18, en réseau Skynet. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 271.0) à 72 nm, Arco 1 (panier, TACAN 52Y, 272.0) à 79 nm.
 
 **5. Kyritz-Ruppiner Heide** — `N53°01.800' E012°37.200'` · bullseye `052/105`
 
-une batterie SA-10 isolée sur l'ancien champ de tir de la Kyritz-Ruppiner Heide, au sud de Wittstock. À détruire : la batterie SA-10 (radars et lanceurs). Défense : SA-10 et un SA-15 Tor en défense rapprochée, en réseau Skynet. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 117 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 128 nm.
+une batterie SA-10 isolée sur l'ancien champ de tir de la Kyritz-Ruppiner Heide, au sud de Wittstock. À détruire : la batterie SA-10 (radars et lanceurs). Défense : SA-10 et un SA-15 Tor en défense rapprochée, en réseau Skynet. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 271.0) à 117 nm, Arco 1 (panier, TACAN 52Y, 272.0) à 128 nm.
 
 ### Convois
 
 **6. Convoi A2** — `N52°24.650' E012°32.988'` · bullseye `070/81`
 
-un convoi logistique qui roule vers l'ouest sur l'axe Brandenburg - Genthin - Burg (A2 / B1), vers Magdeburg. À détruire : le convoi (camions, citernes, escorte). Défense : sa propre défense : un Shilka et un SA-13 roulent avec lui. Sous la couverture de la QRA Berlin. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 116 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 127 nm.
+un convoi logistique qui roule vers l'ouest sur l'axe Brandenburg - Genthin - Burg (A2 / B1), vers Magdeburg. À détruire : le convoi (camions, citernes, escorte). Défense : sa propre défense : un Shilka et un SA-13 roulent avec lui. Sous la couverture de la QRA Berlin. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 271.0) à 116 nm, Arco 1 (panier, TACAN 52Y, 272.0) à 127 nm.
 
 **7. Convoi A9** — `N51°25.311' E012°11.698'` · bullseye `119/64`
 
-un convoi de ravitaillement qui remonte l'A9 du Schkeuditzer Kreuz vers Bitterfeld et Dessau. À détruire : le convoi (camions et escorte). Défense : sa propre défense : un SA-19 Tunguska roule avec lui. Sous la couverture de la QRA Leipzig. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 130 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 139 nm.
+un convoi de ravitaillement qui remonte l'A9 du Schkeuditzer Kreuz vers Bitterfeld et Dessau. À détruire : le convoi (camions et escorte). Défense : sa propre défense : un SA-19 Tunguska roule avec lui. Sous la couverture de la QRA Leipzig. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 271.0) à 130 nm, Arco 1 (panier, TACAN 52Y, 272.0) à 139 nm.
 
 **8. Convoi Ludwigslust** — `N53°23.595' E011°34.520'` · bullseye `028/103`
 
-une colonne blindée de renfort qui roule de Neustadt-Glewe vers Ludwigslust puis Hagenow, vers le front. À détruire : les chars et VCI de la colonne. Défense : sa propre défense : un SA-13 roule avec elle. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 81 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 92 nm.
+une colonne blindée de renfort qui roule de Neustadt-Glewe vers Ludwigslust puis Hagenow, vers le front. À détruire : les chars et VCI de la colonne. Défense : sa propre défense : un SA-13 roule avec elle. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 271.0) à 81 nm, Arco 1 (panier, TACAN 52Y, 272.0) à 92 nm.
 
 ### Frappe profonde
 
 **9. Wünsdorf** — `N52°09.783' E013°28.627'` · bullseye `085/109`
 
-l'état-major de théâtre installé dans les bunkers de Wünsdorf. À détruire : le poste de commandement (toujours présent), les bunkers, la tour de transmissions et la caserne (trois des quatre présents, tirés au sort à chaque activation). Défense : SA-22 Pantsir et SA-15 Tor. Sous la couverture de la QRA Berlin. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 153 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 163 nm.
+l'état-major de théâtre installé dans les bunkers de Wünsdorf. À détruire : le poste de commandement (toujours présent), les bunkers, la tour de transmissions et la caserne (trois des quatre présents, tirés au sort à chaque activation). Défense : SA-22 Pantsir et SA-15 Tor. Sous la couverture de la QRA Berlin. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 271.0) à 153 nm, Arco 1 (panier, TACAN 52Y, 272.0) à 163 nm.
 
 **10. Altengrabow** — `N52°12.130' E012°10.771'` · bullseye `075/63`
 
-une batterie de missiles sol-sol Iskander déployée sur le terrain d'Altengrabow. À détruire : les trois lanceurs Iskander et leurs véhicules. Défense : SA-15 Tor ou SA-19 Tunguska, tiré au sort à chaque activation. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 106 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 117 nm.
+une batterie de missiles sol-sol Iskander déployée sur le terrain d'Altengrabow. À détruire : les trois lanceurs Iskander et leurs véhicules. Défense : SA-15 Tor ou SA-19 Tunguska, tiré au sort à chaque activation. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 271.0) à 106 nm, Arco 1 (panier, TACAN 52Y, 272.0) à 117 nm.
 
 **11. Wittenberg** — `N51°51.480' E012°39.095'` · bullseye `095/76`
 
-le nœud logistique du franchissement de l'Elbe à Wittenberg (B2). À détruire : le dépôt de munitions, l'entrepôt, les réservoirs (trois des quatre présents, tirés au sort à chaque activation) et les camions. Défense : SA-19 Tunguska et ZU-23. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 130 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 140 nm.
+le nœud logistique du franchissement de l'Elbe à Wittenberg (B2). À détruire : le dépôt de munitions, l'entrepôt, les réservoirs (trois des quatre présents, tirés au sort à chaque activation) et les camions. Défense : SA-19 Tunguska et ZU-23. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 271.0) à 130 nm, Arco 1 (panier, TACAN 52Y, 272.0) à 140 nm.
 
 **12. Torgau** — `N51°32.300' E012°59.607'` · bullseye `107/91`
 
-le dépôt de munitions et de carburant de Torgau, sur l'Elbe. À détruire : les dépôts de munitions, les entrepôts et le réservoir (quatre des cinq présents, tirés au sort à chaque activation). Défense : batterie VEAF de niveau 4 (SA-8 ou Tor, missiles IR, AAA). Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 151 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 160 nm.
+le dépôt de munitions et de carburant de Torgau, sur l'Elbe. À détruire : les dépôts de munitions, les entrepôts et le réservoir (quatre des cinq présents, tirés au sort à chaque activation). Défense : batterie VEAF de niveau 4 (SA-8 ou Tor, missiles IR, AAA). Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 271.0) à 151 nm, Arco 1 (panier, TACAN 52Y, 272.0) à 160 nm.
 
 ### Bases aériennes
 
 **13. Base aérienne de Parchim** — `N53°25.398' E011°46.155'` · bullseye `031/107`
 
-la base aérienne de Parchim, où stationnent des MiG-29S et des Su-27. À détruire : les avions au parking et le réservoir de carburant (cinq des sept objectifs présents, tirés au sort à chaque activation). Défense : SA-15 Tor et SA-11 Buk. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 88 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 99 nm.
+la base aérienne de Parchim, où stationnent des MiG-29S et des Su-27. À détruire : les avions au parking et le réservoir de carburant (cinq des sept objectifs présents, tirés au sort à chaque activation). Défense : SA-15 Tor et SA-11 Buk. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 271.0) à 88 nm, Arco 1 (panier, TACAN 52Y, 272.0) à 99 nm.
 
 **14. Base aérienne de Werneuchen** — `N52°37.859' E013°45.067'` · bullseye `074/127`
 
-la base aérienne de Werneuchen, à l'est de Berlin, avec des Su-30, des MiG-31 et un Il-76. À détruire : les avions au parking (quatre des cinq présents, tirés au sort à chaque activation). Défense : SA-22 Pantsir et SA-11 Buk ; la base est sous le parapluie du SA-10 de Berlin. Sous la couverture de la QRA Berlin. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 158 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 169 nm.
+la base aérienne de Werneuchen, à l'est de Berlin, avec des Su-30, des MiG-31 et un Il-76. À détruire : les avions au parking (quatre des cinq présents, tirés au sort à chaque activation). Défense : SA-22 Pantsir et SA-11 Buk ; la base est sous le parapluie du SA-10 de Berlin. Sous la couverture de la QRA Berlin. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 271.0) à 158 nm, Arco 1 (panier, TACAN 52Y, 272.0) à 169 nm.
 
 ### Antinavire
 
 **15. Rade de Rostock** — `N54°13.500' E012°06.000'` · bullseye `028/156`
 
-des cargos et un pétrolier au mouillage devant Warnemünde, à l'entrée du port de Rostock, escortés par une corvette. À détruire : les cargos, le pétrolier et la corvette. Défense : la corvette Molniya ; la rade est sous le parapluie du SA-10 de Rostock. Sous la couverture de la QRA Laage. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 115 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 124 nm.
+des cargos et un pétrolier au mouillage devant Warnemünde, à l'entrée du port de Rostock, escortés par une corvette. À détruire : les cargos, le pétrolier et la corvette. Défense : la corvette Molniya ; la rade est sous le parapluie du SA-10 de Rostock. Sous la couverture de la QRA Laage. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 271.0) à 115 nm, Arco 1 (panier, TACAN 52Y, 272.0) à 124 nm.
 
 **16. Prorer Wiek (Mukran)** — `N54°27.600' E013°39.600'` · bullseye `042/195`
 
-un groupe naval au mouillage dans la baie de Prorer Wiek, devant le port de Mukran (Rügen). À détruire : la frégate, le patrouilleur et le cargo. Défense : la frégate Rezky et le patrouilleur du projet 22160. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 251.0) à 170 nm, Arco 1 (panier, TACAN 52Y, 252.0) à 180 nm.
+un groupe naval au mouillage dans la baie de Prorer Wiek, devant le port de Mukran (Rügen). À détruire : la frégate, le patrouilleur et le cargo. Défense : la frégate Rezky et le patrouilleur du projet 22160. Hors couverture QRA rouge. Ravitailleurs les plus proches : Texaco 1 (perche, TACAN 51Y, 271.0) à 170 nm, Arco 1 (panier, TACAN 52Y, 272.0) à 180 nm.
 
 ## QRA
 
@@ -297,33 +297,33 @@ AWACS de l'arène : Darkstar 1 (E-3A, bleu) 280.0, FL300 ; AWACS Arène Rouge (A
 | Radio 1 (UHF) | `1` | Guard | `243` |
 | Radio 1 (UHF) | `2` | Overlord 1 | `265.0` |
 | Radio 1 (UHF) | `3` | Magic 1 | `266.0` |
-| Radio 1 (UHF) | `4` | Texaco 1 | `251.0` |
-| Radio 1 (UHF) | `5` | Arco 1 | `252.0` |
-| Radio 1 (UHF) | `6` | Texaco 2 | `253.0` |
-| Radio 1 (UHF) | `7` | Arco 2 | `254.0` |
-| Radio 1 (UHF) | `08` | Shell 1 | `255.0` |
-| Radio 1 (UHF) | `09` | Ramstein | `270.1` |
-| Radio 1 (UHF) | `10` | Spangdahlem | `270.2` |
-| Radio 1 (UHF) | `11` | Buchel | `270.3` |
-| Radio 1 (UHF) | `12` | Norvenich | `270.4` |
-| Radio 1 (UHF) | `13` | Wiesbaden | `270.5` |
-| Radio 1 (UHF) | `14` | Nordholz | `270.6` |
-| Radio 1 (UHF) | `15` | Wunstorf | `270.7` |
-| Radio 1 (UHF) | `16` | Fassberg | `270.8` |
-| Radio 1 (UHF) | `17` | Fulda | `270.9` |
+| Radio 1 (UHF) | `4` | Texaco 1 | `271.0` |
+| Radio 1 (UHF) | `5` | Arco 1 | `272.0` |
+| Radio 1 (UHF) | `6` | Texaco 2 | `273.0` |
+| Radio 1 (UHF) | `7` | Arco 2 | `274.0` |
+| Radio 1 (UHF) | `08` | Shell 1 | `275.0` |
+| Radio 1 (UHF) | `09` | Ramstein | `251.95` |
+| Radio 1 (UHF) | `10` | Spangdahlem | `251.8` |
+| Radio 1 (UHF) | `11` | Buchel | `252.9` |
+| Radio 1 (UHF) | `12` | Norvenich | `365.0` |
+| Radio 1 (UHF) | `13` | Wiesbaden | `252.25` |
+| Radio 1 (UHF) | `14` | Nordholz | `315.7` |
+| Radio 1 (UHF) | `15` | Wunstorf | `253.95` |
+| Radio 1 (UHF) | `16` | Fassberg | `251.0` |
+| Radio 1 (UHF) | `17` | Fulda | `252.0` |
 | Radio 1 (UHF) | `18` | Archer | `360.0` |
 | Radio 1 (UHF) | `19` | Arctic | `360.1` |
 | Radio 1 (UHF) | `20` | Ninja | `360.2` |
 | Radio 2 (VHF) | `1` | Guard | `121.5` |
-| Radio 2 (VHF) | `2` | Ramstein | `130.1` |
-| Radio 2 (VHF) | `3` | Spangdahlem | `130.2` |
-| Radio 2 (VHF) | `4` | Buchel | `130.3` |
-| Radio 2 (VHF) | `5` | Norvenich | `130.4` |
-| Radio 2 (VHF) | `6` | Wiesbaden | `130.5` |
-| Radio 2 (VHF) | `7` | Nordholz | `130.6` |
-| Radio 2 (VHF) | `08` | Wunstorf | `130.7` |
-| Radio 2 (VHF) | `09` | Fassberg | `130.8` |
-| Radio 2 (VHF) | `10` | Fulda | `130.9` |
+| Radio 2 (VHF) | `2` | Ramstein | `133.2` |
+| Radio 2 (VHF) | `3` | Spangdahlem | `122.2` |
+| Radio 2 (VHF) | `4` | Buchel | `122.1` |
+| Radio 2 (VHF) | `5` | Norvenich | `123.0` |
+| Radio 2 (VHF) | `6` | Wiesbaden | `118.1` |
+| Radio 2 (VHF) | `7` | Nordholz | `142.9` |
+| Radio 2 (VHF) | `08` | Wunstorf | `121.1` |
+| Radio 2 (VHF) | `09` | Fassberg | `122.1` |
+| Radio 2 (VHF) | `10` | Fulda | `126.0` |
 | Radio 2 (VHF) | `11` | Archer | `120.0` |
 | Radio 2 (VHF) | `12` | Arctic | `120.1` |
 | Radio 2 (VHF) | `13` | Ninja | `120.5` |
@@ -338,17 +338,17 @@ AWACS de l'arène : Darkstar 1 (E-3A, bleu) 280.0, FL300 ; AWACS Arène Rouge (A
 | Radio 1 (UHF) | `1` | Guard | `243` |
 | Radio 1 (UHF) | `2` | AWACS Rouge | `260.0` |
 | Radio 1 (UHF) | `3` | Tanker Rouge | `261.0` |
-| Radio 1 (UHF) | `4` | Laage | `275.1` |
-| Radio 1 (UHF) | `5` | Holzdorf | `275.2` |
-| Radio 1 (UHF) | `6` | Allstedt | `275.3` |
+| Radio 1 (UHF) | `4` | Laage | `252.7` |
+| Radio 1 (UHF) | `5` | Holzdorf | `250.95` |
+| Radio 1 (UHF) | `6` | Allstedt | `251.5` |
 | Radio 1 (UHF) | `7` | Rouge 1 | `380.0` |
 | Radio 1 (UHF) | `08` | Rouge 2 | `380.1` |
 | Radio 1 (UHF) | `09` | Rouge 3 | `380.2` |
 | Radio 1 (UHF) | `10` | Rouge 4 | `380.3` |
 | Radio 2 (VHF) | `1` | Guard | `121.5` |
-| Radio 2 (VHF) | `2` | Laage | `131.1` |
-| Radio 2 (VHF) | `3` | Holzdorf | `131.2` |
-| Radio 2 (VHF) | `4` | Allstedt | `131.3` |
+| Radio 2 (VHF) | `2` | Laage | `129.5` |
+| Radio 2 (VHF) | `3` | Holzdorf | `118.2` |
+| Radio 2 (VHF) | `4` | Allstedt | `132.5` |
 | Radio 2 (VHF) | `5` | Rouge 1 | `124.0` |
 | Radio 2 (VHF) | `6` | Rouge 2 | `124.1` |
 | Radio 2 (VHF) | `7` | Rouge 3 | `124.2` |
