@@ -274,7 +274,7 @@ le déplacement de 11 groupes : **22 véhicules réellement sous les arbres à l
 3. **Clé CheckWX en clair** dans le `configuration.json` de la v5 : à révoquer.
 4. **Lot VMCT FIX-PLACEMENT-IGNORES-SCENERY** : tickets 01-03, 05-07, 09 et 10 livrés ; 10 mesuré
    inerte en jeu le 26/09 (§9.3) et repris par le **ticket 11**, en cours. Le ticket 04 (refuser un
-   FARP dont l'escorte ne peut être placée) reste ouvert. À la livraison de 11 : rebuild, nouvelle
+   FARP dont l'escorte ne peut être placée) est livré dans 6.26.0 (§17), vérification en jeu à faire côté VMCT. À la livraison de 11 : rebuild, nouvelle
    sonde, et vérifier que les espacements n'ont pas bougé.
 5. ~~La sonde et les statiques~~ : corrigée le 29/09 (§13) — véhicules seuls, positions de l'éditeur, avant tout spawn.
 6. **Le Shilka aveugle**, en pause, aucun ticket ouvert. Sur 11 ZSU-23-4, 3 ne déclarent aucun
@@ -457,3 +457,15 @@ Mission de test (game master, pont dcs-bridge), mesures par le pont et `dcs.log`
   sécurité active, `check_frequencies.py` conforme ; les scripts embarqués sont ceux de `dd60e7a5`.
 - À vérifier en jeu, pour le ticket VMCT n°02 : les véhicules d'une zone qu'on vient d'activer sont
   chauds au pod.
+
+## 17. Outils reconstruits depuis la release VMCT 6.26.0, 01/10
+
+- Construits depuis le tag `v6.26.0` (`14f14154`), même recette qu'au §16 : `veaf-tools.exe` annonce `6.26.0.1`.
+  Outils précédents dans `.veaf-backups/outils-dd60e7a5/`.
+- Scripts embarqués qui changent depuis `dd60e7a5` : 17de8b66 (une escorte de FARP déjà dégagée reste à sa
+  place ; un `-farp` dont l'escorte ne tient nulle part est refusé, ticket 04 du point ouvert §10.4),
+  cf9958e9 (le niveau d'un pilote listé atteint de nouveau le menu radio) et 4df4671a (un joueur qui revient
+  ne libère pas l'appareil d'un autre).
+- `.miz` mesuré : `verify.py` rend exactement la même sortie que sur le `.miz` du 29/09 (aucun identifiant ni
+  nom en double, aucune anomalie de structure, slots sur les 12 bases, sécurité active) ; `check_frequencies.py`
+  conforme ; `veaf-scripts.lua` embarqué identique à celui de `published/`.
