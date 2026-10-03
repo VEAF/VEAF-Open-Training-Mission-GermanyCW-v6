@@ -486,6 +486,11 @@ Tour 225.0 - S-3B et Pedro gérés par le menu CARRIER OPS"
   CTLD:
     enabled: true
     manage_logistics: true
+    # Zone de chargement de chaque aérodrome : 250 m par défaut, trop peu pour Ramstein, d'où partent
+    # les transports. Mesuré le 2026-10-03 : un C-130 garé par DCS à 997 m du point de chargement,
+    # un seul des 90 parkings gros porteurs à moins de 250 m. 1 100 m les couvre (une valeur pour
+    # tous les terrains de la mission).
+    airbase_logistics_radius: 1100
   CSAR: true
   AIEN: true
   SKYNET:
