@@ -283,6 +283,12 @@ w("- `-point <nom>` : nomme un point de la carte.")
 w("- `-smoke`, `-light`, `-signal` : fumigène, éclairage, fusée.")
 w("- `-jtac`, `-afac` : JTAC au sol, drone AFAC.")
 w("")
+w("## Rôles sans avion")
+w("")
+w("5 slots par camp pour chaque rôle (Game Master, commandant tactique, JTAC, observateur), et un pilote peut prendre "
+  "la main sur les véhicules au sol, comme en v5. Le menu F10 VEAF reste vide pour un Game Master : il n'a pas de "
+  "groupe, et les commandes sécurisées ne sont posées que groupe par groupe (VMCT #128, limite de DCS).")
+w("")
 w(open(os.path.join(S, "readme_makers.md"), encoding="utf-8").read())
 open(os.path.join(ROOT, "README.md"), "w", encoding="utf-8").write("\n".join(md) + "\n")
 print("README.md", sum(len(x) for x in md), "docs/carte.jpg and docs/cartes/ ok")

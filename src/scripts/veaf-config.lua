@@ -12,6 +12,24 @@ veaf.HideNamesFromSpawnedGroups = true
 
 veaf.config.language = "fr"
 
+-- ── Airfield channels of the mission's radio plan (src/presets.yaml, `bases`) ──────
+if veafAirbases then
+    veafAirbases.MissionChannels = {
+        [11] = { alias = "Base-Fassberg", title = "Fassberg / 95X", uhf = 251.0, vhf = 122.1, fm = 39.4 },
+        [20] = { alias = "Base-Laage", title = "Laage", uhf = 252.7, vhf = 129.5, fm = 41.1 },
+        [32] = { alias = "Base-Wunstorf", title = "Wunstorf / 116X", uhf = 253.95, vhf = 121.1, fm = 39.95 },
+        [47] = { alias = "Base-Nordholz", title = "Nordholz", uhf = 315.7, vhf = 142.9, fm = 40.85 },
+        [48] = { alias = "Base-Norvenich", title = "Nörvenich / 77X", uhf = 365.0, vhf = 123.0, fm = 41.2 },
+        [118] = { alias = "Base-Holzdorf", title = "Holzdorf", uhf = 250.95, vhf = 118.2, fm = 39.35 },
+        [157] = { alias = "Base-Allstedt", title = "Allstedt", uhf = 251.5, vhf = 132.5, fm = 39.9 },
+        [162] = { alias = "Base-Spangdahlem", title = "Spangdahlem / 32X", uhf = 251.8, vhf = 122.2, fm = 40.2 },
+        [165] = { alias = "Base-Ramstein", title = "Ramstein / 81X", uhf = 251.95, vhf = 133.2, fm = 40.35 },
+        [166] = { alias = "Base-Fulda", title = "Fulda", uhf = 252.0, vhf = 126.0, fm = 40.4 },
+        [170] = { alias = "Base-Wiesbaden", title = "Wiesbaden / 88X", uhf = 252.25, vhf = 118.1, fm = 40.65 },
+        [235] = { alias = "Base-Buchel", title = "Büchel / 118X", uhf = 252.9, vhf = 122.1, fm = 41.3 },
+    }
+end
+
 -- ── Security ─────────────────────────────────────────────────────────────────
 veaf.SecurityDisabled = false
 
@@ -23,58 +41,93 @@ veaf.Diagnostics = true
 
 -- ── CTLD 2 ───────────────────────────────────────────────────────────────────
 -- Configuration lives in ctld-config.yaml (edit it with ctld-tools); this only starts it.
+veaf.config.airbase_logistics_radius = 1100
+-- One module's initialisation error must not take the others down (FIX-DEMO-MISSION-FINDINGS 02).
+local function veafGuardedInit(name, initialize)
+    local ok, err = xpcall(initialize, function(e)
+        if debug and debug.traceback then
+            return debug.traceback(tostring(e), 2)
+        end
+        return tostring(e)
+    end)
+    if not ok then
+        veaf.loggers.get(veaf.Id):error("%s init failed: %s", name, err)
+    end
+end
+
+veafGuardedInit("CTLD", function()
 if ctld then
     veaf.ctld_initialize()
 end
+end)
 
 -- ── Module configuration + initialization ────────────────────────────────────
 
 -- ── Core ──
 
+veafGuardedInit("SECURITY", function()
 if veafSecurity then
     veafSecurity.initialize()
 end
+end)
 
+veafGuardedInit("RADIO", function()
 if veafRadio then
     veafRadio.initialize(true)
 end
+end)
 
+veafGuardedInit("SHORTCUTS", function()
 if veafShortcuts then
     veafShortcuts.initialize()
 end
+end)
 
+veafGuardedInit("NAMEDPOINTS", function()
 if veafNamedPoints then
     veafNamedPoints.initialize({})
 end
+end)
 
+veafGuardedInit("SPAWN", function()
 if veafSpawn then
     veafSpawn.initialize()
 end
+end)
 
 -- ── Combat ──
 
+veafGuardedInit("CARRIER", function()
 if veafCarrierOperations then
     veafCarrierOperations.initialize(true)
 end
+end)
 
+veafGuardedInit("CASMISSION", function()
 if veafCasMission then
     veafCasMission.initialize()
 end
+end)
 
+veafGuardedInit("TRANSPORTMISSION", function()
 if veafTransportMission then
     veafTransportMission.initialize()
 end
+end)
 
+veafGuardedInit("COMBATMISSION", function()
 if veafCombatMission then
-    veafCombatMission.initialize()
     veafCombatMission.addCapMission("CAP MiG-29S - Stendal - FL200", "CAP MiG-29S - Stendal - FL200", "Paire de MiG-29S armés Fox 3 : combat au-delà de la portée visuelle, puis dogfight. Hippodrome au FL200 centré sur BULLSEYE 051/64, à 31 nm du front au plus près.", false, true)
     veafCombatMission.addCapMission("CAP Su-27 - Brandenburg - FL280", "CAP Su-27 - Brandenburg - FL280", "Paire de Su-27 armés Fox 1 (missiles à guidage radar semi-actif). Hippodrome au FL280 centré sur BULLSEYE 071/82, à 59 nm du front au plus près.", false, true)
     veafCombatMission.addCapMission("CAP MiG-31 - Neuruppin - FL400", "CAP MiG-31 - Neuruppin - FL400", "Paire de MiG-31 : intercepteur haut et rapide. Hippodrome au FL400 centré sur BULLSEYE 060/106, à 73 nm du front au plus près.", false, true)
     veafCombatMission.addCapMission("Bombardier Tu-22M3 - Rostock - FL250", "Bombardier Tu-22M3 - Rostock - FL250", "Deux Tu-22M3 en attente : cible de bombardier à intercepter. Hippodrome au FL250 centré sur BULLSEYE 039/140, à 52 nm du front au plus près.", false, true)
     veafCombatMission.addCapMission("CAP F-16C - Hanovre - FL250", "CAP F-16C - Hanovre - FL250", "Paire de F-16C armés Fox 3 : opposition pour les joueurs rouges. Hippodrome au FL250 centré sur BULLSEYE 332/45, à 34 nm du front au plus près.", false, true)
     veafCombatMission.addCapMission("CAP F-15C - Kassel - FL300", "CAP F-15C - Kassel - FL300", "Paire de F-15C armés Fox 3 : opposition pour les joueurs rouges. Hippodrome au FL300 centré sur BULLSEYE 246/56, à 24 nm du front au plus près.", false, true)
+    veafCombatMission.initialize()
 end
+end)
 
+veafGuardedInit("COMBATZONE", function()
 if veafCombatZone then
     veafCombatZone.RadioMenuName = "Zones de combat"
     veafCombatZone.AddZone(
@@ -323,7 +376,9 @@ if veafCombatZone then
     veafCombatZone.GetZone("combatZone_Borkenberge_Hard"):addZoneElementsFromZoneNamed("combatZone_Borkenberge_Easy")
     veafCombatZone.initialize()
 end
+end)
 
+veafGuardedInit("QRA", function()
 if veafQraManager then
     veafQraManager.initialize()
     VeafQRA.ToggleAllSilence(false)
@@ -386,13 +441,17 @@ if veafQraManager then
         :setAirportLink("Wiesbaden")
         :start()
 end
+end)
 
 -- ── Features ──
 
+veafGuardedInit("GRASS", function()
 if veafGrass then
     veafGrass.initialize()
 end
+end)
 
+veafGuardedInit("ASSETS", function()
 if veafAssets then
     veafAssets.Assets = {
         {sort = 1, name = "Texaco 1", description = "Texaco 1 (KC-135, perche) - nord", information = [[TACAN 51Y
@@ -417,11 +476,15 @@ U275.0 - FL200]]},
     }
     veafAssets.initialize()
 end
+end)
 
+veafGuardedInit("MOVE", function()
 if veafMove then
     veafMove.initialize()
 end
+end)
 
+veafGuardedInit("SANCTUARY", function()
 if veafSanctuary then
     veafSanctuary.initialize()
     veafSanctuary.addZone(
@@ -465,71 +528,98 @@ if veafSanctuary then
         :setProtectFromMissiles(true)
     )
 end
+end)
 
+veafGuardedInit("WEATHER", function()
 if veafWeather then
     veafWeather.initialize()
 end
+end)
 
+veafGuardedInit("REMOTE", function()
 if veafRemote then
     veafRemote.initialize()
 end
+end)
 
+veafGuardedInit("AIRBASES", function()
 if veafAirbases then
     veafAirbases.initialize()
 end
+end)
 
 -- ── Infrastructure ──
 
+veafGuardedInit("MARKERS", function()
 if veafMarkers then
     veafMarkers.initialize()
 end
+end)
 
+veafGuardedInit("TIME", function()
 if veafTime then
     veafTime.initialize()
 end
+end)
 
+veafGuardedInit("UNITS", function()
 if veafUnits then
     veafUnits.initialize()
 end
+end)
 
+veafGuardedInit("CACHE", function()
 if veafCacheManager then
     veafCacheManager.initialize()
 end
+end)
 
+veafGuardedInit("EVENTS", function()
 if veafEventHandler then
     veafEventHandler.initialize()
 end
+end)
 
 -- ── Core ──
 
+veafGuardedInit("GROUNDAI", function()
 if veafGroundAI then
     veafGroundAI.initialize()
 end
+end)
 
 -- ── Infrastructure ──
 
+veafGuardedInit("COMMANDS", function()
 if veafCommands then
     veafCommands.initialize()
 end
+end)
 
 -- ── Features ──
 
+veafGuardedInit("INTERPRETER", function()
 if veafInterpreter then
     veafInterpreter.initialize()
 end
+end)
 
 -- ── Community scripts disabled (VEAF leaves their globals alone) ──────────────
 veaf.setConfig("tum", "enable", false)
 
 -- ── Skynet-IADS ──────────────────────────────────────────────────────────────
+veafGuardedInit("SKYNET", function()
 if veafSkynet then
     veafSkynet.SpotterNetwork = true
     veafSkynet.SpotterView = "off"
     veafSkynet.initialize(false, false, false, false)
 end
+end)
 
 -- ── CSAR configuration ───────────────────────────────────────────────────────
 -- Note: CSAR.lua must be loaded by mission-script.lua before this block.
+veafGuardedInit("CSAR", function()
 if csar then
     csar.initialize()
 end
+end)

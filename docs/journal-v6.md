@@ -296,6 +296,8 @@ le déplacement de 11 groupes : **22 véhicules réellement sous les arbres à l
     hélicoptère sur la zone de sauvetage). Le reste de la liste du 28/09 est vérifié (§12).
 11. **Le preset VHF de l'OH-58D** n'a pas été lu dans le cockpit : le module a fait tomber DCS deux fois au
     chargement du cockpit (§13). La correction repose sur le code.
+12. **Trois appareils de soutien hors préréglages**, relevés par le rapport de 6.29.0 (`presets-validation-report.md`) : le S-3B ravitailleur du Stennis (290.9), Darkstar 1 (280.0) et l'AWACS Arène Rouge (281.0).
+    Aucun canal de `src/presets.yaml` ne les atteint ; à ajouter au plan radio ou à laisser en saisie manuelle.
 
 ## 11. Finalisation selon le prompt du 28/09
 
@@ -469,3 +471,21 @@ Mission de test (game master, pont dcs-bridge), mesures par le pont et `dcs.log`
 - `.miz` mesuré : `verify.py` rend exactement la même sortie que sur le `.miz` du 29/09 (aucun identifiant ni
   nom en double, aucune anomalie de structure, slots sur les 12 bases, sécurité active) ; `check_frequencies.py`
   conforme ; `veaf-scripts.lua` embarqué identique à celui de `published/`.
+
+## 18. Recompilation en 6.29.0, 10/10
+
+- Outils et scripts de la release publiée 6.29.0 (`veaf-tools-updater.exe --tag published-v6.29.0`).
+  Le build régénère `veaf-config.lua` (initialisations protégées par `veafGuardedInit`, canaux d'aérodrome) et le rapport des préréglages.
+- **Rôles sans avion** : la v6 était née avec 0 slot Game Master, commandant tactique, JTAC et observateur, comme Caucasus v6 (scaffold de VMCT).
+  Remis comme en v5 : 5 par rôle et par camp, `isPilotControlVehicles = true`.
+  Le menu F10 VEAF reste vide pour un Game Master : il n'a pas de groupe, et les commandes sécurisées ne sont posées que groupe par groupe (VMCT #128, `wontfix`).
+- **CTLD** : `ctld-config.yaml` passe au catalogue 2.2.0 avec ses trois nouveaux réglages aux valeurs par défaut (`enableParachuteDrop`, `crateDropExtraDistance`, `crateSpawnGap`), comparaison faite clé par clé avec le catalogue embarqué.
+  Aucun message CTLD « réglage(s) absent(s) » dans le log du test ; rien ne change en jeu.
+- **Arène** : déjà tracée sur la carte F10 (couche `Common`, cercle « Arène ») ; la carte du briefing la lit de là. Rien à faire, contrairement à Caucasus.
+- **Menu MISSIONS** : la régression 6.29 vue sur Caucasus (commandes « ACTIVER LA MISSION » à la racine VEAF, missions déclarées dans `mission-script.lua` après la construction du menu) ne touche pas GermanyCW.
+  Ses 6 CAP sont déclarées dans `veaf-config.lua` avant `veafCombatMission.initialize()`.
+  Vérifié en jeu par DCS Fiddle, en multijoueur sur un slot dynamique : racine VEAF sans commande, aucune commande de profondeur 1 parmi les 346 entrées rendues, les 6 CAP sous MISSIONS dès le départ.
+- **En jeu** : aucune erreur de script VEAF, CTLD, Skynet ou CSAR ; slot Game Master présent et arène visible sur la carte F10 (David) ; `verify.py` et `check_frequencies.py` conformes.
+- **Mesure du menu radio** (lot VMCT `FEAT-RADIO-MENU-WATCH`, ticket 03) : `modules.RADIO.menu_stats` se pose pour le build seulement, jamais committée.
+  Au démarrage, 208 entrées (169 pour tous, 39 par coalition) ; 346 une fois un A-10C II pris en slot dynamique (138 pour son groupe), aucun id parqué.
+  Le `.miz` instrumenté est gardé hors dépôt dans `.veaf-backups/instrumente-menu-stats-20261010/`.

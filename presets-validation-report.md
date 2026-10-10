@@ -1,8 +1,8 @@
 # Rapport de validation des fréquences radio
 
-Généré le : 2026-10-01  
-Fichier presets : `D:\dev\_VEAF\VEAF-Open-Training-Mission-GermanyCW-v6\src\presets.yaml`  
-Mission : `D:\dev\_VEAF\VEAF-Open-Training-Mission-GermanyCW-v6\VEAF_OpenTraining_GermanyCW_ICAO_ETAR_20261001.miz`
+Généré le : 2026-10-10  
+Fichier presets : `D:\dev\_VEAF\VEAF-Open-Training-Mission-GermanyCW-v6\.claude\worktrees\objective-tharp-510609\src\presets.yaml`  
+Mission : `D:\dev\_VEAF\VEAF-Open-Training-Mission-GermanyCW-v6\.claude\worktrees\objective-tharp-510609\VEAF_OpenTraining_GermanyCW_ICAO_ETAR_20261010.miz`
 
 ## ℹ️ Hors plage — retirées de la radio injectée (DCS les stockerait mais les ignorerait)
 
@@ -67,3 +67,11 @@ presets_assignments:
     plane:
       TF-51D: none
 ```
+
+## ⚠️ AWACS et ravitailleurs qu'aucun preset n'atteint — ajoutez leur canal dans src/presets.yaml
+
+| Groupe | Tâche | Fréquence (MHz) | Coalition |
+|--------|------|-----------------|-----------|
+| `CVN-74 Stennis S3B-Tanker` | Refueling | 290.9 | blue |
+| `Darkstar 1` | AWACS | 280.0 | blue |
+| `AWACS Arène Rouge` | AWACS | 281.0 | red |
