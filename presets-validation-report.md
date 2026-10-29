@@ -1,8 +1,7 @@
 # Rapport de validation des fréquences radio
 
-Généré le : 2026-10-10  
-Fichier presets : `D:\dev\_VEAF\VEAF-Open-Training-Mission-GermanyCW-v6\.claude\worktrees\objective-tharp-510609\src\presets.yaml`  
-Mission : `D:\dev\_VEAF\VEAF-Open-Training-Mission-GermanyCW-v6\.claude\worktrees\objective-tharp-510609\VEAF_OpenTraining_GermanyCW_ICAO_ETAR_20261010.miz`
+Fichier presets : `src/presets.yaml`  
+Mission : `VEAF_OpenTraining_GermanyCW_ICAO_ETAR`
 
 ## ℹ️ Hors plage — retirées de la radio injectée (DCS les stockerait mais les ignorerait)
 
@@ -16,13 +15,7 @@ Plages valides : 225.0–400.0 MHz (AM/FM), 118.0–140.0 MHz (AM/FM), 225.0–4
 |---------|-------|-----------------|------------|-------|
 | 7 | Nordholz | 142.9 |  | radio_2 |
 
-**Pour masquer :** ajouter dans `presets.yaml` :
-```yaml
-presets_assignments:
-  blue:
-    plane:
-      M-2000C: none
-```
+**Rien à faire :** les canaux à portée restent sur les radios de cet avion ; DCS aurait ignoré ceux-ci. Ne passez pas le type à `none` — cela retire tous ses presets.
 
 ### TF-51D
 Groupes : `TF-51D Template`, `TF-51D Template Red`  
@@ -60,13 +53,7 @@ Plages valides : 38.0–156.0 MHz (AM/FM), 100.0–200.0 MHz (AM/FM)
 | 9 | Rouge-3 | 380.2 |  | radio_2 |
 | 10 | Rouge-4 | 380.3 |  | radio_2 |
 
-**Pour masquer :** ajouter dans `presets.yaml` :
-```yaml
-presets_assignments:
-  blue:
-    plane:
-      TF-51D: none
-```
+**Rien à faire :** les canaux à portée restent sur les radios de cet avion ; DCS aurait ignoré ceux-ci. Ne passez pas le type à `none` — cela retire tous ses presets.
 
 ## ⚠️ AWACS et ravitailleurs qu'aucun preset n'atteint — ajoutez leur canal dans src/presets.yaml
 
