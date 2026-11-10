@@ -1,0 +1,183 @@
+{
+  "title": "VEAF Open Training — GermanyCW (moderne)",
+  "kneeboard_only": true,
+  "sheets": [
+    {
+      "title": "Mission",
+      "paragraphs": [
+        "Open Training : mission d'entraînement ouverte des serveurs VEAF, scénario moderne fictif. Tout se pilote par le menu F10 › VEAF ; le README est le briefing complet.",
+        "Base mère : Ramstein. Autres bases bleues : Spangdahlem, Büchel, Nörvenich, Wiesbaden, Nordholz, Wunstorf, Fassberg, Fulda, FARP Baumholder et Göttingen. Bases rouges : Laage, Holzdorf, Allstedt.",
+        "Ravitailleurs nord : Texaco 1 (KC-135, perche) TACAN 51Y, 271.0, FL220 · Arco 1 (KC135MPRS, panier) TACAN 52Y, 272.0, FL180.",
+        "Ravitailleurs sud : Texaco 2 (perche) TACAN 53Y, 273.0, FL240 · Arco 2 (panier) TACAN 54Y, 274.0, FL160. Arrière : Shell 1 (perche) TACAN 55Y, 275.0, FL200.",
+        "AWACS : Overlord 1 (nord) 265.0, FL300 · Magic 1 (sud) 266.0, FL310.",
+        "Porte-avions en mer du Nord, à l'ouest d'Helgoland : CVN-74 Stennis TACAN 10X, ICLS 10, Link 4 225.0, tour 225.0.",
+        "Drones laser : Reaper 1 au-dessus de Baumholder (1688, 36.0 FM) · Reaper 2 au-dessus de Wahner Heide (1687, 37.0 FM).",
+        "Arène Air Quake au-dessus du Grand Belt, territoire neutre : slots en vol au FL250, bleus à l'ouest, rouges à l'est.",
+        "Sanctuaires : bleu sur les arrières à l'ouest ; rouges 8 nm autour de Laage, Holzdorf et Allstedt.",
+        "Bullseye (bleu et rouge) : Brocken, N51°47.948' E010°36.938'. ATC coupé sur tous les aérodromes."
+      ]
+    },
+    {
+      "title": "Conduite",
+      "paragraphs": [
+        "Décollez de la piste, jamais d'un taxiway.",
+        "L'ATC de DCS est coupé : annoncez-vous sur la VHF de l'aérodrome au roulage, au décollage et en tour de piste (fréquences dans le README et le plan radio).",
+        "Ne vous alignez pas derrière un avion qui décolle ; dégagez la piste dès l'atterrissage.",
+        "Une zone de combat activée par un autre pilote est la sienne : demandez avant de la désactiver ou de la nettoyer.",
+        "Nettoyez VOS zones de combat en les désactivant avant de partir."
+      ]
+    },
+    {
+      "title": "Commandes",
+      "paragraphs": [
+        "Marqueur : carte F10, clic droit, « Ajouter un marqueur », tapez la commande, validez.",
+        "Paliers : [ouvert] tout le monde · [pilote VEAF] pilote que le serveur connaît · [confiance] membre de confiance. Un pilote que le serveur ne connaît pas ajoute « , password <mot de passe du palier> » à son marqueur.",
+        "-cas : une zone d'appui aérien rapproché, des groupes dispersés autour du marqueur, terminée par le menu F10 [pilote VEAF]",
+        "-shilka, -manpads, -sa6, -sa11, -sa15, -samSR, -samLR : une défense aérienne à neutraliser ou à éviter [pilote VEAF]",
+        "-armor, -infantry : une cible au sol [pilote VEAF]",
+        "-convoy, dest <point> : une cible mobile [pilote VEAF]",
+        "-cap <type> (ex. -cap Su-27) : une cible aérienne [pilote VEAF]",
+        "-tankerlow, -tankerhigh : le ravitailleur le plus proche au FL120 / FL220 [pilote VEAF]",
+        "-farp <nom>, -fob : une base avancée [pilote VEAF]",
+        "-jtac (laser 1688), -smoke (option color), -tacan : désignation, marque visuelle, balise [ouvert]",
+        "-point <nom> : nommer un point (la destination d'un convoi) [ouvert]",
+        "-destroy : retire ce qui est à moins de 100 m du marqueur [confiance]",
+        "_spawn unit, name <type DCS>, multiplier 4 : un type précis, là où -armor tire au hasard [pilote VEAF]",
+        "Options : side red/blue, defense 0-5, armor 0-5, size.",
+        "Le reste passe par le menu F10 › VEAF : ZONES DE COMBAT, MOYENS, OPS PORTE-AVIONS."
+      ]
+    }
+  ],
+  "objectives": [
+    {
+      "zone": "combatZone_Baumholder_Easy",
+      "title": "Baumholder - facile",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Entraînement hélicoptères › Baumholder - facile › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Baumholder_Medium",
+      "title": "Baumholder - moyen",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Entraînement hélicoptères › Baumholder - moyen › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Baumholder_Hard",
+      "title": "Baumholder - difficile",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Entraînement hélicoptères › Baumholder - difficile › Activer la zone"
+    },
+    {
+      "zone": "combatZone_WahnerHeide_Easy",
+      "title": "Wahner Heide - facile",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Entraînement attaque › Wahner Heide - facile › Activer la zone"
+    },
+    {
+      "zone": "combatZone_WahnerHeide_Medium",
+      "title": "Wahner Heide - moyen",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Entraînement attaque › Wahner Heide - moyen › Activer la zone"
+    },
+    {
+      "zone": "combatZone_WahnerHeide_Hard",
+      "title": "Wahner Heide - difficile",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Entraînement attaque › Wahner Heide - difficile › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Borkenberge_Easy",
+      "title": "Borkenberge - facile",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Entraînement SEAD › Borkenberge - facile › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Borkenberge_Medium",
+      "title": "Borkenberge - moyen",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Entraînement SEAD › Borkenberge - moyen › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Borkenberge_Hard",
+      "title": "Borkenberge - difficile",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Entraînement SEAD › Borkenberge - difficile › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Hunsrueck_SAR",
+      "title": "Hunsrück - recherche et sauvetage",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Entraînement hélicoptères › Hunsrück - recherche et sauvetage › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Luebtheen",
+      "title": "Lübtheen",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Front › Lübtheen › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Letzlingen",
+      "title": "Letzlingen (Altmark)",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Front › Letzlingen (Altmark) › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Ohrdruf",
+      "title": "Ohrdruf",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Front › Ohrdruf › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Brocken",
+      "title": "Brocken",
+      "task": "F10 › VEAF › ZONES DE COMBAT › SEAD › Brocken › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Wittstock",
+      "title": "Kyritz-Ruppiner Heide",
+      "task": "F10 › VEAF › ZONES DE COMBAT › SEAD › Kyritz-Ruppiner Heide › Activer la zone"
+    },
+    {
+      "zone": "combatZone_ConvoiA2",
+      "title": "Convoi A2",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Convois › Convoi A2 › Activer la zone"
+    },
+    {
+      "zone": "combatZone_ConvoiA9",
+      "title": "Convoi A9",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Convois › Convoi A9 › Activer la zone"
+    },
+    {
+      "zone": "combatZone_ConvoiA24",
+      "title": "Convoi Ludwigslust",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Convois › Convoi Ludwigslust › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Wuensdorf",
+      "title": "Wünsdorf",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Frappe profonde › Wünsdorf › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Altengrabow",
+      "title": "Altengrabow",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Frappe profonde › Altengrabow › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Wittenberg",
+      "title": "Wittenberg",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Frappe profonde › Wittenberg › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Torgau",
+      "title": "Torgau",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Frappe profonde › Torgau › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Parchim",
+      "title": "Base aérienne de Parchim",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Bases aériennes › Base aérienne de Parchim › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Werneuchen",
+      "title": "Base aérienne de Werneuchen",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Bases aériennes › Base aérienne de Werneuchen › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Rostock",
+      "title": "Rade de Rostock",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Antinavire › Rade de Rostock › Activer la zone"
+    },
+    {
+      "zone": "combatZone_Mukran",
+      "title": "Prorer Wiek (Mukran)",
+      "task": "F10 › VEAF › ZONES DE COMBAT › Antinavire › Prorer Wiek (Mukran) › Activer la zone"
+    }
+  ]
+}
