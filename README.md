@@ -354,7 +354,7 @@ AWACS de l'arène : Darkstar 1 (E-3A, bleu) 280.0, FL300 ; AWACS Arène Rouge (A
 | Radio 2 (VHF) | `7` | Rouge 3 | `124.2` |
 | Radio 2 (VHF) | `08` | Rouge 4 | `124.3` |
 
-Presets injectés dans les appareils à radio programmable ; les FC3, le Ka-50 et les Gazelle n'en reçoivent pas. FM : canaux 1 à 30 = 30 à 59 MHz.
+Presets injectés dans les appareils à radio programmable ; les FC3, le Ka-50 et les Gazelle n'en reçoivent pas. FM : canaux 1 à 20 = 30 à 49 MHz (1 à 30 = 30 à 59 MHz sur le CH-47).
 
 ## Météo et heures
 

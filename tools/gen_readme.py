@@ -266,7 +266,7 @@ for sd, label in (("blue", "Bleu"), ("red", "Rouge")):
     w(table(["Radio", "Canal", "Nom", "MHz"], rows))
     w("")
 w("Presets injectés dans les appareils à radio programmable ; les FC3, le Ka-50 et les Gazelle n'en reçoivent pas. "
-  "FM : canaux 1 à 30 = 30 à 59 MHz.")
+  "FM : canaux 1 à 20 = 30 à 49 MHz (1 à 30 = 30 à 59 MHz sur le CH-47).")
 w("")
 w("## Météo et heures")
 w("")
