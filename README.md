@@ -294,65 +294,42 @@ AWACS de l'arène : Darkstar 1 (E-3A, bleu) 280.0, FL300 ; AWACS Arène Rouge (A
 
 | Radio | Canal | Nom | MHz |
 |---|---|---|---|
-| Radio 1 (UHF) | `1` | Guard | `243` |
-| Radio 1 (UHF) | `2` | Overlord 1 | `265.0` |
-| Radio 1 (UHF) | `3` | Magic 1 | `266.0` |
-| Radio 1 (UHF) | `4` | Texaco 1 | `271.0` |
-| Radio 1 (UHF) | `5` | Arco 1 | `272.0` |
-| Radio 1 (UHF) | `6` | Texaco 2 | `273.0` |
-| Radio 1 (UHF) | `7` | Arco 2 | `274.0` |
-| Radio 1 (UHF) | `08` | Shell 1 | `275.0` |
-| Radio 1 (UHF) | `09` | Ramstein | `251.95` |
-| Radio 1 (UHF) | `10` | Spangdahlem | `251.8` |
-| Radio 1 (UHF) | `11` | Buchel | `252.9` |
-| Radio 1 (UHF) | `12` | Norvenich | `365.0` |
-| Radio 1 (UHF) | `13` | Wiesbaden | `252.25` |
-| Radio 1 (UHF) | `14` | Nordholz | `315.7` |
-| Radio 1 (UHF) | `15` | Wunstorf | `253.95` |
-| Radio 1 (UHF) | `16` | Fassberg | `251.0` |
-| Radio 1 (UHF) | `17` | Fulda | `252.0` |
-| Radio 1 (UHF) | `18` | Archer | `360.0` |
-| Radio 1 (UHF) | `19` | Arctic | `360.1` |
-| Radio 1 (UHF) | `20` | Ninja | `360.2` |
-| Radio 2 (VHF) | `1` | Guard | `121.5` |
-| Radio 2 (VHF) | `2` | Ramstein | `133.2` |
-| Radio 2 (VHF) | `3` | Spangdahlem | `122.2` |
-| Radio 2 (VHF) | `4` | Buchel | `122.1` |
-| Radio 2 (VHF) | `5` | Norvenich | `123.0` |
-| Radio 2 (VHF) | `6` | Wiesbaden | `118.1` |
-| Radio 2 (VHF) | `7` | Nordholz | `142.9` |
-| Radio 2 (VHF) | `08` | Wunstorf | `121.1` |
-| Radio 2 (VHF) | `09` | Fassberg | `122.1` |
-| Radio 2 (VHF) | `10` | Fulda | `126.0` |
-| Radio 2 (VHF) | `11` | Archer | `120.0` |
-| Radio 2 (VHF) | `12` | Arctic | `120.1` |
-| Radio 2 (VHF) | `13` | Ninja | `120.5` |
-| Radio 2 (VHF) | `14` | Pinder | `120.6` |
-| Radio 2 (VHF) | `15` | Bengal | `120.7` |
-| Radio 2 (VHF) | `16` | Blade | `120.8` |
+| Radio 1 (UHF) | `1` | Overlord 1 | `265.0` |
+| Radio 1 (UHF) | `2` | Magic 1 | `266.0` |
+| Radio 1 (UHF) | `3` | Texaco 1 | `271.0` |
+| Radio 1 (UHF) | `4` | Arco 1 | `272.0` |
+| Radio 1 (UHF) | `5` | Texaco 2 | `273.0` |
+| Radio 1 (UHF) | `6` | Arco 2 | `274.0` |
+| Radio 1 (UHF) | `7` | Shell 1 | `275.0` |
+| Radio 1 (UHF) | `8` | Archer | `360.0` |
+| Radio 1 (UHF) | `9` | Arctic | `360.1` |
+| Radio 1 (UHF) | `10` | Ninja | `360.2` |
+| Radio 1 (UHF) | `11` | Pinder | `360.3` |
+| Radio 1 (UHF) | `12` | Bengal | `360.4` |
+| Radio 1 (UHF) | `13` | Blade | `360.5` |
+| Radio 2 (VHF) | `1` | Ramstein | `133.2` |
+| Radio 2 (VHF) | `2` | Spangdahlem | `122.2` |
+| Radio 2 (VHF) | `3` | Buchel | `122.1` |
+| Radio 2 (VHF) | `4` | Norvenich | `123.0` |
+| Radio 2 (VHF) | `5` | Wiesbaden | `118.1` |
+| Radio 2 (VHF) | `6` | Nordholz | `142.9` |
+| Radio 2 (VHF) | `7` | Wunstorf | `121.1` |
+| Radio 2 (VHF) | `8` | Fassberg | `122.1` |
+| Radio 2 (VHF) | `9` | Fulda | `126.0` |
 
 ### Rouge
 
 | Radio | Canal | Nom | MHz |
 |---|---|---|---|
-| Radio 1 (UHF) | `1` | Guard | `243` |
-| Radio 1 (UHF) | `2` | AWACS Rouge | `260.0` |
-| Radio 1 (UHF) | `3` | Tanker Rouge | `261.0` |
-| Radio 1 (UHF) | `4` | Laage | `252.7` |
-| Radio 1 (UHF) | `5` | Holzdorf | `250.95` |
-| Radio 1 (UHF) | `6` | Allstedt | `251.5` |
-| Radio 1 (UHF) | `7` | Rouge 1 | `380.0` |
-| Radio 1 (UHF) | `08` | Rouge 2 | `380.1` |
-| Radio 1 (UHF) | `09` | Rouge 3 | `380.2` |
-| Radio 1 (UHF) | `10` | Rouge 4 | `380.3` |
-| Radio 2 (VHF) | `1` | Guard | `121.5` |
-| Radio 2 (VHF) | `2` | Laage | `129.5` |
-| Radio 2 (VHF) | `3` | Holzdorf | `118.2` |
-| Radio 2 (VHF) | `4` | Allstedt | `132.5` |
-| Radio 2 (VHF) | `5` | Rouge 1 | `124.0` |
-| Radio 2 (VHF) | `6` | Rouge 2 | `124.1` |
-| Radio 2 (VHF) | `7` | Rouge 3 | `124.2` |
-| Radio 2 (VHF) | `08` | Rouge 4 | `124.3` |
+| Radio 1 (UHF) | `1` | AWACS Rouge | `260.0` |
+| Radio 1 (UHF) | `2` | Tanker Rouge | `261.0` |
+| Radio 1 (UHF) | `3` | Rouge 1 | `380.0` |
+| Radio 1 (UHF) | `4` | Rouge 2 | `380.1` |
+| Radio 1 (UHF) | `5` | Rouge 3 | `380.2` |
+| Radio 1 (UHF) | `6` | Rouge 4 | `380.3` |
+| Radio 2 (VHF) | `1` | Laage | `129.5` |
+| Radio 2 (VHF) | `2` | Holzdorf | `118.2` |
+| Radio 2 (VHF) | `3` | Allstedt | `132.5` |
 
 Presets injectés dans les appareils à radio programmable ; les FC3, le Ka-50 et les Gazelle n'en reçoivent pas. FM : canaux 1 à 20 = 30 à 49 MHz (1 à 30 = 30 à 59 MHz sur le CH-47).
 

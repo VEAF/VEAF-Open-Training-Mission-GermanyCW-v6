@@ -13,7 +13,7 @@ Plages valides : 225.0–400.0 MHz (AM/FM), 118.0–140.0 MHz (AM/FM), 225.0–4
 
 | Canal | Titre | Fréquence (MHz) | Collection | Radio |
 |---------|-------|-----------------|------------|-------|
-| 7 | Nordholz | 142.9 |  | radio_2 |
+| 6 | Nordholz | 142.9 |  | radio_2 |
 
 **Rien à faire :** les canaux à portée restent sur les radios de cet avion ; DCS aurait ignoré ceux-ci. Ne passez pas le type à `none` — cela retire tous ses presets.
 
@@ -23,35 +23,25 @@ Plages valides : 38.0–156.0 MHz (AM/FM), 100.0–200.0 MHz (AM/FM)
 
 | Canal | Titre | Fréquence (MHz) | Collection | Radio |
 |---------|-------|-----------------|------------|-------|
-| 1 | Guard | 243.0 |  | radio_2 |
-| 2 | Overlord 1 (AWACS) | 265.0 |  | radio_2 |
-| 3 | Magic 1 (AWACS) | 266.0 |  | radio_2 |
-| 4 | Texaco 1 / perche / 51Y | 271.0 |  | radio_2 |
-| 5 | Arco 1 / panier / 52Y | 272.0 |  | radio_2 |
-| 6 | Texaco 2 / perche / 53Y | 273.0 |  | radio_2 |
-| 7 | Arco 2 / panier / 54Y | 274.0 |  | radio_2 |
-| 8 | Shell 1 / perche / 55Y | 275.0 |  | radio_2 |
-| 9 | Ramstein / 81X | 251.95 |  | radio_2 |
-| 10 | Spangdahlem / 32X | 251.8 |  | radio_2 |
-| 11 | Büchel / 118X | 252.9 |  | radio_2 |
-| 12 | Nörvenich / 77X | 365.0 |  | radio_2 |
-| 13 | Wiesbaden / 88X | 252.25 |  | radio_2 |
-| 14 | Nordholz | 315.7 |  | radio_2 |
-| 15 | Wunstorf / 116X | 253.95 |  | radio_2 |
-| 16 | Fassberg / 95X | 251.0 |  | radio_2 |
-| 17 | Fulda | 252.0 |  | radio_2 |
-| 18 | Archer | 360.0 |  | radio_2 |
-| 19 | Arctic | 360.1 |  | radio_2 |
-| 20 | Ninja | 360.2 |  | radio_2 |
-| 2 | AWACS Rouge (A-50) | 260.0 |  | radio_2 |
-| 3 | Tanker Rouge (Il-78M) | 261.0 |  | radio_2 |
-| 4 | Laage | 252.7 |  | radio_2 |
-| 5 | Holzdorf | 250.95 |  | radio_2 |
-| 6 | Allstedt | 251.5 |  | radio_2 |
-| 7 | Rouge-1 | 380.0 |  | radio_2 |
-| 8 | Rouge-2 | 380.1 |  | radio_2 |
-| 9 | Rouge-3 | 380.2 |  | radio_2 |
-| 10 | Rouge-4 | 380.3 |  | radio_2 |
+| 1 | Overlord 1 (AWACS) | 265.0 |  | radio_2 |
+| 2 | Magic 1 (AWACS) | 266.0 |  | radio_2 |
+| 3 | Texaco 1 / perche / 51Y | 271.0 |  | radio_2 |
+| 4 | Arco 1 / panier / 52Y | 272.0 |  | radio_2 |
+| 5 | Texaco 2 / perche / 53Y | 273.0 |  | radio_2 |
+| 6 | Arco 2 / panier / 54Y | 274.0 |  | radio_2 |
+| 7 | Shell 1 / perche / 55Y | 275.0 |  | radio_2 |
+| 8 | Archer | 360.0 |  | radio_2 |
+| 9 | Arctic | 360.1 |  | radio_2 |
+| 10 | Ninja | 360.2 |  | radio_2 |
+| 11 | Pinder | 360.3 |  | radio_2 |
+| 12 | Bengal | 360.4 |  | radio_2 |
+| 13 | Blade | 360.5 |  | radio_2 |
+| 1 | AWACS Rouge (A-50) | 260.0 |  | radio_2 |
+| 2 | Tanker Rouge (Il-78M) | 261.0 |  | radio_2 |
+| 3 | Rouge-1 | 380.0 |  | radio_2 |
+| 4 | Rouge-2 | 380.1 |  | radio_2 |
+| 5 | Rouge-3 | 380.2 |  | radio_2 |
+| 6 | Rouge-4 | 380.3 |  | radio_2 |
 
 **Rien à faire :** les canaux à portée restent sur les radios de cet avion ; DCS aurait ignoré ceux-ci. Ne passez pas le type à `none` — cela retire tous ses presets.
 
