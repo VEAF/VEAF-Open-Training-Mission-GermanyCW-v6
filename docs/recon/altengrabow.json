@@ -1,0 +1,122 @@
+{
+  "name": "altengrabow",
+  "title": "Altengrabow",
+  "heading_deg": 55.0,
+  "pitch_deg": 30.0,
+  "slant_m": 1700.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Altengrabow",
+  "camera": {
+    "position": [
+      -242036.93150031666,
+      945.6249999999999,
+      -567849.4660158575
+    ],
+    "forward": [
+      0.49673176489215404,
+      -0.49999999999999994,
+      0.7094064799162225
+    ],
+    "up": [
+      0.28678821817552297,
+      0.8660254037844387,
+      0.40957602214449584
+    ],
+    "right": [
+      -0.8191520442889918,
+      0.0,
+      0.573576436351046
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -241192.4875,
+    "z": -566643.475,
+    "alt_m": 95.625,
+    "lat": 52.20374279192295,
+    "lon": 12.18110117410009,
+    "dms": "N52°12'13.47\" E012°10'51.96\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:49",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Altengrabow [r] SA15#10658",
+      "type": "Tor 9A331",
+      "x": -240780.0,
+      "z": -566264.3,
+      "alt": 90.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Altengrabow [r] SA15#10658",
+      "type": "GAZ-66",
+      "x": -240764.0,
+      "z": -566265.3,
+      "alt": 90.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Altengrabow [r] combatZone_Altengrabow-soutien#10657",
+      "type": "Ural-375",
+      "x": -241553.5,
+      "z": -566583.9,
+      "alt": 97.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Altengrabow [r] combatZone_Altengrabow-soutien#10657",
+      "type": "Ural-375",
+      "x": -241533.5,
+      "z": -566583.9,
+      "alt": 97.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Altengrabow [r] combatZone_Altengrabow-soutien#10657",
+      "type": "Tigr_233036",
+      "x": -241513.5,
+      "z": -566583.9,
+      "alt": 97.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Altengrabow [r] combatZone_Altengrabow-iskander#10656",
+      "type": "CHAP_9K720_HE",
+      "x": -241151.8,
+      "z": -566955.5,
+      "alt": 97.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Altengrabow [r] combatZone_Altengrabow-iskander#10656",
+      "type": "CHAP_9K720_HE",
+      "x": -241131.8,
+      "z": -566955.5,
+      "alt": 97.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Altengrabow [r] combatZone_Altengrabow-iskander#10656",
+      "type": "CHAP_9K720_HE",
+      "x": -241111.8,
+      "z": -566955.5,
+      "alt": 97.4
+    }
+  ],
+  "image": "altengrabow.jpg",
+  "heading": 55,
+  "pitch": -30.0,
+  "x": -242036.93150031666,
+  "y": -567849.4660158575,
+  "altitude_m": 946,
+  "order": 19
+}

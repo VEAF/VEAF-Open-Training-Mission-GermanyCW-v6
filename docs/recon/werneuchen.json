@@ -1,0 +1,210 @@
+{
+  "name": "werneuchen",
+  "title": "Base aérienne de Werneuchen",
+  "heading_deg": 59.0,
+  "pitch_deg": 30.0,
+  "slant_m": 4800.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Werneuchen",
+  "camera": {
+    "position": [
+      -208390.55201995245,
+      2476.431578947368,
+      -458797.0196622297
+    ],
+    "forward": [
+      0.44603605678833963,
+      -0.49999999999999994,
+      0.7423286577013642
+    ],
+    "up": [
+      0.257519037455027,
+      0.8660254037844387,
+      0.4285836503510561
+    ],
+    "right": [
+      -0.8571673007021123,
+      0.0,
+      0.5150380749100542
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -206249.57894736843,
+    "z": -455233.84210526315,
+    "alt_m": 76.43157894736842,
+    "lat": 52.62578105911624,
+    "lon": 13.746128205058039,
+    "dms": "N52°37'32.81\" E013°44'46.06\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:51",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Werneuchen [r] SA11#10679",
+      "type": "SA-11 Buk SR 9S18M1",
+      "x": -206627.0,
+      "z": -455614.0,
+      "alt": 74.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Werneuchen [r] SA11#10679",
+      "type": "SA-11 Buk CC 9S470M1",
+      "x": -206633.0,
+      "z": -455673.0,
+      "alt": 74.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Werneuchen [r] SA11#10679",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -206548.0,
+      "z": -455682.0,
+      "alt": 74.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Werneuchen [r] SA11#10679",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -206545.0,
+      "z": -455623.0,
+      "alt": 75.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Werneuchen [r] SA11#10679",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -206550.0,
+      "z": -455585.0,
+      "alt": 75.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Werneuchen [r] SA11#10679",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -206638.0,
+      "z": -455596.0,
+      "alt": 74.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Werneuchen [r] SA11#10679",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -206660.0,
+      "z": -455651.0,
+      "alt": 74.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Werneuchen [r] SA11#10679",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -206659.0,
+      "z": -455586.0,
+      "alt": 74.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Werneuchen [r] SA11#10679",
+      "type": "ZSU-23-4 Shilka",
+      "x": -206612.0,
+      "z": -455630.0,
+      "alt": 74.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Werneuchen [r] SA11#10679",
+      "type": "ZSU-23-4 Shilka",
+      "x": -206559.0,
+      "z": -455693.0,
+      "alt": 74.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Werneuchen [r] SA11#10679",
+      "type": "ATZ-5",
+      "x": -206588.0,
+      "z": -455693.0,
+      "alt": 74.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Werneuchen [r] SA11#10679",
+      "type": "Ural-375",
+      "x": -206648.0,
+      "z": -455662.0,
+      "alt": 74.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Werneuchen [r] SA11#10679",
+      "type": "Ural-375",
+      "x": -206641.0,
+      "z": -455602.0,
+      "alt": 74.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Werneuchen [r] SA22#10678",
+      "type": "CHAP_PantsirS1",
+      "x": -205017.0,
+      "z": -454230.0,
+      "alt": 78.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Werneuchen [r] SA22#10678",
+      "type": "GAZ-66",
+      "x": -204993.0,
+      "z": -454247.0,
+      "alt": 78.8
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Werneuchen [r] combatZone_Werneuchen-cible-3 #spawngroup=\"we_avions\" #spawncount=4#10680 #208",
+      "type": "MiG-31",
+      "x": -206006.0,
+      "z": -454439.0,
+      "alt": 81.2
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Werneuchen [r] combatZone_Werneuchen-cible-1 #spawngroup=\"we_avions\" #spawncount=4#10681 #206",
+      "type": "Su-30",
+      "x": -205406.0,
+      "z": -454439.0,
+      "alt": 81.0
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Werneuchen [r] combatZone_Werneuchen-cible-2 #spawngroup=\"we_avions\" #spawncount=4#10682 #207",
+      "type": "Su-30",
+      "x": -205376.0,
+      "z": -454399.0,
+      "alt": 81.0
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Werneuchen [r] combatZone_Werneuchen-cible-4 #spawngroup=\"we_avions\" #spawncount=4#10683 #209",
+      "type": "MiG-31",
+      "x": -206036.0,
+      "z": -454399.0,
+      "alt": 81.2
+    }
+  ],
+  "image": "werneuchen.jpg",
+  "heading": 59,
+  "pitch": -30.0,
+  "x": -208390.55201995245,
+  "y": -458797.0196622297,
+  "altitude_m": 2476,
+  "order": 23
+}

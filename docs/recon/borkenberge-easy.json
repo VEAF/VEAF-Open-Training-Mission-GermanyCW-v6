@@ -1,0 +1,162 @@
+{
+  "name": "borkenberge-easy",
+  "title": "Borkenberge - facile",
+  "heading_deg": 6.0,
+  "pitch_deg": 30.0,
+  "slant_m": 600.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Borkenberge_Easy",
+  "camera": {
+    "position": [
+      -237651.69181252833,
+      373.57692307692304,
+      -907998.0068904572
+    ],
+    "forward": [
+      0.8612812260087742,
+      -0.49999999999999994,
+      0.09052430460833646
+    ],
+    "up": [
+      0.4972609476841366,
+      0.8660254037844387,
+      0.05226423163382673
+    ],
+    "right": [
+      -0.10452846326765347,
+      0.0,
+      0.9945218953682733
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -237134.92307692306,
+    "z": -907943.6923076923,
+    "alt_m": 73.57692307692308,
+    "lat": 51.767103046197285,
+    "lon": 7.297564278375795,
+    "dms": "N51°46'01.57\" E007°17'51.23\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:42",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Easy [r] SA11#10617",
+      "type": "SA-11 Buk SR 9S18M1",
+      "x": -237129.0,
+      "z": -907909.0,
+      "alt": 73.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Easy [r] SA11#10617",
+      "type": "SA-11 Buk CC 9S470M1",
+      "x": -237126.0,
+      "z": -907973.0,
+      "alt": 73.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Easy [r] SA11#10617",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -237091.0,
+      "z": -908023.0,
+      "alt": 72.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Easy [r] SA11#10617",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -237089.0,
+      "z": -907932.0,
+      "alt": 72.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Easy [r] SA11#10617",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -237084.0,
+      "z": -907880.0,
+      "alt": 72.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Easy [r] SA11#10617",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -237166.0,
+      "z": -907870.0,
+      "alt": 74.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Easy [r] SA11#10617",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -237193.0,
+      "z": -907954.0,
+      "alt": 75.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Easy [r] SA11#10617",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -237185.0,
+      "z": -907878.0,
+      "alt": 74.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Easy [r] SA11#10617",
+      "type": "ZSU-23-4 Shilka",
+      "x": -237168.0,
+      "z": -907920.0,
+      "alt": 74.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Easy [r] SA11#10617",
+      "type": "ZSU-23-4 Shilka",
+      "x": -237137.0,
+      "z": -908000.0,
+      "alt": 73.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Easy [r] SA11#10617",
+      "type": "ATZ-5",
+      "x": -237123.0,
+      "z": -908017.0,
+      "alt": 73.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Easy [r] SA11#10617",
+      "type": "Ural-375",
+      "x": -237149.0,
+      "z": -908018.0,
+      "alt": 73.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Easy [r] SA11#10617",
+      "type": "Ural-375",
+      "x": -237114.0,
+      "z": -907894.0,
+      "alt": 73.4
+    }
+  ],
+  "image": "borkenberge-easy.jpg",
+  "heading": 6,
+  "pitch": -30.0,
+  "x": -237651.69181252833,
+  "y": -907998.0068904572,
+  "altitude_m": 374,
+  "order": 7
+}

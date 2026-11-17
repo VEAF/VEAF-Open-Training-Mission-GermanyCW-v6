@@ -1,0 +1,210 @@
+{
+  "name": "ohrdruf",
+  "title": "Ohrdruf",
+  "heading_deg": 64.0,
+  "pitch_deg": 30.0,
+  "slant_m": 4700.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Ohrdruf",
+  "camera": {
+    "position": [
+      -382254.50005588983,
+      2729.5631578947364,
+      -690251.3104202143
+    ],
+    "forward": [
+      0.37964054940545827,
+      -0.49999999999999994,
+      0.7783784768652856
+    ],
+    "up": [
+      0.2191855733945387,
+      0.8660254037844387,
+      0.44939702314958346
+    ],
+    "right": [
+      -0.898794046299167,
+      0.0,
+      0.43837114678907746
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -380470.1894736842,
+    "z": -686592.9315789475,
+    "alt_m": 379.56315789473683,
+    "lat": 50.828789671855,
+    "lon": 10.736722184474885,
+    "dms": "N50°49'43.64\" E010°44'12.20\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:45",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] combatZone_Ohrdruf-logistique#10640",
+      "type": "Ural-375",
+      "x": -381012.3,
+      "z": -686473.4,
+      "alt": 378.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] combatZone_Ohrdruf-logistique#10640",
+      "type": "Ural-375",
+      "x": -380992.3,
+      "z": -686473.4,
+      "alt": 377.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] combatZone_Ohrdruf-logistique#10640",
+      "type": "Ural-375",
+      "x": -380972.3,
+      "z": -686473.4,
+      "alt": 377.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] combatZone_Ohrdruf-logistique#10640",
+      "type": "BMP-2",
+      "x": -380952.3,
+      "z": -686473.4,
+      "alt": 377.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] combatZone_Ohrdruf-logistique#10640",
+      "type": "BMP-2",
+      "x": -380932.3,
+      "z": -686473.4,
+      "alt": 377.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] Msta artillery battery#10639",
+      "type": "SAU Msta",
+      "x": -381388.8,
+      "z": -687815.4,
+      "alt": 384.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] Msta artillery battery#10639",
+      "type": "SAU Msta",
+      "x": -381390.8,
+      "z": -687759.4,
+      "alt": 384.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] Msta artillery battery#10639",
+      "type": "SAU Msta",
+      "x": -381427.8,
+      "z": -687782.4,
+      "alt": 385.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] Msta artillery battery#10639",
+      "type": "Grad_FDDM",
+      "x": -381366.8,
+      "z": -687697.4,
+      "alt": 384.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] Msta artillery battery#10639",
+      "type": "Ural-375",
+      "x": -381442.8,
+      "z": -687818.4,
+      "alt": 385.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] Air Defense Battery#10638",
+      "type": "ZSU_57_2",
+      "x": -379820.9,
+      "z": -685992.3,
+      "alt": 377.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] Air Defense Battery#10638",
+      "type": "Dog Ear radar",
+      "x": -379563.9,
+      "z": -685858.3,
+      "alt": 382.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] Air Defense Battery#10638",
+      "type": "ZSU-23-4 Shilka",
+      "x": -379626.9,
+      "z": -686081.3,
+      "alt": 374.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] Air Defense Battery#10638",
+      "type": "Osa 9A33 ln",
+      "x": -379787.9,
+      "z": -685872.3,
+      "alt": 381.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] Air Defense Battery#10638",
+      "type": "Ural-4320-31",
+      "x": -379587.9,
+      "z": -686128.3,
+      "alt": 374.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] Air Defense Battery#10638",
+      "type": "Strela-10M3",
+      "x": -379685.9,
+      "z": -686010.3,
+      "alt": 376.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] Air Defense Battery#10638",
+      "type": "Osa 9A33 ln",
+      "x": -379767.9,
+      "z": -685937.3,
+      "alt": 379.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] Air Defense Battery#10638",
+      "type": "Ural-4320-31",
+      "x": -379564.9,
+      "z": -685983.3,
+      "alt": 378.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Ohrdruf [r] Air Defense Battery#10638",
+      "type": "Ural-4320-31",
+      "x": -379648.9,
+      "z": -686162.3,
+      "alt": 372.5
+    }
+  ],
+  "image": "ohrdruf.jpg",
+  "heading": 64,
+  "pitch": -30.0,
+  "x": -382254.50005588983,
+  "y": -690251.3104202143,
+  "altitude_m": 2730,
+  "order": 12
+}

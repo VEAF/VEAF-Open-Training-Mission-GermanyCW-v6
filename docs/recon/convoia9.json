@@ -1,0 +1,146 @@
+{
+  "name": "convoia9",
+  "title": "Convoi A9",
+  "heading_deg": 64.0,
+  "pitch_deg": 30.0,
+  "slant_m": 600.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_ConvoiA9",
+  "camera": {
+    "position": [
+      -328159.8752387342,
+      428.29999999999995,
+      -576704.908904301
+    ],
+    "forward": [
+      0.37964054940545827,
+      -0.49999999999999994,
+      0.7783784768652856
+    ],
+    "up": [
+      0.2191855733945387,
+      0.8660254037844387,
+      0.44939702314958346
+    ],
+    "right": [
+      -0.898794046299167,
+      0.0,
+      0.43837114678907746
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -327932.0909090909,
+    "z": -576237.8818181818,
+    "alt_m": 128.3,
+    "lat": 51.42267283617001,
+    "lon": 12.195073311034212,
+    "dms": "N51°25'21.62\" E012°11'42.26\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:47",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA9 [r] combatZone_ConvoiA9-convoi#10647",
+      "type": "KAMAZ Truck",
+      "x": -328008.2,
+      "z": -576230.9,
+      "alt": 128.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA9 [r] combatZone_ConvoiA9-convoi#10647",
+      "type": "KAMAZ Truck",
+      "x": -328014.5,
+      "z": -576238.6,
+      "alt": 128.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA9 [r] combatZone_ConvoiA9-convoi#10647",
+      "type": "KAMAZ Truck",
+      "x": -327994.5,
+      "z": -576238.6,
+      "alt": 128.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA9 [r] combatZone_ConvoiA9-convoi#10647",
+      "type": "KAMAZ Truck",
+      "x": -327974.5,
+      "z": -576238.6,
+      "alt": 128.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA9 [r] combatZone_ConvoiA9-convoi#10647",
+      "type": "KAMAZ Truck",
+      "x": -327954.5,
+      "z": -576238.6,
+      "alt": 128.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA9 [r] combatZone_ConvoiA9-convoi#10647",
+      "type": "KAMAZ Truck",
+      "x": -327934.5,
+      "z": -576238.6,
+      "alt": 128.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA9 [r] combatZone_ConvoiA9-convoi#10647",
+      "type": "Ural-4320-31",
+      "x": -327914.5,
+      "z": -576238.6,
+      "alt": 128.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA9 [r] combatZone_ConvoiA9-convoi#10647",
+      "type": "Ural-4320-31",
+      "x": -327894.5,
+      "z": -576238.6,
+      "alt": 128.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA9 [r] combatZone_ConvoiA9-convoi#10647",
+      "type": "BTR-80",
+      "x": -327874.5,
+      "z": -576238.6,
+      "alt": 128.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA9 [r] combatZone_ConvoiA9-convoi#10647",
+      "type": "BTR-80",
+      "x": -327854.5,
+      "z": -576238.6,
+      "alt": 128.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA9 [r] combatZone_ConvoiA9-convoi#10647",
+      "type": "2S6 Tunguska",
+      "x": -327834.3,
+      "z": -576238.4,
+      "alt": 128.3
+    }
+  ],
+  "image": "convoia9.jpg",
+  "heading": 64,
+  "pitch": -30.0,
+  "x": -328159.8752387342,
+  "y": -576704.908904301,
+  "altitude_m": 428,
+  "order": 16
+}

@@ -1,0 +1,114 @@
+{
+  "name": "borkenberge-medium",
+  "title": "Borkenberge - moyen",
+  "heading_deg": 6.0,
+  "pitch_deg": 30.0,
+  "slant_m": 4200.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Borkenberge_Medium",
+  "camera": {
+    "position": [
+      -240325.0240063797,
+      2169.028571428571,
+      -908061.7592222121
+    ],
+    "forward": [
+      0.8612812260087742,
+      -0.49999999999999994,
+      0.09052430460833646
+    ],
+    "up": [
+      0.4972609476841366,
+      0.8660254037844387,
+      0.05226423163382673
+    ],
+    "right": [
+      -0.10452846326765347,
+      0.0,
+      0.9945218953682733
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -236707.64285714287,
+    "z": -907681.5571428571,
+    "alt_m": 69.02857142857142,
+    "lat": 51.77127396830571,
+    "lon": 7.300102813216112,
+    "dms": "N51°46'16.59\" E007°18'00.37\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:42",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Medium [r] SA19#10619",
+      "type": "2S6 Tunguska",
+      "x": -235537.8,
+      "z": -906917.2,
+      "alt": 55.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Medium [r] SA19#10619",
+      "type": "Ural-375",
+      "x": -235515.7,
+      "z": -906955.2,
+      "alt": 55.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Medium [r] combatZone_Borkenberge_Easy-sa6#10618",
+      "type": "Kub 1S91 str",
+      "x": -237220.0,
+      "z": -907979.7,
+      "alt": 75.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Medium [r] combatZone_Borkenberge_Easy-sa6#10618",
+      "type": "Kub 2P25 ln",
+      "x": -237200.0,
+      "z": -907979.7,
+      "alt": 74.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Medium [r] combatZone_Borkenberge_Easy-sa6#10618",
+      "type": "Kub 2P25 ln",
+      "x": -237180.0,
+      "z": -907979.7,
+      "alt": 74.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Medium [r] combatZone_Borkenberge_Easy-sa6#10618",
+      "type": "Kub 2P25 ln",
+      "x": -237160.0,
+      "z": -907979.7,
+      "alt": 74.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Medium [r] combatZone_Borkenberge_Easy-sa6#10618",
+      "type": "Kub 2P25 ln",
+      "x": -237140.0,
+      "z": -907979.7,
+      "alt": 73.5
+    }
+  ],
+  "image": "borkenberge-medium.jpg",
+  "heading": 6,
+  "pitch": -30.0,
+  "x": -240325.0240063797,
+  "y": -908061.7592222121,
+  "altitude_m": 2169,
+  "order": 8
+}

@@ -1,0 +1,98 @@
+{
+  "name": "wahnerheide-easy",
+  "title": "Wahner Heide - facile",
+  "heading_deg": 357.0,
+  "pitch_deg": 30.0,
+  "slant_m": 1450.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_WahnerHeide_Easy",
+  "camera": {
+    "position": [
+      -332694.995891797,
+      777.3599999999999,
+      -940892.2398119252
+    ],
+    "forward": [
+      0.8648385460668959,
+      -0.49999999999999994,
+      -0.04532426763774061
+    ],
+    "up": [
+      0.49931476737728686,
+      0.8660254037844387,
+      -0.02616797812147218
+    ],
+    "right": [
+      0.05233595624294437,
+      0.0,
+      0.9986295347545738
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -331440.98,
+    "z": -940957.96,
+    "alt_m": 52.36,
+    "lat": 50.88831863909141,
+    "lon": 7.08961604261766,
+    "dms": "N50°53'17.95\" E007°05'22.62\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:40",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Easy [r] combatZone_WahnerHeide_Easy-cible-7#10600",
+      "type": "ATZ-5",
+      "x": -331131.8,
+      "z": -940623.6,
+      "alt": 52.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Easy [r] combatZone_WahnerHeide_Easy-cible-4#10599",
+      "type": "BMP-2",
+      "x": -331365.4,
+      "z": -941126.7,
+      "alt": 53.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Easy [r] combatZone_WahnerHeide_Easy-cible-1#10598",
+      "type": "T-72B",
+      "x": -331568.7,
+      "z": -940896.0,
+      "alt": 51.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Easy [r] combatZone_WahnerHeide_Easy-cible-6#10597",
+      "type": "Ural-375",
+      "x": -331752.6,
+      "z": -941326.9,
+      "alt": 52.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Easy [r] combatZone_WahnerHeide_Easy-cible-2#10596",
+      "type": "T-72B",
+      "x": -331386.4,
+      "z": -940816.6,
+      "alt": 51.3
+    }
+  ],
+  "image": "wahnerheide-easy.jpg",
+  "heading": 357,
+  "pitch": -30.0,
+  "x": -332694.995891797,
+  "y": -940892.2398119252,
+  "altitude_m": 777,
+  "order": 4
+}

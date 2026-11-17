@@ -1,0 +1,130 @@
+{
+  "name": "convoia24",
+  "title": "Convoi Ludwigslust",
+  "heading_deg": 41.0,
+  "pitch_deg": 30.0,
+  "slant_m": 600.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_ConvoiA24",
+  "camera": {
+    "position": [
+      -104439.16971248254,
+      334.3666666666666,
+      -590444.809382404
+    ],
+    "forward": [
+      0.6535976689524103,
+      -0.49999999999999994,
+      0.5681637854879309
+    ],
+    "up": [
+      0.37735479011138595,
+      0.8660254037844387,
+      0.3280295144952536
+    ],
+    "right": [
+      -0.6560590289905073,
+      0.0,
+      0.754709580222772
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -104047.0111111111,
+    "z": -590103.9111111112,
+    "alt_m": 34.36666666666667,
+    "lat": 53.39443560700904,
+    "lon": 11.580712801279635,
+    "dms": "N53°23'39.97\" E011°34'50.57\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:48",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA24 [r] combatZone_ConvoiA24-colonne#10648",
+      "type": "T-72B",
+      "x": -104011.9,
+      "z": -590133.0,
+      "alt": 34.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA24 [r] combatZone_ConvoiA24-colonne#10648",
+      "type": "T-72B",
+      "x": -103984.9,
+      "z": -590122.4,
+      "alt": 35.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA24 [r] combatZone_ConvoiA24-colonne#10648",
+      "type": "T-72B",
+      "x": -104003.9,
+      "z": -590116.4,
+      "alt": 34.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA24 [r] combatZone_ConvoiA24-colonne#10648",
+      "type": "T-72B",
+      "x": -104022.9,
+      "z": -590109.4,
+      "alt": 34.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA24 [r] combatZone_ConvoiA24-colonne#10648",
+      "type": "BMP-3",
+      "x": -104041.9,
+      "z": -590103.4,
+      "alt": 34.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA24 [r] combatZone_ConvoiA24-colonne#10648",
+      "type": "BMP-3",
+      "x": -104060.9,
+      "z": -590097.4,
+      "alt": 33.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA24 [r] combatZone_ConvoiA24-colonne#10648",
+      "type": "Ural-375",
+      "x": -104079.9,
+      "z": -590090.4,
+      "alt": 33.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA24 [r] combatZone_ConvoiA24-colonne#10648",
+      "type": "Ural-375",
+      "x": -104098.9,
+      "z": -590084.4,
+      "alt": 34.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA24 [r] combatZone_ConvoiA24-colonne#10648",
+      "type": "Strela-10M3",
+      "x": -104117.9,
+      "z": -590078.4,
+      "alt": 34.3
+    }
+  ],
+  "image": "convoia24.jpg",
+  "heading": 41,
+  "pitch": -30.0,
+  "x": -104439.16971248254,
+  "y": -590444.809382404,
+  "altitude_m": 334,
+  "order": 17
+}

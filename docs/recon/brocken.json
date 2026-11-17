@@ -1,0 +1,210 @@
+{
+  "name": "brocken",
+  "title": "Brocken",
+  "heading_deg": 48.0,
+  "pitch_deg": 30.0,
+  "slant_m": 1650.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Brocken",
+  "camera": {
+    "position": [
+      -272505.93824455235,
+      1942.3473684210526,
+      -680896.7213172805
+    ],
+    "forward": [
+      0.5794841035564565,
+      -0.49999999999999994,
+      0.6435822975543766
+    ],
+    "up": [
+      0.33456530317942906,
+      0.8660254037844387,
+      0.37157241273869707
+    ],
+    "right": [
+      -0.7431448254773942,
+      0.0,
+      0.6691306063588582
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -271549.7894736842,
+    "z": -679834.8105263158,
+    "alt_m": 1117.3473684210526,
+    "lat": 51.800831308171595,
+    "lon": 10.613463250218874,
+    "dms": "N51°48'02.99\" E010°36'48.47\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:45",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] Red Manpad Squad#10643",
+      "type": "SA-18 Igla manpad",
+      "x": -271307.0,
+      "z": -679778.1,
+      "alt": 1077.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] Red Manpad Squad#10643",
+      "type": "Infantry AK",
+      "x": -271419.0,
+      "z": -679880.1,
+      "alt": 1097.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] Red Manpad Squad#10643",
+      "type": "Infantry AK",
+      "x": -271366.0,
+      "z": -679847.1,
+      "alt": 1090.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] Red Manpad Squad#10643",
+      "type": "UAZ-469",
+      "x": -271338.0,
+      "z": -679849.1,
+      "alt": 1085.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] SA11#10642",
+      "type": "SA-11 Buk SR 9S18M1",
+      "x": -271532.0,
+      "z": -679924.0,
+      "alt": 1120.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] SA11#10642",
+      "type": "SA-11 Buk CC 9S470M1",
+      "x": -271547.0,
+      "z": -679985.0,
+      "alt": 1120.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] SA11#10642",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -271493.0,
+      "z": -680006.0,
+      "alt": 1104.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] SA11#10642",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -271496.0,
+      "z": -679953.0,
+      "alt": 1107.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] SA11#10642",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -271492.0,
+      "z": -679896.0,
+      "alt": 1107.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] SA11#10642",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -271563.0,
+      "z": -679884.0,
+      "alt": 1139.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] SA11#10642",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -271576.0,
+      "z": -679965.0,
+      "alt": 1130.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] SA11#10642",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -271577.0,
+      "z": -679894.0,
+      "alt": 1141.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] SA11#10642",
+      "type": "ZSU-23-4 Shilka",
+      "x": -271520.0,
+      "z": -679997.0,
+      "alt": 1112.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] SA11#10642",
+      "type": "ZSU-23-4 Shilka",
+      "x": -271500.0,
+      "z": -679993.0,
+      "alt": 1107.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] SA11#10642",
+      "type": "ATZ-5",
+      "x": -271544.0,
+      "z": -679883.0,
+      "alt": 1131.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] SA11#10642",
+      "type": "Ural-375",
+      "x": -271554.0,
+      "z": -679902.0,
+      "alt": 1130.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] Red EWR#10641",
+      "type": "55G6 EWR",
+      "x": -271877.0,
+      "z": -679386.0,
+      "alt": 1141.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] Red EWR#10641",
+      "type": "SA-18 Igla manpad",
+      "x": -271883.0,
+      "z": -679412.0,
+      "alt": 1141.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Brocken [r] Red EWR#10641",
+      "type": "Ural-375 PBU",
+      "x": -271862.0,
+      "z": -679427.0,
+      "alt": 1141.4
+    }
+  ],
+  "image": "brocken.jpg",
+  "heading": 48,
+  "pitch": -30.0,
+  "x": -272505.93824455235,
+  "y": -680896.7213172805,
+  "altitude_m": 1942,
+  "order": 13
+}

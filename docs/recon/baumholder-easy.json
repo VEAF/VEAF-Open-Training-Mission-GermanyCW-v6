@@ -1,0 +1,82 @@
+{
+  "name": "baumholder-easy",
+  "title": "Baumholder - facile",
+  "heading_deg": 335.0,
+  "pitch_deg": 30.0,
+  "slant_m": 1200.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Baumholder_Easy",
+  "camera": {
+    "position": [
+      -474111.92934733233,
+      1040.8,
+      -945002.5355524085
+    ],
+    "forward": [
+      0.7848855672213959,
+      -0.49999999999999994,
+      -0.36599815077066666
+    ],
+    "up": [
+      0.45315389351832497,
+      0.8660254037844387,
+      -0.21130913087034958
+    ],
+    "right": [
+      0.4226182617406992,
+      0.0,
+      0.90630778703665
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -473170.06666666665,
+    "z": -945441.7333333334,
+    "alt_m": 440.8,
+    "lat": 49.64289232272997,
+    "lon": 7.392252377040851,
+    "dms": "N49°38'34.41\" E007°23'32.11\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:38",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Easy [r] combatZone_Baumholder_Easy-cible-1#10585",
+      "type": "BMP-2",
+      "x": -473084.1,
+      "z": -945400.8,
+      "alt": 440.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Easy [r] combatZone_Baumholder_Easy-cible-3#10584",
+      "type": "Ural-375",
+      "x": -473338.5,
+      "z": -945089.3,
+      "alt": 442.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Easy [r] combatZone_Baumholder_Easy-cible-4#10583",
+      "type": "T-72B",
+      "x": -473087.6,
+      "z": -945835.1,
+      "alt": 440.0
+    }
+  ],
+  "image": "baumholder-easy.jpg",
+  "heading": 335,
+  "pitch": -30.0,
+  "x": -474111.92934733233,
+  "y": -945002.5355524085,
+  "altitude_m": 1041,
+  "order": 1
+}

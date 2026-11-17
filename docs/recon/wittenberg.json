@@ -1,0 +1,154 @@
+{
+  "name": "wittenberg",
+  "title": "Wittenberg",
+  "heading_deg": 61.0,
+  "pitch_deg": 30.0,
+  "slant_m": 2750.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Wittenberg",
+  "camera": {
+    "position": [
+      -284621.2496462808,
+      1441.4749999999997,
+      -541068.7846005082
+    ],
+    "forward": [
+      0.41985744713241446,
+      -0.49999999999999994,
+      0.7574428850332228
+    ],
+    "up": [
+      0.24240481012316853,
+      0.8660254037844387,
+      0.4373098535696978
+    ],
+    "right": [
+      -0.8746197071393957,
+      0.0,
+      0.4848096202463371
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -283466.64166666666,
+    "z": -538985.8166666668,
+    "alt_m": 66.47500000000001,
+    "lat": 51.857177540524674,
+    "lon": 12.652236454143006,
+    "dms": "N51°51'25.84\" E012°39'08.05\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:49",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittenberg [r] SA19#10662",
+      "type": "2S6 Tunguska",
+      "x": -282901.1,
+      "z": -539445.8,
+      "alt": 65.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittenberg [r] SA19#10662",
+      "type": "Ural-375",
+      "x": -282834.1,
+      "z": -539515.8,
+      "alt": 66.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittenberg [r] combatZone_Wittenberg-camions#10661",
+      "type": "Ural-375",
+      "x": -283698.4,
+      "z": -538714.4,
+      "alt": 66.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittenberg [r] combatZone_Wittenberg-camions#10661",
+      "type": "Ural-375",
+      "x": -283678.4,
+      "z": -538714.4,
+      "alt": 66.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittenberg [r] combatZone_Wittenberg-camions#10661",
+      "type": "Ural-375",
+      "x": -283658.4,
+      "z": -538714.4,
+      "alt": 66.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittenberg [r] combatZone_Wittenberg-camions#10661",
+      "type": "Ural-375",
+      "x": -283638.4,
+      "z": -538714.4,
+      "alt": 66.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittenberg [r] combatZone_Wittenberg-camions#10661",
+      "type": "ATZ-5",
+      "x": -283618.4,
+      "z": -538714.4,
+      "alt": 66.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittenberg [r] combatZone_Wittenberg-camions#10661",
+      "type": "ATZ-5",
+      "x": -283598.4,
+      "z": -538714.4,
+      "alt": 65.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittenberg [r] Ural-375 ZU-23#10659",
+      "type": "Ural-375 ZU-23",
+      "x": -284014.1,
+      "z": -539721.8,
+      "alt": 64.6
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Wittenberg [r] combatZone_Wittenberg-cible-4 #spawngroup=\"wi_depots\" #spawncount=3#10663 #188",
+      "type": "Fuel tank",
+      "x": -283620.0,
+      "z": -538870.0,
+      "alt": 68.1
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Wittenberg [r] combatZone_Wittenberg-cible-2 #spawngroup=\"wi_depots\" #spawncount=3#10664 #186",
+      "type": ".Ammunition depot",
+      "x": -283120.0,
+      "z": -539120.0,
+      "alt": 65.7
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Wittenberg [r] combatZone_Wittenberg-cible-1 #spawngroup=\"wi_depots\" #spawncount=3#10665 #185",
+      "type": "Warehouse",
+      "x": -283220.0,
+      "z": -538870.0,
+      "alt": 70.1
+    }
+  ],
+  "image": "wittenberg.jpg",
+  "heading": 61,
+  "pitch": -30.0,
+  "x": -284621.2496462808,
+  "y": -541068.7846005082,
+  "altitude_m": 1441,
+  "order": 20
+}

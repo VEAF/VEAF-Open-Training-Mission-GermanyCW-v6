@@ -1,0 +1,90 @@
+{
+  "name": "baumholder-medium",
+  "title": "Baumholder - moyen",
+  "heading_deg": 335.0,
+  "pitch_deg": 30.0,
+  "slant_m": 2350.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Baumholder_Medium",
+  "camera": {
+    "position": [
+      -475063.6310829703,
+      1614.9999999999998,
+      -944755.7543456889
+    ],
+    "forward": [
+      0.7848855672213959,
+      -0.49999999999999994,
+      -0.36599815077066666
+    ],
+    "up": [
+      0.45315389351832497,
+      0.8660254037844387,
+      -0.21130913087034958
+    ],
+    "right": [
+      0.4226182617406992,
+      0.0,
+      0.90630778703665
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -473219.15,
+    "z": -945615.85,
+    "alt_m": 440.0,
+    "lat": 49.642182437405616,
+    "lon": 7.390030389490258,
+    "dms": "N49°38'31.86\" E007°23'24.11\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:39",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Medium [r] combatZone_Baumholder_Medium-aaa-shilka#10589",
+      "type": "ZSU-23-4 Shilka",
+      "x": -473744.4,
+      "z": -946187.4,
+      "alt": 440.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Medium [r] combatZone_Baumholder_Easy-cible-2#10588",
+      "type": "BTR-80",
+      "x": -472767.6,
+      "z": -945190.5,
+      "alt": 440.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Medium [r] combatZone_Baumholder_Easy-cible-1#10587",
+      "type": "BMP-2",
+      "x": -473077.6,
+      "z": -945398.4,
+      "alt": 440.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Medium [r] combatZone_Baumholder_Easy-cible-5#10586",
+      "type": "Ural-375",
+      "x": -473287.0,
+      "z": -945687.1,
+      "alt": 440.0
+    }
+  ],
+  "image": "baumholder-medium.jpg",
+  "heading": 335,
+  "pitch": -30.0,
+  "x": -475063.6310829703,
+  "y": -944755.7543456889,
+  "altitude_m": 1615,
+  "order": 2
+}
