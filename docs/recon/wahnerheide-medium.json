@@ -1,0 +1,162 @@
+{
+  "name": "wahnerheide-medium",
+  "title": "Wahner Heide - moyen",
+  "heading_deg": 357.0,
+  "pitch_deg": 30.0,
+  "slant_m": 2100.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_WahnerHeide_Medium",
+  "camera": {
+    "position": [
+      -333009.7147928943,
+      1102.5923076923075,
+      -940805.8036533454
+    ],
+    "forward": [
+      0.8648385460668959,
+      -0.49999999999999994,
+      -0.04532426763774061
+    ],
+    "up": [
+      0.49931476737728686,
+      0.8660254037844387,
+      -0.02616797812147218
+    ],
+    "right": [
+      0.05233595624294437,
+      0.0,
+      0.9986295347545738
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -331193.55384615384,
+    "z": -940900.9846153847,
+    "alt_m": 52.5923076923077,
+    "lat": 50.890573916707936,
+    "lon": 7.089746091206578,
+    "dms": "N50°53'26.07\" E007°05'23.09\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:41",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Medium [r] combatZone_WahnerHeide_Medium-blindes#10607",
+      "type": "T-72B",
+      "x": -330812.6,
+      "z": -941192.8,
+      "alt": 51.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Medium [r] combatZone_WahnerHeide_Medium-blindes#10607",
+      "type": "T-72B",
+      "x": -330792.6,
+      "z": -941192.8,
+      "alt": 51.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Medium [r] combatZone_WahnerHeide_Medium-blindes#10607",
+      "type": "T-72B",
+      "x": -330772.6,
+      "z": -941192.8,
+      "alt": 51.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Medium [r] combatZone_WahnerHeide_Medium-blindes#10607",
+      "type": "BMP-2",
+      "x": -330752.6,
+      "z": -941192.8,
+      "alt": 51.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Medium [r] combatZone_WahnerHeide_Medium-blindes#10607",
+      "type": "BMP-2",
+      "x": -330732.6,
+      "z": -941192.8,
+      "alt": 52.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Medium [r] combatZone_WahnerHeide_Medium-aaa#10606",
+      "type": "Ural-375 ZU-23",
+      "x": -331488.2,
+      "z": -940317.1,
+      "alt": 54.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Medium [r] combatZone_WahnerHeide_Medium-aaa#10606",
+      "type": "Ural-375 ZU-23",
+      "x": -331468.2,
+      "z": -940317.1,
+      "alt": 54.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Medium [r] combatZone_WahnerHeide_Medium-aaa#10606",
+      "type": "ZSU-23-4 Shilka",
+      "x": -331448.2,
+      "z": -940317.1,
+      "alt": 54.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Medium [r] combatZone_WahnerHeide_Easy-cible-6#10605",
+      "type": "Ural-375",
+      "x": -331752.6,
+      "z": -941329.8,
+      "alt": 52.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Medium [r] combatZone_WahnerHeide_Easy-cible-1#10604",
+      "type": "T-72B",
+      "x": -331563.0,
+      "z": -940895.2,
+      "alt": 51.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Medium [r] combatZone_WahnerHeide_Easy-cible-4#10603",
+      "type": "BMP-2",
+      "x": -331367.5,
+      "z": -941137.7,
+      "alt": 53.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Medium [r] combatZone_WahnerHeide_Easy-cible-2#10602",
+      "type": "T-72B",
+      "x": -331440.6,
+      "z": -940803.5,
+      "alt": 51.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Medium [r] combatZone_WahnerHeide_Easy-cible-7#10601",
+      "type": "ATZ-5",
+      "x": -331124.9,
+      "z": -940631.3,
+      "alt": 52.8
+    }
+  ],
+  "image": "wahnerheide-medium.jpg",
+  "heading": 357,
+  "pitch": -30.0,
+  "x": -333009.7147928943,
+  "y": -940805.8036533454,
+  "altitude_m": 1103,
+  "order": 5
+}

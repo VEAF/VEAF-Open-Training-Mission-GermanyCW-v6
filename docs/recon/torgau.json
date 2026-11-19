@@ -1,0 +1,154 @@
+{
+  "name": "torgau",
+  "title": "Torgau",
+  "heading_deg": 67.0,
+  "pitch_deg": 30.0,
+  "slant_m": 2350.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Torgau",
+  "camera": {
+    "position": [
+      -321968.63357913785,
+      1256.783333333333,
+      -520875.7243803822
+    ],
+    "forward": [
+      0.3383830833210727,
+      -0.49999999999999994,
+      0.7971805873966853
+    ],
+    "up": [
+      0.19536556424463683,
+      0.8660254037844387,
+      0.46025242672622013
+    ],
+    "right": [
+      -0.9205048534524404,
+      0.0,
+      0.3907311284892737
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -321173.43333333335,
+    "z": -519002.35000000003,
+    "alt_m": 81.78333333333333,
+    "lat": 51.54163636355764,
+    "lon": 12.99933503095059,
+    "dms": "N51°32'29.89\" E012°59'57.61\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:50",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Torgau [r] Air Defense Battery#10670",
+      "type": "Strela-10M3",
+      "x": -321142.4,
+      "z": -518778.4,
+      "alt": 81.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Torgau [r] Air Defense Battery#10670",
+      "type": "Ural-4320-31",
+      "x": -321017.4,
+      "z": -518850.4,
+      "alt": 81.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Torgau [r] Air Defense Battery#10670",
+      "type": "ZSU_57_2",
+      "x": -320948.4,
+      "z": -518753.4,
+      "alt": 80.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Torgau [r] Air Defense Battery#10670",
+      "type": "Osa 9A33 ln",
+      "x": -321068.4,
+      "z": -518787.4,
+      "alt": 81.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Torgau [r] Air Defense Battery#10670",
+      "type": "Dog Ear radar",
+      "x": -321137.4,
+      "z": -518991.4,
+      "alt": 81.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Torgau [r] Air Defense Battery#10670",
+      "type": "Osa 9A33 ln",
+      "x": -321143.4,
+      "z": -518935.4,
+      "alt": 82.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Torgau [r] Air Defense Battery#10670",
+      "type": "ZSU-23-4 Shilka",
+      "x": -321089.4,
+      "z": -519021.4,
+      "alt": 81.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Torgau [r] Air Defense Battery#10670",
+      "type": "Ural-4320-31",
+      "x": -321016.4,
+      "z": -518782.4,
+      "alt": 80.9
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Torgau [r] combatZone_Torgau-cible-1 #spawngroup=\"to_depots\" #spawncount=4#10666 #190",
+      "type": ".Ammunition depot",
+      "x": -321872.0,
+      "z": -519193.0,
+      "alt": 82.5
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Torgau [r] combatZone_Torgau-cible-3 #spawngroup=\"to_depots\" #spawncount=4#10667 #192",
+      "type": "Warehouse",
+      "x": -321932.0,
+      "z": -519220.0,
+      "alt": 81.8
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Torgau [r] combatZone_Torgau-cible-2 #spawngroup=\"to_depots\" #spawncount=4#10668 #191",
+      "type": ".Ammunition depot",
+      "x": -320968.0,
+      "z": -519192.0,
+      "alt": 82.9
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Torgau [r] combatZone_Torgau-cible-4 #spawngroup=\"to_depots\" #spawncount=4#10669 #193",
+      "type": "Warehouse",
+      "x": -320746.0,
+      "z": -519523.0,
+      "alt": 83.2
+    }
+  ],
+  "image": "torgau.jpg",
+  "heading": 67,
+  "pitch": -30.0,
+  "x": -321968.63357913785,
+  "y": -520875.7243803822,
+  "altitude_m": 1257,
+  "order": 21
+}

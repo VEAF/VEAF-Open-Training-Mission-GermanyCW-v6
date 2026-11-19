@@ -1,0 +1,370 @@
+{
+  "name": "wahnerheide-hard",
+  "title": "Wahner Heide - difficile",
+  "heading_deg": 357.0,
+  "pitch_deg": 30.0,
+  "slant_m": 4550.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_WahnerHeide_Hard",
+  "camera": {
+    "position": [
+      -335690.59999998903,
+      2327.6179487179484,
+      -940990.8771463509
+    ],
+    "forward": [
+      0.8648385460668959,
+      -0.49999999999999994,
+      -0.04532426763774061
+    ],
+    "up": [
+      0.49931476737728686,
+      0.8660254037844387,
+      -0.02616797812147218
+    ],
+    "right": [
+      0.05233595624294437,
+      0.0,
+      0.9986295347545738
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -331755.58461538464,
+    "z": -941197.1025641026,
+    "alt_m": 52.617948717948714,
+    "lat": 50.88517138838492,
+    "lon": 7.087150464569886,
+    "dms": "N50°53'06.62\" E007°05'13.74\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:41",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Armored Platoon#10616",
+      "type": "BMP-2",
+      "x": -332336.9,
+      "z": -942109.4,
+      "alt": 54.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Armored Platoon#10616",
+      "type": "BTR-82A",
+      "x": -332572.9,
+      "z": -941729.4,
+      "alt": 51.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Armored Platoon#10616",
+      "type": "BTR-82A",
+      "x": -332687.9,
+      "z": -942025.4,
+      "alt": 54.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Armored Platoon#10616",
+      "type": "VAB_Mephisto",
+      "x": -332453.9,
+      "z": -942139.4,
+      "alt": 53.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Armored Platoon#10616",
+      "type": "BTR-82A",
+      "x": -332823.9,
+      "z": -942110.4,
+      "alt": 51.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Armored Platoon#10616",
+      "type": "BMP-2",
+      "x": -332643.9,
+      "z": -941841.4,
+      "alt": 52.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Armored Platoon#10616",
+      "type": "VAB_Mephisto",
+      "x": -332386.9,
+      "z": -941714.4,
+      "alt": 51.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Armored Platoon#10616",
+      "type": "ZSU_57_2",
+      "x": -332526.9,
+      "z": -941869.4,
+      "alt": 52.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Armored Platoon#10616",
+      "type": "T-55",
+      "x": -332405.9,
+      "z": -941534.4,
+      "alt": 53.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Armored Platoon#10616",
+      "type": "VAB_Mephisto",
+      "x": -332251.9,
+      "z": -941762.4,
+      "alt": 52.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Armored Platoon#10616",
+      "type": "BMP-2",
+      "x": -332893.9,
+      "z": -942067.4,
+      "alt": 50.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Armored Platoon#10616",
+      "type": "ZSU-23-4 Shilka",
+      "x": -332563.9,
+      "z": -941810.4,
+      "alt": 51.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Armored Platoon#10616",
+      "type": "BMP-2",
+      "x": -332380.9,
+      "z": -941935.4,
+      "alt": 53.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Armored Platoon#10616",
+      "type": "T-55",
+      "x": -332745.9,
+      "z": -941649.4,
+      "alt": 54.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Armored Platoon#10616",
+      "type": "BTR-82A",
+      "x": -332219.9,
+      "z": -941700.4,
+      "alt": 52.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Armored Platoon#10616",
+      "type": "VAB_Mephisto",
+      "x": -332726.9,
+      "z": -941926.4,
+      "alt": 52.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Armored Platoon#10616",
+      "type": "Chieftain_mk3",
+      "x": -332749.9,
+      "z": -941949.4,
+      "alt": 51.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Armored Platoon#10616",
+      "type": "T-55",
+      "x": -332341.9,
+      "z": -941591.4,
+      "alt": 52.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Air Defense Battery#10615",
+      "type": "ZSU-23-4 Shilka",
+      "x": -330725.8,
+      "z": -940199.6,
+      "alt": 52.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Air Defense Battery#10615",
+      "type": "Ural-4320-31",
+      "x": -330864.8,
+      "z": -940104.6,
+      "alt": 54.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Air Defense Battery#10615",
+      "type": "Dog Ear radar",
+      "x": -330816.8,
+      "z": -940176.6,
+      "alt": 51.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Air Defense Battery#10615",
+      "type": "Strela-1 9P31",
+      "x": -330923.8,
+      "z": -940389.6,
+      "alt": 54.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Air Defense Battery#10615",
+      "type": "Ural-4320-31",
+      "x": -330770.8,
+      "z": -940287.6,
+      "alt": 52.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Air Defense Battery#10615",
+      "type": "Strela-1 9P31",
+      "x": -330946.8,
+      "z": -940183.6,
+      "alt": 51.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Air Defense Battery#10615",
+      "type": "ZSU-23-4 Shilka",
+      "x": -330706.8,
+      "z": -940111.6,
+      "alt": 53.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] Air Defense Battery#10615",
+      "type": "Ural-4320-31",
+      "x": -330796.8,
+      "z": -940238.6,
+      "alt": 51.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] combatZone_WahnerHeide_Medium-blindes#10614",
+      "type": "T-72B",
+      "x": -330812.8,
+      "z": -941183.8,
+      "alt": 51.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] combatZone_WahnerHeide_Medium-blindes#10614",
+      "type": "T-72B",
+      "x": -330792.8,
+      "z": -941183.8,
+      "alt": 51.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] combatZone_WahnerHeide_Medium-blindes#10614",
+      "type": "T-72B",
+      "x": -330772.8,
+      "z": -941183.8,
+      "alt": 51.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] combatZone_WahnerHeide_Medium-blindes#10614",
+      "type": "BMP-2",
+      "x": -330752.8,
+      "z": -941183.8,
+      "alt": 51.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] combatZone_WahnerHeide_Medium-blindes#10614",
+      "type": "BMP-2",
+      "x": -330732.8,
+      "z": -941183.8,
+      "alt": 52.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] combatZone_WahnerHeide_Medium-aaa#10613",
+      "type": "Ural-375 ZU-23",
+      "x": -331493.3,
+      "z": -940312.5,
+      "alt": 54.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] combatZone_WahnerHeide_Medium-aaa#10613",
+      "type": "Ural-375 ZU-23",
+      "x": -331473.3,
+      "z": -940312.5,
+      "alt": 54.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] combatZone_WahnerHeide_Medium-aaa#10613",
+      "type": "ZSU-23-4 Shilka",
+      "x": -331453.3,
+      "z": -940312.5,
+      "alt": 54.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] combatZone_WahnerHeide_Easy-cible-7#10612",
+      "type": "ATZ-5",
+      "x": -331133.3,
+      "z": -940622.9,
+      "alt": 52.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] combatZone_WahnerHeide_Easy-cible-5#10611",
+      "type": "Ural-375",
+      "x": -331868.4,
+      "z": -941130.7,
+      "alt": 52.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] combatZone_WahnerHeide_Easy-cible-3#10610",
+      "type": "BMP-2",
+      "x": -331787.5,
+      "z": -940787.3,
+      "alt": 53.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] combatZone_WahnerHeide_Easy-cible-2#10609",
+      "type": "T-72B",
+      "x": -331381.0,
+      "z": -940820.4,
+      "alt": 51.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_WahnerHeide_Hard [r] combatZone_WahnerHeide_Easy-cible-6#10608",
+      "type": "Ural-375",
+      "x": -331747.1,
+      "z": -941311.2,
+      "alt": 52.1
+    }
+  ],
+  "image": "wahnerheide-hard.jpg",
+  "heading": 357,
+  "pitch": -30.0,
+  "x": -335690.59999998903,
+  "y": -940990.8771463509,
+  "altitude_m": 2328,
+  "order": 6
+}

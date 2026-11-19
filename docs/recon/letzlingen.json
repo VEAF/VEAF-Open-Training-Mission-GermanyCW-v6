@@ -1,0 +1,242 @@
+{
+  "name": "letzlingen",
+  "title": "Letzlingen (Altmark)",
+  "heading_deg": 49.0,
+  "pitch_deg": 30.0,
+  "slant_m": 6000.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Letzlingen",
+  "camera": {
+    "position": [
+      -212901.5131477102,
+      3110.9086956521733,
+      -607510.0773180623
+    ],
+    "forward": [
+      0.5681637854879309,
+      -0.49999999999999994,
+      0.6535976689524103
+    ],
+    "up": [
+      0.3280295144952536,
+      0.8660254037844387,
+      0.37735479011138595
+    ],
+    "right": [
+      -0.754709580222772,
+      0.0,
+      0.6560590289905073
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -209492.53043478262,
+    "z": -603588.4913043479,
+    "alt_m": 110.90869565217392,
+    "lat": 52.44348838271172,
+    "lon": 11.587549784999247,
+    "dms": "N52°26'36.56\" E011°35'15.18\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:44",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] combatZone_Letzlingen-btr#10637",
+      "type": "BTR-82A",
+      "x": -210658.8,
+      "z": -603779.6,
+      "alt": 100.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] combatZone_Letzlingen-btr#10637",
+      "type": "BTR-82A",
+      "x": -210638.8,
+      "z": -603779.6,
+      "alt": 101.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] combatZone_Letzlingen-btr#10637",
+      "type": "BTR-82A",
+      "x": -210618.8,
+      "z": -603779.6,
+      "alt": 101.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] combatZone_Letzlingen-chars#10636",
+      "type": "T-72B",
+      "x": -209660.1,
+      "z": -604476.6,
+      "alt": 98.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] combatZone_Letzlingen-chars#10636",
+      "type": "T-72B",
+      "x": -209640.1,
+      "z": -604476.6,
+      "alt": 98.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] combatZone_Letzlingen-chars#10636",
+      "type": "T-72B",
+      "x": -209620.1,
+      "z": -604476.6,
+      "alt": 98.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] combatZone_Letzlingen-chars#10636",
+      "type": "T-72B",
+      "x": -209600.1,
+      "z": -604476.6,
+      "alt": 98.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] SA15#10635",
+      "type": "Tor 9A331",
+      "x": -211165.0,
+      "z": -604868.0,
+      "alt": 86.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] SA15#10635",
+      "type": "GAZ-66",
+      "x": -211194.0,
+      "z": -604880.0,
+      "alt": 86.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] Armored Platoon#10634",
+      "type": "T-55",
+      "x": -208889.6,
+      "z": -603123.8,
+      "alt": 121.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] Armored Platoon#10634",
+      "type": "VAB_Mephisto",
+      "x": -209164.6,
+      "z": -603062.8,
+      "alt": 116.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] Armored Platoon#10634",
+      "type": "BTR-82A",
+      "x": -209121.6,
+      "z": -603266.8,
+      "alt": 114.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] Armored Platoon#10634",
+      "type": "T-55",
+      "x": -209196.6,
+      "z": -603214.8,
+      "alt": 114.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] Armored Platoon#10634",
+      "type": "T-55",
+      "x": -208957.6,
+      "z": -603010.8,
+      "alt": 121.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] Armored Platoon#10634",
+      "type": "BTR-82A",
+      "x": -209033.6,
+      "z": -603344.8,
+      "alt": 115.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] Armored Platoon#10634",
+      "type": "BTR-82A",
+      "x": -209081.6,
+      "z": -603086.8,
+      "alt": 118.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] Armored Platoon#10634",
+      "type": "BMP-2",
+      "x": -208758.6,
+      "z": -603167.8,
+      "alt": 122.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] Armored Platoon#10634",
+      "type": "ZSU-23-4 Shilka",
+      "x": -208856.6,
+      "z": -603000.7,
+      "alt": 124.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] Armored Platoon#10634",
+      "type": "VAB_Mephisto",
+      "x": -208866.6,
+      "z": -603083.8,
+      "alt": 122.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] Armored Platoon#10634",
+      "type": "Strela-10M3",
+      "x": -208793.6,
+      "z": -603079.8,
+      "alt": 123.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] Armored Platoon#10634",
+      "type": "BMP-2",
+      "x": -208783.6,
+      "z": -602984.8,
+      "alt": 125.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] Armored Platoon#10634",
+      "type": "BTR-82A",
+      "x": -208775.6,
+      "z": -603057.8,
+      "alt": 124.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Letzlingen [r] Armored Platoon#10634",
+      "type": "T-55",
+      "x": -209252.6,
+      "z": -603056.8,
+      "alt": 114.9
+    }
+  ],
+  "image": "letzlingen.jpg",
+  "heading": 49,
+  "pitch": -30.0,
+  "x": -212901.5131477102,
+  "y": -607510.0773180623,
+  "altitude_m": 3111,
+  "order": 11
+}

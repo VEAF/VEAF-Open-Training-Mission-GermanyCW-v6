@@ -1,0 +1,210 @@
+{
+  "name": "parchim",
+  "title": "Base aérienne de Parchim",
+  "heading_deg": 42.0,
+  "pitch_deg": 30.0,
+  "slant_m": 4400.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Parchim",
+  "camera": {
+    "position": [
+      -105764.28842502873,
+      2248.368421052631,
+      -580061.098476701
+    ],
+    "forward": [
+      0.6435822975543766,
+      -0.49999999999999994,
+      0.5794841035564565
+    ],
+    "up": [
+      0.37157241273869707,
+      0.8660254037844387,
+      0.33456530317942906
+    ],
+    "right": [
+      -0.6691306063588582,
+      0.0,
+      0.7431448254773942
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -102932.52631578948,
+    "z": -577511.3684210526,
+    "alt_m": 48.36842105263158,
+    "lat": 53.419049903239056,
+    "lon": 11.765449191682604,
+    "dms": "N53°25'08.58\" E011°45'55.62\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:51",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Parchim [r] SA11#10677",
+      "type": "SA-11 Buk SR 9S18M1",
+      "x": -103358.0,
+      "z": -577974.0,
+      "alt": 44.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Parchim [r] SA11#10677",
+      "type": "SA-11 Buk CC 9S470M1",
+      "x": -103359.0,
+      "z": -578042.0,
+      "alt": 45.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Parchim [r] SA11#10677",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -103350.0,
+      "z": -578063.0,
+      "alt": 45.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Parchim [r] SA11#10677",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -103343.0,
+      "z": -577994.0,
+      "alt": 44.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Parchim [r] SA11#10677",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -103337.0,
+      "z": -577946.0,
+      "alt": 44.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Parchim [r] SA11#10677",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -103423.0,
+      "z": -577935.0,
+      "alt": 45.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Parchim [r] SA11#10677",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -103444.0,
+      "z": -578012.0,
+      "alt": 47.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Parchim [r] SA11#10677",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -103451.0,
+      "z": -577939.0,
+      "alt": 46.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Parchim [r] SA11#10677",
+      "type": "ZSU-23-4 Shilka",
+      "x": -103421.0,
+      "z": -577998.0,
+      "alt": 46.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Parchim [r] SA11#10677",
+      "type": "ATZ-5",
+      "x": -103385.0,
+      "z": -577965.0,
+      "alt": 45.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Parchim [r] SA11#10677",
+      "type": "Ural-375",
+      "x": -103396.0,
+      "z": -577960.0,
+      "alt": 45.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Parchim [r] SA11#10677",
+      "type": "Ural-375",
+      "x": -103439.0,
+      "z": -577982.0,
+      "alt": 46.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Parchim [r] SA15#10671",
+      "type": "Tor 9A331",
+      "x": -101789.0,
+      "z": -576590.0,
+      "alt": 52.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Parchim [r] SA15#10671",
+      "type": "GAZ-66",
+      "x": -101803.0,
+      "z": -576606.0,
+      "alt": 52.0
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Parchim [r] combatZone_Parchim-cible-1 #spawngroup=\"pa_avions\" #spawncount=5#10672 #197",
+      "type": "MiG-29S",
+      "x": -102194.0,
+      "z": -576798.0,
+      "alt": 53.5
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Parchim [r] combatZone_Parchim-cible-2 #spawngroup=\"pa_avions\" #spawncount=5#10673 #198",
+      "type": "MiG-29S",
+      "x": -102164.0,
+      "z": -576758.0,
+      "alt": 53.5
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Parchim [r] combatZone_Parchim-cible-3 #spawngroup=\"pa_avions\" #spawncount=5#10674 #199",
+      "type": "MiG-29S",
+      "x": -102134.0,
+      "z": -576718.0,
+      "alt": 53.5
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Parchim [r] combatZone_Parchim-cible-4 #spawngroup=\"pa_avions\" #spawncount=5#10675 #200",
+      "type": "MiG-29S",
+      "x": -102104.0,
+      "z": -576678.0,
+      "alt": 53.5
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Parchim [r] combatZone_Parchim-cible-6 #spawngroup=\"pa_avions\" #spawncount=5#10676 #202",
+      "type": "Su-27",
+      "x": -102824.0,
+      "z": -576758.0,
+      "alt": 54.3
+    }
+  ],
+  "image": "parchim.jpg",
+  "heading": 42,
+  "pitch": -30.0,
+  "x": -105764.28842502873,
+  "y": -580061.098476701,
+  "altitude_m": 2248,
+  "order": 22
+}

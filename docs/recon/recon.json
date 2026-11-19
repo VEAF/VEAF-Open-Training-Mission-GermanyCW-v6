@@ -1,0 +1,155 @@
+{
+  "operation": "Open Training GermanyCW",
+  "shots": [
+    {
+      "name": "baumholder-easy",
+      "title": "Baumholder - facile",
+      "image": "baumholder-easy.jpg",
+      "metadata": "baumholder-easy.json"
+    },
+    {
+      "name": "baumholder-medium",
+      "title": "Baumholder - moyen",
+      "image": "baumholder-medium.jpg",
+      "metadata": "baumholder-medium.json"
+    },
+    {
+      "name": "baumholder-hard",
+      "title": "Baumholder - difficile",
+      "image": "baumholder-hard.jpg",
+      "metadata": "baumholder-hard.json"
+    },
+    {
+      "name": "wahnerheide-easy",
+      "title": "Wahner Heide - facile",
+      "image": "wahnerheide-easy.jpg",
+      "metadata": "wahnerheide-easy.json"
+    },
+    {
+      "name": "wahnerheide-medium",
+      "title": "Wahner Heide - moyen",
+      "image": "wahnerheide-medium.jpg",
+      "metadata": "wahnerheide-medium.json"
+    },
+    {
+      "name": "wahnerheide-hard",
+      "title": "Wahner Heide - difficile",
+      "image": "wahnerheide-hard.jpg",
+      "metadata": "wahnerheide-hard.json"
+    },
+    {
+      "name": "borkenberge-easy",
+      "title": "Borkenberge - facile",
+      "image": "borkenberge-easy.jpg",
+      "metadata": "borkenberge-easy.json"
+    },
+    {
+      "name": "borkenberge-medium",
+      "title": "Borkenberge - moyen",
+      "image": "borkenberge-medium.jpg",
+      "metadata": "borkenberge-medium.json"
+    },
+    {
+      "name": "borkenberge-hard",
+      "title": "Borkenberge - difficile",
+      "image": "borkenberge-hard.jpg",
+      "metadata": "borkenberge-hard.json"
+    },
+    {
+      "name": "luebtheen",
+      "title": "Lübtheen",
+      "image": "luebtheen.jpg",
+      "metadata": "luebtheen.json"
+    },
+    {
+      "name": "letzlingen",
+      "title": "Letzlingen (Altmark)",
+      "image": "letzlingen.jpg",
+      "metadata": "letzlingen.json"
+    },
+    {
+      "name": "ohrdruf",
+      "title": "Ohrdruf",
+      "image": "ohrdruf.jpg",
+      "metadata": "ohrdruf.json"
+    },
+    {
+      "name": "brocken",
+      "title": "Brocken",
+      "image": "brocken.jpg",
+      "metadata": "brocken.json"
+    },
+    {
+      "name": "wittstock",
+      "title": "Kyritz-Ruppiner Heide",
+      "image": "wittstock.jpg",
+      "metadata": "wittstock.json"
+    },
+    {
+      "name": "convoia2",
+      "title": "Convoi A2",
+      "image": "convoia2.jpg",
+      "metadata": "convoia2.json"
+    },
+    {
+      "name": "convoia9",
+      "title": "Convoi A9",
+      "image": "convoia9.jpg",
+      "metadata": "convoia9.json"
+    },
+    {
+      "name": "convoia24",
+      "title": "Convoi Ludwigslust",
+      "image": "convoia24.jpg",
+      "metadata": "convoia24.json"
+    },
+    {
+      "name": "wuensdorf",
+      "title": "Wünsdorf",
+      "image": "wuensdorf.jpg",
+      "metadata": "wuensdorf.json"
+    },
+    {
+      "name": "altengrabow",
+      "title": "Altengrabow",
+      "image": "altengrabow.jpg",
+      "metadata": "altengrabow.json"
+    },
+    {
+      "name": "wittenberg",
+      "title": "Wittenberg",
+      "image": "wittenberg.jpg",
+      "metadata": "wittenberg.json"
+    },
+    {
+      "name": "torgau",
+      "title": "Torgau",
+      "image": "torgau.jpg",
+      "metadata": "torgau.json"
+    },
+    {
+      "name": "parchim",
+      "title": "Base aérienne de Parchim",
+      "image": "parchim.jpg",
+      "metadata": "parchim.json"
+    },
+    {
+      "name": "werneuchen",
+      "title": "Base aérienne de Werneuchen",
+      "image": "werneuchen.jpg",
+      "metadata": "werneuchen.json"
+    },
+    {
+      "name": "rostock",
+      "title": "Rade de Rostock",
+      "image": "rostock.jpg",
+      "metadata": "rostock.json"
+    },
+    {
+      "name": "mukran",
+      "title": "Prorer Wiek (Mukran)",
+      "image": "mukran.jpg",
+      "metadata": "mukran.json"
+    }
+  ]
+}

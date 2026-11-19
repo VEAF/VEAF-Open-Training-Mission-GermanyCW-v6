@@ -1,0 +1,186 @@
+{
+  "name": "wittstock",
+  "title": "Kyritz-Ruppiner Heide",
+  "heading_deg": 50.0,
+  "pitch_deg": 30.0,
+  "slant_m": 3650.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Wittstock",
+  "camera": {
+    "position": [
+      -155109.78445717643,
+      1888.7062499999997,
+      -528589.0859108167
+    ],
+    "forward": [
+      0.5566703992264195,
+      -0.49999999999999994,
+      0.6634139481689384
+    ],
+    "up": [
+      0.3213938048432696,
+      0.8660254037844387,
+      0.38302222155948895
+    ],
+    "right": [
+      -0.766044443118978,
+      0.0,
+      0.6427876096865394
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -153077.9375,
+    "z": -526167.625,
+    "alt_m": 63.70625,
+    "lat": 53.03021685274923,
+    "lon": 12.617572905053688,
+    "dms": "N53°01'48.78\" E012°37'03.26\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:46",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittstock [r] SA15#10645",
+      "type": "Tor 9A331",
+      "x": -152219.0,
+      "z": -525298.0,
+      "alt": 61.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittstock [r] SA15#10645",
+      "type": "GAZ-66",
+      "x": -152214.0,
+      "z": -525320.0,
+      "alt": 61.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittstock [r] S300#10644",
+      "type": "S-300PS 40B6MD sr",
+      "x": -153273.0,
+      "z": -526185.0,
+      "alt": 64.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittstock [r] S300#10644",
+      "type": "S-300PS 40B6M tr",
+      "x": -153127.0,
+      "z": -526291.0,
+      "alt": 64.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittstock [r] S300#10644",
+      "type": "S-300PS 5P85C ln",
+      "x": -153151.0,
+      "z": -526367.0,
+      "alt": 63.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittstock [r] S300#10644",
+      "type": "S-300PS 5P85D ln",
+      "x": -153157.0,
+      "z": -526210.0,
+      "alt": 64.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittstock [r] S300#10644",
+      "type": "S-300PS 5P85D ln",
+      "x": -153177.0,
+      "z": -526358.0,
+      "alt": 63.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittstock [r] S300#10644",
+      "type": "S-300PS 5P85C ln",
+      "x": -153171.0,
+      "z": -526234.0,
+      "alt": 64.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittstock [r] S300#10644",
+      "type": "S-300PS 5P85C ln",
+      "x": -153199.0,
+      "z": -526329.0,
+      "alt": 64.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittstock [r] S300#10644",
+      "type": "S-300PS 5P85D ln",
+      "x": -153193.0,
+      "z": -526257.0,
+      "alt": 64.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittstock [r] S300#10644",
+      "type": "S-300PS 5P85D ln",
+      "x": -153216.0,
+      "z": -526307.0,
+      "alt": 64.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittstock [r] S300#10644",
+      "type": "S-300PS 5P85C ln",
+      "x": -153213.0,
+      "z": -526275.0,
+      "alt": 64.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittstock [r] S300#10644",
+      "type": "S-300PS 64H6E sr",
+      "x": -153254.0,
+      "z": -526293.0,
+      "alt": 64.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittstock [r] S300#10644",
+      "type": "S-300PS 54K6 cp",
+      "x": -153279.0,
+      "z": -526393.0,
+      "alt": 63.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittstock [r] S300#10644",
+      "type": "ZSU-23-4 Shilka",
+      "x": -153234.0,
+      "z": -526368.0,
+      "alt": 63.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wittstock [r] S300#10644",
+      "type": "2S6 Tunguska",
+      "x": -153170.0,
+      "z": -526197.0,
+      "alt": 64.5
+    }
+  ],
+  "image": "wittstock.jpg",
+  "heading": 50,
+  "pitch": -30.0,
+  "x": -155109.78445717643,
+  "y": -528589.0859108167,
+  "altitude_m": 1889,
+  "order": 14
+}

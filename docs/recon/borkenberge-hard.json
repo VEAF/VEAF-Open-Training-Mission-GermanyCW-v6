@@ -1,0 +1,394 @@
+{
+  "name": "borkenberge-hard",
+  "title": "Borkenberge - difficile",
+  "heading_deg": 6.0,
+  "pitch_deg": 30.0,
+  "slant_m": 6000.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Borkenberge_Hard",
+  "camera": {
+    "position": [
+      -242711.71116557647,
+      3056.4642857142853,
+      -909244.3601133643
+    ],
+    "forward": [
+      0.8612812260087742,
+      -0.49999999999999994,
+      0.09052430460833646
+    ],
+    "up": [
+      0.4972609476841366,
+      0.8660254037844387,
+      0.05226423163382673
+    ],
+    "right": [
+      -0.10452846326765347,
+      0.0,
+      0.9945218953682733
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -237544.02380952382,
+    "z": -908701.2142857143,
+    "alt_m": 56.464285714285715,
+    "lat": 51.762261785624574,
+    "lon": 7.288003672029689,
+    "dms": "N51°45'44.14\" E007°17'16.81\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:43",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10624",
+      "type": "SA-11 Buk SR 9S18M1",
+      "x": -237141.0,
+      "z": -907919.0,
+      "alt": 73.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10624",
+      "type": "SA-11 Buk CC 9S470M1",
+      "x": -237140.0,
+      "z": -907978.0,
+      "alt": 73.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10624",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -237093.0,
+      "z": -908007.0,
+      "alt": 72.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10624",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -237108.0,
+      "z": -907950.0,
+      "alt": 72.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10624",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -237103.0,
+      "z": -907891.0,
+      "alt": 73.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10624",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -237165.0,
+      "z": -907889.0,
+      "alt": 74.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10624",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -237176.0,
+      "z": -907958.0,
+      "alt": 74.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10624",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -237184.0,
+      "z": -907885.0,
+      "alt": 74.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10624",
+      "type": "ZSU-23-4 Shilka",
+      "x": -237138.0,
+      "z": -907902.0,
+      "alt": 74.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10624",
+      "type": "ATZ-5",
+      "x": -237119.0,
+      "z": -907943.0,
+      "alt": 73.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10624",
+      "type": "Ural-375",
+      "x": -237116.0,
+      "z": -907970.0,
+      "alt": 72.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] Red EWR#10623",
+      "type": "55G6 EWR",
+      "x": -239604.0,
+      "z": -905918.0,
+      "alt": 61.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] Red EWR#10623",
+      "type": "SA-18 Igla manpad",
+      "x": -239654.0,
+      "z": -905935.0,
+      "alt": 61.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] Red EWR#10623",
+      "type": "Ural-375 PBU",
+      "x": -239636.0,
+      "z": -905960.0,
+      "alt": 61.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] S300#10622",
+      "type": "S-300PS 40B6MD sr",
+      "x": -239679.0,
+      "z": -909137.0,
+      "alt": 46.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] S300#10622",
+      "type": "S-300PS 40B6M tr",
+      "x": -239559.0,
+      "z": -909236.0,
+      "alt": 46.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] S300#10622",
+      "type": "S-300PS 5P85C ln",
+      "x": -239577.0,
+      "z": -909325.0,
+      "alt": 46.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] S300#10622",
+      "type": "S-300PS 5P85D ln",
+      "x": -239570.0,
+      "z": -909164.0,
+      "alt": 45.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] S300#10622",
+      "type": "S-300PS 5P85D ln",
+      "x": -239601.0,
+      "z": -909293.0,
+      "alt": 46.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] S300#10622",
+      "type": "S-300PS 5P85C ln",
+      "x": -239590.0,
+      "z": -909176.0,
+      "alt": 45.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] S300#10622",
+      "type": "S-300PS 5P85C ln",
+      "x": -239615.0,
+      "z": -909284.0,
+      "alt": 46.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] S300#10622",
+      "type": "S-300PS 5P85D ln",
+      "x": -239621.0,
+      "z": -909196.0,
+      "alt": 46.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] S300#10622",
+      "type": "S-300PS 5P85D ln",
+      "x": -239638.0,
+      "z": -909262.0,
+      "alt": 46.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] S300#10622",
+      "type": "S-300PS 5P85C ln",
+      "x": -239636.0,
+      "z": -909225.0,
+      "alt": 46.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] S300#10622",
+      "type": "S-300PS 64H6E sr",
+      "x": -239660.0,
+      "z": -909243.0,
+      "alt": 46.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] S300#10622",
+      "type": "S-300PS 54K6 cp",
+      "x": -239669.0,
+      "z": -909344.0,
+      "alt": 47.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] S300#10622",
+      "type": "ZSU-23-4 Shilka",
+      "x": -239583.0,
+      "z": -909244.0,
+      "alt": 46.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] S300#10622",
+      "type": "2S6 Tunguska",
+      "x": -239633.0,
+      "z": -909150.0,
+      "alt": 45.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA8#10621",
+      "type": "Osa 9A33 ln",
+      "x": -235639.0,
+      "z": -906936.0,
+      "alt": 53.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA8#10621",
+      "type": "GAZ-66",
+      "x": -235647.0,
+      "z": -906949.0,
+      "alt": 53.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10620",
+      "type": "SA-11 Buk SR 9S18M1",
+      "x": -235303.0,
+      "z": -909747.0,
+      "alt": 52.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10620",
+      "type": "SA-11 Buk CC 9S470M1",
+      "x": -235303.0,
+      "z": -909802.0,
+      "alt": 51.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10620",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -235247.0,
+      "z": -909820.0,
+      "alt": 50.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10620",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -235249.0,
+      "z": -909760.0,
+      "alt": 51.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10620",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -235245.0,
+      "z": -909725.0,
+      "alt": 52.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10620",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -235334.0,
+      "z": -909733.0,
+      "alt": 52.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10620",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -235344.0,
+      "z": -909783.0,
+      "alt": 51.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10620",
+      "type": "SA-11 Buk LN 9A310M1",
+      "x": -235357.0,
+      "z": -909729.0,
+      "alt": 52.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10620",
+      "type": "ZSU-23-4 Shilka",
+      "x": -235343.0,
+      "z": -909798.0,
+      "alt": 51.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10620",
+      "type": "ZSU-23-4 Shilka",
+      "x": -235268.0,
+      "z": -909803.0,
+      "alt": 50.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10620",
+      "type": "ATZ-5",
+      "x": -235289.0,
+      "z": -909744.0,
+      "alt": 52.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Borkenberge_Hard [r] SA11#10620",
+      "type": "Ural-375",
+      "x": -235273.0,
+      "z": -909738.0,
+      "alt": 52.1
+    }
+  ],
+  "image": "borkenberge-hard.jpg",
+  "heading": 6,
+  "pitch": -30.0,
+  "x": -242711.71116557647,
+  "y": -909244.3601133643,
+  "altitude_m": 3056,
+  "order": 9
+}

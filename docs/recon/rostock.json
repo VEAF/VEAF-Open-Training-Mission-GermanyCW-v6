@@ -1,0 +1,90 @@
+{
+  "name": "rostock",
+  "title": "Rade de Rostock",
+  "heading_deg": 39.0,
+  "pitch_deg": 30.0,
+  "slant_m": 2800.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Rostock",
+  "camera": {
+    "position": [
+      -18013.778806196613,
+      1399.9999999999998,
+      -544694.0208481525
+    ],
+    "forward": [
+      0.673028145070219,
+      -0.49999999999999994,
+      0.5450074457687163
+    ],
+    "up": [
+      0.3885729807284854,
+      0.8660254037844387,
+      0.31466019552491864
+    ],
+    "right": [
+      -0.6293203910498374,
+      0.0,
+      0.7771459614569709
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -16129.3,
+    "z": -543168.0,
+    "alt_m": 0.0,
+    "lat": 54.22874958801853,
+    "lon": 12.113040475886487,
+    "dms": "N54°13'43.50\" E012°06'46.95\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:52",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Rostock [r] combatZone_Rostock-navires#10684",
+      "type": "Dry-cargo ship-1",
+      "x": -16366.1,
+      "z": -544068.0,
+      "alt": 0.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Rostock [r] combatZone_Rostock-navires#10684",
+      "type": "Dry-cargo ship-2",
+      "x": -15866.1,
+      "z": -543468.0,
+      "alt": 0.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Rostock [r] combatZone_Rostock-navires#10684",
+      "type": "ELNYA",
+      "x": -16364.0,
+      "z": -542868.0,
+      "alt": -0.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Rostock [r] combatZone_Rostock-navires#10684",
+      "type": "MOLNIYA",
+      "x": -15921.0,
+      "z": -542268.0,
+      "alt": 0.0
+    }
+  ],
+  "image": "rostock.jpg",
+  "heading": 39,
+  "pitch": -30.0,
+  "x": -18013.778806196613,
+  "y": -544694.0208481525,
+  "altitude_m": 1400,
+  "order": 24
+}

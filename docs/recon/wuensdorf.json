@@ -1,0 +1,146 @@
+{
+  "name": "wuensdorf",
+  "title": "Wünsdorf",
+  "heading_deg": 62.0,
+  "pitch_deg": 30.0,
+  "slant_m": 2200.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Wuensdorf",
+  "camera": {
+    "position": [
+      -256714.13618667205,
+      1152.2999999999997,
+      -480596.3592821957
+    ],
+    "forward": [
+      0.40657429972696263,
+      -0.49999999999999994,
+      0.7646550456261504
+    ],
+    "up": [
+      0.2347357813929454,
+      0.8660254037844387,
+      0.4414737964294634
+    ],
+    "right": [
+      -0.8829475928589269,
+      0.0,
+      0.46947156278589086
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -255819.67272727273,
+    "z": -478914.11818181816,
+    "alt_m": 52.3,
+    "lat": 52.162141225818715,
+    "lon": 13.47524035285414,
+    "dms": "N52°09'43.71\" E013°28'30.87\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:48",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Wuensdorf [r] SA22#10652",
+      "type": "CHAP_PantsirS1",
+      "x": -255239.0,
+      "z": -479167.0,
+      "alt": 52.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wuensdorf [r] SA22#10652",
+      "type": "GAZ-66",
+      "x": -255225.0,
+      "z": -479187.0,
+      "alt": 52.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wuensdorf [r] SA15#10651",
+      "type": "Tor 9A331",
+      "x": -256334.0,
+      "z": -479413.0,
+      "alt": 43.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wuensdorf [r] SA15#10651",
+      "type": "GAZ-66",
+      "x": -256355.0,
+      "z": -479412.0,
+      "alt": 43.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wuensdorf [r] combatZone_Wuensdorf-vehicules#10650",
+      "type": "Tigr_233036",
+      "x": -256043.8,
+      "z": -478514.1,
+      "alt": 53.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wuensdorf [r] combatZone_Wuensdorf-vehicules#10650",
+      "type": "Tigr_233036",
+      "x": -256023.8,
+      "z": -478514.1,
+      "alt": 53.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Wuensdorf [r] combatZone_Wuensdorf-vehicules#10650",
+      "type": "Ural-375 PBU",
+      "x": -256003.8,
+      "z": -478514.1,
+      "alt": 53.8
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Wuensdorf [r] combatZone_Wuensdorf-cible-1#10649 #164",
+      "type": ".Command Center",
+      "x": -255733.0,
+      "z": -478776.0,
+      "alt": 55.5
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Wuensdorf [r] combatZone_Wuensdorf-cible-4 #spawngroup=\"wu_batiments\" #spawncount=3#10653 #167",
+      "type": "Comms tower M",
+      "x": -255533.0,
+      "z": -478926.0,
+      "alt": 53.6
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Wuensdorf [r] combatZone_Wuensdorf-cible-5 #spawngroup=\"wu_batiments\" #spawncount=3#10655 #168",
+      "type": "Barracks 2",
+      "x": -255913.0,
+      "z": -478936.0,
+      "alt": 56.2
+    },
+    {
+      "kind": "static",
+      "group": "combatZone_Wuensdorf [r] combatZone_Wuensdorf-cible-2 #spawngroup=\"wu_batiments\" #spawncount=3#10654 #165",
+      "type": "Bunker",
+      "x": -255613.0,
+      "z": -478696.0,
+      "alt": 56.0
+    }
+  ],
+  "image": "wuensdorf.jpg",
+  "heading": 62,
+  "pitch": -30.0,
+  "x": -256714.13618667205,
+  "y": -480596.3592821957,
+  "altitude_m": 1152,
+  "order": 18
+}

@@ -1,0 +1,82 @@
+{
+  "name": "mukran",
+  "title": "Prorer Wiek (Mukran)",
+  "heading_deg": 45.0,
+  "pitch_deg": 30.0,
+  "slant_m": 1900.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Mukran",
+  "camera": {
+    "position": [
+      -3036.1742944886764,
+      949.9999999999999,
+      -440525.507627822
+    ],
+    "forward": [
+      0.6123724356957946,
+      -0.49999999999999994,
+      0.6123724356957946
+    ],
+    "up": [
+      0.35355339059327373,
+      0.8660254037844387,
+      0.35355339059327373
+    ],
+    "right": [
+      -0.7071067811865476,
+      0.0,
+      0.7071067811865476
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -1872.6666666666667,
+    "z": -439362.0,
+    "alt_m": 0.0,
+    "lat": 54.46254013341982,
+    "lon": 13.668821762643622,
+    "dms": "N54°27'45.14\" E013°40'07.76\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:52",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Mukran [r] combatZone_Mukran-navires#10685",
+      "type": "REZKY",
+      "x": -2052.0,
+      "z": -439962.0,
+      "alt": -0.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Mukran [r] combatZone_Mukran-navires#10685",
+      "type": "CHAP_Project22160",
+      "x": -1541.9,
+      "z": -439362.0,
+      "alt": -0.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Mukran [r] combatZone_Mukran-navires#10685",
+      "type": "Dry-cargo ship-1",
+      "x": -2024.1,
+      "z": -438762.0,
+      "alt": 0.0
+    }
+  ],
+  "image": "mukran.jpg",
+  "heading": 45,
+  "pitch": -30.0,
+  "x": -3036.1742944886764,
+  "y": -440525.507627822,
+  "altitude_m": 950,
+  "order": 25
+}

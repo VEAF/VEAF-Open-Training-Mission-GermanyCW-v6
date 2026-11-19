@@ -1,0 +1,218 @@
+{
+  "name": "baumholder-hard",
+  "title": "Baumholder - difficile",
+  "heading_deg": 335.0,
+  "pitch_deg": 30.0,
+  "slant_m": 4650.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Baumholder_Hard",
+  "camera": {
+    "position": [
+      -476535.9328875795,
+      2780.2849999999994,
+      -943787.7885989164
+    ],
+    "forward": [
+      0.7848855672213959,
+      -0.49999999999999994,
+      -0.36599815077066666
+    ],
+    "up": [
+      0.45315389351832497,
+      0.8660254037844387,
+      -0.21130913087034958
+    ],
+    "right": [
+      0.4226182617406992,
+      0.0,
+      0.90630778703665
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -472886.215,
+    "z": -945489.6799999999,
+    "alt_m": 455.285,
+    "lat": 49.6452963721924,
+    "lon": 7.390901946637092,
+    "dms": "N49°38'43.07\" E007°23'27.25\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:40",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] combatZone_Baumholder_Medium-aaa-shilka#10595",
+      "type": "ZSU-23-4 Shilka",
+      "x": -473742.4,
+      "z": -946165.5,
+      "alt": 440.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] Air Defense Battery#10594",
+      "type": "Ural-4320-31",
+      "x": -471965.2,
+      "z": -946317.1,
+      "alt": 440.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] Air Defense Battery#10594",
+      "type": "Dog Ear radar",
+      "x": -471914.2,
+      "z": -946187.1,
+      "alt": 440.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] Air Defense Battery#10594",
+      "type": "ZSU-23-4 Shilka",
+      "x": -472002.2,
+      "z": -946167.1,
+      "alt": 440.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] Air Defense Battery#10594",
+      "type": "Strela-10M3",
+      "x": -471899.2,
+      "z": -946365.1,
+      "alt": 440.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] Air Defense Battery#10594",
+      "type": "Ural-4320-31",
+      "x": -471810.2,
+      "z": -946409.1,
+      "alt": 440.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] Air Defense Battery#10594",
+      "type": "Strela-10M3",
+      "x": -472078.2,
+      "z": -946396.1,
+      "alt": 440.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] Air Defense Battery#10594",
+      "type": "ZSU-23-4 Shilka",
+      "x": -471760.2,
+      "z": -946259.1,
+      "alt": 440.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] Air Defense Battery#10594",
+      "type": "Strela-1 9P31",
+      "x": -471929.2,
+      "z": -946293.1,
+      "alt": 440.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] Air Defense Battery#10594",
+      "type": "Strela-1 9P31",
+      "x": -471826.2,
+      "z": -946181.1,
+      "alt": 440.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] Red Manpad Squad#10593",
+      "type": "SA-18 Igla manpad",
+      "x": -473892.3,
+      "z": -944380.7,
+      "alt": 483.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] Red Manpad Squad#10593",
+      "type": "SA-18 Igla manpad",
+      "x": -473917.3,
+      "z": -944463.7,
+      "alt": 483.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] Red Manpad Squad#10593",
+      "type": "Infantry AK",
+      "x": -473929.3,
+      "z": -944403.7,
+      "alt": 484.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] Red Manpad Squad#10593",
+      "type": "Infantry AK",
+      "x": -473868.3,
+      "z": -944387.7,
+      "alt": 482.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] Red Manpad Squad#10593",
+      "type": "Infantry AK",
+      "x": -473851.3,
+      "z": -944338.7,
+      "alt": 482.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] Red Manpad Squad#10593",
+      "type": "Infantry AK",
+      "x": -473895.3,
+      "z": -944469.7,
+      "alt": 483.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] Red Manpad Squad#10593",
+      "type": "UAZ-469",
+      "x": -473882.3,
+      "z": -944299.7,
+      "alt": 483.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] combatZone_Baumholder_Easy-cible-4#10592",
+      "type": "T-72B",
+      "x": -473087.5,
+      "z": -945832.2,
+      "alt": 440.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] combatZone_Baumholder_Easy-cible-3#10591",
+      "type": "Ural-375",
+      "x": -473386.0,
+      "z": -945080.0,
+      "alt": 443.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Baumholder_Hard [r] combatZone_Baumholder_Easy-cible-1#10590",
+      "type": "BMP-2",
+      "x": -473087.5,
+      "z": -945397.1,
+      "alt": 440.0
+    }
+  ],
+  "image": "baumholder-hard.jpg",
+  "heading": 335,
+  "pitch": -30.0,
+  "x": -476535.9328875795,
+  "y": -943787.7885989164,
+  "altitude_m": 2780,
+  "order": 3
+}

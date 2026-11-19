@@ -1,0 +1,154 @@
+{
+  "name": "convoia2",
+  "title": "Convoi A2",
+  "heading_deg": 55.0,
+  "pitch_deg": 30.0,
+  "slant_m": 600.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_ConvoiA2",
+  "camera": {
+    "position": [
+      -221436.65572560197,
+      333.88333333333327,
+      -539259.5938879497
+    ],
+    "forward": [
+      0.49673176489215404,
+      -0.49999999999999994,
+      0.7094064799162225
+    ],
+    "up": [
+      0.28678821817552297,
+      0.8660254037844387,
+      0.40957602214449584
+    ],
+    "right": [
+      -0.8191520442889918,
+      0.0,
+      0.573576436351046
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -221138.61666666667,
+    "z": -538833.95,
+    "alt_m": 33.88333333333333,
+    "lat": 52.41169510680175,
+    "lon": 12.549420387075077,
+    "dms": "N52°24'42.10\" E012°32'57.91\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:47",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA2 [r] combatZone_ConvoiA2-convoi#10646",
+      "type": "Ural-375",
+      "x": -221233.7,
+      "z": -538864.2,
+      "alt": 34.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA2 [r] combatZone_ConvoiA2-convoi#10646",
+      "type": "Ural-375",
+      "x": -221230.0,
+      "z": -538831.2,
+      "alt": 34.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA2 [r] combatZone_ConvoiA2-convoi#10646",
+      "type": "Ural-375",
+      "x": -221209.9,
+      "z": -538831.2,
+      "alt": 33.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA2 [r] combatZone_ConvoiA2-convoi#10646",
+      "type": "Ural-375",
+      "x": -221189.9,
+      "z": -538831.2,
+      "alt": 33.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA2 [r] combatZone_ConvoiA2-convoi#10646",
+      "type": "Ural-375",
+      "x": -221169.9,
+      "z": -538831.2,
+      "alt": 33.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA2 [r] combatZone_ConvoiA2-convoi#10646",
+      "type": "Ural-375",
+      "x": -221150.0,
+      "z": -538831.2,
+      "alt": 33.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA2 [r] combatZone_ConvoiA2-convoi#10646",
+      "type": "ATZ-5",
+      "x": -221130.0,
+      "z": -538831.2,
+      "alt": 33.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA2 [r] combatZone_ConvoiA2-convoi#10646",
+      "type": "ATZ-5",
+      "x": -221110.0,
+      "z": -538831.2,
+      "alt": 33.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA2 [r] combatZone_ConvoiA2-convoi#10646",
+      "type": "BTR-82A",
+      "x": -221090.0,
+      "z": -538831.2,
+      "alt": 33.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA2 [r] combatZone_ConvoiA2-convoi#10646",
+      "type": "BTR-82A",
+      "x": -221070.0,
+      "z": -538831.2,
+      "alt": 33.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA2 [r] combatZone_ConvoiA2-convoi#10646",
+      "type": "ZSU-23-4 Shilka",
+      "x": -221050.0,
+      "z": -538831.2,
+      "alt": 34.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_ConvoiA2 [r] combatZone_ConvoiA2-convoi#10646",
+      "type": "Strela-10M3",
+      "x": -221030.0,
+      "z": -538831.2,
+      "alt": 35.2
+    }
+  ],
+  "image": "convoia2.jpg",
+  "heading": 55,
+  "pitch": -30.0,
+  "x": -221436.65572560197,
+  "y": -539259.5938879497,
+  "altitude_m": 334,
+  "order": 15
+}

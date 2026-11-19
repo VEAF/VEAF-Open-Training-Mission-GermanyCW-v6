@@ -1,0 +1,258 @@
+{
+  "name": "luebtheen",
+  "title": "Lübtheen",
+  "heading_deg": 39.0,
+  "pitch_deg": 30.0,
+  "slant_m": 4450.0,
+  "mark": "groups",
+  "labels": {},
+  "zone": "combatZone_Luebtheen",
+  "camera": {
+    "position": [
+      -115420.00724556248,
+      2268.048,
+      -620451.6391336708
+    ],
+    "forward": [
+      0.673028145070219,
+      -0.49999999999999994,
+      0.5450074457687163
+    ],
+    "up": [
+      0.3885729807284854,
+      0.8660254037844387,
+      0.31466019552491864
+    ],
+    "right": [
+      -0.6293203910498374,
+      0.0,
+      0.7771459614569709
+    ],
+    "hfov_deg": 80.0
+  },
+  "window": {
+    "width": 2650,
+    "height": 1660,
+    "cropped_bottom": 40
+  },
+  "target": {
+    "x": -112425.032,
+    "z": -618026.356,
+    "alt_m": 43.048,
+    "lat": 53.286545925373986,
+    "lon": 11.184102635420967,
+    "dms": "N53°17'11.57\" E011°11'02.77\""
+  },
+  "theatre": "GermanyCW",
+  "date": "2025-06-14",
+  "time": "11:44",
+  "units": [
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] Air Defense Battery#10633",
+      "type": "Strela-10M3",
+      "x": -113241.0,
+      "z": -618824.9,
+      "alt": 44.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] Air Defense Battery#10633",
+      "type": "Ural-4320-31",
+      "x": -113072.0,
+      "z": -618973.9,
+      "alt": 45.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] Air Defense Battery#10633",
+      "type": "ZSU-23-4 Shilka",
+      "x": -113257.0,
+      "z": -618651.9,
+      "alt": 42.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] Air Defense Battery#10633",
+      "type": "Osa 9A33 ln",
+      "x": -113168.0,
+      "z": -618721.9,
+      "alt": 44.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] Air Defense Battery#10633",
+      "type": "Dog Ear radar",
+      "x": -113292.0,
+      "z": -618726.9,
+      "alt": 41.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] Air Defense Battery#10633",
+      "type": "Strela-10M3",
+      "x": -113241.0,
+      "z": -618724.9,
+      "alt": 42.8
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] Air Defense Battery#10633",
+      "type": "Ural-4320-31",
+      "x": -113323.0,
+      "z": -618677.9,
+      "alt": 41.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] Air Defense Battery#10633",
+      "type": "ZSU_57_2",
+      "x": -113202.0,
+      "z": -618801.9,
+      "alt": 44.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] Air Defense Battery#10633",
+      "type": "ZSU-23-4 Shilka",
+      "x": -113365.0,
+      "z": -618953.9,
+      "alt": 45.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] Air Defense Battery#10633",
+      "type": "Ural-4320-31",
+      "x": -113294.0,
+      "z": -618882.9,
+      "alt": 44.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] SA19#10632",
+      "type": "2S6 Tunguska",
+      "x": -111378.1,
+      "z": -618857.2,
+      "alt": 46.2
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] SA19#10632",
+      "type": "Ural-375",
+      "x": -111410.1,
+      "z": -618801.2,
+      "alt": 45.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] Msta artillery battery#10631",
+      "type": "SAU Msta",
+      "x": -111637.8,
+      "z": -616787.3,
+      "alt": 37.0
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] Msta artillery battery#10631",
+      "type": "SAU Msta",
+      "x": -111594.8,
+      "z": -616795.3,
+      "alt": 37.5
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] Msta artillery battery#10631",
+      "type": "SAU Msta",
+      "x": -111599.8,
+      "z": -616918.3,
+      "alt": 36.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] Msta artillery battery#10631",
+      "type": "Grad_FDDM",
+      "x": -111594.8,
+      "z": -616821.3,
+      "alt": 37.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] Msta artillery battery#10631",
+      "type": "Ural-375",
+      "x": -111625.8,
+      "z": -616889.3,
+      "alt": 37.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] combatZone_Luebtheen-chars#10630",
+      "type": "T-90",
+      "x": -111777.3,
+      "z": -618154.5,
+      "alt": 45.9
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] combatZone_Luebtheen-chars#10630",
+      "type": "T-90",
+      "x": -111757.3,
+      "z": -618154.5,
+      "alt": 45.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] combatZone_Luebtheen-chars#10630",
+      "type": "T-90",
+      "x": -111737.3,
+      "z": -618154.5,
+      "alt": 44.7
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] combatZone_Luebtheen-chars#10630",
+      "type": "T-90",
+      "x": -111717.3,
+      "z": -618154.5,
+      "alt": 44.1
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] combatZone_Luebtheen-vci#10629",
+      "type": "BMP-3",
+      "x": -112615.1,
+      "z": -617057.5,
+      "alt": 45.6
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] combatZone_Luebtheen-vci#10629",
+      "type": "BMP-3",
+      "x": -112595.1,
+      "z": -617057.5,
+      "alt": 45.4
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] combatZone_Luebtheen-vci#10629",
+      "type": "BMP-3",
+      "x": -112575.1,
+      "z": -617057.5,
+      "alt": 45.3
+    },
+    {
+      "kind": "unit",
+      "group": "combatZone_Luebtheen [r] combatZone_Luebtheen-vci#10629",
+      "type": "BMP-3",
+      "x": -112555.1,
+      "z": -617057.5,
+      "alt": 45.1
+    }
+  ],
+  "image": "luebtheen.jpg",
+  "heading": 39,
+  "pitch": -30.0,
+  "x": -115420.00724556248,
+  "y": -620451.6391336708,
+  "altitude_m": 2268,
+  "order": 10
+}
